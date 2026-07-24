@@ -21,7 +21,7 @@
 #   (Was `git-gateway`, which is Netlify-Identity only and does not work on Vercel.)
 backend:
   name: github
-  repo: OWNER/REPO   # TODO: set to the real GitHub repo, e.g. sportendorse/sportendorse-website
+  repo: SportEndorse/sport-endorse-website   # points to the real GitHub repo
   branch: main
   base_url: https://www.sportendorse.com   # origin serving the OAuth handler (api/auth.py, api/callback.py)
   auth_endpoint: api/auth                  # the serverless function scaffolded in /api/
