@@ -1,0 +1,83 @@
+{
+  "video_id": "",
+  "logos": [
+    {
+      "name": "Puma"
+    },
+    {
+      "name": "WHOOP"
+    },
+    {
+      "name": "Kellogg's"
+    },
+    {
+      "name": "PwC"
+    },
+    {
+      "name": "Red Bull"
+    },
+    {
+      "name": "Skechers"
+    },
+    {
+      "name": "Optimum Nutrition"
+    },
+    {
+      "name": "Specsavers"
+    },
+    {
+      "name": "Sports Direct"
+    },
+    {
+      "name": "Alpro"
+    },
+    {
+      "name": "ISDIN"
+    },
+    {
+      "name": "Pringles"
+    },
+    {
+      "name": "Grant Thornton"
+    },
+    {
+      "name": "Active Iron"
+    },
+    {
+      "name": "Uniphar / AYA"
+    },
+    {
+      "name": "Glanbia"
+    },
+    {
+      "name": "Dalata Hotels"
+    },
+    {
+      "name": "Movember"
+    },
+    {
+      "name": "Shokz"
+    },
+    {
+      "name": "Hard Rock Cafe"
+    },
+    {
+      "name": "SKINS"
+    },
+    {
+      "name": "Revive Active"
+    },
+    {
+      "name": "Uriage"
+    },
+    {
+      "name": "Mini"
+    }
+  ],
+  "hubspot": {
+    "portal_id": "4025606",
+    "form_id": "cf360f72-9c40-4604-a526-84ce0a32f4b9",
+    "region": "na1"
+  },
+  "show_video_on_mobile": true
+}

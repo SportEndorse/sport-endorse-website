@@ -1,0 +1,72 @@
+/* ============================================================================
+   Sport Endorse — BRAND BIBLE THEME (loads after style.css when SE_THEME=brand)
+   Source: Sport_Endorse_Brand_Bible_portrait_v8_2.pdf
+   Palette (§10.2): Blue #0078C1 · Yellow #F9B31D · Black #000000 ·
+                    Red #E62643 · Green #009640
+   Backgrounds (§18.8/§19): 100% Cyan blocks + clean white; white text on cyan.
+   Type (§10.3): Myriad Pro — rendered here as Source Sans 3, Adobe's open
+   humanist sans and the closest freely-embeddable equivalent.
+   ========================================================================== */
+
+:root{
+  --ink:#0078C1;               /* dark sections -> 100% Cyan */
+  --panel:#046FB2; --panel-2:#1284CC;
+  --line:rgba(255,255,255,.32);
+  --gold:#F9B31D; --gold-dark:#E0A017;   /* accent + CTAs -> brand yellow */
+  --paper:#FFFFFF; --paper-2:#F3F7FB;    /* light sections -> clean white */
+  --text:#FFFFFF; --muted:rgba(255,255,255,.85);
+  --dark-text:#10222E; --dark-muted:#4C5D6B;
+}
+
+/* ---- type: Myriad-style humanist sans, sentence case ---- */
+body{font-family:"Source Sans 3","Segoe UI",system-ui,sans-serif}
+h1,h2,h3,.display,.eyebrow,.logo,.flabel{font-family:"Source Sans 3","Segoe UI",system-ui,sans-serif;font-stretch:normal}
+h1{font-weight:900;text-transform:none;letter-spacing:-.015em}
+h2{font-weight:800;text-transform:none;letter-spacing:-.01em}
+.eyebrow{letter-spacing:.12em;font-weight:700}
+.light .eyebrow{color:#0078C1}
+h1 span{color:var(--gold)}
+
+/* ---- chrome ---- */
+header.site{background:rgba(0,120,193,.96)}
+:focus-visible{outline:3px solid var(--gold)}
+.btn.gold{color:#10222E}
+.chip{border-color:rgba(255,255,255,.45)}
+
+/* ---- light-section accents: gold-dark -> cyan ---- */
+.light .pmeta{color:#0078C1}
+.light .pstat b{color:#0078C1}
+.light a:not(.btn){color:#0078C1}
+.prose a{color:#0078C1}
+.pbadge{color:#046FB2;background:rgba(0,120,193,.09);border-color:rgba(0,120,193,.35)}
+.fpill:hover{border-color:#0078C1}
+.fsearch:focus{outline-color:#0078C1;border-color:#0078C1}
+.mcard.sel{border-color:#0078C1;box-shadow:0 0 0 2px rgba(0,120,193,.30)}
+.mcard.sel .maddon{background:#0078C1;border-color:#0078C1;color:#fff}
+.msummary{border-color:#0078C1;background:rgba(0,120,193,.07)}
+.mtotal{color:#0078C1}
+.prose blockquote{border-left-color:#0078C1;background:rgba(0,120,193,.06)}
+.prose pre{background:#0B2233}
+
+/* ---- five-colour palette, used sparingly (§10.2) ---- */
+.tag{background:#009640;color:#fff}                     /* green: savings/positive */
+.answer{border-left-color:var(--gold)}
+.ticker{background:#046FB2;border-color:rgba(255,255,255,.25)}
+.ticker b{color:var(--gold)}
+
+/* ---- video shell: cyan cinematic ---- */
+.videosec{background:var(--ink)}
+.video-shell{background:radial-gradient(120% 140% at 20% 0%,#1284CC 0%,#046FB2 60%),#046FB2;border-color:rgba(255,255,255,.3)}
+.vbtn::after{border-color:transparent transparent transparent #10222E}
+
+/* ---- tables ---- */
+.light .compare thead th{background:#0078C1;color:#fff}
+.compare td.you{background:rgba(0,120,193,.08)}
+
+/* ---- cards on cyan sections ---- */
+section:not(.light) .card{background:var(--panel);border-color:rgba(255,255,255,.22)}
+section:not(.light) .fpill.on{color:#10222E}
+
+/* ---- footer ---- */
+footer.site{background:#046FB2}
+.tagline{color:var(--gold);font-weight:600;font-style:italic}

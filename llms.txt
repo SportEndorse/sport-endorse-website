@@ -1,0 +1,29 @@
+# Sport Endorse
+
+> Sport Endorse is an athlete marketing and sports sponsorship platform that helps brands and businesses discover, evaluate, contact, and manage verified elite athletes for measurable campaigns, brand ambassadorships, speaking engagements, and content partnerships. Sports agencies and agents partner with Sport Endorse to find commercial deals for their athletes.
+
+Founded in Dublin by Trevor Twamley and Declan Bourke. Platform live since 2021.
+9,000+ verified athletes and creators, 280+ sports, 85+ countries. Offices: Dublin (HQ) and Indianapolis.
+Pricing: market-based brand subscriptions — annual from 999 (EUR/GBP) or 3,000 (USD), up to 1,800/1,200/6,000 for domestic-market rosters; quarterly options from 360/380/1,100 — with a transparent 14–18% platform commission on deals, plus custom full-service campaign management. Athletes join free. Agent Partner subscriptions for sports agencies (three roster tiers, 20–40% commission share-back) launching soon. Marketing/creative agencies run client campaigns on standard brand subscriptions.
+
+## Key pages
+- [Brand Hub / entity facts](https://www.sportendorse.com/about.html): canonical company facts and founder profiles
+- [For Brands](https://www.sportendorse.com/brands.html): how brands discover and manage verified athletes
+- [Athlete profiles](https://www.sportendorse.com/athletes.html): what a verified athlete profile contains (illustrative samples)
+- [Sports agencies](https://www.sportendorse.com/sports-agencies.html): commercial deals for athlete rosters, Agent Partner Programme with 20–40% share-back
+- [Blog](https://www.sportendorse.com/blog/): athlete marketing insights, pricing analysis and NIL guidance — full posts, no gating
+- [Careers](https://www.sportendorse.com/careers.html): join the founder-led team building the platform
+- [Strategic partners](https://www.sportendorse.com/strategic-partners.html): vetted service bench — videography, PR, creative, advisory
+- [Affiliates](https://www.sportendorse.com/affiliates.html): earn recurring commission referring brand subscriptions
+- [Sport Endorse Academy](https://www.sportendorse.com/academy.html): overview of the athlete-education sister site (52 lessons on NIL, personal brand, contracts, pricing, taxes); links out to https://academy.sportendorse.com
+- [Marketing agencies](https://www.sportendorse.com/marketing-agencies.html): verified athletes for client campaigns, per-client briefs and reporting
+- [Pricing](https://www.sportendorse.com/subscription.html): transparent subscription tiers
+- [Platform comparison](https://www.sportendorse.com/compare-athlete-marketing-platforms.html): Sport Endorse vs Opendorse, OpenSponsorship, Sponsoo, Pickstar
+- [Universities & NIL](https://www.sportendorse.com/universities.html): international athlete access, Sport Endorse Academy, student-athlete success
+- [Healthcare solution](https://www.sportendorse.com/healthcare-athlete-marketing.html): compliance-first athlete marketing for health and pharma brands
+- [Regulated industries](https://www.sportendorse.com/regulated-industries.html): finance, banking, insurance and corporate engagement
+- [Campaign measurement](https://www.sportendorse.com/campaign-measurement.html): ROI tracking and reporting
+- [Why athlete sourcing is broken](https://www.sportendorse.com/why-athlete-sourcing-is-broken.html): the problem the platform solves
+- [Success stories](https://www.sportendorse.com/success-stories.html): full case studies (Active Iron, WHOOP, Puma)
+- [FAQs](https://www.sportendorse.com/faqs.html): direct answers to the 25 questions buyers ask most
+- [Help Centre](https://www.sportendorse.com/help/): how-to guides and answers for brands, athletes, agencies and universities — pricing, deals, billing, getting started

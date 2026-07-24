@@ -1,0 +1,147 @@
+{
+  "members": [
+    {
+      "name": "Declan Bourke",
+      "role": "COO + Founder",
+      "loc": "Ireland",
+      "photo": "/images/teamPhotos/declan-bourke-headshot.webp",
+      "hue": 210,
+      "group": "Board & Executive Leadership"
+    },
+    {
+      "name": "Trevor Twamley",
+      "role": "CEO + Founder",
+      "loc": "Ireland",
+      "photo": "/images/teamPhotos/trevor-twamley-headshot.webp",
+      "hue": 42,
+      "group": "Board & Executive Leadership"
+    },
+    {
+      "name": "Manav Bhatia",
+      "role": "CMO",
+      "loc": "UAE",
+      "photo": "/images/teamPhotos/manav-bhatia-min.webp",
+      "hue": 25,
+      "group": "Executive Team"
+    },
+    {
+      "name": "Rowan Ellis",
+      "role": "CFO (fractional)",
+      "loc": "UK",
+      "photo": "/images/teamPhotos/rowan-ellis-headshot.webp",
+      "hue": 265,
+      "group": "Executive Team"
+    },
+    {
+      "name": "Martin Nutty",
+      "role": "CDO",
+      "loc": "USA",
+      "photo": "/images/teamPhotos/martin-nutty-min.webp",
+      "hue": 150,
+      "group": "Executive Team"
+    },
+    {
+      "name": "Seán Armadà",
+      "role": "Markets Development Manager",
+      "loc": "Spain",
+      "photo": "/images/teamPhotos/sean-armada-headshot.png",
+      "hue": 0,
+      "group": "Team Members"
+    },
+    {
+      "name": "Lara-Lyn Connellan",
+      "role": "Customer Success Executive",
+      "loc": "South Africa",
+      "photo": "/images/teamPhotos/lara-lyn-connellan-headshot.webp",
+      "hue": 185,
+      "group": "Team Members"
+    },
+    {
+      "name": "Priyanka Deodhar",
+      "role": "HR Consultant",
+      "loc": "Ireland",
+      "photo": "/images/teamPhotos/priyanka-deodhar-headshot.webp",
+      "hue": 330,
+      "group": "Team Members"
+    },
+    {
+      "name": "Cameron Duckham",
+      "role": "Bookkeeper",
+      "loc": "South Africa",
+      "hue": 100,
+      "group": "Team Members"
+    },
+    {
+      "name": "Collin Fiske",
+      "role": "Full Stack Developer",
+      "loc": "USA",
+      "photo": "/images/teamPhotos/collin-fiske-min.webp",
+      "hue": 210,
+      "group": "Team Members"
+    },
+    {
+      "name": "Liam Forster",
+      "role": "Lead Generation Manager",
+      "loc": "Ireland",
+      "photo": "/images/teamPhotos/liam-forster-min.webp",
+      "hue": 42,
+      "group": "Team Members"
+    },
+    {
+      "name": "Clara Gómez",
+      "role": "Market Growth Executive",
+      "loc": "Ireland",
+      "photo": "/images/teamPhotos/clara-gomez-headshot.webp",
+      "hue": 265,
+      "group": "Team Members"
+    },
+    {
+      "name": "Arthur Groslier",
+      "role": "Market Development Executive",
+      "loc": "France",
+      "photo": "/images/teamPhotos/arthur-groslier-headshot.webp",
+      "hue": 150,
+      "group": "Team Members"
+    },
+    {
+      "name": "Allison Melting",
+      "role": "Content Strategist",
+      "loc": "USA",
+      "photo": "/images/teamPhotos/allison-melting-min.webp",
+      "hue": 25,
+      "group": "Team Members"
+    },
+    {
+      "name": "Clementine Philbin",
+      "role": "Finance Director",
+      "loc": "UK",
+      "photo": "/images/teamPhotos/clementine-philbin-headshot.webp",
+      "hue": 0,
+      "group": "Team Members"
+    },
+    {
+      "name": "Lena Smirnova",
+      "role": "Market Development Executive",
+      "loc": "Ireland",
+      "photo": "/images/teamPhotos/lena-smirnova-headshot.webp",
+      "hue": 330,
+      "group": "Team Members"
+    },
+    {
+      "name": "Eliott Vauret",
+      "role": "Customer Success & Marketing Executive",
+      "loc": "Ireland",
+      "photo": "/images/teamPhotos/eliott-vauret-headshot.webp",
+      "hue": 100,
+      "group": "Team Members"
+    },
+    {
+      "name": "Nicola Woodgate",
+      "role": "Sales & Customer Success Executive",
+      "loc": "South Africa",
+      "photo": "/images/teamPhotos/nicola-woodgate-headshot.webp",
+      "hue": 210,
+      "group": "Team Members"
+    }
+  ]
+}

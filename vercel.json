@@ -1,0 +1,12 @@
+{
+  "buildCommand": "python3 build.py",
+  "outputDirectory": ".",
+  "headers": [
+    { "source": "/build.py", "headers": [{ "key": "x-robots-tag", "value": "noindex" }] }
+  ],
+  "redirects": [
+    { "source": "/(.*)\\.py", "destination": "/404.html", "statusCode": 404 },
+    { "source": "/content/(.*)", "destination": "/404.html", "statusCode": 404 },
+    { "source": "/t_(.*)", "destination": "/404.html", "statusCode": 404 }
+  ]
+}

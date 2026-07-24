@@ -1,0 +1,4 @@
+# Netlify build config — pairs with Decap CMS at /admin/ via Identity + Git Gateway.
+[build]
+  command = "python3 build.py"
+  publish = "."

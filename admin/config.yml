@@ -1,0 +1,214 @@
+# Decap CMS — Sport Endorse site
+#
+# RESPONSIVE / MOBILE: this is ONE responsive website, not a desktop site plus a
+# separate mobile site. You edit each item once here and it adapts automatically
+# to phone, tablet and desktop — there is nothing to edit twice and no risk of the
+# two drifting apart. Where you want something to differ by device, use the
+# per-device controls (labelled with 📱, e.g. "show overview video on phones").
+# Every collection below edits a JSON file that build.py reads, so a CMS save
+# → git commit → CI rebuild → live site, with no developer involved.
+#
+# SETUP (one-time, developer) — Vercel + GitHub hosting:
+#   The GitHub backend needs a small OAuth handler so editors can log in.
+#   1. Set `repo` below to the real GitHub repo (OWNER/REPO).
+#   2. Deploy a Decap GitHub OAuth provider and point the CMS at it — either as
+#      a serverless function in this same Vercel project, or a hosted one; see
+#      https://decapcms.org/docs/external-oauth-clients/ . If it isn't on the
+#      same origin, add `base_url:` (and `auth_endpoint:`) here pointing at it.
+#   3. Give CMS editors access to the repo (or use a machine account).
+#   Each save commits to `main` → Vercel rebuilds → live in ~1–2 min.
+#   Local testing: run `npx decap-server` and set `local_backend: true`.
+#   (Was `git-gateway`, which is Netlify-Identity only and does not work on Vercel.)
+backend:
+  name: github
+  repo: OWNER/REPO   # TODO: set to the real GitHub repo, e.g. sportendorse/sportendorse-website
+  branch: main
+  base_url: https://www.sportendorse.com   # origin serving the OAuth handler (api/auth.py, api/callback.py)
+  auth_endpoint: api/auth                  # the serverless function scaffolded in /api/
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "site"
+    label: "Site settings"
+    files:
+      - file: "content/settings.json"
+        label: "Logos & video"
+        name: "settings"
+        format: "json"
+        fields:
+          - label: "Overview video — YouTube ID"
+            name: "video_id"
+            widget: "string"
+            required: false
+            hint: "Just the ID (e.g. dQw4w9WgXcQ), not the full URL. Leave empty to show the 'coming soon' shell."
+          - label: "📱 Mobile — show overview video on phones"
+            name: "show_video_on_mobile"
+            widget: "boolean"
+            default: true
+            required: false
+            hint: "This site is responsive — you edit content ONCE here and it automatically adapts to phone, tablet and desktop (no separate mobile version to maintain). This toggle is a per-device control: turn it OFF to hide the overview video on phones and keep mobile fast. It still shows on tablet/desktop."
+          - label: "Brand logo wall (homepage, all languages)"
+            name: "logos"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Brand name", name: "name", widget: "string" }
+              - label: "Logo image (optional)"
+                name: "image"
+                widget: "image"
+                required: false
+                media_folder: "/images/logos"
+                public_folder: "/images/logos"
+                hint: "Optional — without an image the name shows as styled text. Best on the dark background: white/mono transparent PNG or SVG. Export at ~2× display size, max 320px on the longest edge, under 50KB."
+
+  - name: "entity"
+    label: "Company facts"
+    files:
+      - file: "content/entity.json"
+        label: "Entity facts (footer, About table, schema)"
+        name: "entity"
+        format: "json"
+        fields:
+          - { label: "Legal name", name: "legal", widget: "string" }
+          - { label: "Founded (year)", name: "founded", widget: "string" }
+          - { label: "Platform launched", name: "launched", widget: "string" }
+          - { label: "Athlete roster claim", name: "athletes", widget: "string", hint: "One number everywhere, e.g. 8,000+ verified athletes and creators" }
+          - { label: "Sports covered", name: "sports", widget: "string" }
+          - { label: "Countries", name: "countries", widget: "string" }
+          - { label: "HQ", name: "hq", widget: "string" }
+          - { label: "US office", name: "us_office", widget: "string" }
+        # Note: these update the footer, About facts table and Organization
+        # schema. Mentions written into paragraph copy (e.g. FAQ answers)
+        # are edited by a developer in build.py / t_*.py.
+
+  - name: "team"
+    label: "Team (About page)"
+    files:
+      - file: "content/team.json"
+        label: "Team members"
+        name: "team"
+        format: "json"
+        fields:
+          - label: "Members"
+            name: "members"
+            widget: "list"
+            summary: "{{fields.name}} — {{fields.role}}"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role", name: "role", widget: "string" }
+              - { label: "Location", name: "loc", widget: "string" }
+              - label: "Photo (optional)"
+                name: "photo"
+                widget: "image"
+                required: false
+                media_folder: "/images/team"
+                public_folder: "/images/team"
+                hint: "Square headshot, 480×480 WebP or JPG. Without one, coloured initials show."
+              - { label: "Initials (optional)", name: "ini", widget: "string", required: false, hint: "Auto-generated from the name if left empty." }
+              - { label: "Avatar colour hue 0–360 (optional)", name: "hue", widget: "number", required: false }
+
+  - name: "athletes"
+    label: "Sample athlete profiles"
+    files:
+      - file: "content/athletes.json"
+        label: "Athlete showcase cards"
+        name: "athletes"
+        format: "json"
+        fields:
+          - label: "Profiles"
+            name: "profiles"
+            widget: "list"
+            summary: "{{fields.name}} — {{fields.sport}}"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Sport", name: "sport", widget: "string" }
+              - { label: "Location", name: "loc", widget: "string" }
+              - { label: "Bio (1–2 sentences)", name: "bio", widget: "text" }
+              - { label: "Partnership tags", name: "tags", widget: "list", field: { label: "Tag", name: "tag", widget: "string" } }
+              - { label: "Audience (e.g. 48K)", name: "aud", widget: "string", required: false }
+              - { label: "Engagement (e.g. 4.8%)", name: "eng", widget: "string", required: false }
+              - label: "Photo (optional)"
+                name: "photo"
+                widget: "image"
+                required: false
+                media_folder: "/images/athletes"
+                public_folder: "/images/athletes"
+              - { label: "Initials (optional)", name: "ini", widget: "string", required: false }
+              - { label: "Avatar colour hue 0–360 (optional)", name: "hue", widget: "number", required: false }
+        # IMPORTANT: only feature real athletes with their written consent.
+        # Note: editing here switches the ES/FR/DE/IT athlete pages to these
+        # (English) bios; translated bios for the default set live in t_*.py.
+
+  - name: "stories"
+    label: "Case-study cards (Success Stories grid)"
+    files:
+      - file: "content/stories.json"
+        label: "Story cards"
+        name: "stories"
+        format: "json"
+        fields:
+          - label: "Cards"
+            name: "stories"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "ID (short, no spaces)", name: "id", widget: "string", hint: "e.g. active-iron. For 'full case study' cards this must match an on-page write-up anchor (developer adds those)." }
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Industry"
+                name: "industry"
+                widget: "select"
+                options: [{label: "Healthcare & Pharma", value: "healthcare"}, {label: "Wellness & Fitness", value: "wellness"}, {label: "Retail & Sporting Goods", value: "retail"}, {label: "FMCG & Food", value: "fmcg"}, {label: "Finance & Insurance", value: "finance"}, {label: "Corporate & Professional Services", value: "corporate"}]
+              - label: "Campaign type"
+                name: "ctype"
+                widget: "select"
+                options: [{label: "Ambassadorship", value: "ambassador"}, {label: "Product seeding", value: "seeding"}, {label: "Social campaign", value: "social"}, {label: "Speaking & events", value: "speaking"}, {label: "Regional activation", value: "activation"}]
+              - label: "Region"
+                name: "region"
+                widget: "select"
+                options: [{label: "Ireland", value: "ie"}, {label: "UK", value: "uk"}, {label: "Multi-market", value: "multi"}]
+              - { label: "Blurb (one sentence)", name: "blurb", widget: "text" }
+              - { label: "Links to a full on-page case study?", name: "full", widget: "boolean", default: false, required: false }
+
+  - name: "careers"
+    label: "Careers — open roles"
+    files:
+      - file: "content/careers.json"
+        label: "Open roles"
+        name: "careers"
+        format: "json"
+        fields:
+          - label: "Roles (empty list = 'no open roles' message shows)"
+            name: "roles"
+            widget: "list"
+            required: false
+            summary: "{{fields.title}} — {{fields.loc}}"
+            fields:
+              - { label: "Job title", name: "title", widget: "string" }
+              - { label: "Team", name: "team", widget: "string", hint: "e.g. Engineering, Partnerships, Customer Success" }
+              - { label: "Location", name: "loc", widget: "string", hint: "e.g. Remote (Europe), Dublin, Indianapolis" }
+              - { label: "Type", name: "type", widget: "string", hint: "e.g. Full-time, Contract" }
+              - { label: "One-paragraph description", name: "desc", widget: "text" }
+              - { label: "Application link (optional)", name: "link", widget: "string", required: false, hint: "URL to a job post or form. Leave empty to use the careers email." }
+
+  - name: "blog"
+    label: "Blog posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    summary: "{{title}} — {{date}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string", hint: "Keep under ~55 characters — it becomes the page title." }
+      - { label: "Publish date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "Author", name: "author", widget: "string", hint: "Full name, e.g. Declan Bourke — named authors build credibility." }
+      - { label: "Lead / meta description", name: "description", widget: "text", hint: "1–2 sentences, max 160 characters. Doubles as the answer-first opener and the Google snippet — front-load the answer." }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        required: false
+        options: ["Athlete Marketing", "NIL & Regulation", "Pricing & ROI", "Founder Notes", "Platform News"]
+      - { label: "Draft (don't publish yet)", name: "draft", widget: "boolean", default: false, required: false }
+      - { label: "Body", name: "body", widget: "markdown", hint: "Use ## for section headings (the title above is the page H1). Short paragraphs, specific numbers, one idea per section." }
