@@ -242,7 +242,7 @@ ARTICLES = [
    related=["support-included", "what-is-sport-endorse"],
    body=_p(
      f"The quickest way to reach us is email: <a href=\"mailto:{CONTACT_EMAIL}\">{CONTACT_EMAIL}</a>.",
-     "If you'd like to see the platform or scope a campaign, <a href=\"https://calendly.com/d/dzw-nc4-57b/sport-endorse-demo\">book a demo</a> and we'll walk you through it.",
+     "If you'd like to see the platform or scope a campaign, <a href=\"../demo.html\">book a demo</a> and we'll walk you through it.",
      "Already a subscriber? Annual clients can contact their named customer success manager or founder contact directly for anything urgent.")
    ),
 

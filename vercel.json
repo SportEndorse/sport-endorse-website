@@ -1,12 +1,235 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "python3 build.py",
   "outputDirectory": ".",
+  "cleanUrls": true,
+  "trailingSlash": false,
   "headers": [
-    { "source": "/build.py", "headers": [{ "key": "x-robots-tag", "value": "noindex" }] }
+    {
+      "source": "/build.py",
+      "headers": [
+        {
+          "key": "x-robots-tag",
+          "value": "noindex"
+        }
+      ]
+    }
   ],
   "redirects": [
-    { "source": "/(.*)\\.py", "destination": "/404.html", "statusCode": 404 },
-    { "source": "/content/(.*)", "destination": "/404.html", "statusCode": 404 },
-    { "source": "/t_(.*)", "destination": "/404.html", "statusCode": 404 }
+    {
+      "source": "/(.*)\\.py",
+      "destination": "/404.html",
+      "statusCode": 404
+    },
+    {
+      "source": "/content/(.*)",
+      "destination": "/404.html",
+      "statusCode": 404
+    },
+    {
+      "source": "/t_(.*)",
+      "destination": "/404.html",
+      "statusCode": 404
+    },
+    {
+      "source": "/agency",
+      "destination": "/agencies",
+      "permanent": true
+    },
+    {
+      "source": "/about-us",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/successStories",
+      "destination": "/success-stories",
+      "permanent": true
+    },
+    {
+      "source": "/successStories/:slug*",
+      "destination": "/success-stories",
+      "permanent": true
+    },
+    {
+      "source": "/presses/:slug*",
+      "destination": "/press",
+      "permanent": true
+    },
+    {
+      "source": "/athlete-marketing-platforms-for-faster-elite-sourcing",
+      "destination": "/blog/athlete-marketing-platforms-for-faster-elite-sourcing",
+      "permanent": true
+    },
+    {
+      "source": "/automate-athlete-endorsement-deals",
+      "destination": "/blog/automate-athlete-endorsement-deals",
+      "permanent": true
+    },
+    {
+      "source": "/how-healthcare-brands-find-verified-athletes-and-creators-with-sport-endorsehow-healthcare-brands-find-verified-athletes-and-creators",
+      "destination": "/blog/how-healthcare-brands-find-verified-athletes-and-creators",
+      "permanent": true
+    },
+    {
+      "source": "/athlete-seeding-campaigns-authentic-sports-influencer-marketing-with-sport-endorse",
+      "destination": "/blog/athlete-seeding-campaigns-authentic-sports-influencer-marketing-with-sport-endorse",
+      "permanent": true
+    },
+    {
+      "source": "/hoverair-sport-endorse-athlete-campaign",
+      "destination": "/success-stories",
+      "permanent": true
+    },
+    {
+      "source": "/college-football-classic-dublin-2025-nil-sport-endorse",
+      "destination": "/blog/college-football-classic-dublin-2025-nil-sport-endorse",
+      "permanent": true
+    },
+    {
+      "source": "/crypto-athlete-collaborations-sport-endorse",
+      "destination": "/blog/crypto-athlete-collaborations-sport-endorse",
+      "permanent": true
+    },
+    {
+      "source": "/trail-running-sponsorship-athlete-marketing-opportunities",
+      "destination": "/blog/trail-running-sponsorship-athlete-marketing-opportunities",
+      "permanent": true
+    },
+    {
+      "source": "/unrivaled-3x3-womens-basketball-league-redefining-game",
+      "destination": "/blog/unrivaled-3x3-womens-basketball-league-redefining-game",
+      "permanent": true
+    },
+    {
+      "source": "/skins-sport-endorse-collaboration",
+      "destination": "/success-stories",
+      "permanent": true
+    },
+    {
+      "source": "/women-in-sport-iwd-event-impact",
+      "destination": "/blog/women-in-sport-iwd-event-impact",
+      "permanent": true
+    },
+    {
+      "source": "/sports-influencers-marketing-trends",
+      "destination": "/blog/sports-influencers-marketing-trends",
+      "permanent": true
+    },
+    {
+      "source": "/athlete-endorsements-beauty-brands",
+      "destination": "/blog/athlete-endorsements-beauty-brands",
+      "permanent": true
+    },
+    {
+      "source": "/sports-speakers-endorsements",
+      "destination": "/blog/sports-speakers-endorsements",
+      "permanent": true
+    },
+    {
+      "source": "/brands-looking-for-athlete-ambassadors",
+      "destination": "/blog/brands-looking-for-athlete-ambassadors",
+      "permanent": true
+    },
+    {
+      "source": "/sponsorship-management-benefits-athletes",
+      "destination": "/blog/sponsorship-management-benefits-athletes",
+      "permanent": true
+    },
+    {
+      "source": "/nfl-london-sports-marketing",
+      "destination": "/blog/nfl-london-sports-marketing",
+      "permanent": true
+    },
+    {
+      "source": "/15-must-know-athlete-sponsorship-strategies",
+      "destination": "/blog/15-must-know-athlete-sponsorship-strategies",
+      "permanent": true
+    },
+    {
+      "source": "/nfl-private-equity-rule-change-impact",
+      "destination": "/blog/nfl-private-equity-rule-change-impact",
+      "permanent": true
+    },
+    {
+      "source": "/athlete-sponsorship-management-secrets",
+      "destination": "/blog/athlete-sponsorship-management-secrets",
+      "permanent": true
+    },
+    {
+      "source": "/women-in-sports-business-growth",
+      "destination": "/blog/women-in-sports-business-growth",
+      "permanent": true
+    },
+    {
+      "source": "/athlete-brand-partnerships-sponsorship-management-guide",
+      "destination": "/blog/athlete-brand-partnerships-sponsorship-management-guide",
+      "permanent": true
+    },
+    {
+      "source": "/sponsorship-management-tips",
+      "destination": "/blog/athlete-brand-partnerships-sponsorship-management-guide",
+      "permanent": true
+    },
+    {
+      "source": "/paris-2024-olympics-sponsorship-trends",
+      "destination": "/blog/paris-2024-olympics-sponsorship-trends",
+      "permanent": true
+    },
+    {
+      "source": "/olympians-mental-preparation-paris-2024",
+      "destination": "/blog/olympians-mental-preparation-paris-2024",
+      "permanent": true
+    },
+    {
+      "source": "/empowering-brands-athletes-brand-ambassadors-impact-beyond-sports",
+      "destination": "/blog/empowering-brands-athletes-brand-ambassadors-impact-beyond-sports",
+      "permanent": true
+    },
+    {
+      "source": "/leveraging-six-nations-2024-strategies-for-maximum-brand-exposure",
+      "destination": "/blog/leveraging-six-nations-2024-strategies-for-maximum-brand-exposure",
+      "permanent": true
+    },
+    {
+      "source": "/partnering-with-add-victor-connecting-athletes-with-career-opportunities",
+      "destination": "/blog/partnering-with-add-victor-connecting-athletes-with-career-opportunities",
+      "permanent": true
+    },
+    {
+      "source": "/how-athlete-partnerships-enhance-holiday-campaigns",
+      "destination": "/blog/how-athlete-partnerships-enhance-holiday-campaigns",
+      "permanent": true
+    },
+    {
+      "source": "/5x-sales-sports-influencer-marketing",
+      "destination": "/blog/5x-sales-sports-influencer-marketing",
+      "permanent": true
+    },
+    {
+      "source": "/collegiate-football-athletes-exceptional-brand-ambassadors",
+      "destination": "/blog/collegiate-football-athletes-exceptional-brand-ambassadors",
+      "permanent": true
+    },
+    {
+      "source": "/the-allure-of-skilled-lacrosse-players-as-exceptional-brand-ambassadors",
+      "destination": "/blog/the-allure-of-skilled-lacrosse-players-as-exceptional-brand-ambassadors",
+      "permanent": true
+    },
+    {
+      "source": "/5-tips-to-use-sports-influencer-marketing",
+      "destination": "/blog/5-tips-to-use-sports-influencer-marketing",
+      "permanent": true
+    },
+    {
+      "source": "/3-reasons-to-use-sports-talent-as-source-for-digital-advertisement",
+      "destination": "/blog/3-reasons-to-use-sports-talent-as-source-for-digital-advertisement",
+      "permanent": true
+    },
+    {
+      "source": "/elite-sport-presents-challenges-for-irish-athletes",
+      "destination": "/blog/elite-sport-presents-challenges-for-irish-athletes",
+      "permanent": true
+    }
   ]
 }

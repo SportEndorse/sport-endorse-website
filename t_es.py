@@ -82,7 +82,7 @@ T = {
    "Los entregables, plazos y derechos de uso se acuerdan en la plataforma antes de liberar el pago, así que queda constancia clara de lo comprometido. Nuestro equipo de éxito de cliente supervisa las campañas e interviene directamente."),
  ],
  "br_cmp_h2": "Compáranos antes de elegir",
- "br_cmp_p": "Consulta cómo se compara Sport Endorse con Opendorse, OpenSponsorship, Sponsoo y Pickstar — incluidos los puntos en los que cada competidor es más fuerte.",
+ "br_cmp_p": "Consulta cómo se compara Sport Endorse con Opendorse, OpenSponsorship y Pickstar — incluidos los puntos en los que cada competidor es más fuerte.",
  "br_cmp_cta": "Ver la comparativa",
 
  # ---------- talent ----------
@@ -115,11 +115,11 @@ T = {
  "ath_desc": "Descubre cómo es un perfil verificado de Sport Endorse: deporte, ubicación, audiencia e interacción. Más de 9.000 deportistas verificados de 280+ deportes.",
  "ath_eyebrow": "El plantel",
  "ath_h1": "Así es un <span>perfil verificado</span> de deportista",
- "ath_answer": "Sport Endorse reúne a más de 9.000 deportistas y creadores de élite verificados de más de 280 deportes en más de 85 países. Cada perfil se verifica individualmente — identidad, nivel deportivo y audiencia — y muestra el deporte, la ubicación, el alcance, la interacción y el enfoque de colaboración que las marcas necesitan para preseleccionar con confianza. Abajo: perfiles de muestra ilustrativos en el formato real de la plataforma.",
+ "ath_answer": "Sport Endorse reúne a más de 9.000 deportistas y creadores de élite verificados de más de 280 deportes en más de 85 países. Cada perfil se verifica individualmente — identidad, nivel deportivo y audiencia — y muestra el deporte, la ubicación, el alcance, la interacción y el enfoque de colaboración que las marcas necesitan para preseleccionar con confianza. Abajo: una selección de deportistas verificados, en el formato real de la plataforma.",
  "ath_cta1": "Ver el plantel completo — pide una demo", "ath_cta2": "Soy deportista — únete gratis",
- "ath_grid_eye": "Perfiles de muestra", "ath_grid_h2": "Ocho ejemplos, un mismo formato",
- "ath_grid_p": "Ejemplos ficticios y claramente identificados de cómo aparece el talento verificado ante las marcas. El plantel real se explora dentro de la plataforma.",
- "ath_badge": "Perfil de muestra",
+ "ath_grid_eye": "Deportistas destacados", "ath_grid_h2": "Talento verificado en Sport Endorse",
+ "ath_grid_p": "Una selección de deportistas verificados en Sport Endorse, tal como aparecen ante las marcas. El plantel completo se explora dentro de la plataforma.",
+ "ath_badge": "Deportista verificado",
  "ath_bios": [
   "Delantera campeona de la All-Ireland y fisioterapeuta titulada. Protagoniza campañas de salud, bienestar y deporte de base con alcance auténtico en Irlanda.",
   "Tercera línea de la Premiership con grado en nutrición. Colaboraciones de larga duración en recuperación, nutrición deportiva y moda masculina.",
@@ -140,11 +140,11 @@ T = {
   ["Velocidad", "Con propósito", "Contenido"],
   ["Ciclismo", "Análisis técnico", "Resistencia"],
  ],
- "ath_note": "Estos son perfiles de muestra ilustrativos, no personas reales. Para mostrar deportistas reales aquí, añádelos mediante el CMS con su consentimiento por escrito y sube las fotos a images/athletes/.",
+ "ath_note": "Esta es una selección del plantel de Sport Endorse. Gestiona los deportistas destacados mediante el CMS (content/athletes.json), cada uno con su consentimiento por escrito y, opcionalmente, una foto en images/athletes/.",
  "ath_faq_h2": "Preguntas sobre el plantel, respondidas",
  "ath_faq": [
   ("¿Son reales estos perfiles?",
-   "Estos ocho son perfiles de muestra ilustrativos que enseñan exactamente qué contiene un perfil verificado de Sport Endorse: deporte, ubicación, tamaño de audiencia, interacción y enfoque de colaboración. La plataforma real aloja más de 9.000 deportistas verificados; las marcas exploran el plantel completo tras pedir una demo o suscribirse."),
+   "Sí — estos son una selección de deportistas verificados en Sport Endorse. La plataforma completa aloja más de 9.000 deportistas y creadores verificados individualmente en más de 280 deportes; las marcas exploran el plantel completo tras pedir una demo o suscribirse."),
   ("¿Cómo verifica Sport Endorse a los deportistas?",
    "Cada deportista se verifica individualmente antes de aparecer en la plataforma: se comprueban la identidad, el nivel deportivo y las audiencias sociales conectadas, de modo que las marcas nunca negocian con perfiles sin verificar ni cifras de seguidores infladas."),
   ("¿Puedo buscar deportistas por deporte, país o audiencia?",

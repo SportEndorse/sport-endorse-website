@@ -82,7 +82,7 @@ T = {
    "Les livrables, échéances et droits d'utilisation sont convenus sur la plateforme avant le déblocage du paiement, avec une trace claire des engagements. Notre équipe customer success suit les campagnes et intervient directement."),
  ],
  "br_cmp_h2": "Comparez-nous avant de choisir",
- "br_cmp_p": "Découvrez comment Sport Endorse se positionne face à Opendorse, OpenSponsorship, Sponsoo et Pickstar — y compris là où chaque concurrent est plus fort.",
+ "br_cmp_p": "Découvrez comment Sport Endorse se positionne face à Opendorse, OpenSponsorship et Pickstar — y compris là où chaque concurrent est plus fort.",
  "br_cmp_cta": "Voir le comparatif",
 
  # ---------- talent ----------
@@ -115,11 +115,11 @@ T = {
  "ath_desc": "Découvrez à quoi ressemble un profil vérifié Sport Endorse : sport, localisation, audience et engagement. Plus de 9 000 athlètes vérifiés dans 280+ sports.",
  "ath_eyebrow": "Le vivier",
  "ath_h1": "À quoi ressemble un <span>profil d'athlète vérifié</span>",
- "ath_answer": "Sport Endorse rassemble plus de 9 000 athlètes et créateurs d'élite vérifiés dans plus de 280 sports et plus de 85 pays. Chaque profil est vérifié individuellement — identité, niveau sportif et audience — et présente le sport, la localisation, la portée, l'engagement et les axes de partenariat dont les marques ont besoin pour présélectionner en confiance. Ci-dessous : des profils d'exemple illustratifs, au format exact de la plateforme.",
+ "ath_answer": "Sport Endorse réunit plus de 9 000 athlètes et créateurs d'élite vérifiés dans plus de 280 sports et 85 pays. Chaque profil est vérifié individuellement — identité, niveau sportif et audience — et présente le sport, la localisation, la portée, l'engagement et les axes de partenariat dont les marques ont besoin pour présélectionner en toute confiance. Ci-dessous : une sélection d'athlètes vérifiés, au format réel de la plateforme.",
  "ath_cta1": "Parcourir le vivier complet — demander une démo", "ath_cta2": "Je suis athlète — inscription gratuite",
- "ath_grid_eye": "Profils d'exemple", "ath_grid_h2": "Huit exemples, un même format",
- "ath_grid_p": "Des exemples fictifs, clairement identifiés, montrant comment les talents vérifiés apparaissent aux marques. Le vivier réel se parcourt dans la plateforme.",
- "ath_badge": "Profil d'exemple",
+ "ath_grid_eye": "Athlètes en vedette", "ath_grid_h2": "Des talents vérifiés sur Sport Endorse",
+ "ath_grid_p": "Une sélection d'athlètes vérifiés sur Sport Endorse, tels qu'ils apparaissent aux marques. L'effectif complet est consultable dans la plateforme.",
+ "ath_badge": "Athlète vérifié",
  "ath_bios": [
   "Attaquante championne All-Ireland et kinésithérapeute diplômée. En première ligne des campagnes santé, bien-être et sport amateur, avec une portée authentique en Irlande.",
   "Troisième ligne de Premiership diplômé en nutrition. Partenariats de longue durée dans la récupération, la nutrition sportive et la mode masculine.",
@@ -140,11 +140,11 @@ T = {
   ["Sprint", "Engagement sociétal", "Contenu"],
   ["Cyclisme", "Test matériel", "Endurance"],
  ],
- "ath_note": "Il s'agit de profils d'exemple illustratifs, pas de personnes réelles. Pour présenter de vrais athlètes ici, ajoutez-les via le CMS avec leur accord écrit et déposez les photos dans images/athletes/.",
+ "ath_note": "Voici une sélection de l'effectif Sport Endorse. Gérez les athlètes en vedette via le CMS (content/athletes.json), chacun avec son consentement écrit et, éventuellement, une photo dans images/athletes/.",
  "ath_faq_h2": "Questions sur le vivier, réponses claires",
  "ath_faq": [
   ("Ces profils sont-ils réels ?",
-   "Ces huit profils sont des exemples illustratifs montrant exactement ce que contient un profil vérifié Sport Endorse : sport, localisation, taille d'audience, engagement et axes de partenariat. La plateforme héberge plus de 9 000 athlètes réels et vérifiés ; les marques parcourent le vivier complet après une démo ou un abonnement."),
+   "Oui — il s'agit d'une sélection d'athlètes vérifiés sur Sport Endorse. La plateforme complète héberge plus de 9 000 athlètes et créateurs vérifiés individuellement dans plus de 280 sports ; les marques parcourent l'effectif complet après une démo ou un abonnement."),
   ("Comment Sport Endorse vérifie-t-il les athlètes ?",
    "Chaque athlète est vérifié individuellement avant d'apparaître sur la plateforme : identité, niveau sportif et audiences sociales connectées sont contrôlés, si bien que les marques ne négocient jamais avec des profils non vérifiés ou des compteurs d'abonnés gonflés."),
   ("Puis-je rechercher des athlètes par sport, pays ou audience ?",

@@ -1,124 +1,116 @@
 {
-  "profiles": [
-    {
-      "ini": "AB",
-      "hue": 42,
-      "name": "Aoife Brennan",
-      "sport": "Camogie",
-      "loc": "Dublin, Ireland",
-      "bio": "All-Ireland winning forward and qualified physiotherapist. Fronts health, wellness and grassroots-sport campaigns with authentic Irish reach.",
-      "tags": [
-        "Health & wellness",
-        "Ambassadorship",
-        "Speaking"
-      ],
-      "aud": "48K",
-      "eng": "4.8%"
-    },
-    {
-      "ini": "MW",
-      "hue": 210,
-      "name": "Marcus Webb",
-      "sport": "Rugby Union",
-      "loc": "Leicester, England",
-      "bio": "Premiership back-row with a nutrition degree. Long-term partnerships in recovery, performance nutrition and menswear.",
-      "tags": [
-        "Performance",
-        "Content",
-        "Appearances"
-      ],
-      "aud": "112K",
-      "eng": "3.9%"
-    },
-    {
-      "ini": "SH",
-      "hue": 0,
-      "name": "Sofía Herrera",
-      "sport": "Football",
-      "loc": "Madrid, Spain",
-      "bio": "Liga F midfielder and UEFA-B coach. Bilingual content creator focused on women's sport, boots and fan engagement across Spain and LatAm.",
-      "tags": [
-        "Football",
-        "Bilingual content",
-        "Ambassadorship"
-      ],
-      "aud": "204K",
-      "eng": "5.2%"
-    },
-    {
-      "ini": "JK",
-      "hue": 150,
-      "name": "Jonas Keller",
-      "sport": "Triathlon",
-      "loc": "Munich, Germany",
-      "bio": "Two-time Ironman finisher and full-distance podium athlete. Deep credibility in endurance tech, wearables and recovery brands in the DACH market.",
-      "tags": [
-        "Endurance",
-        "Wearables",
-        "Product seeding"
-      ],
-      "aud": "67K",
-      "eng": "6.1%"
-    },
-    {
-      "ini": "CR",
-      "hue": 265,
-      "name": "Chiara Romano",
-      "sport": "Alpine Skiing",
-      "loc": "Turin, Italy",
-      "bio": "World Cup slalom skier and mountain-lifestyle creator. Winter sport, outdoor apparel and travel partnerships across Italy and the Alps.",
-      "tags": [
-        "Winter sport",
-        "Outdoor",
-        "Travel"
-      ],
-      "aud": "89K",
-      "eng": "4.4%"
-    },
-    {
-      "ini": "TB",
-      "hue": 25,
-      "name": "Tyler Brooks",
-      "sport": "Basketball (NCAA D1)",
-      "loc": "Indianapolis, USA",
-      "bio": "Division 1 point guard building an NIL portfolio the compliant way — campus activations, apparel and gaming partnerships with full disclosure.",
-      "tags": [
-        "NIL",
-        "Gaming",
-        "Campus activation"
-      ],
-      "aud": "156K",
-      "eng": "7.3%"
-    },
-    {
-      "ini": "LD",
-      "hue": 185,
-      "name": "Lindiwe Dube",
-      "sport": "Athletics — 200m",
-      "loc": "Durban, South Africa",
-      "bio": "National-level sprinter and STEM graduate. Campaigns in sportswear, energy and youth-development causes across South Africa.",
-      "tags": [
-        "Sprint",
-        "Purpose-led",
-        "Content"
-      ],
-      "aud": "73K",
-      "eng": "5.6%"
-    },
-    {
-      "ini": "ÉF",
-      "hue": 330,
-      "name": "Émile Fournier",
-      "sport": "Road Cycling",
-      "loc": "Lyon, France",
-      "bio": "Continental-team climber and bike-tech reviewer. Trusted voice for cycling hardware, nutrition and endurance travel in the French market.",
-      "tags": [
-        "Cycling",
-        "Tech review",
-        "Endurance"
-      ],
-      "aud": "94K",
-      "eng": "4.1%"
-    }
-  ]
+ "profiles": [
+  {
+   "ini": "MD",
+   "hue": 210,
+   "name": "Marquis Dendy",
+   "sport": "Track & Field",
+   "loc": "USA",
+   "bio": "US long jumper and sprinter competing on the international track and field circuit.",
+   "tags": [
+    "Track & field",
+    "Ambassadorship",
+    "Content"
+   ],
+   "photo": "images/athletes/marquis-dendy.jpg"
+  },
+  {
+   "ini": "JL",
+   "hue": 150,
+   "name": "James Lowe",
+   "sport": "Rugby",
+   "loc": "Ireland & Japan",
+   "bio": "Professional rugby union winger and Ireland international known for his attacking play.",
+   "tags": [
+    "Rugby",
+    "Ambassadorship",
+    "Content"
+   ],
+   "photo": "images/athletes/james-lowe.jpg"
+  },
+  {
+   "ini": "KT",
+   "hue": 190,
+   "name": "Kira Toussaint",
+   "sport": "Swimming",
+   "loc": "Netherlands",
+   "bio": "Dutch international swimmer and backstroke specialist competing on the world stage.",
+   "tags": [
+    "Swimming",
+    "Ambassadorship",
+    "Speaking"
+   ],
+   "photo": "images/athletes/kira-toussaint.jpg"
+  },
+  {
+   "ini": "DS",
+   "hue": 25,
+   "name": "Danny Simpson",
+   "sport": "Football",
+   "loc": "UK",
+   "bio": "English footballer with a long career across the Premier League and Football League.",
+   "tags": [
+    "Football",
+    "Ambassadorship",
+    "Appearances"
+   ],
+   "photo": "images/athletes/danny-simpson.jpg"
+  },
+  {
+   "ini": "AD",
+   "hue": 320,
+   "name": "Annabel Dimmock",
+   "sport": "Golf",
+   "loc": "UK",
+   "bio": "English professional golfer competing on the Ladies European Tour.",
+   "tags": [
+    "Golf",
+    "Ambassadorship",
+    "Content"
+   ],
+   "photo": "images/athletes/annabel-dimmock.jpg"
+  },
+  {
+   "ini": "MB",
+   "hue": 42,
+   "name": "Matthias Bühler",
+   "sport": "Athletics",
+   "loc": "Germany",
+   "bio": "German international sprint hurdler with major-championship experience.",
+   "tags": [
+    "Athletics",
+    "Ambassadorship",
+    "Content"
+   ],
+   "photo": "images/athletes/matthias-buhler.jpg"
+  },
+  {
+   "ini": "NJ",
+   "hue": 265,
+   "name": "Noble Johnson",
+   "sport": "Football",
+   "loc": "USA",
+   "bio": "US professional footballer building his profile on and off the pitch.",
+   "tags": [
+    "Football",
+    "Ambassadorship",
+    "Content"
+   ],
+   "photo": "images/athletes/noble-johnson.jpg"
+  },
+  {
+   "ini": "PP",
+   "hue": 5,
+   "name": "Peter Plavec",
+   "sport": "Ice & Open Water Swimming",
+   "loc": "Austria",
+   "bio": "Austrian ice and open-water swimmer competing in extreme-endurance events.",
+   "tags": [
+    "Endurance",
+    "Ambassadorship",
+    "Content"
+   ],
+   "photo": "images/athletes/peter-plavec.jpg"
+  }
+ ]
 }

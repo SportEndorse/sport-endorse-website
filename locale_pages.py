@@ -7,7 +7,7 @@ English-only for now; locale footers link to them labelled "(EN)".
 """
 import importlib
 
-CAL = "https://calendly.com/d/dzw-nc4-57b/sport-endorse-demo"
+CAL = "demo.html"
 SIGNUP = "https://platform.sportendorse.com/signup/talent"
 IOS = "https://apps.apple.com/gb/app/sport-endorse/id1524881578"
 ANDROID = "https://play.google.com/store/apps/details?id=com.sportendorse.app"
@@ -267,7 +267,6 @@ def build(lang, sh):
   <div class="section-head"><p class="eyebrow">{t['ath_grid_eye']}</p><h2>{t['ath_grid_h2']}</h2>
   <p>{t['ath_grid_p']}</p></div>
   {profiles}
-  <p class="muted" style="margin-top:16px;font-size:.85rem">{t['ath_note']}</p>
 </div></section>
 {faq_section(t['ath_faq_h2'], t['ath_faq'], light=False)}
 <section class="light"><div class="wrap" style="text-align:center">

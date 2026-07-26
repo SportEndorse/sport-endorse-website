@@ -413,3 +413,74 @@ html,body{overflow-x:clip}
    an element by device. Content is edited ONCE; these only change visibility. */
 @media(max-width:640px){ .hide-on-mobile{display:none!important} }
 @media(min-width:641px){ .hide-on-desktop{display:none!important} }
+
+/* ---- Success-story cards (migrated case studies) ---- */
+.story{overflow:hidden;padding:0}
+.storyimg{margin:0;aspect-ratio:16/10;overflow:hidden;background:var(--panel)}
+.storyimg img{width:100%;height:100%;object-fit:cover;display:block}
+.story>.storyhead,.story>h3,.story>p,.story>details{padding-left:22px;padding-right:22px}
+.storyhead{display:flex;align-items:center;gap:12px;margin-top:16px}
+.storylogo{height:26px;width:auto;max-width:110px;object-fit:contain;background:#fff;border-radius:6px;padding:3px 6px}
+.story h3{margin:.5em 0 .3em}
+.storymore{margin:.4em 0 .2em}
+.storymore summary{cursor:pointer;color:var(--gold);font-weight:600;font-size:.92rem;list-style:none}
+.storymore summary::-webkit-details-marker{display:none}
+.storymore summary::after{content:" ↓"}
+.storymore[open] summary::after{content:" ↑"}
+.storyfull{padding-top:8px}
+.storyq{margin:12px 0 0;padding:12px 16px;border-left:3px solid var(--gold);background:var(--panel);font-size:.92rem;font-style:italic}
+.storyq cite{display:block;margin-top:6px;font-style:normal;font-weight:600;color:var(--muted);font-size:.85rem}
+.story .stags{padding-bottom:20px;margin-top:12px}
+
+/* ---- Success-story detail pages + card links ---- */
+.wrap.narrow{max-width:800px}
+.storyhero{padding-bottom:24px}
+.storyhero .backlink{margin:0 0 14px;font-size:.9rem}
+.storyhero-img{max-width:1080px;margin:8px auto 0;padding:0 24px}
+.storyhero-img img{width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:16px;display:block}
+.storyq.big{font-size:1.15rem;line-height:1.6}
+.story h3 a{color:inherit;text-decoration:none}
+.story h3 a:hover{color:var(--gold)}
+.storycover{display:block}
+.storylinkwrap{margin-top:auto;padding-top:10px}
+.storylink{font-weight:600;color:var(--gold);text-decoration:none;font-size:.92rem}
+.storylink:hover{text-decoration:underline}
+
+/* Blog index cards: keep titles readable (not full-gold), gold on hover */
+.card h3 a{color:inherit;text-decoration:none}
+.card h3 a:hover{color:var(--gold)}
+
+/* Press hub links */
+.presslinks{margin-top:auto;padding-top:10px;display:flex;gap:16px;flex-wrap:wrap}
+.presslink{font-weight:600;color:var(--gold);text-decoration:none;font-size:.9rem}
+.presslink:hover{text-decoration:underline}
+
+/* Success-story detail page: smaller, readable title + larger brand logo */
+.storyhero h1{font-size:clamp(1.7rem,3.4vw,2.5rem);text-transform:none;font-stretch:100%;letter-spacing:-.01em;margin-top:.1em}
+.storyhero .storylogo{height:44px;max-width:170px;padding:6px 10px}
+
+/* Press hub: jump-link chips + anchored sections */
+.jumpnav{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.jumpnav a{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border:1px solid rgba(255,255,255,.16);border-radius:999px;font-size:.9rem;font-weight:600;color:#fff;text-decoration:none;background:rgba(255,255,255,.05);transition:border-color .15s,color .15s,background .15s}
+.jumpnav a:hover{border-color:var(--gold);color:var(--gold);background:rgba(255,206,0,.08)}
+.jumpnav a span{font-size:.76rem;font-weight:700;opacity:.85;background:rgba(255,255,255,.13);border-radius:999px;padding:1px 8px}
+.pressec{scroll-margin-top:90px}
+@media (prefers-reduced-motion: no-preference){html{scroll-behavior:smooth}}
+
+/* Blog & press images (hotlinked; optimised for delivery — dimensions via aspect-ratio, lazy, cover-fit) */
+.postcover{max-width:1000px;margin:10px auto 0;aspect-ratio:16/9;border-radius:14px;overflow:hidden}
+.postcover img{width:100%;height:100%;object-fit:cover;display:block}
+.card .postthumb,.card .presthumb{display:block;margin:-26px -26px 16px;aspect-ratio:16/9;overflow:hidden;border-radius:var(--r) var(--r) 0 0;background:var(--panel)}
+.card .postthumb img,.card .presthumb img{width:100%;height:100%;object-fit:cover;display:block}
+@media(max-width:640px){.postcover{border-radius:10px;margin-top:4px}}
+
+/* Demo booking embed (HubSpot meetings) */
+.bookingwrap{background:#fff;border:1px solid #DDE0D2;border-radius:var(--r);padding:12px;min-height:680px}
+.bookingwrap .meetings-iframe-container{width:100%}
+.bookingwrap iframe{width:100%!important;min-height:660px;border:0;display:block}
+@media(max-width:640px){.bookingwrap{padding:6px;min-height:760px}.bookingwrap iframe{min-height:740px}}
+
+/* Temporary flat pricing cards */
+.price .perunit{font-size:.42em;font-weight:400;color:var(--muted);margin-left:3px;letter-spacing:0}
+.flatplan .card.plan{display:flex;flex-direction:column;gap:8px}
+.flatplan .card.plan .btn{margin-top:auto;align-self:flex-start}

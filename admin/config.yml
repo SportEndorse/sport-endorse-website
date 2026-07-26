@@ -110,7 +110,7 @@ collections:
               - { label: "Avatar colour hue 0–360 (optional)", name: "hue", widget: "number", required: false }
 
   - name: "athletes"
-    label: "Sample athlete profiles"
+    label: "Featured athlete profiles"
     files:
       - file: "content/athletes.json"
         label: "Athlete showcase cards"
@@ -154,22 +154,32 @@ collections:
             widget: "list"
             summary: "{{fields.title}}"
             fields:
-              - { label: "ID (short, no spaces)", name: "id", widget: "string", hint: "e.g. active-iron. For 'full case study' cards this must match an on-page write-up anchor (developer adds those)." }
+              - { label: "ID (short, no spaces)", name: "id", widget: "string", hint: "e.g. aib-bori-akinola" }
               - { label: "Title", name: "title", widget: "string" }
+              - { label: "Cover image URL", name: "cover", widget: "string", required: false, hint: "Full https:// URL to the cover image" }
+              - { label: "Brand logo URL", name: "logo", widget: "string", required: false, hint: "Full https:// URL to the brand logo" }
               - label: "Industry"
                 name: "industry"
                 widget: "select"
-                options: [{label: "Healthcare & Pharma", value: "healthcare"}, {label: "Wellness & Fitness", value: "wellness"}, {label: "Retail & Sporting Goods", value: "retail"}, {label: "FMCG & Food", value: "fmcg"}, {label: "Finance & Insurance", value: "finance"}, {label: "Corporate & Professional Services", value: "corporate"}]
+                options: [{label: "Healthcare & Pharma", value: "healthcare"}, {label: "Wellness & Nutrition", value: "wellness"}, {label: "Food & Drink", value: "fmcg"}, {label: "Retail & Fashion", value: "retail"}, {label: "Finance & Insurance", value: "finance"}, {label: "Corporate & Events", value: "corporate"}, {label: "Media & Broadcast", value: "media"}, {label: "Tech", value: "tech"}, {label: "Beauty & Skincare", value: "beauty"}, {label: "Sport & Sportswear", value: "sport"}]
               - label: "Campaign type"
                 name: "ctype"
                 widget: "select"
-                options: [{label: "Ambassadorship", value: "ambassador"}, {label: "Product seeding", value: "seeding"}, {label: "Social campaign", value: "social"}, {label: "Speaking & events", value: "speaking"}, {label: "Regional activation", value: "activation"}]
+                options: [{label: "Brand ambassador", value: "ambassador"}, {label: "Social campaign", value: "social"}, {label: "Speaking & events", value: "speaking"}, {label: "Athlete programme", value: "seeding"}, {label: "Campaign activation", value: "activation"}, {label: "Punditry & podcast", value: "punditry"}]
               - label: "Region"
                 name: "region"
                 widget: "select"
-                options: [{label: "Ireland", value: "ie"}, {label: "UK", value: "uk"}, {label: "Multi-market", value: "multi"}]
-              - { label: "Blurb (one sentence)", name: "blurb", widget: "text" }
-              - { label: "Links to a full on-page case study?", name: "full", widget: "boolean", default: false, required: false }
+                options: [{label: "Ireland", value: "ie"}, {label: "UK", value: "uk"}, {label: "Europe", value: "eu"}, {label: "International", value: "intl"}, {label: "Multi-market", value: "multi"}]
+              - { label: "Sport (free text, shown as a tag)", name: "sport", widget: "string", required: false, hint: "e.g. Rugby, GAA, Athletics" }
+              - { label: "Blurb (one sentence, shown on the card)", name: "blurb", widget: "text" }
+              - { label: "Full write-up (expandable)", name: "full", widget: "text", required: false }
+              - { label: "Client quote", name: "quote", widget: "text", required: false }
+              - { label: "Quote attribution", name: "quote_by", widget: "string", required: false, hint: "e.g. Claire Lynch, Head of Marketing, Active Iron" }
+              - { label: "Objective (detail page section)", name: "objective", widget: "text", required: false, hint: "What the brand set out to achieve. Leave blank to hide this section." }
+              - { label: "Planning & approach (detail page section)", name: "approach", widget: "text", required: false, hint: "How the campaign was planned and delivered. Blank = hidden." }
+              - { label: "Athletes involved (detail page section)", name: "athletes", widget: "text", required: false, hint: "Athletes/talent and why they fit. Blank = hidden." }
+              - { label: "Deliverables (detail page section)", name: "deliverables", widget: "text", required: false, hint: "What was produced/delivered. Blank = hidden." }
+              - { label: "Results & performance (detail page section)", name: "results", widget: "text", required: false, hint: "Reach, engagement, outcomes. Blank = hidden." }
 
   - name: "careers"
     label: "Careers — open roles"
@@ -211,4 +221,38 @@ collections:
         required: false
         options: ["Athlete Marketing", "NIL & Regulation", "Pricing & ROI", "Founder Notes", "Platform News"]
       - { label: "Draft (don't publish yet)", name: "draft", widget: "boolean", default: false, required: false }
+      - { label: "Hero image URL", name: "image", widget: "string", required: false, hint: "Full https:// URL. Shows as the post banner, the social-share image, and the blog-index thumbnail." }
       - { label: "Body", name: "body", widget: "markdown", hint: "Use ## for section headings (the title above is the page H1). Short paragraphs, specific numbers, one idea per section." }
+
+  - name: "press"
+    label: "Press & Media hub"
+    files:
+      - file: "content/press.json"
+        label: "Press items"
+        name: "press"
+        format: "json"
+        fields:
+          - label: "Press & media coverage"
+            name: "press"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Headline", name: "title", widget: "string" }
+              - label: "Section"
+                name: "section"
+                widget: "select"
+                hint: "Which group this appears under on the hub."
+                options: ["In the media", "Interviews & broadcast", "Awards & recognition", "Company news"]
+              - { label: "Publish date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+              - { label: "Outlet", name: "outlet", widget: "string", hint: "e.g. Irish Independent, Newstalk, RTÉ, Virgin Media" }
+              - { label: "One-sentence blurb", name: "blurb", widget: "text", hint: "Answer-first: lead with what happened / the outlet and the point." }
+              - { label: "Thumbnail image URL", name: "image", widget: "string", required: false, hint: "Full https:// URL to a card thumbnail. Optional." }
+              - { label: "Source link (external)", name: "url", widget: "string", required: false, hint: "Full https:// URL to the original coverage. Leave blank to show as a credibility mention with no outbound link." }
+              - label: "Link label"
+                name: "cta"
+                widget: "select"
+                required: false
+                default: "Read"
+                options: ["Read", "Listen", "Watch", "View"]
+              - { label: "Related success story (optional)", name: "se", widget: "string", required: false, hint: "Internal link, e.g. success-stories/aya-robbie-henshaw.html — adds a 'See the campaign' link on the card." }
+              - { label: "Internal ID (optional)", name: "slug", widget: "string", required: false, hint: "Legacy identifier; safe to leave blank for new items." }
