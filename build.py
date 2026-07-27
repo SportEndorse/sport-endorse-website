@@ -23,6 +23,15 @@ def _load_json(rel):
             print(f"WARNING: {rel} could not be parsed ({e}) — using built-in defaults")
     return None
 
+def _load_text(rel):
+    """Read an HTML/text content fragment from content/. Used for long-form copy
+    (e.g. legal pages) that belongs with the content, not inline in this file."""
+    p = os.path.join(os.path.dirname(os.path.abspath(__file__)), rel)
+    if os.path.exists(p):
+        with open(p, encoding="utf-8") as f:
+            return f.read()
+    return None
+
 _settings = _load_json("content/settings.json") or {}
 
 # ---- Theme -------------------------------------------------------------------
@@ -2308,6 +2317,27 @@ PAGES["faqs.html"] = dict(
   title="Athlete Marketing FAQs — Platforms, Pricing, Compliance | Sport Endorse",
   desc="Direct answers to the questions brands ask about athlete marketing platforms: pricing, compliance, comparisons, measurement, usage rights and more.",
   body=faqs_body, jsonld=[faq_ld(FAQ25)])
+
+# ============================================================ TERMS & CONDITIONS
+# The legal copy lives in content/terms-and-conditions.html so Legal can revise it
+# without touching code. English only by design — clause 17.8 provides that the
+# English text prevails, so this slug is deliberately absent from LOCALIZED_SLUGS.
+_terms = _load_text("content/terms-and-conditions.html")
+if _terms:
+    terms_body = f"""
+<section class="hero"><div class="wrap">
+  <p class="eyebrow">Legal</p>
+  <h1>Platform <span>Terms &amp; Conditions</span></h1>
+  <p class="lead muted">Sport Endorse Limited &middot; Updated April 2026</p>
+</div></section>
+<section class="light"><div class="wrap narrow"><article class="prose">
+{_terms}
+</article></div></section>
+"""
+    PAGES["terms-and-conditions.html"] = dict(
+      title="Platform Terms & Conditions | Sport Endorse",
+      desc="Sport Endorse Limited platform terms and conditions, updated April 2026 — subscriptions, commissions, deliverables, cancellation, anti-circumvention and dispute resolution.",
+      body=terms_body)
 
 # ============================================================ WRITE EVERYTHING
 OUT = os.path.dirname(os.path.abspath(__file__))

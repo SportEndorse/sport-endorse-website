@@ -32,6 +32,16 @@
       "statusCode": 404
     },
     {
+      "source": "/privacy-center",
+      "destination": "https://privacy-center.dataships.io/YDf7ngeS_q4cFkPgNcinQ_IqQ2rJBKT1/en-GB",
+      "permanent": false
+    },
+    {
+      "source": "/privacy-centre",
+      "destination": "https://privacy-center.dataships.io/YDf7ngeS_q4cFkPgNcinQ_IqQ2rJBKT1/en-GB",
+      "permanent": false
+    },
+    {
       "source": "/agency",
       "destination": "/agencies",
       "permanent": true
