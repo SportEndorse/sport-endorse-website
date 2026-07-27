@@ -4,7 +4,7 @@ Every page ships as fully server-rendered HTML (no JS required to read content),
 with JSON-LD schema, answer-first blocks, single H1, canonical + hreflang,
 and geo/i18n handled as a progressive enhancement. Run: python3 build.py
 """
-import os, json, html, datetime
+import os, json, html, datetime, re, posixpath
 
 BASE = "https://www.sportendorse.com"
 TODAY = datetime.date.today().isoformat()
@@ -311,11 +311,25 @@ def faq_ld(items):
     return {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
         {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in items]}
 
+_REL_HREF = re.compile(r'((?:href|src)=")((?!(?:https?:)?//|https?:|mailto:|tel:|#|/)[^"]*)')
+
+def _rootify(htm, base):
+    """Anchor relative links to the site root for directory-index pages.
+
+    Vercel serves these with cleanUrls and trailingSlash:false, so help/index.html
+    is reachable at /help — with no trailing slash. A browser then resolves a
+    relative "getting-started.html" against / instead of /help/, producing a 404
+    (and, on locale indexes, silently serving the English page instead). Rewriting
+    to /help/getting-started.html is correct at /help and /help/ alike.
+    """
+    return _REL_HREF.sub(
+        lambda m: m.group(1) + posixpath.normpath(posixpath.join(base, m.group(2))), htm)
+
 def page(slug, title, desc, body, jsonld=None, active=None, lang="en", prefix="", chrome=None, og_image=None):
     """chrome: optional (header_html, footer_html) tuple for locale builds."""
     ld = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in (jsonld or []))
     head_html, foot_html = chrome if chrome else (header(active or slug), footer())
-    return f"""<!DOCTYPE html>
+    out = f"""<!DOCTYPE html>
 <html lang="{lang}">
 <head>
 <meta charset="utf-8">
@@ -346,6 +360,18 @@ def page(slug, title, desc, body, jsonld=None, active=None, lang="en", prefix=""
 {foot_html}
 </body>
 </html>"""
+    # Directory-index pages only: see _rootify. Leaf pages keep relative links,
+    # which already resolve correctly from their own directory. The root English
+    # index is served at "/" — a real trailing slash — so it needs no rewrite.
+    if slug.endswith("/index.html"):
+        base = "/" + slug[:-len("index.html")]   # blog/index.html -> /blog/
+    elif slug == "index.html" and lang != "en":
+        base = f"/{lang}/"                       # de/index.html   -> /de/
+    else:
+        base = None
+    if base:
+        out = _rootify(out, base)
+    return out
 
 PAGES = {}
 
