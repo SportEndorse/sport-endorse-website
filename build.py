@@ -107,7 +107,9 @@ SHOW_VIDEO_MOBILE = _settings.get("show_video_on_mobile", True)
 def video_section(t=None):
     """16:9 video block. With VIDEO_ID set: a fast click-to-play facade
     (thumbnail + play button, iframe injected only on click — no third-party
-    JS on page load). Without it: an intentional-looking placeholder."""
+    JS on page load). Without it: the whole section is hidden."""
+    if not VIDEO_ID:
+        return ""   # TEMP: no overview video yet — section hidden until VIDEO_ID is set
     s = t or {"video_eyebrow": "Two-minute overview",
               "video_title": "See how the platform works",
               "video_sub": "How brands discover, contact and manage verified athletes on Sport Endorse.",
@@ -149,10 +151,7 @@ ENTITY = {
 ENTITY.update({k: v for k, v in (_load_json("content/entity.json") or {}).items() if v})
 
 # ---- Brand logo wall (CMS-editable via content/settings.json) ----------------
-LOGOS = [{"name": n} for n in ["Puma", "WHOOP", "Kellogg's", "PwC", "Red Bull", "Skechers",
-         "Optimum Nutrition", "Specsavers", "Sports Direct", "Alpro", "ISDIN", "Pringles",
-         "Grant Thornton", "Active Iron", "Uniphar / AYA", "Glanbia", "Dalata Hotels", "Movember",
-         "Shokz", "Hard Rock Cafe", "SKINS", "Revive Active", "Uriage", "Mini"]]
+LOGOS = [{"name": "Puma", "image": "images/logos/puma.svg"}, {"name": "WHOOP", "image": "images/logos/whoop.svg"}, {"name": "Kellogg's", "image": "images/logos/kelloggs.svg"}, {"name": "PwC", "image": "images/logos/pwc.svg"}, {"name": "Red Bull", "image": "images/logos/red-bull.svg"}, {"name": "Skechers", "image": "images/logos/skechers.svg"}, {"name": "Optimum Nutrition", "image": "images/logos/optimum-nutrition.svg"}, {"name": "Specsavers", "image": "images/logos/specsavers.svg"}, {"name": "Sports Direct", "image": "images/logos/sports-direct.svg"}, {"name": "Alpro", "image": "images/logos/alpro.svg"}, {"name": "ISDIN", "image": "images/logos/isdin.svg"}, {"name": "Pringles", "image": "images/logos/pringles.svg"}, {"name": "Grant Thornton", "image": "images/logos/grant-thornton.svg"}, {"name": "Active Iron", "image": "images/logos/active-iron.svg"}, {"name": "Uniphar / AYA", "image": "images/logos/uniphar.svg"}, {"name": "Glanbia", "image": "images/logos/glanbia.svg"}, {"name": "Dalata Hotels", "image": "images/logos/dalata.svg"}, {"name": "Movember", "image": "images/logos/movember.svg"}, {"name": "Shokz", "image": "images/logos/shokz.svg"}, {"name": "Hard Rock Cafe", "image": "images/logos/hard-rock-cafe.svg"}, {"name": "SKINS", "image": "images/logos/skins.svg"}, {"name": "Uriage", "image": "images/logos/uriage.svg"}, {"name": "Lovable", "image": "images/logos/lovable.svg"}, {"name": "HoverAir", "image": "images/logos/hoverair.png"}]
 if _settings.get("logos"):
     LOGOS = _settings["logos"]
 
@@ -161,8 +160,13 @@ def logos_wall(prefix=""):
     for l in LOGOS:
         name = html.escape(l.get("name", ""))
         if l.get("image"):
-            src = prefix + l["image"].lstrip("/")
-            out += f'<span class="logoimg"><img src="{src}" alt="{name}" loading="lazy"></span>'
+            # Root-relative: logos live at one fixed path, and this block is copied
+            # verbatim into text-localized pages (/de/... etc.) where `prefix` is
+            # never applied — a relative src would 404 there.
+            src = "/" + l["image"].lstrip("/")
+            sc = l.get("scale")
+            st = f' style="transform:scale({sc})"' if sc else ""
+            out += f'<span class="logoimg"><img src="{src}" alt="{name}" loading="lazy"{st}></span>'
         else:
             out += f"<span>{name}</span>"
     return f'<div class="logos">{out}</div>'
@@ -189,7 +193,7 @@ BRANDS_SHOWCASE = [
 
 def brand_card(name, desc, markets, prefix=""):
     img = _LOGO_IMG.get(name)
-    logo = (f'<span class="bshow-logo"><img src="{prefix}{img.lstrip("/")}" alt="{html.escape(name)}" loading="lazy"></span>'
+    logo = (f'<span class="bshow-logo"><img src="/{img.lstrip("/")}" alt="{html.escape(name)}" loading="lazy"></span>'
             if img else f'<span class="bshow-name">{html.escape(name)}</span>')
     tags = "".join(f"<span>{html.escape(m)}</span>" for m in markets)
     return (f'<div class="card bshow-card">{logo}'
@@ -262,7 +266,7 @@ def footer():
       <a class="logo" href="index.html">Sport <b>Endorse</b></a>
       <p class="tagline">Engaging Athletes. Empowering Brands.</p>
       <p class="entity" style="margin-top:14px">{ENTITY['legal']} was founded in {ENTITY['hq']} by {ENTITY['founders'][0]} and {ENTITY['founders'][1]}. The platform launched in {ENTITY['launched']} and today connects brands with {ENTITY['athletes']} across {ENTITY['sports']} in {ENTITY['countries']}.</p>
-      <p class="entity" style="margin-top:10px">HQ: Dublin, Ireland &middot; US office: Indianapolis, Indiana &middot; South Africa: Hilton, KZN</p>
+      <p class="entity" style="margin-top:10px">HQ office: Dublin, Ireland<br>US office: Indianapolis, Indiana<br>South Africa office: Hilton, KZN</p>
     </div>
     <div><h4>Platform</h4><ul>
       <li><a href="brands.html">For Brands</a></li><li><a href="athletes.html">Athletes You Can Reach</a></li>
@@ -289,7 +293,7 @@ def footer():
   </div>
   <div class="legal">
     <span>© 2026 Sport Endorse Limited. All rights reserved.</span>
-    <span><a href="https://www.sportendorse.com/privacy-center">Privacy Centre</a> &middot; <a href="https://www.sportendorse.com/terms-and-conditions">Terms &amp; Conditions</a></span>
+    <span><a href="https://www.sportendorse.com/privacy-center">Privacy Centre</a> &middot; <a href="/terms-and-conditions">Terms &amp; Conditions</a></span>
   </div>
 </div></footer>
 <script src="assets/i18n-avail.js"></script>
@@ -325,6 +329,23 @@ def _rootify(htm, base):
     return _REL_HREF.sub(
         lambda m: m.group(1) + posixpath.normpath(posixpath.join(base, m.group(2))), htm)
 
+GTM_ID = "GTM-TK4NZ6T"
+GTM_HEAD = (
+    "<!-- Google Tag Manager -->\n"
+    "<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n"
+    "new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n"
+    "j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n"
+    "'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n"
+    "})(window,document,'script','dataLayer','" + GTM_ID + "');</script>\n"
+    "<!-- End Google Tag Manager -->"
+)
+GTM_BODY = (
+    '<!-- Google Tag Manager (noscript) -->\n'
+    '<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=' + GTM_ID + '"\n'
+    'height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\n'
+    '<!-- End Google Tag Manager (noscript) -->'
+)
+
 def page(slug, title, desc, body, jsonld=None, active=None, lang="en", prefix="", chrome=None, og_image=None):
     """chrome: optional (header_html, footer_html) tuple for locale builds."""
     ld = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in (jsonld or []))
@@ -334,6 +355,7 @@ def page(slug, title, desc, body, jsonld=None, active=None, lang="en", prefix=""
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{GTM_HEAD}
 <title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(desc)}">
 <link rel="canonical" href="{canon(slug, lang)}">
@@ -353,6 +375,7 @@ def page(slug, title, desc, body, jsonld=None, active=None, lang="en", prefix=""
 {ld}
 </head>
 <body>
+{GTM_BODY}
 {head_html}
 <main>
 {body}
@@ -572,7 +595,7 @@ talent_body = f"""
 <section class="light"><div class="wrap">
   <div class="grid g2">
     <div><p class="eyebrow">Sport Endorse Academy</p><h2 style="margin-top:8px">Learn the business side of your sport</h2></div>
-    <div><p>The <a href="{ACADEMY_URL}">Sport Endorse Academy</a> is our sister site for athlete education: a structured curriculum on personal brand, NIL and disclosure rules, contracts, pricing your work, taxes and working with brands professionally — so your first deal is done right, not just done.</p>
+    <div><p>The <strong>Sport Endorse Academy</strong> (coming soon) is our sister site for athlete education: a structured curriculum on personal brand, NIL and disclosure rules, contracts, pricing your work, taxes and working with brands professionally — so your first deal is done right, not just done.</p>
     <p style="margin-top:14px"><a class="btn ghost sm" href="academy.html">About the Academy</a></p></div>
   </div>
 </div></section>
@@ -1243,7 +1266,7 @@ def load_posts():
 
 def _prefix_links(htm, prefix):
     """Rewrite relative internal href/src for pages living in a subdirectory."""
-    return _re.sub(r'((?:href|src)=")(?!(?:https?:)?//|https?:|mailto:|tel:|#|\.\./)', r"\1" + prefix, htm)
+    return _re.sub(r'((?:href|src)=")(?!(?:https?:)?//|https?:|mailto:|tel:|#|/|\.\./)', r"\1" + prefix, htm)
 
 def post_ld(p):
     a = {"@type": "Person", "name": p["author"]}
@@ -1340,7 +1363,7 @@ academy_body = f"""
   <p class="eyebrow">Sport Endorse Academy · Sister site</p>
   <h1>Learn the business side <span>of sport</span></h1>
   <div class="answer"><p>The Sport Endorse Academy is our education platform for athletes: a structured curriculum of 52 bite-size lessons on personal brand, contracts and disclosure, pricing your work, money and taxes, and working with brands professionally — drawn from real deals on the Sport Endorse platform, so athletes learn how it actually works, not how a textbook imagines it.</p></div>
-  <div class="cta"><a class="btn gold" href="{ACADEMY_URL}">Visit the Academy ↗</a>
+  <div class="cta"><span class="btn gold soon" aria-disabled="true">Coming Soon</span>
   <a class="btn ghost" data-geo="us" href="universities.html">For universities</a>
   <a class="btn ghost" data-geo="za" href="school-rugby.html">For SA schools</a></div>
 </div></section>
@@ -1366,13 +1389,13 @@ academy_body = f"""
     <div class="card"><h3>Money &amp; taxes</h3><p>Endorsement income basics &middot; Invoicing and getting paid securely &middot; Tax obligations at home and abroad &middot; Building financial habits early</p></div>
     <div class="card"><h3>Working with brands</h3><p>What brand teams actually want &middot; Briefs, deadlines and approvals &middot; Being re-booked: the professional's edge &middot; Turning one deal into a relationship</p></div>
   </div>
-  <p style="margin-top:24px"><a class="btn gold" href="{ACADEMY_URL}">Explore the full curriculum ↗</a></p>
+  <p style="margin-top:24px"><span class="btn gold soon" aria-disabled="true">Coming Soon</span></p>
 </div></section>
 {faq_section("Academy questions, answered", academy_faq)}
 <section><div class="wrap" style="text-align:center">
   <h2>Education and execution, together</h2>
   <p class="lead muted" style="margin:12px auto 24px;max-width:640px">Athletes learn on the Academy; deals happen on the platform, with documented terms and compliant trails. Universities: ask us about running both across your programme.</p>
-  <a class="btn gold" href="{ACADEMY_URL}">Visit the Academy ↗</a>
+  <span class="btn gold soon" aria-disabled="true">Coming Soon</span>
   <a class="btn ghost" href="demo.html" style="margin-left:10px">Talk to us</a>
 </div></section>
 """
@@ -1385,7 +1408,7 @@ PAGES["academy.html"] = dict(
     "name": "Sport Endorse Academy athlete education curriculum",
     "description": "A 52-lesson micro-learning curriculum covering personal brand, contracts and disclosure, pricing, money and taxes, and working with brands professionally.",
     "provider": {"@id": BASE + "/#organization"},
-    "url": ACADEMY_URL,
+    "url": canon("academy.html"),
     "hasCourseInstance": {"@type": "CourseInstance", "courseMode": "online"}}])
 
 # ============================================================ UNIVERSITIES
@@ -1471,7 +1494,7 @@ school_body = f"""
     <div class="card"><span class="eyebrow">How opportunities work</span><h3>Understanding agreements</h3><p>The basics of what a fair, age-appropriate arrangement looks like, what to check, and why a guardian and the school are always involved.</p></div>
     <div class="card"><span class="eyebrow">Development, not pressure</span><h3>At their pace</h3><p>Education is the core; any commercial element is optional, occasional and fully consented — never a target or an expectation placed on a young player.</p></div>
   </div>
-  <p style="margin-top:16px"><a class="btn ghost" href="{ACADEMY_URL}">See the Sport Endorse Academy →</a></p>
+  <p style="margin-top:16px"><span class="btn ghost soon" aria-disabled="true">Coming Soon</span></p>
 </div></section>
 <section class="light"><div class="wrap">
   <div class="section-head"><p class="eyebrow">Compliance &amp; protection</p><h2>Built for South African law and school rules</h2>
@@ -1652,7 +1675,7 @@ pricing_faq = [
  ("Can we pay quarterly instead of annually?",
   "Yes, every market has a quarterly option. Annual billing saves roughly a third versus four quarters, so it's the better value for always-on programmes. If budget cycles are a blocker, talk to us: custom packages can be structured around your procurement process."),
  ("Is there a commission on deals?",
-  "Yes, a transparent platform commission of 14–18% on deal value, depending on deal size. That's well below the 30% take-rates common on US marketplaces, and there are no hidden agency mark-ups on athlete fees."),
+  "Yes, a transparent platform commission of 14–18% on deal value, depending on deal size (20% on deals we introduce that are completed off-platform; gift-in-kind carries no commission). That's well below the 30% take-rates common on US marketplaces, and there are no hidden agency mark-ups on athlete fees."),
  ("Is VAT/ Sales Tax included in the price?",
   "Prices are shown excluding VAT/ Sales Tax, which is added at the applicable local rate at checkout. Your invoice itemises VAT/ Sales Tax clearly for reclaim where eligible."),
  ("What support do we get once we have paid?",
@@ -2259,7 +2282,7 @@ about_body = f"""
     <tr><th>Platform launched</th><td>{ENTITY['launched']}</td></tr>
     <tr><th>Talent roster</th><td>{ENTITY['athletes']}</td></tr>
     <tr><th>Coverage</th><td>{ENTITY['sports']} across {ENTITY['countries']}</td></tr>
-    <tr><th>Offices</th><td>Dublin, Ireland (HQ) · Indianapolis, USA (opened December 2025)</td></tr>
+    <tr><th>Offices</th><td>HQ: Dublin, Ireland · US office: Indianapolis, Indiana · South Africa: Hilton, KZN</td></tr>
     <tr><th>Business model</th><td>Flat-rate brand subscriptions (quarterly/annual), custom full-service campaign management, fair and transparent commission splits</td></tr>
     <tr><th>Selected clients</th><td>Puma, WHOOP, Kellogg's, PwC, Skechers, Optimum Nutrition, Specsavers, Red Bull, Active Iron, Uniphar (AYA), Grant Thornton, Glanbia, Dalata Hotel Group</td></tr>
   </tbody></table></div>
@@ -2282,7 +2305,7 @@ about_body = f"""
     <div class="card"><h3>Founded in Dublin</h3><p>Trevor Twamley and Declan Bourke set out to remove the friction between brands and elite athletes.</p></div>
     <div class="card"><h3>2021 — Platform launch</h3><p>The two-sided marketplace goes live, connecting brands directly with verified athletes.</p></div>
     <div class="card"><h3>Global scale</h3><p>The roster grows past 9,000 verified athletes and creators across 280+ sports in 85+ countries.</p></div>
-    <div class="card"><h3>2025 — US expansion</h3><p>Indianapolis office opens, anchoring US growth in the NIL era alongside a Delaware subsidiary.</p></div>
+    <div class="card"><h3>2026 — US expansion</h3><p>Indianapolis office opens, anchoring US growth in the NIL era alongside a Delaware subsidiary.</p></div>
   </div>
 </div></section>
 <section class="light"><div class="wrap" style="text-align:center">
@@ -2343,27 +2366,6 @@ PAGES["faqs.html"] = dict(
   title="Athlete Marketing FAQs — Platforms, Pricing, Compliance | Sport Endorse",
   desc="Direct answers to the questions brands ask about athlete marketing platforms: pricing, compliance, comparisons, measurement, usage rights and more.",
   body=faqs_body, jsonld=[faq_ld(FAQ25)])
-
-# ============================================================ TERMS & CONDITIONS
-# The legal copy lives in content/terms-and-conditions.html so Legal can revise it
-# without touching code. English only by design — clause 17.8 provides that the
-# English text prevails, so this slug is deliberately absent from LOCALIZED_SLUGS.
-_terms = _load_text("content/terms-and-conditions.html")
-if _terms:
-    terms_body = f"""
-<section class="hero"><div class="wrap">
-  <p class="eyebrow">Legal</p>
-  <h1>Platform <span>Terms &amp; Conditions</span></h1>
-  <p class="lead muted">Sport Endorse Limited &middot; Updated April 2026</p>
-</div></section>
-<section class="light"><div class="wrap narrow"><article class="prose">
-{_terms}
-</article></div></section>
-"""
-    PAGES["terms-and-conditions.html"] = dict(
-      title="Platform Terms & Conditions | Sport Endorse",
-      desc="Sport Endorse Limited platform terms and conditions, updated April 2026 — subscriptions, commissions, deliverables, cancellation, anti-circumvention and dispute resolution.",
-      body=terms_body)
 
 # ============================================================ WRITE EVERYTHING
 OUT = os.path.dirname(os.path.abspath(__file__))
@@ -2586,6 +2588,26 @@ if PRESS:
         desc="Press coverage and media appearances for Sport Endorse \u2014 featured in the Irish Independent, RT\u00c9, Newstalk, Virgin Media and more, plus awards and partnership news.",
         body=press_hub_body(), jsonld=press_ld())
 
+# ---- Terms & Conditions (legal page, English only) --------------------------
+_terms_body = _load_text("content/terms-body.txt") or ""
+
+if _terms_body:
+    _terms_page_body = (
+        '<section class="hero"><div class="wrap">'
+        '<p class="eyebrow">Legal</p>'
+        '<h1>Terms &amp; <span>Conditions</span></h1>'
+        '<div class="answer"><p>These are the platform and services terms and conditions for Sport Endorse Limited. By registering for or using the Sport Endorse platform, products or services, you agree to them.</p></div>'
+        '</div></section>'
+        '<section class="light"><div class="wrap"><div class="legaldoc">' + _terms_body + '</div></div></section>'
+    )
+    PAGES["terms-and-conditions.html"] = dict(
+        title="Terms & Conditions | Sport Endorse",
+        desc="Sport Endorse Limited platform and services terms and conditions \u2014 the agreement governing use of the Sport Endorse platform, products and services.",
+        body=_terms_page_body,
+        jsonld=[{"@context": "https://schema.org", "@type": "WebPage",
+                 "name": "Terms & Conditions", "url": canon("terms-and-conditions.html"),
+                 "isPartOf": {"@type": "WebSite", "name": "Sport Endorse", "url": BASE}}])
+
 for slug, p in PAGES.items():
     with open(os.path.join(OUT, slug), "w", encoding="utf-8") as f:
         f.write(page(slug, p["title"], p["desc"], p["body"], p.get("jsonld"), active=slug))
@@ -2678,7 +2700,7 @@ Pricing: brand subscriptions are a single flat rate in every market — 700 (USD
 - [Careers]({BASE}/careers): join the founder-led team building the platform
 - [Strategic partners]({BASE}/strategic-partners): vetted service bench — videography, PR, creative, advisory
 - [Affiliates]({BASE}/affiliates): earn recurring commission referring brand subscriptions
-- [Sport Endorse Academy]({BASE}/academy): overview of the athlete-education sister site (52 lessons on NIL, personal brand, contracts, pricing, taxes); links out to {ACADEMY_URL}
+- [Sport Endorse Academy]({BASE}/academy): overview of the athlete-education sister site (52 lessons on NIL, personal brand, contracts, pricing, taxes) (public platform launching soon)
 - [Marketing agencies]({BASE}/marketing-agencies): verified athletes for client campaigns, per-client briefs and reporting
 - [Pricing]({BASE}/subscription): flat 700 per quarter or 1,799 per year (USD/EUR/GBP), all markets
 - [Platform comparison]({BASE}/compare-athlete-marketing-platforms): Sport Endorse vs Opendorse, OpenSponsorship, Pickstar
@@ -2755,9 +2777,6 @@ def sm_entry(slug, lang):
 urls = "".join(sm_entry(s, "en") for s in PAGES)
 urls += "".join(sm_entry(s, l) for s in LOC_AVAIL for l in LOCALES if l in LOC_AVAIL.get(s, set()))
 urls += sm_entry("blog/index.html", "en")
-urls += sm_entry("press.html", "en")
-urls += sm_entry("demo.html", "en")
-urls += sm_entry("demo-agency.html", "en")
 urls += "".join(sm_entry(f"blog/{p['slug']}.html", "en") for p in POSTS)
 urls += "".join(sm_entry(hp["path"], "en") for hp in HELP_PAGES)
 urls += "".join(sm_entry(f"success-stories/{s['id']}.html", "en") for s in STORIES)

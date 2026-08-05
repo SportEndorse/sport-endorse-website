@@ -1,0 +1,2182 @@
+<p><em>Version 3.0 · Effective July 27 2026 · Supersedes the April 2026
+Terms</em></p>
+<p>These terms and conditions of use (together with all Schedules and,
+where applicable, the User's selected Subscription Plan, Order Form,
+Statement of Work or Institutional Agreement), and our Privacy Policy
+available at https://www.sportendorse.com/privacy-centre/ (collectively,
+the "Terms"), constitute a legally binding agreement (the "Agreement")
+between you (the "User") and Sport Endorse Limited, a private company
+incorporated in Ireland under company registration number 593768, with
+its registered office at 2 Seapoint Avenue, Blackrock, County Dublin,
+Ireland ("Sport Endorse", "the Company", "we", "us" or "our").</p>
+<p><strong>Structure of these Terms.</strong> Part A applies to all
+Users. Parts B to I apply additionally to particular categories of User
+or particular products, as follows: Part B (Brands and Agencies), Part C
+(Talent), Part D (Agent Partner Programme), Part E (Sport Endorse
+Academy), Part F (University and Institutional Partners), Part G
+(Schools Programme and Minors), Part H (Managed Campaigns and Additional
+Services), Part I (Websites, Apps and Online Content). Where a Part
+conflicts with Part A, the Part prevails for the product or User
+category it governs. Where an Order Form, Statement of Work or
+Institutional Agreement signed by Sport Endorse conflicts with these
+Terms, that document prevails.</p>
+<p>By registering for, accessing or using the Service, you confirm that
+you have read, understood and agree to be bound by the Terms and by all
+Applicable Law.</p>
+<p><strong>Mandatory rights are preserved.</strong> If you are a natural
+person acting outside your trade, business, craft or profession and you
+reside in the European Union, the United Kingdom, South Africa, the
+United States or any other jurisdiction whose laws confer non-waivable
+consumer rights, nothing in these Terms excludes or limits those rights,
+and any provision that purports to do so shall be read down to the
+minimum extent necessary. If you are a business user of an online
+intermediation service established or resident in the European Union,
+nothing in these Terms is intended to derogate from Regulation (EU)
+2019/1150 (the "P2B Regulation"), and clause 12 sets out the specific
+disclosures required by it.</p>
+<p><strong>Not all products are available in all territories.</strong>
+Certain products, surfaces and pages of the Service are made available
+only in specified territories (for example, the university and NIL
+surfaces are directed at the United States, and the Schools Programme is
+directed at South Africa). Availability is described in clause 2.6.</p>
+<h2 id="part-a-general-terms">PART A — GENERAL
+TERMS</h2>
+<h3 id="definitions-and-interpretation">1. Definitions and
+Interpretation</h3>
+<p><strong>1.1</strong> In these Terms, the following capitalised terms
+have the meanings set out below:</p>
+<blockquote>
+<p><strong>"Academy"</strong> — Sport Endorse Academy, the athlete and
+student education product described in Part E, including its curriculum,
+lessons, assessments, materials and hosting environment.</p>
+<p><strong>"Agency"</strong> — a User engaged in the business of
+representing Talent, or procuring commercial engagements on behalf of
+Talent (also "Agent" or "Agencies").</p>
+<p><strong>"Agent Partner"</strong> — an Agency that has subscribed to
+the Agent Partner Programme described in Part D.</p>
+<p><strong>"Applicable Law"</strong> — all laws, regulations, binding
+codes and mandatory standards applying to a User, the Service, a
+Sponsorship Contract, the delivery of Deliverables or a Deal Payment,
+including (as relevant) Irish law, the law of England and Wales, U.S.
+federal and state law (including state NIL statutes and the rules of the
+College Sports Commission), European Union law (including the GDPR, the
+Digital Services Act, the P2B Regulation and DAC7), South African law
+(including POPIA, the Consumer Protection Act, the Children's Act and
+exchange control regulations), and applicable advertising standards
+codes.</p>
+<p><strong>"Brand"</strong> — a User (being an individual, firm,
+corporate body or related entity) that uses the Service to identify,
+engage or transact with Talent for sponsorship, endorsement or
+commercial partnership purposes.</p>
+<p><strong>"Business Day"</strong> — a day other than a Saturday, Sunday
+or public holiday in Dublin, Ireland.</p>
+<p><strong>"Commission"</strong> — the commission payable to Sport
+Endorse under clause 5.4, calculated on the Deal Payment at the band
+rate applicable to that Deal Payment, and deducted from the Deal Payment
+before settlement to the Talent. No Commission is payable in respect of
+Gift-in-Kind.</p>
+<p><strong>"Confirmed Opportunity"</strong> — an Opportunity in respect
+of which a Talent has accepted the Brand's proposal and the Brand has
+confirmed the Talent, whether in-Platform or otherwise.</p>
+<p><strong>"Content"</strong> — any materials posted, uploaded, created,
+transmitted or otherwise made available through the Service, including
+Talent Deliverables and profile information.</p>
+<p><strong>"Deal Payment"</strong> — the cash consideration (exclusive
+of Gift-in-Kind) agreed to be payable by a Brand to a Talent under a
+Sponsorship Contract.</p>
+<p><strong>"Deal Value"</strong> — the total value of consideration
+agreed between a Brand and a Talent in respect of an Opportunity or
+Sponsorship Contract, comprising the Deal Payment plus the declared
+retail value of any Gift-in-Kind plus any expenses reimbursed.</p>
+<p><strong>"Deliverables"</strong> — the content, appearances, posts,
+activations or other services to be provided by a Talent under a
+Sponsorship Contract.</p>
+<p><strong>"Gift-in-Kind"</strong> — any product, kit, equipment,
+experience, hospitality, travel or other non-cash consideration provided
+(or to be provided) by a Brand to a Talent in connection with an
+Opportunity, valued at its retail market price as declared by the Brand
+when posting the Opportunity.</p>
+<p><strong>"Institutional Partner"</strong> — a university, college,
+athletic department, conference, school, federation, club or other
+institution that contracts with Sport Endorse under Part F or Part
+G.</p>
+<p><strong>"Intellectual Property Rights"</strong> — patents,
+trademarks, service marks, design rights (registered or unregistered),
+applications for any of the foregoing, trade or business names,
+copyright (including rights in computer software), database rights,
+rights in confidential information, know-how, goodwill and reputation,
+domain names, moral rights, and all other rights of a similar nature
+(and their equivalents in any jurisdiction), whether or not registered
+or registrable.</p>
+<p><strong>"Kill Fee"</strong> — the cancellation fee payable by a Brand
+under clause 6.2 where a Confirmed Opportunity is cancelled.</p>
+<p><strong>"Managed Campaign"</strong> — a campaign or activation
+delivered by Sport Endorse on a managed or full-service basis under Part
+H and a Statement of Work.</p>
+<p><strong>"Off-Platform Deal"</strong> — a Sponsorship Contract or
+Downstream Deal between Users introduced through the Service that is
+concluded, documented or settled otherwise than through the Service.</p>
+<p><strong>"Once-Off Campaign"</strong> — the single-campaign access
+product described in clause 5.3, purchased for a one-off fee in place of
+a Subscription Plan.</p>
+<p><strong>"Opportunity"</strong> — a sponsorship, endorsement,
+partnership, ambassadorship, appearance, content or similar commercial
+opportunity posted by a Brand or Agency on the Service.</p>
+<p>"Platform" or "Service" — Sport Endorse's websites (including
+localised language versions), mobile and desktop applications, APIs, the
+Academy, the Help Centre and all related services, products and content
+described in clause 2.</p>
+<p><strong>"Sponsorship Contract"</strong> — the agreement between a
+Brand (or Agency) and a Talent in respect of a Confirmed Opportunity, on
+the terms agreed through the Service (and incorporating the relevant
+provisions of these Terms).</p>
+<p>"Statement of Work" or "SOW" — a written scope of work for a Managed
+Campaign or Additional Services agreed under Part H.</p>
+<p><strong>"Subscription Fees"</strong> — the fees payable for a
+Subscription Plan.</p>
+<p><strong>"Subscription Plan"</strong> — the subscription plan under
+which a Brand, Agency or other User accesses the Service, as published
+by Sport Endorse from time to time or as set out in an Order Form,
+including its region, term, seat entitlements, roster or market coverage
+and applicable Commission rate.</p>
+<p><strong>"Tail Period"</strong> — the period of eighteen (18) months
+commencing on the last Communication through the Service between two
+Users introduced through the Service, as referenced in clause 7.</p>
+<p><strong>"Talent"</strong> — a User who is an athlete,
+student-athlete, sports personality, presenter, brand ambassador,
+content creator, sports influencer or similar person using the Service
+to engage with Brands.</p>
+<p><strong>"Trial"</strong> — a time-limited paid trial of a
+Subscription Plan made available under clause 5.3.</p>
+<p><strong>"User"</strong> — any person who accesses, registers for, or
+uses the Service, including Brands, Agencies, Talent, Institutional
+Partners and Academy learners (also "you" or "your").</p>
+</blockquote>
+<p><strong>1.2 Interpretation.</strong> References to "writing" include
+email and in-Platform messaging. Words in the singular include the
+plural and vice versa. Headings are for convenience only and do not
+affect interpretation. References to a statute include any subordinate
+legislation and any amendment, replacement or re-enactment. "Including"
+means "including without limitation". Where a rate, fee, threshold or
+product specification is stated in these Terms and also on the Service,
+the version published on the Service (or in the User's Order Form) at
+the time of the relevant transaction prevails.</p>
+<h3
+id="the-service-the-products-and-the-role-of-sport-endorse">2.
+The Service, the Products and the Role of Sport Endorse</h3>
+<p><strong>2.1 Nature of the Service.</strong> The Service is a
+technology-enabled marketplace and a set of related products that enable
+Brands, Agencies and Institutional Partners to identify, communicate
+with, educate and transact with Talent for sponsorship, endorsement,
+education and commercial partnership purposes. Sport Endorse is a
+technology and services provider. It is not a talent agency, a manager,
+an employment agency, an escrow agent, a payment institution or a
+regulated financial services provider, and the provision of the Service
+does not constitute the offer, provision or brokerage of regulated
+financial, employment or agency services.</p>
+<p><strong>2.2 The Products.</strong> The Service comprises the
+following products. Not every product is offered to every User, and each
+may be varied, withdrawn or added to under clause 2.7:</p>
+<blockquote>
+<p>(a) <strong>Marketplace.</strong> Discovery, matching, messaging,
+contracting, invoicing and settlement between Brands (or Agencies) and
+Talent, accessed under a Subscription Plan, a Once-Off Campaign or an
+Order Form. Governed by Parts A, B and C.</p>
+<p>(b) <strong>Agent Partner Programme.</strong> Roster-tiered access
+for Agencies representing Talent, including commission share-back.
+Governed by Part D.</p>
+<p>(c) <strong>Sport Endorse Academy.</strong> A digital education
+curriculum for athletes and students covering personal brand, commercial
+literacy, disclosure and compliance, contracts, pricing, money and tax,
+with optional live and on-campus sessions. Governed by Part E.</p>
+<p>(d) <strong>University and Institutional Partnerships.</strong>
+Institutional products for U.S. universities, colleges and athletic
+departments, comprising the Academy (sold per seat or per cohort), the
+Platform Partnership tier (access, visibility and support, sold at a
+flat annual fee), and Sport Endorse Global (support for international
+student-athletes commercialising outside the United States). Governed by
+Part F.</p>
+<p>(e) <strong>Schools Programme.</strong> A safeguarding-led schools
+partnership offered in South Africa, contracted with the school and the
+learner's parent or guardian, not with the learner. Governed by Part
+G.</p>
+<p>(f) <strong>Managed Campaigns and Additional Services.</strong>
+Full-service campaign management and related services, which may include
+creative and production services, photography and videography, public
+relations, events and competitions, and media planning and buying.
+Governed by Part H.</p>
+<p>(g) <strong>Websites, Apps and Content.</strong> The Sport Endorse
+websites (including localised language versions), the Help Centre, the
+blog, podcast and other published content, and the iOS and Android
+applications. Governed by Part I.</p>
+</blockquote>
+<p><strong>2.3 Not a Party to Sponsorship Contracts.</strong> Save where
+it expressly agrees otherwise in writing (including under Part H), Sport
+Endorse is not a party to any Sponsorship Contract, does not act as
+agent for any User and does not guarantee the performance of any User.
+Sport Endorse does not guarantee that any Opportunity will be filled,
+that any Talent will be selected, that any campaign will achieve any
+particular result, or that any User will earn any particular amount.</p>
+<p><strong>2.4 Payment Facilitation.</strong> Notwithstanding clause
+2.3, Sport Endorse operates invoicing, collection and settlement
+mechanisms in respect of Deal Payments, Commissions, Kill Fees,
+Subscription Fees, service fees and liquidated damages, and is entitled
+to collect and apply such amounts in accordance with these Terms. Sport
+Endorse does not hold Deal Payments in escrow; Deal Payments are
+invoiced to the Brand on completion of the Sponsorship Contract and
+settled to the Talent upon receipt of cleared funds (see clause 5). Card
+and payment processing is performed by a licensed third-party payment
+provider (currently Stripe, including Stripe Connect), subject to that
+provider's own terms.</p>
+<p><strong>2.5 Automated Features and AI-Assisted Tools.</strong> The
+Service uses automated processing, including search, matching,
+recommendation and ranking functions and, in some surfaces, AI-assisted
+drafting, translation, summarisation or content-suggestion tools. Where
+Content is generated or materially assisted by such tools, this is
+indicated on the relevant surface or shall be disclosed on request.
+Automated outputs are aids, not advice or decisions: they may be
+incomplete or inaccurate; Users remain solely responsible for reviewing
+and verifying any output before relying on it or publishing it; and no
+automated output constitutes legal, tax, regulatory, eligibility or
+compliance advice. Users must not represent an automated output as
+human-created where Applicable Law requires disclosure. Clause 12.1
+describes the main parameters determining ranking.</p>
+<p><strong>2.6 Territorial Availability and Geo-Targeting.</strong>
+Certain surfaces, products, prices and pages are directed at, and made
+available only to, Users in specified territories. In particular: (i)
+the university and NIL surfaces are directed at the United States; (ii)
+the Schools Programme surfaces are directed at South Africa; (iii)
+Subscription Plan pricing is set by region and by the market of the
+Talent roster to which access is granted; and (iv) localised language
+versions of the website are provided for convenience. Geo-targeting is
+applied on a best-efforts basis using signals such as locale, timezone,
+network information and any region the User selects. It is not a
+warranty of eligibility, and a User must not access a
+territory-restricted product for which it is not eligible, including by
+misrepresenting its location or using a proxy or VPN to do so. Access to
+a product does not create an entitlement to it where the User is not
+eligible under Applicable Law or under these Terms.</p>
+<p><strong>2.7 Changes to the Service.</strong> We may modify, suspend,
+limit, add to or discontinue features and products of the Service. Where
+a change is material and adversely affects paying Users, we will give at
+least thirty (30) days' prior written notice and, where reasonably
+applicable, a pro-rata refund of prepaid, unused Subscription Fees.
+Nothing in this clause permits Sport Endorse to reduce, without notice,
+entitlements a User has already paid for in respect of a current
+term.</p>
+<p><strong>2.8 Modification of Terms.</strong> We may update these Terms
+by giving at least thirty (30) days' prior notice on a durable medium
+(by email to the address on file and/or in-Platform), which period
+satisfies the minimum notice period required by Article 3 of the P2B
+Regulation. Continued use of the Service after the effective date
+constitutes acceptance. A business user may terminate before the expiry
+of the notice period, and may waive the notice period by written
+statement or by an unambiguous affirmative action. Shorter notice may be
+given where a change is required by Applicable Law or to address an
+unforeseen and imminent security, fraud, malware, spam, data-breach or
+other cybersecurity risk. Users who do not agree may terminate in
+accordance with clause 15.</p>
+<p><strong>2.9 Contracting Entity.</strong> Unless an Order Form,
+Statement of Work or Institutional Agreement names another company in
+the Sport Endorse group as the contracting entity, the contracting
+entity is Sport Endorse Limited (Ireland). Where a group company is
+named (for example, a United States subsidiary contracting with a U.S.
+Institutional Partner), these Terms apply to that contract as if
+references to Sport Endorse were references to that company, save that
+governing law and jurisdiction shall be as stated in the relevant Order
+Form or Institutional Agreement.</p>
+<p><strong>2.10 No Advice.</strong> Nothing on the Service — including
+the Help Centre, the Academy, blog and podcast content, campaign
+benchmarks, pricing guidance, rate estimates, compliance summaries or
+NIL explanations — constitutes legal, tax, financial, regulatory,
+immigration, eligibility, medical or safeguarding advice. It is general
+information only. Users must take their own professional advice.</p>
+<h3 id="eligibility-registration-and-account-security">3.
+Eligibility, Registration and Account Security</h3>
+<p><strong>3.1 Minimum Age.</strong> The Service is not intended for
+persons under the age of sixteen (16). Certain features (including U.S.
+NIL functionality, restricted-category Opportunities and financial
+settlement features) require the User to be aged eighteen (18) or such
+higher age as Applicable Law or the relevant Brand requires. Where a
+Talent is a minor under the laws of their home jurisdiction, the Talent
+warrants that a parent or legal guardian has reviewed and approved these
+Terms and any Sponsorship Contract, and Sport Endorse may require
+written evidence of such consent and co-signature by the parent or
+guardian. Part G contains additional and overriding provisions for the
+Schools Programme.</p>
+<p><strong>3.2 Registration Data.</strong> Users must provide accurate,
+current and complete information when registering and using the Service,
+and must update it promptly when it changes. Each User warrants that it
+(and the individual accepting these Terms on its behalf) has the
+authority to enter into this Agreement.</p>
+<p><strong>3.3 Account Security.</strong> Each User is responsible for
+maintaining the confidentiality of its credentials and for all activity
+under its account. Users must notify Sport Endorse promptly of any
+suspected unauthorised access. Sport Endorse is not liable for losses
+caused by the User's failure to safeguard credentials.</p>
+<p><strong>3.4 Verification, KYC and Payment Data.</strong> Sport
+Endorse may (and where required by Applicable Law shall) carry out
+identity, AML/KYC, sanctions, tax-residence and other verification
+checks, and may suspend an account or withhold settlement pending
+completion. Users must provide the bank, tax and identification data
+required for the User's jurisdiction, including any data required for
+payment settlement and for reporting under clause 5.13.</p>
+<p><strong>3.5 One Account; Accuracy of Roster.</strong> A User may not
+maintain multiple accounts to obtain access to a territory, roster,
+price or entitlement to which its Subscription Plan does not extend.
+Agencies must not list Talent they do not represent.</p>
+<p><strong>3.6 Sanctions and Export Controls.</strong> Each User
+represents and warrants that it is not (i) located in, nor a national or
+resident of, any country or territory subject to comprehensive sanctions
+by the EU, UK, UN or the U.S. Office of Foreign Assets Control, or (ii)
+a designated person on any applicable sanctions or restricted-party
+list. Users must not use the Service in violation of any export control
+or sanctions law.</p>
+<h3 id="opportunities-engagements-and-deliverables">4.
+Opportunities, Engagements and Deliverables</h3>
+<p><strong>4.1 Posting Opportunities.</strong> A Brand posting an
+Opportunity must disclose fully and accurately: (i) the Deliverables
+required; (ii) the Deal Payment (if any); (iii) the nature and declared
+retail value of any Gift-in-Kind; (iv) deadlines and the campaign
+timeline; (v) territory and content usage rights required; (vi) any
+exclusivity; (vii) any regulatory context (for example alcohol,
+gambling, betting, age-restricted products, NIL compliance, team,
+league, school or federation category restrictions); (viii) any material
+safety or venue information; and (ix) the payment terms applicable to
+the Brand under clause 5.9. The Deal Payment stated in an Opportunity is
+the gross amount from which the Talent's Commission is deducted under
+clause 5.4, and is displayed to Talent together with the applicable rate
+and estimated net amount under clause 5.4.3.</p>
+<p><strong>4.2 Formation of Sponsorship Contract.</strong> A Sponsorship
+Contract is formed when a Talent accepts the Opportunity on the terms
+(including amendments) agreed through the Service and the Brand confirms
+the Talent. The terms so agreed, together with the relevant provisions
+of these Terms, constitute the Sponsorship Contract.</p>
+<p><strong>4.3 Delivery and Acceptance.</strong> Unless the Sponsorship
+Contract provides otherwise: (i) the Talent shall deliver Deliverables
+by the stated deadline(s); (ii) the Brand shall review and either
+approve or provide specific, reasonable written change requests within
+seven (7) days of delivery; (iii) Deliverables are deemed accepted if no
+timely change request is provided; (iv) the Talent shall have a
+reasonable opportunity (not less than seven (7) days) to address change
+requests; and (v) publication or posting by the Brand or Talent
+constitutes acceptance of the relevant Deliverables.</p>
+<p><strong>4.4 Expenses.</strong> Pre-agreed out-of-pocket expenses (for
+example travel, production, location fees) shall be reimbursed by the
+Brand against supporting documentation, and shall remain payable
+notwithstanding any subsequent cancellation.</p>
+<p><strong>4.5 Gift-in-Kind Delivery.</strong> Where Gift-in-Kind forms
+all or part of the consideration, the Brand shall dispatch it so as to
+arrive no later than the agreed date. Title and risk in Gift-in-Kind
+pass to the Talent on delivery, subject to clause 6.</p>
+<p><strong>4.6 Minimum Deal Values.</strong> Sport Endorse may set and
+publish minimum Deal Payment thresholds for particular Subscription
+Plans, Trials or Once-Off Campaigns. Where a minimum applies it is
+stated on the relevant plan and on the Opportunity posting flow.</p>
+<h3 id="fees-commission-payment-terms-and-taxes">5. Fees,
+Commission, Payment Terms and Taxes</h3>
+<p><strong>5.1 Fee Categories.</strong> Depending on the products used,
+a User may be charged: (a) Subscription Fees; (b) Once-Off Campaign
+fees; (c) Commission on Deal Payments, borne by the Talent by deduction
+under clause 5.4; (d) Managed Campaign and Additional Services fees
+under Part H; (e) Academy fees under Part E; (f) institutional fees
+under Part F; and (g) Kill Fees, liquidated damages, interest and
+recovery costs under clauses 5.11, 6 and 7. Current rates are published
+on the Service and, where a User has signed an Order Form, in that Order
+Form. Except where these Terms expressly state a rate, the rate
+applicable to a User is the rate in that User's Subscription Plan or
+Order Form.</p>
+<p><strong>5.2 Subscription Fees and Automatic Renewal.</strong> Brands,
+Agencies and other subscribing Users pay Subscription Fees in advance
+for the applicable term. Subscription Plans are priced by region and by
+the market of the Talent roster to which access is granted, and are
+offered on quarterly and annual terms. Subscription Plans renew
+automatically at the end of each term at the then-current published
+rates unless cancelled before the renewal date. Sport Endorse will give
+clear pre-contractual disclosure of the renewal mechanic, the renewal
+amount and the cancellation method, and will send advance renewal
+reminders by email before each renewal charge. Cancellation may be
+effected at any time through the account settings on the Service (in no
+more steps than were required to subscribe) or by written notice to
+subscriptions@sportendorse.com. On cancellation: (a) access continues
+until the end of the then-current paid term; (b) no refund of
+Subscription Fees is payable in respect of the then-current term, save
+as required by Applicable Law or clause 5.14; and (c) no further renewal
+occurs.</p>
+<p><strong>5.3 Trials and Once-Off Campaigns.</strong> Where Sport
+Endorse offers a Trial, the Trial is restricted as published (which may
+include limits on territory, number of Opportunities, number of Talent
+partners, minimum collaboration fee, and exclusion of Gift-in-Kind-only
+Opportunities), requires valid payment details at sign-up, and converts
+automatically into a paid Subscription Plan at the end of the Trial
+period unless cancelled beforehand. Sport Endorse will notify the User
+by email before the Trial converts and state the amount and date of the
+first charge and how to cancel. A Once-Off Campaign is a single-campaign
+access product purchased for a one-off fee, restricted as published
+(including as to territory, number of Opportunities, number of Talent
+partners and duration), and does not renew; access to the Service ends
+when the Once-Off Campaign period expires unless the User
+subscribes.</p>
+<p><strong>5.4 Commission on Deal Payments.</strong> Unless expressly
+agreed otherwise in writing by Sport Endorse, Commission is payable on
+the Deal Payment of every Opportunity or Sponsorship Contract between a
+Brand and a Talent who connected through the Service. Commission is
+consideration for the services Sport Endorse provides to the Talent in
+sourcing, enabling, documenting and settling the engagement.
+<strong>Commission is borne by the Talent and is deducted by Sport
+Endorse from the Deal Payment before settlement.</strong> It is not
+added to the amount payable by the Brand. Commission is charged at the
+rate determined by the size of the Deal Payment, as follows:</p>
+<div class="tablewrap"><table>
+<colgroup>
+<col style="width: 39%" />
+<col style="width: 30%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Deal Payment (per Sponsorship Contract, excluding
+Gift-in-Kind)</strong></th>
+<th><strong>Commission rate</strong></th>
+<th><strong>Borne by</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Up to and including 500</td>
+<td>14% of the Deal Payment</td>
+<td>Talent, by deduction from the Deal Payment</td>
+</tr>
+<tr class="even">
+<td>Above 500 and up to and including 2,000</td>
+<td>16% of the Deal Payment</td>
+<td>Talent, by deduction from the Deal Payment</td>
+</tr>
+<tr class="odd">
+<td>Above 2,000</td>
+<td>18% of the Deal Payment</td>
+<td>Talent, by deduction from the Deal Payment</td>
+</tr>
+<tr class="even">
+<td>Off-Platform Deal (including deals within the Tail Period under
+clause 7)</td>
+<td>20% of the Deal Payment</td>
+<td>The User or Users that concluded the Off-Platform Deal, jointly and
+severally</td>
+</tr>
+<tr class="odd">
+<td>Gift-in-Kind (any product, kit, experience or other non-cash
+consideration)</td>
+<td>No Commission</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>5.4.1 Application of the bands.</strong> The applicable rate
+is applied to the whole of the Deal Payment, and not to each band
+separately. The band thresholds are the figures stated in clause 5.4 and
+apply as the same numerical values in whichever currency the Deal
+Payment is denominated (so a Deal Payment of 500 falls in the first band
+whether it is denominated in euro, pounds sterling, U.S. dollars, South
+African rand or any other currency in which Sport Endorse transacts). No
+currency conversion is applied for the purpose of determining the band.
+Sport Endorse may vary its published Commission rates and thresholds on
+notice under clause 2.8; a change does not affect a Sponsorship Contract
+already formed.</p>
+<p><strong>5.4.2 Worked example.</strong> Where a Brand posts an
+Opportunity with a Deal Payment of 450: the Brand pays 450, plus payment
+processing costs under clause 5.11, plus any applicable VAT or sales
+tax; Commission of 14% (63) is deducted; and the Talent is settled 387,
+subject to clauses 5.10, 5.12 and 5.13.</p>
+<p><strong>5.4.3 Transparency to Talent.</strong> Before a Talent
+accepts an Opportunity, the Service will display the Deal Payment, the
+applicable Commission rate and the estimated net amount the Talent will
+receive, together with the Brand's payment terms under clause 5.9. The
+Talent's acceptance is given on the basis of the net figure so
+displayed.</p>
+<p><strong>5.4.4 Aggregation and anti-splitting.</strong> Where a Brand
+and a Talent enter into two or more Sponsorship Contracts that form part
+of the same campaign, or that are concluded within any rolling sixty
+(60) day period, Sport Endorse may treat the aggregate Deal Payments as
+a single Deal Payment for the purpose of determining the applicable
+band, and may invoice or set off any resulting adjustment. Users must
+not structure, split or stage an engagement with the purpose or effect
+of obtaining a lower Commission band. Where an Opportunity combines a
+cash Deal Payment with Gift-in-Kind, Commission applies to the cash Deal
+Payment only, and the value of the Gift-in-Kind is disregarded in
+determining the band.</p>
+<p><strong>5.5 Other Revenue.</strong> Where Sport Endorse introduces,
+facilitates or administers a commercial arrangement that is not a
+Sponsorship Contract (for example a referral, licensing, affiliate, or
+partner-programme arrangement), a fee of twenty percent (20%) of the
+consideration applies unless a different rate is agreed in writing in
+the relevant Order Form or Statement of Work.</p>
+<p><strong>5.6 Managed Campaigns and Additional Services.</strong> Fees
+for Managed Campaigns and Additional Services are set out in the
+applicable Statement of Work under Part H. They are charged in addition
+to, and are not credited against, Subscription Fees or Commission unless
+the Statement of Work expressly says so.</p>
+<p><strong>5.7 Academy and Institutional Fees.</strong> Academy fees are
+charged per seat, per cohort or per licence, and live and on-campus
+sessions are charged per session, in each case as set out in the
+applicable Order Form. Institutional fees under Part F are charged as a
+flat annual fee or on a per-seat basis and are not metered by the number
+of student-athletes who transact on the Marketplace.</p>
+<p><strong>5.8 Agent Partner Share-Back.</strong> Where an Agent Partner
+qualifies for commission share-back under Part D, the share-back is
+calculated as a percentage of the Commission actually received and
+retained by Sport Endorse on qualifying deals, at the tier rate stated
+in the Agent Partner's Subscription Plan. Share-back is never funded
+from, and never reduces, the Deal Payment settled to Talent.</p>
+<p><strong>5.9 Invoicing of Deal Payments.</strong> Sport Endorse does
+not hold Deal Payments in escrow. On completion of a Sponsorship
+Contract (being acceptance or deemed acceptance of the Deliverables
+under clause 4.3, or the trigger of a Kill Fee under clause 6.2), Sport
+Endorse shall invoice the Brand for the Deal Payment, plus payment
+processing costs under clause 5.11, plus any applicable VAT, sales tax
+or equivalent. Commission is not added to the Brand's invoice; it is
+deducted from the Deal Payment on settlement to the Talent under clauses
+5.4 and 5.10. The Brand shall pay on the payment terms stated on the
+invoice, which shall be Sport Endorse's standard payment terms of
+immediate payment unless extended terms (typically 30, 60 or, by prior
+written agreement, 90 days) have been agreed with the Brand in writing
+(including on the Brand's Subscription Plan or Order Form). Payment
+terms applicable to a Brand shall be disclosed to the Talent before the
+Talent accepts the Opportunity.</p>
+<p><strong>5.10 Settlement to Talent.</strong> Sport Endorse shall
+settle the Deal Payment to the Talent net of Commission (and net of any
+tax required to be withheld) within five (5) Business Days of Sport
+Endorse's receipt of cleared funds from the Brand, provided the Talent's
+verification and payment details under clause 3.4 are complete. Where
+the Brand pays in instalments or late, the Talent shall be paid pro-rata
+on each receipt. The Talent acknowledges that settlement timing is
+contingent on the Brand's payment terms and actual payment, as disclosed
+under clause 5.9, and that Sport Endorse is not liable for the Brand's
+failure or delay to pay, subject to clause 5.15.</p>
+<p><strong>5.11 Payment Processing Costs.</strong> Payment processing,
+card and platform-transfer fees charged by the payment provider are
+borne by the Brand (or, for Subscription Fees, by the subscribing User)
+and are added to the Brand's invoice. They are not deducted from the
+Deal Payment in addition to Commission. Each User bears its own bank,
+intermediary-bank and foreign-exchange charges, and the Talent bears any
+payout or beneficiary-bank charge applied to its own settlement
+account.</p>
+<p><strong>5.12 Taxes.</strong> Each User is responsible for its own
+taxes (including income tax, corporation tax, self-employment tax,
+VAT/GST and withholding taxes) in every relevant jurisdiction. All fees
+are stated exclusive of VAT, GST, sales tax and similar taxes, which are
+added where applicable. Where the reverse charge applies to a
+cross-border supply, the User shall provide a valid VAT/GST registration
+number. Where Sport Endorse is required by Applicable Law to deduct or
+withhold tax, it may do so and will provide customary documentation.
+Users may be required to provide tax documentation (including IRS Forms
+W-9, W-8BEN or W-8BEN-E, or equivalent) before settlement. Talent
+transact as independent contractors and are solely responsible for their
+own filings.</p>
+<p><strong>5.12.1 VAT on Commission.</strong> Because Commission is
+consideration for a service supplied by Sport Endorse to the Talent,
+VAT, GST or equivalent may be chargeable on the Commission itself, in
+addition to any tax arising on the Talent's own supply to the Brand.
+Where the Talent is established outside Ireland and is in business, the
+reverse charge may apply and the Talent shall provide a valid VAT/GST
+registration number. Where the Talent is not in business, or is
+established in a jurisdiction in which Sport Endorse is required to
+account for local tax, that tax may be added to the Commission and
+deducted from the Deal Payment accordingly. Sport Endorse will issue the
+Talent a statement, invoice or self-billing document for each deduction,
+showing the Deal Payment, the Commission rate, the Commission, any tax,
+and the net amount settled. Where self-billing is used, the Talent
+agrees to accept self-billed invoices and not to raise its own invoice
+for the same supply.</p>
+<p><strong>5.13 Platform Reporting Obligations.</strong> Users
+acknowledge that Sport Endorse is or may be subject to mandatory
+reporting obligations as a platform operator, including under Council
+Directive (EU) 2021/514 ("DAC7") as implemented in Ireland, U.S.
+information-reporting rules (including Forms 1099-K and 1042-S where
+applicable), and equivalent regimes in other jurisdictions. Users shall
+provide, and keep current, the identification, residence,
+tax-identification and financial-account information required for such
+reporting, and consent to Sport Endorse disclosing that information to
+the relevant tax authorities. Sport Endorse may suspend an account or
+withhold settlement where a User fails to provide required information
+after two reminders, as permitted or required by the applicable
+regime.</p>
+<p><strong>5.14 Consumer Refund and Withdrawal Rights.</strong> Where a
+User is a consumer, statutory cancellation and withdrawal rights apply
+and are not affected by clause 5.2. In particular: (i) EU and Irish
+consumers generally have fourteen (14) days from conclusion of a
+distance contract to withdraw, subject to the loss of that right where
+the consumer has expressly requested immediate performance and the
+service has been fully performed, in which case a proportionate charge
+for services supplied may be made; (ii) UK consumers have equivalent
+rights; (iii) South African consumers may have cooling-off rights under
+section 44 of the Electronic Communications and Transactions Act 2002
+and cancellation rights under section 14 of the Consumer Protection Act
+2008; and (iv) U.S. consumers have the rights conferred by applicable
+federal and state automatic-renewal and negative-option laws. Business
+users are not consumers and these rights do not apply to them.</p>
+<p><strong>5.15 Late Payment, Suspension and Enforcement.</strong>
+Amounts overdue beyond the invoice payment terms accrue interest at four
+percent (4%) per annum above the European Central Bank main refinancing
+rate, together with reasonable collection costs (including, for
+business-to-business debts in Ireland, compensation and charges payable
+under Statutory Instrument No. 580/2012 and, in the UK, the Late Payment
+of Commercial Debts (Interest) Act 1998). The Brand's obligation to pay
+Sport Endorse's invoice in respect of a completed Sponsorship Contract
+is unconditional and is not affected by any dispute between the Brand
+and the Talent (which shall be resolved separately under clause 16
+without suspending payment). Where a Brand fails to pay an undisputed
+invoice by its due date, Sport Endorse may: (a) pursue collection and
+recovery (including interest and costs); (b) suspend or terminate the
+Brand's account under clause 12.4; (c) report the default to credit
+reference agencies where legally permissible; and (d) at the Talent's
+written request, assign to the Talent Sport Endorse's rights to the
+unpaid Deal Payment portion (net of Commission, which remains due to
+Sport Endorse) so that the Talent may sue the Brand directly. Sport
+Endorse shall keep the Talent reasonably informed of collection
+progress.</p>
+<p><strong>5.16 Set-Off and Chargebacks.</strong> Sport Endorse may set
+off any amount owed to it by a User against any amount payable to that
+User through the Service. Chargebacks made without merit may result in
+the charged-back amount, plus Sport Endorse's reasonable costs, being
+set off or invoiced directly.</p>
+<p><strong>5.17 Currency.</strong> Fees and Commissions are payable in
+the currency specified on the Service or the invoice. Where a User's
+plan is priced in a currency other than that of the User's bank account,
+conversion is at the payment provider's applicable rate.</p>
+<h3 id="cancellation-kill-fees-and-non-performance">6.
+Cancellation, Kill Fees and Non-Performance</h3>
+<p><strong>6.1 Principle.</strong> Once a Sponsorship Contract is
+formed, both parties are bound to perform. This clause 6 allocates the
+cost of cancellation or non-performance. The parties agree that the
+amounts specified are genuine pre-estimates of loss, reasonable in the
+circumstances, and are payable as liquidated damages and not as a
+penalty. They are without prejudice to any other rights and remedies the
+parties may have, including damages for losses exceeding the stated
+amounts.</p>
+<p><strong>6.2 Brand Cancellation — Kill Fee.</strong> Where a Brand
+cancels a Confirmed Opportunity (whether expressly, or by failing to
+take necessary steps such as delivering Gift-in-Kind or materials,
+failing to approve Deliverables, or failing to pay Sport Endorse's
+invoice in respect of the Deal Payment within a reasonable period of
+written notice), the following Kill Fees are payable to the Talent:</p>
+<div class="tablewrap"><table>
+<colgroup>
+<col style="width: 39%" />
+<col style="width: 30%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Stage at which Brand cancels</strong></th>
+<th><strong>Kill Fee (% of Deal Payment)</strong></th>
+<th><strong>Gift-in-Kind</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Brand confirms Talent; Talent has not yet begun production</td>
+<td>25%</td>
+<td>Talent retains, or returns at Brand's cost (Brand's election)</td>
+</tr>
+<tr class="even">
+<td>Talent has commenced production but not delivered</td>
+<td>50%</td>
+<td>Talent retains</td>
+</tr>
+<tr class="odd">
+<td>Talent has delivered Deliverables to Brand</td>
+<td>100%</td>
+<td>Talent retains</td>
+</tr>
+<tr class="even">
+<td>Deliverables approved, posted or published</td>
+<td>100% plus agreed usage/licence fees</td>
+<td>Talent retains</td>
+</tr>
+</tbody>
+</table></div>
+<p>In addition the Brand shall pay any pre-agreed out-of-pocket expenses
+under clause 4.4. Commission remains payable in respect of the Kill Fee
+and is deducted from it at the band determined by the Deal Payment for
+the cancelled Sponsorship Contract, in the same way as if the engagement
+had completed; expenses reimbursed under clause 4.4 are not subject to
+Commission, and no Commission is payable on Gift-in-Kind retained by the
+Talent. All such amounts shall be invoiced by Sport Endorse to the Brand
+under clause 5.9 and settled to the Talent under clause 5.10.</p>
+<p><strong>6.3 Brand Cancellation — No Use of Content.</strong> Where a
+Brand cancels after Deliverables have been created and elects not to use
+them, the Talent shall retain (i) all Intellectual Property Rights and
+usage rights in those Deliverables; (ii) the Kill Fee under clause 6.2;
+(iii) any Gift-in-Kind received; and (iv) the right to showcase the
+Deliverables on the Talent's own channels, provided the Talent does not
+disparage the Brand and does not represent a continuing commercial
+relationship.</p>
+<p><strong>6.4 Talent Cancellation or Non-Performance.</strong> Where a
+Talent cancels a Confirmed Opportunity, or fails to deliver Deliverables
+by the deadline and does not cure within fourteen (14) days of written
+notice: (a) any Gift-in-Kind received must be returned, undamaged and in
+saleable condition, at the Talent's cost, within fourteen (14) days, and
+if return is impossible or the item has been used, the Talent shall pay
+the declared retail value; (b) any advance Deal Payment received by the
+Talent shall be refunded; (c) the Talent shall pay liquidated damages
+equal to twenty-five percent (25%) of the Deal Payment (or, where there
+is no cash Deal Payment, twenty-five percent (25%) of the declared
+retail value of the Gift-in-Kind) in compensation for the Brand's
+opportunity cost and the cost of re-sourcing Talent; (d) Sport Endorse
+shall invoice the defaulting Talent (or set off the amount against sums
+otherwise payable to the Talent through the Service on other deals) and
+shall remit recovered amounts to the Brand net of Commission; and (e)
+repeated Talent default may result in suspension or termination under
+clause 12.4.</p>
+<p><strong>6.5 Force Majeure, Injury, Illness or Professional
+Change.</strong> Where performance is genuinely prevented by Force
+Majeure (clause 18.3), verified injury or illness, or a material change
+in the Talent's professional circumstances (for example transfer,
+retirement, deselection or team medical restriction), the parties shall
+in good faith seek to reschedule or mutually release the Sponsorship
+Contract. Kill Fees and liquidated damages shall not apply in such
+circumstances, save that: (i) Gift-in-Kind shall be returned where
+reasonably possible, or its declared value refunded; (ii) the Brand
+shall reimburse verified out-of-pocket Talent expenses; and (iii) any
+advance Deal Payment for work not performed shall be returned.</p>
+<p><strong>6.6 Role of Sport Endorse.</strong> Sport Endorse is not
+itself liable for Kill Fees or liquidated damages as principal. However,
+Sport Endorse will invoice, collect, enforce and settle amounts due
+under this clause 6 in accordance with clauses 5.9, 5.10 and 5.15, and
+may pause invoicing or settlement pending resolution of a bona fide
+dispute under clause 16.</p>
+<h3 id="anti-circumvention">7. Anti-Circumvention</h3>
+<p><strong>7.1 Covenant.</strong> Each User covenants that, during the
+Tail Period, any sponsorship, endorsement, appearance, ambassadorship,
+content, image-rights, licensing, Gift-in-Kind or similar arrangement (a
+"Downstream Deal") entered into with another User who was introduced,
+accessed or communicated with through the Service — whether on or off
+the Service, whether directly or indirectly, whether through an
+intermediary, agent, related party, corporate affiliate, family member,
+or a third-party platform — shall be: (a) either routed through, and
+documented on, the Service; or (b) promptly disclosed in writing to
+Sport Endorse in sufficient detail for Commission to be calculated; and
+(c) subject to payment of Commission at the off-Platform rate stated in
+clause 5.4, calculated on the Deal Payment component of the Downstream
+Deal.</p>
+<p><strong>7.2 Liquidated Damages.</strong> In the event of a breach of
+clause 7.1, the breaching User shall pay Sport Endorse, as agreed
+liquidated damages and not as a penalty, an amount equal to two hundred
+percent (200%) of the Commission that would have been payable on the
+Deal Payment component of the Downstream Deal (or, where the Downstream
+Deal is wholly or substantially in Gift-in-Kind, a minimum sum equal to
+€2,500 per undisclosed Downstream Deal), together with Sport Endorse's
+reasonable costs of investigation and enforcement (including legal fees
+and external advisor costs). The parties acknowledge that the harm
+arising from circumvention is inherently difficult to quantify and that
+this amount is a reasonable pre-estimate.</p>
+<p><strong>7.3 Audit Rights.</strong> Users shall, on at least ten (10)
+Business Days' written notice and not more than twice in any calendar
+year, permit Sport Endorse (or its independent auditors, bound by
+confidentiality) to inspect records, books, accounts, invoices and
+relevant communications concerning potential Downstream Deals during the
+Tail Period and for twenty-four (24) months thereafter. The costs of an
+audit shall be borne by Sport Endorse unless it identifies
+under-reporting of five percent (5%) or more of the Commission properly
+due in the audited period, in which case the audited User shall bear
+Sport Endorse's reasonable costs.</p>
+<p><strong>7.4 Certification on Request.</strong> On reasonable written
+request, a User shall provide a signed certification, accurate to its
+knowledge after due enquiry, listing any Downstream Deals concluded
+during the Tail Period and the consideration paid or received.</p>
+<p><strong>7.5 No Double Counting.</strong> Commission under clause 7
+does not apply where it has already been properly accounted for and paid
+through the Service.</p>
+<p><strong>7.6 Carve-Outs.</strong> Clause 7 does not apply to: (i) a
+pre-existing relationship between two Users that the relevant User
+evidences, to Sport Endorse's reasonable satisfaction, as having been in
+place and documented before the introduction through the Service; (ii)
+an arrangement between an Agent Partner and Talent already on that Agent
+Partner's roster before the roster was uploaded to the Service; or (iii)
+revenue expressly excluded in a signed Order Form.</p>
+<p><strong>7.7 Reasonableness.</strong> The parties acknowledge that
+this clause 7 is a reasonable and necessary protection of Sport
+Endorse's legitimate business interests, and that the duration and scope
+are commensurate with the value that the Service provides in sourcing
+and enabling the relationship. If a court of competent jurisdiction
+determines that any element of this clause 7 is unreasonable, the clause
+shall be read down to the minimum extent necessary to be
+enforceable.</p>
+<h3
+id="intellectual-property-content-licences-image-rights-and-data">8.
+Intellectual Property, Content Licences, Image Rights and
+Data</h3>
+<p><strong>8.1 Sport Endorse IP.</strong> The Service and all Sport
+Endorse content, software, source code, databases, curricula,
+methodologies, templates, trade marks, logos, designs, and other
+Intellectual Property Rights are owned by Sport Endorse and its
+licensors. Users are granted a limited, non-exclusive, revocable,
+non-transferable, non-sublicensable licence to access and use the
+Service for its intended purpose only, for the duration of their
+subscription or account. No rights are granted by implication.</p>
+<p><strong>8.2 Database and Platform Data.</strong> The compilation,
+structure, taxonomy and arrangement of the Sport Endorse athlete, brand,
+sport and industry databases, and all rights in them (including database
+rights under Directive 96/9/EC and the Irish European Communities (Legal
+Protection of Databases) Regulations 1997), belong to Sport Endorse.
+Users may not extract or re-utilise all or a substantial part of the
+contents of any database, whether by repeated systematic extraction or
+otherwise, or build a competing dataset or product from it.</p>
+<p><strong>8.3 Reservation of Text and Data Mining Rights.</strong>
+Sport Endorse expressly reserves the right to text and data mining of
+all Content and materials made available on the Service, within the
+meaning of Article 4(3) of Directive (EU) 2019/790 and the Irish
+implementing regulations. No use of the Service, the websites or any
+Content for the purposes of training, fine-tuning, evaluating or
+grounding any machine learning or generative artificial intelligence
+model is permitted without Sport Endorse's prior written consent.
+Automated access for these purposes is prohibited under clause 9.1, and
+this reservation is additionally expressed in machine-readable form on
+the Service.</p>
+<p><strong>8.4 User Content.</strong> Users retain ownership of Content
+they create or provide and grant Sport Endorse a worldwide,
+royalty-free, non-exclusive, sub-licensable and transferable licence to
+host, store, display, reproduce, translate, format, index and otherwise
+use such Content as necessary to provide, secure, improve and promote
+the Service, for as long as such use is reasonably required (subject to
+the account-closure limits in clause 8.8). Sport Endorse does not sell
+User Content, and does not license Talent likeness to third parties for
+their own advertising except as expressly permitted under a Sponsorship
+Contract or clause 8.9.</p>
+<p><strong>8.5 Talent Deliverables — Brand Usage Rights.</strong>
+Subject to (i) payment in full of the Deal Payment and Commission (or
+any applicable Kill Fee in lieu), and (ii) delivery in full of any
+Gift-in-Kind to the Talent, the Talent grants the Brand the specific
+usage rights to the Deliverables set out in the Sponsorship Contract
+(scope, territory, channels and duration). Absent express agreement, the
+licence is non-exclusive, non-transferable, limited to twelve (12)
+months from delivery, confined to the Brand's owned and operated
+channels and to the territory specified in the Opportunity, and
+restricted to the campaign for which the Deliverables were created. Use
+in paid media, derivative products, out-of-home advertising, AI training
+or synthesis, or any extension or renewal, requires a separate written
+agreement (subject to Commission).</p>
+<p><strong>8.6 Synthetic Media and Likeness.</strong> No Brand, Agency
+or Institutional Partner may create, commission or publish any
+synthetic, digitally altered, cloned, deepfake or AI-generated depiction
+of a Talent's face, body, voice or performance, or use Deliverables to
+train or condition a model to generate such a depiction, without the
+Talent's specific, separate, informed and revocable written consent
+identifying the permitted uses, duration and territory. Any such consent
+is in addition to, and not implied by, the licence in clause 8.5. This
+clause is intended to operate consistently with U.S. state
+right-of-publicity and digital-replica laws, EU and Irish personality
+and data-protection rights, and South African law.</p>
+<p><strong>8.7 Unpaid Deliverables.</strong> Where the Brand has not
+paid in full (or any applicable Kill Fee), no licence to use the
+Deliverables is granted and any use constitutes copyright infringement
+and a material breach.</p>
+<p><strong>8.8 Image Rights for Platform Promotion.</strong> Each Talent
+grants Sport Endorse a worldwide, non-exclusive, royalty-free right to
+use the Talent's name, image, likeness, biographical details and profile
+Content for the purpose of operating and promoting the Service and
+illustrating available Talent to prospective Brands. Such use shall
+cease within a reasonable time (and no later than ninety (90) days)
+following the closure of the Talent's account, save in relation to
+legitimate archival and case-study materials.</p>
+<p><strong>8.9 Success Stories.</strong> Each User grants Sport Endorse
+a non-exclusive, worldwide, royalty-free and (once approved under this
+clause) perpetual licence to produce and publish case studies,
+testimonials, press releases, social media posts, sales and investor
+materials, conference content and other marketing or
+business-development materials (each a "Success Story") featuring a
+completed Sponsorship Contract, including the Brand's name, logo and
+products, the Talent's name, image and likeness, selected Deliverables,
+non-confidential campaign metrics, and a narrative description of the
+engagement, in any format and media now known or later developed. Sport
+Endorse shall: (a) submit each draft Success Story to the relevant Brand
+and the relevant Talent for review before first publication; (b)
+consider in good faith reasonable amendments proposed by either party
+(including redaction or anonymisation of commercially sensitive
+financial terms at a party's written request); (c) not publish until
+written approval has been received from both the Brand and the Talent,
+save that if a party does not respond with either approval or
+substantive change requests within ten (10) Business Days of a written
+request for approval, that party's approval shall be deemed given; and
+(d) not make material edits to an approved Success Story that change its
+meaning or positioning without re-submitting the amended version for
+approval. The right to continue using an approved (or deemed-approved)
+Success Story survives termination, subject to any non-waivable image or
+data-protection rights under Applicable Law. Where the Talent is a
+minor, approval must be given by the parent or guardian and deemed
+approval does not apply.</p>
+<p><strong>8.10 Aggregated and Anonymised Data.</strong> Sport Endorse
+may compile, use and publish aggregated and anonymised statistics,
+benchmarks and insights derived from use of the Service (for example
+average deal values by sport, territory or category), provided that no
+individual User, Talent, Brand or Sponsorship Contract is identifiable
+and no confidential commercial term is disclosed.</p>
+<p><strong>8.11 Feedback.</strong> Where a User provides suggestions,
+feature requests or feedback about the Service, Sport Endorse may use
+them without restriction, obligation or compensation.</p>
+<p><strong>8.12 Moral Rights.</strong> To the extent permitted by
+Applicable Law, each User waives moral rights in User Content to the
+minimum extent necessary to give effect to clauses 8.4, 8.5, 8.8 and
+8.9. Where waiver is not permitted (including under the laws of certain
+EU Member States and South Africa), the User consents to the use
+described to the maximum extent permitted.</p>
+<p><strong>8.13 Infringement and Illegal Content Notices.</strong>
+Copyright, trade mark and other IP infringement notices, and notices of
+allegedly illegal content, should be sent to
+platform.legal@sportendorse.com, including the information required
+under the EU Digital Services Act and (for U.S. material) the Digital
+Millennium Copyright Act. Clause 12.7 sets out how notices are
+handled.</p>
+<h3 id="acceptable-use-and-prohibited-activities">9. Acceptable
+Use and Prohibited Activities</h3>
+<p><strong>9.1</strong> Users shall not: (i) use any robot, spider,
+scraper, crawler or other automated means to access, extract or index
+the Service, or use the Service or its Content for text and data mining
+or for training, evaluating or grounding any AI model (see clause 8.3);
+(ii) attempt to circumvent the Service or any Commission (clause 7);
+(iii) use the Service to advertise a competing platform, product or
+service; (iv) harvest personal data or contact information; (v) transmit
+malicious code or interfere with Service security or integrity; (vi)
+post or transmit Content that is unlawful, deceptive, misleading,
+harassing, defamatory, obscene, discriminatory, sexually explicit, or
+infringing, or that sexualises, endangers or exploits a minor; (vii)
+impersonate any person or misrepresent affiliation, representation
+rights or credentials; (viii) use the Service to promote products or
+services unlawful in the User's or counterparty's jurisdiction; (ix)
+misrepresent location or eligibility to access a territory-restricted
+product (clause 2.6); (x) resell, sublicense or share account access or
+Academy content outside the seats purchased; or (xi) use the Service in
+connection with match-fixing, betting on competitions in which the
+Talent participates, doping, or any conduct prohibited by a relevant
+sports governing body.</p>
+<p><strong>9.2 Communications Monitoring.</strong> To prevent
+circumvention and to maintain security, safeguarding and compliance,
+Sport Endorse may (but is not obliged to) monitor and filter in-Platform
+messages, including automated filtering of personal contact details,
+off-Platform payment solicitations and attempts to transact outside the
+Service. Monitoring is carried out in accordance with the Privacy Policy
+and Applicable Law.</p>
+<p><strong>9.3 Voluntary Investigations.</strong> Sport Endorse may
+investigate suspected breaches on its own initiative. Any such
+own-initiative investigation is conducted in good faith, in a diligent,
+objective and proportionate manner, and does not of itself deprive a
+User of the protections in clause 12.</p>
+<h3
+id="regulatory-compliance-advertising-disclosure-nil-and-restricted-categories">10.
+Regulatory Compliance: Advertising, Disclosure, NIL and Restricted
+Categories</h3>
+<p><strong>10.1 Compliance.</strong> Each User shall comply with all
+Applicable Law and applicable codes governing advertising, endorsements,
+influencer marketing and sponsorship in every jurisdiction in which
+Content is made available, including the UK CAP Code and CMA guidance,
+the U.S. FTC Endorsement Guides, the Advertising Standards Authority of
+Ireland rules, the ASA South Africa code, the EU Unfair Commercial
+Practices Directive and Digital Services Act, and applicable rules of
+sports governing bodies, teams, leagues, federations, schools and
+institutions.</p>
+<p><strong>10.2 Disclosure.</strong> The Talent and the Brand shall
+ensure that every item of sponsored Content carries a clear, prominent
+and unambiguous disclosure (for example #Ad, #Sponsored, "Paid
+Partnership with [Brand]") that complies with the rules referenced in
+clause 10.1 in every territory in which the Content is accessible.
+Failure to make required disclosures is a material breach.</p>
+<p><strong>10.3 U.S. Collegiate NIL.</strong> Where a Talent is a U.S.
+college athlete, the parties shall comply with the applicable NCAA,
+conference, institutional and state NIL rules, the framework established
+under the House settlement, and the rules and processes of the College
+Sports Commission (or any successor designated reporting entity),
+including submission of qualifying third-party NIL agreements to the NIL
+Go clearinghouse within the applicable time limit and any
+valid-business-purpose or range-of-compensation review. Reporting
+thresholds and review tiers change from time to time; it is the Talent's
+and the Brand's responsibility to apply the thresholds current at the
+date of the agreement. The Talent warrants that entry into the
+Sponsorship Contract does not jeopardise the Talent's eligibility. Sport
+Endorse may require evidence of clearance or institutional approval
+before releasing settlement, and may decline to facilitate a deal that
+it reasonably believes is non-compliant. Sport Endorse does not
+determine eligibility and gives no assurance that any deal will be
+cleared.</p>
+<p><strong>10.4 International Student-Athletes.</strong> Talent studying
+in the United States on a non-immigrant visa are responsible for
+ensuring that any commercial activity complies with their visa
+conditions and U.S. immigration law. Sport Endorse Global (Part F) is
+designed to support commercialisation with non-U.S. brands while the
+athlete is physically outside the United States, but Sport Endorse gives
+no immigration advice and no assurance as to visa compliance;
+independent immigration advice must be taken.</p>
+<p><strong>10.5 Restricted Categories.</strong> Opportunities involving
+alcohol, betting, gambling, tobacco, e-cigarettes and vaping, cannabis,
+prescription medicines, weapons, supplements, high-risk financial
+products, cryptoassets, or other categories flagged on the Service,
+require the Talent's specific prior written consent and are subject to
+territory-specific restrictions under Applicable Law, which the Brand
+warrants it has verified. Restricted categories are prohibited entirely
+in respect of Talent under 18 and under the Schools Programme (Part
+G).</p>
+<p><strong>10.6 Anti-Bribery and Financial Crime.</strong> Each User
+shall comply with applicable anti-bribery, anti-corruption,
+anti-money-laundering and counter-terrorist-financing laws, including
+the Irish Criminal Justice (Corruption Offences) Act 2018, the UK
+Bribery Act 2010, the U.S. Foreign Corrupt Practices Act, and South
+Africa's Prevention and Combating of Corrupt Activities Act and
+Financial Intelligence Centre Act.</p>
+<p><strong>10.7 Exchange Control.</strong> Users in jurisdictions with
+exchange control regimes (including South Africa) are responsible for
+their own compliance with those regimes in respect of cross-border
+receipts and payments.</p>
+<h3 id="data-protection">11. Data Protection</h3>
+<p><strong>11.1 Compliance.</strong> Sport Endorse processes personal
+data in accordance with the GDPR (Regulation (EU) 2016/679), the Irish
+Data Protection Acts 1988–2018, the UK GDPR and Data Protection Act
+2018, POPIA (South Africa, Act 4 of 2013), the California Consumer
+Privacy Act as amended by the CPRA and other U.S. state privacy laws,
+and other Applicable Law.</p>
+<p><strong>11.2 Privacy Policy.</strong> The categories of personal data
+processed, the purposes, the lawful bases, retention periods and
+data-subject rights are described in the Privacy Policy, which forms
+part of these Terms.</p>
+<p><strong>11.3 Roles.</strong> Sport Endorse acts as controller (or,
+under POPIA, responsible party) in respect of its operation of the
+Service, including account data, marketplace matching, and its own
+marketing. Where a Brand, Agency or Institutional Partner determines its
+own purposes for personal data obtained through the Service, it acts as
+an independent controller and is solely responsible for its own
+compliance, including its own privacy notices, lawful bases, retention
+and audience consents. Where Sport Endorse processes personal data on
+the documented instructions of an Institutional Partner (for example
+Academy learner records supplied by a university), Sport Endorse acts as
+processor (operator) and the parties shall enter into a data processing
+agreement in the form Sport Endorse reasonably requires.</p>
+<p><strong>11.4 Minors' Data.</strong> Personal data of Users under 18
+is processed on the basis of parental or guardian consent, or another
+lawful basis, and subject to heightened safeguards, data minimisation
+and restricted visibility. Part G contains further provisions.</p>
+<p><strong>11.5 International Transfers.</strong> Personal data may be
+transferred outside the EEA, the UK and South Africa. Where this occurs,
+Sport Endorse will rely on appropriate safeguards, including the EU
+Standard Contractual Clauses, the UK International Data Transfer
+Addendum, section 72 POPIA safeguards, and adequacy decisions where
+applicable.</p>
+<p><strong>11.6 Security and Breach.</strong> Sport Endorse maintains
+appropriate technical and organisational measures. Users must report
+suspected security incidents affecting the Service without undue delay
+to platform.legal@sportendorse.com.</p>
+<h3
+id="platform-governance-ranking-data-access-restriction-and-complaints">12.
+Platform Governance: Ranking, Data Access, Restriction and
+Complaints</h3>
+<p>This clause 12 sets out the disclosures and processes required by the
+P2B Regulation and the EU Digital Services Act. It applies to all Users,
+and the P2B-specific protections apply in particular to business users
+established or resident in the European Union.</p>
+<p><strong>12.1 Ranking — Main Parameters.</strong> Where Talent,
+Opportunities or profiles are presented in an ordered list or set of
+search results, the main parameters determining ranking, in descending
+order of general importance, are:</p>
+<blockquote>
+<p>(a) <strong>Relevance to the query and brief</strong> — the match
+between the search terms, category, sport, market, audience and budget
+specified by the Brand and the attributes recorded on the Talent
+profile. This carries the greatest weight because a marketplace is only
+useful if the results fit the brief.</p>
+<p>(b) <strong>Profile completeness and verification status</strong> —
+whether identity, representation, sport, market and channel data have
+been supplied and verified. Incomplete or unverified profiles rank lower
+because they are less reliable and more likely to waste a Brand's
+time.</p>
+<p>(c) <strong>Responsiveness and reliability</strong> — historical
+response times, acceptance and completion rates, on-time delivery, and
+cancellation or non-performance history on the Service. This weight
+reflects that a highly relevant profile is of little value if the Talent
+does not respond or does not deliver.</p>
+<p>(d) <strong>Recency of activity</strong> — how recently the User has
+been active on the Service, to avoid surfacing dormant profiles.</p>
+<p>(e) <strong>Compliance and eligibility filters</strong> — whether the
+Talent is eligible for the territory, age gate, restricted category or
+institutional rules applicable to the Opportunity. These operate
+primarily as filters rather than as weighted scores.</p>
+<p>(f) <strong>Subscription and programme status</strong> — a User's
+plan or programme may affect the range of results it can access (for
+example the markets or rosters visible to it), and Agent Partner and
+Institutional Partner rosters may be surfaced within their own programme
+surfaces. Sport Endorse does not accept payment from Talent for higher
+placement in a Brand's search results.</p>
+</blockquote>
+<p>No direct or indirect remuneration is accepted from Talent to
+influence ranking against other Talent in a Brand's results. Where any
+placement is paid, featured or sponsored, it is labelled as such. Sport
+Endorse may adjust ranking logic to improve relevance, to remedy abuse
+or manipulation, or to comply with Applicable Law, and will keep this
+description up to date. Sport Endorse is not required to disclose
+algorithms, weightings or any information that would enable manipulation
+or deception of consumers, or that constitutes a trade secret.</p>
+<p><strong>12.2 Differentiated Treatment.</strong> Sport Endorse does
+not operate as a Brand or as Talent in competition with its Users on the
+Marketplace. Where Sport Endorse or a group company delivers a Managed
+Campaign under Part H, it does so as a service provider engaged by a
+Brand, and the Talent selected in that campaign are drawn from the same
+Marketplace on the same commercial terms. Where Sport Endorse promotes
+its own Academy, Institutional or partner products on the Service, that
+promotion is identifiable as such.</p>
+<p><strong>12.3 Access to Data.</strong> Users have access, through
+their account and on request, to: the data they provide; the data
+generated through their own use of the Service (including their
+Opportunities, messages, contracts, invoices and settlement records);
+and the aggregated performance data made available in their plan. Sport
+Endorse does not provide one business user with the personal data or
+non-aggregated commercial data of another business user, except where
+required to perform a Sponsorship Contract or by Applicable Law. Users
+may export their own data in a commonly used machine-readable format on
+request.</p>
+<p><strong>12.4 Restriction, Suspension and Termination — Statement of
+Reasons.</strong> Where Sport Endorse restricts, suspends or terminates
+a business user's access to the Service, it shall provide that User with
+a statement of the reasons for the decision on a durable medium: (a)
+before or at the time the restriction or suspension takes effect; and
+(b) at least thirty (30) days before a termination takes effect. The
+statement shall refer to the specific facts or circumstances (including
+third-party notices where relevant) and the applicable ground in these
+Terms. The thirty-day termination notice period does not apply where
+Sport Endorse is subject to a legal or regulatory obligation to
+terminate, exercises a right of termination for an imperative reason
+under national law, can demonstrate that the User has repeatedly
+infringed these Terms, or where the User's conduct involves fraud,
+sanctions, a serious safeguarding concern, a serious security risk, or
+the sexualisation or endangerment of a minor. Where a restriction,
+suspension or termination is revoked, access shall be reinstated without
+undue delay.</p>
+<p><strong>12.5 Grounds.</strong> Sport Endorse may, acting reasonably
+and proportionately, restrict, suspend or terminate a User's account
+where the User: (i) materially breaches these Terms (including clauses
+7, 9 and 10) and, if capable of cure, fails to cure within fourteen (14)
+days of written notice; (ii) becomes insolvent or enters any similar
+process; (iii) is placed on a sanctions list or fails verification under
+clause 3.4; (iv) fails to pay an undisputed invoice; or (v) poses a
+brand-safety, safeguarding, legal or reputational risk to Sport Endorse
+or its Users, including in light of credible allegations of serious
+misconduct.</p>
+<p><strong>12.6 Internal Complaint-Handling System.</strong> Sport
+Endorse operates a free, internal complaint-handling system for business
+users. Complaints may be submitted to complaints@sportendorse.com and
+may concern: alleged non-compliance by Sport Endorse with these Terms or
+the P2B Regulation; technological issues relating to the Service that
+materially affect the User; or measures taken by Sport Endorse that
+materially affect the User. Sport Endorse will consider each complaint,
+having due regard to its importance and complexity, process it in a
+timely and effective manner, acknowledge it within five (5) Business
+Days, and communicate the outcome and reasons in plain and intelligible
+language, normally within thirty (30) days. Sport Endorse publishes
+annual information on the functioning and effectiveness of this
+system.</p>
+<p><strong>12.7 Notice and Action (Illegal Content).</strong> Any person
+may notify Sport Endorse of Content believed to be illegal, by email to
+platform.legal@sportendorse.com, stating the reasons, the exact
+electronic location of the Content, the notifier's name and email
+(except for certain offences against children), and a good-faith
+statement of accuracy. Sport Endorse will confirm receipt, process
+notices in a timely, diligent, non-arbitrary and objective manner,
+notify the notifier of its decision and of available redress, and give
+the affected User a statement of reasons for any removal, demotion,
+restriction, demonetisation or suspension. Users may contest such a
+decision through the internal complaint-handling system in clause 12.6
+and may have a right to refer the matter to a certified out-of-court
+dispute settlement body, without prejudice to court proceedings. Sport
+Endorse gives priority to notices from trusted flaggers and may suspend,
+after warning, the processing of notices or complaints from persons who
+frequently submit manifestly unfounded ones, and the accounts of Users
+who frequently provide manifestly illegal Content.</p>
+<p><strong>12.8 Mediation.</strong> In addition to clause 16, Sport
+Endorse identifies the following mediators as willing and able to
+mediate disputes with business users under Article 12 of the P2B
+Regulation: the Centre for Effective Dispute Resolution (CEDR);
+Mediators' Institute of Ireland accredited commercial mediators; and the
+WIPO Arbitration and Mediation Center. Sport Endorse will engage in good
+faith in any attempt at mediation with a business user. This does not
+affect a User's right to institute judicial proceedings at any time.</p>
+<p><strong>12.9 Point of Contact.</strong> The single electronic point
+of contact for Users, authorities and notifiers under the Digital
+Services Act is platform.legal@sportendorse.com. Communications may be
+in English or Irish.</p>
+<h3
+id="representations-warranties-indemnities-and-insurance">13.
+Representations, Warranties, Indemnities and Insurance</h3>
+<p><strong>13.1 Mutual Representations.</strong> Each User represents
+and warrants that: (i) it has authority to enter into this Agreement;
+(ii) its use of the Service will not violate any other agreement to
+which it is subject; (iii) the information it provides is accurate and
+complete; and (iv) it will comply with Applicable Law.</p>
+<p><strong>13.2 Brand / Agency Indemnity.</strong> Each Brand and Agency
+shall indemnify and hold harmless Sport Endorse, its affiliates and
+their directors, officers, employees and agents from and against all
+losses, damages, liabilities, costs and expenses (including reasonable
+legal fees) arising out of or relating to: (a) the Brand's or Agency's
+breach of these Terms or any Sponsorship Contract; (b) any claim by a
+Talent relating to unpaid amounts, Kill Fees or misuse of Deliverables
+or likeness (including under clause 8.6); (c) the Brand's products,
+services or marketing (including product safety, misleading advertising
+or infringement claims); (d) any breach of data protection law by the
+Brand; and (e) any breach of sanctions, anti-bribery or financial-crime
+law by the Brand.</p>
+<p><strong>13.3 Talent Indemnity.</strong> Each Talent shall indemnify
+and hold harmless Sport Endorse, its affiliates and their directors,
+officers, employees and agents from and against all losses, damages,
+liabilities, costs and expenses (including reasonable legal fees)
+arising out of or relating to: (a) the Talent's breach of these Terms or
+any Sponsorship Contract; (b) Content posted by the Talent that
+infringes third-party rights or violates Applicable Law; and (c) any
+breach by the Talent of sports governing body, team, league, school,
+institutional or NIL rules.</p>
+<p><strong>13.4 Institutional Partner Indemnity.</strong> Each
+Institutional Partner shall indemnify Sport Endorse on the same terms in
+respect of: (a) its breach of these Terms or its Institutional
+Agreement; (b) any claim arising from its own compliance determinations,
+eligibility decisions or instructions; and (c) any breach of data
+protection or child-protection law by it.</p>
+<p><strong>13.5 Warranty Disclaimer.</strong> To the maximum extent
+permitted by Applicable Law, the Service is provided on an "as is" and
+"as available" basis. Sport Endorse disclaims all implied warranties,
+including merchantability, fitness for a particular purpose, accuracy,
+uninterrupted availability and non-infringement, save to the extent
+these cannot be excluded under Applicable Law (including the Irish
+Consumer Rights Act 2022, the UK Consumer Rights Act 2015 and the South
+African Consumer Protection Act as applicable to consumer Users). Sport
+Endorse does not warrant that any Opportunity will be filled, that any
+Talent will accept, that any campaign will achieve any commercial
+result, or that any deal will be approved by a governing body,
+institution or clearinghouse.</p>
+<p><strong>13.6 Insurance.</strong> The Brand warrants that it maintains
+product liability and, where venues are used, public liability insurance
+on commercially reasonable terms. Talent performing physical activities,
+appearances or stunts under a Sponsorship Contract warrant that they
+maintain appropriate personal accident cover (or that the Brand has
+agreed to provide equivalent cover).</p>
+<h3 id="limitation-of-liability">14. Limitation of
+Liability</h3>
+<p><strong>14.1 Exclusions.</strong> Nothing in these Terms excludes or
+limits liability for: (i) death or personal injury caused by negligence;
+(ii) fraud or fraudulent misrepresentation; (iii) any other liability
+that cannot be excluded or limited under Applicable Law; or (iv) a
+User's payment obligations under clauses 5, 6 and 7.</p>
+<p><strong>14.2 Exclusion of Certain Losses.</strong> Subject to clause
+14.1, neither party shall be liable to the other for loss of profits,
+loss of revenue, loss of goodwill or reputation, loss of business
+opportunity, loss of anticipated savings, or any indirect,
+consequential, special or punitive damages.</p>
+<p><strong>14.3 Cap.</strong> Subject to clauses 14.1 and 14.2, Sport
+Endorse's aggregate liability to any User in connection with this
+Agreement, whether in contract, tort (including negligence), breach of
+statutory duty or otherwise, shall not exceed the greater of (a) €5,000,
+or (b) the total fees and Commissions actually received and retained by
+Sport Endorse from that User during the twelve (12) months preceding the
+event giving rise to liability. Where a User has contracted for a
+Managed Campaign under Part H, the cap in respect of that campaign is
+instead the fees paid by that User under the relevant Statement of
+Work.</p>
+<p><strong>14.4 Disputes Between Users.</strong> Sport Endorse is not a
+party to Sponsorship Contracts and, save for its facilitation role under
+clauses 5, 6 and 16, has no liability for the acts or omissions of
+Users. Each User releases Sport Endorse from claims arising out of
+disputes with other Users, to the maximum extent permitted by Applicable
+Law.</p>
+<h3 id="term-and-termination">15. Term and
+Termination</h3>
+<p><strong>15.1 Term.</strong> This Agreement commences on registration
+and continues until terminated in accordance with its terms.</p>
+<p><strong>15.2 Termination by User.</strong> A User may terminate by
+closing its account, subject to (a) completing any open Sponsorship
+Contracts; (b) clauses 6 and 7; and (c) any minimum Subscription term.
+Consumer Users retain the statutory rights in clause 5.14. South African
+Users who are consumers under the Consumer Protection Act may cancel a
+fixed-term agreement on twenty (20) business days' written notice,
+subject to a reasonable cancellation penalty as permitted by that
+Act.</p>
+<p><strong>15.3 Termination and Suspension by Sport Endorse.</strong>
+Sport Endorse may restrict, suspend or terminate an account on the
+grounds and following the process in clause 12.4 and 12.5.</p>
+<p><strong>15.4 Consequences of Termination.</strong> Termination does
+not relieve Users of accrued obligations (including payment of
+Commission, Kill Fees, liquidated damages, and completion of Confirmed
+Opportunities), and shall not affect the Tail Period. Clauses 5 (in
+respect of accrued sums), 6, 7, 8, 11, 12.3, 12.4, 13, 14, 15.4, 16, 17
+and 18 survive termination. On termination, Sport Endorse will retain
+data as set out in the Privacy Policy and as required by Applicable Law
+(including for DAC7 and tax records).</p>
+<h3 id="dispute-resolution">16. Dispute Resolution</h3>
+<p><strong>16.1 Good-Faith Negotiation.</strong> The parties shall first
+seek to resolve any dispute through good-faith discussions, escalated to
+senior management, for a period of at least twenty (20) Business Days
+from written notice of the dispute. For business users in the EU, the
+internal complaint-handling system in clause 12.6 is available first and
+free of charge.</p>
+<p><strong>16.2 Mediation.</strong> Failing resolution, the dispute
+shall be referred to mediation under the Mediation Rules of the Centre
+for Effective Dispute Resolution (CEDR) or another mutually agreed
+mediator experienced in commercial, sports and digital media disputes
+(see also clause 12.8). The seat of mediation shall be Dublin, Ireland;
+the language shall be English; each party shall bear its own costs;
+mediator fees shall be shared equally.</p>
+<p><strong>16.3 Arbitration.</strong> Failing mediation, any dispute
+shall be finally resolved by binding arbitration under the Rules of
+Arbitration Ireland (or, where the amount in dispute exceeds €250,000 or
+a party reasonably requests it, the Rules of the London Court of
+International Arbitration). The seat shall be Dublin, Ireland. The
+language shall be English. A sole arbitrator shall be appointed, save
+that three arbitrators shall be appointed where the amount in dispute
+exceeds €500,000. The award shall be final and binding, and enforceable
+in any court of competent jurisdiction under the New York
+Convention.</p>
+<p><strong>16.4 Court Carve-Outs.</strong> Notwithstanding the above,
+either party may apply to a court of competent jurisdiction for: (i)
+injunctive or equitable relief (including to restrain circumvention,
+breach of confidence or IP infringement); (ii) enforcement of an
+arbitral award; or (iii) proceedings to recover undisputed liquidated
+amounts.</p>
+<p><strong>16.5 Consumer Users.</strong> Where a User is a consumer and
+Applicable Law (including EU, Irish, UK and South African consumer law)
+requires that the User be able to bring or defend proceedings in their
+home courts and under their home law in respect of mandatory consumer
+protections, nothing in this clause overrides those rights. EU consumers
+may also use the European Commission's online dispute resolution
+platform and their national alternative dispute resolution bodies.</p>
+<p><strong>16.6 Class Action Waiver.</strong> To the extent permitted by
+Applicable Law, Users agree to bring claims in their individual capacity
+only, and not as a plaintiff or class member in any purported class,
+collective or representative action. This clause does not apply to EU,
+UK or South African consumers to the extent it would be unenforceable,
+and does not affect representative actions permitted under Article 14 of
+the P2B Regulation or Directive (EU) 2020/1828.</p>
+<p><strong>16.7 Limitation Period.</strong> To the extent permitted by
+Applicable Law, any claim arising out of or relating to this Agreement
+must be brought within one (1) year of the date on which the claimant
+first became (or, acting reasonably, ought to have become) aware of the
+facts giving rise to the claim.</p>
+<h3 id="governing-law-and-jurisdiction">17. Governing Law and
+Jurisdiction</h3>
+<p><strong>17.1 Governing Law.</strong> These Terms and any
+non-contractual obligations arising out of or in connection with them
+shall be governed by the laws of Ireland, without regard to
+conflict-of-laws rules.</p>
+<p><strong>17.2 Jurisdiction.</strong> Subject to clause 16 and to
+mandatory consumer rights, the parties submit to the non-exclusive
+jurisdiction of the courts of Ireland. Sport Endorse may alternatively
+bring proceedings against a User in the User's home jurisdiction
+(including any court of competent jurisdiction in the United Kingdom,
+any U.S. state, any EU Member State, or South Africa) for the
+enforcement of these Terms, any arbitral award or any injunctive
+relief.</p>
+<p><strong>17.3 Jurisdictional Acknowledgements.</strong> Users
+acknowledge that these Terms are intended to be enforceable in, and
+compliant with, the laws of Ireland, the United Kingdom, the European
+Union, the United States and South Africa. Schedule 3 sets out specific
+jurisdictional acknowledgements which, where applicable, form part of
+these Terms.</p>
+<h3 id="general">18. General</h3>
+<p><strong>18.1 Assignment.</strong> A User may not assign or transfer
+this Agreement without Sport Endorse's prior written consent. Sport
+Endorse may assign to an affiliate, group company or an acquirer of all
+or substantially all of its business.</p>
+<p><strong>18.2 Entire Agreement.</strong> These Terms (together with
+the Schedules, the User's Subscription Plan or Order Form, any Statement
+of Work or Institutional Agreement, the Privacy Policy and any written
+Sponsorship Contract) constitute the entire agreement between the
+parties and supersede all prior understandings, including the April 2026
+Terms. No party has relied on any statement not set out in the Terms.
+Nothing in this clause limits liability for fraudulent
+misrepresentation.</p>
+<p><strong>18.3 Force Majeure.</strong> Neither party shall be liable
+for any delay in, or failure of, performance caused by events beyond its
+reasonable control (including war, terrorism, civil unrest, acts of
+government, pandemic or epidemic, utility or internet failure,
+cyberattack, industrial action, or fire or flood). The affected party
+shall give prompt notice and use reasonable efforts to mitigate. If a
+Force Majeure event continues for more than sixty (60) days, either
+party may terminate affected Sponsorship Contracts on written
+notice.</p>
+<p><strong>18.4 Severability.</strong> If any provision is held invalid
+or unenforceable by a court of competent jurisdiction, the remainder of
+these Terms shall remain in full force and effect, and wherever possible
+the invalid provision shall be read down rather than struck out, to the
+minimum extent necessary to give the maximum permissible effect to the
+parties' intention.</p>
+<p><strong>18.5 No Waiver.</strong> A failure or delay by a party to
+exercise any right is not a waiver of that right or of any other
+right.</p>
+<p><strong>18.6 Third-Party Rights.</strong> Save as expressly provided
+(including indemnified persons under clause 13, who may enforce the
+indemnities in their favour), no third party shall have rights under the
+Contracts (Rights of Third Parties) Act 1999 (UK) or any equivalent
+legislation.</p>
+<p><strong>18.7 Notices.</strong> Notices to Sport Endorse must be sent
+to platform.legal@sportendorse.com. Notices to Users may be delivered to
+the email address on the User's account and shall be deemed received on
+the Business Day after transmission.</p>
+<p><strong>18.8 Language.</strong> These Terms are drafted in English.
+Translations into other languages (including Spanish, French, German and
+Italian) are provided for convenience only, and the English text
+prevails.</p>
+<p><strong>18.9 Electronic Signature.</strong> The parties agree that
+electronic acceptance and signature of these Terms and of any
+Sponsorship Contract is valid and binding, as contemplated by the Irish
+Electronic Commerce Act 2000, the EU eIDAS Regulation (910/2014), the UK
+Electronic Communications Act 2000, the U.S. ESIGN Act and Uniform
+Electronic Transactions Act, and the South African Electronic
+Communications and Transactions Act 2002.</p>
+<p><strong>18.10 Relationship.</strong> Nothing in these Terms creates a
+partnership, employment, agency or joint-venture relationship between
+any User and Sport Endorse or between Users.</p>
+<p><strong>18.11 Third-Party Services.</strong> The Service integrates
+with third-party APIs and services (including Stripe, Meta/Facebook,
+Instagram, TikTok, YouTube, X, LinkedIn) and hosting and infrastructure
+providers (including Amazon Web Services). Use of third-party services
+is subject to those providers' own terms, and Sport Endorse is not
+responsible for their acts, omissions, availability or changes to their
+terms or APIs.</p>
+<p><strong>18.12 Contact.</strong> For queries or to report a breach of
+these Terms, contact platform.hello@sportendorse.com (general),
+platform.legal@sportendorse.com (legal, illegal content and IP notices),
+subscriptions@sportendorse.com (billing) or complaints@sportendorse.com
+(business-user complaints).</p>
+<h2 id="part-b-additional-terms-for-brands-and-agencies">PART B
+— ADDITIONAL TERMS FOR BRANDS AND AGENCIES</h2>
+<p><strong>B1 Subscription Plans.</strong> Brands and Agencies select a
+Subscription Plan and pay Subscription Fees in advance for the
+applicable term, on the terms in clauses 5.2 and 5.3. Plans are
+region-specific and roster-specific; a plan grants access only to the
+markets, rosters and entitlements stated in it. Upgrades take effect
+immediately with a pro-rata charge; downgrades take effect at the next
+renewal.</p>
+<p><strong>B2 Accurate Posting.</strong> Brands must not post
+Opportunities they are not willing and able to perform. Repeated
+cancellation of Confirmed Opportunities, or posting of misleading
+Opportunities, may result in restriction under clause 12.4 and, at Sport
+Endorse's reasonable discretion, a requirement to pay in advance rather
+than on extended payment terms before posting further Opportunities.</p>
+<p><strong>B3 Content Use Strictly Within Agreed Rights.</strong> Brands
+may only use Deliverables within the scope of the licence agreed under
+clause 8.5, and may not create synthetic or AI-generated depictions of
+Talent except under clause 8.6. Any use beyond scope, after non-payment,
+or after termination is a material breach and copyright infringement and
+will entitle the Talent and Sport Endorse to all remedies available at
+law.</p>
+<p><strong>B4 Agency Role.</strong> Agencies must clearly identify the
+Talent they represent and the scope of their authority, and warrant that
+they hold a valid mandate to contract on the Talent's behalf. An Agency
+is jointly and severally liable with the Talent it represents for
+obligations under this Agreement to the extent it transacts on the
+Talent's behalf, including in respect of clause 7.</p>
+<p><strong>B5 Product and Safety Responsibility.</strong> Each Brand
+represents and warrants that any product or service which is the subject
+of an Opportunity, and any Gift-in-Kind, complies with Applicable Law,
+including product safety, consumer protection, advertising disclosure
+and age-restricted category rules.</p>
+<p><strong>B6 Venues and Live Engagements.</strong> Brands are
+responsible for the safety, security and fitness-for-purpose of any
+venue at which a Talent is required to appear, and shall maintain
+appropriate public liability and (where relevant) employer's liability
+insurance.</p>
+<p><strong>B7 Payment Methods.</strong> Subscription Fees and Once-Off
+Campaign fees are paid up front at the time of subscription, purchase or
+renewal, by card or other method accepted by Sport Endorse (via Stripe
+or an equivalent licensed provider). Deal Payments, Commissions, Kill
+Fees and liquidated damages are invoiced under clause 5.9 and payable on
+the terms stated on the invoice. Payment processing costs are borne by
+the Brand under clause 5.11.</p>
+<p><strong>B8 Age Restrictions.</strong> No Brand may post an
+Opportunity knowingly targeted at, or requiring performance by, a Talent
+under the age of sixteen (16). Opportunities requiring performance by
+Talent aged 16–17 (or minors under local law) are permitted only with
+demonstrable parental or guardian consent, only in permitted categories,
+and shall comply with applicable child-protection and
+working-with-children laws. Part G applies to the Schools Programme.</p>
+<p><strong>B9 Success Stories.</strong> The Brand acknowledges and
+consents to Sport Endorse's Success Story rights under clause 8.9 and
+shall review drafts in good faith within the period stated there.</p>
+<p><strong>B10 Brand Marks.</strong> Each Brand grants Sport Endorse a
+non-exclusive, royalty-free licence to display its name and logo on the
+Service and in customer lists for the duration of its subscription,
+subject to any brand guidelines the Brand supplies. A Brand may withdraw
+this licence for future use on written notice.</p>
+<h2 id="part-c-additional-terms-for-talent">PART C — ADDITIONAL
+TERMS FOR TALENT</h2>
+<p><strong>C1 Independent Contractor.</strong> The Talent engages with
+Brands as an independent contractor. No employment, agency, partnership
+or joint-venture relationship is created between the Talent and Sport
+Endorse or between the Talent and a Brand by virtue of using the
+Service.</p>
+<p><strong>C2 Access and Commission.</strong> Talent access to the
+Marketplace is provided free of charge: there is no joining fee,
+subscription or listing fee for Talent unless a separate paid product
+(for example an Academy licence or Sport Endorse Global) is expressly
+purchased. Sport Endorse is instead remunerated by Commission, which is
+<strong>deducted from the Deal Payment before it is settled to the
+Talent</strong>, at the band rates in clause 5.4. The Talent will be
+shown the applicable rate and the estimated net amount before accepting
+an Opportunity (clause 5.4.3), and will receive a statement for each
+deduction (clause 5.12.1). Commission is charged per Sponsorship
+Contract and may be aggregated across related engagements under clause
+5.4.4.</p>
+<p><strong>C3 Eligibility Warranties.</strong> The Talent warrants that:
+(i) performance of any Sponsorship Contract will not breach any contract
+to which the Talent is subject (team, league, federation, school,
+institution, existing endorsement or exclusivity); (ii) the Talent has
+obtained all necessary approvals from any team, league, federation,
+school or institution, including NIL clearance and reporting for U.S.
+college athletes under clause 10.3; and (iii) the Talent is duly
+authorised to grant the image, likeness and content rights contemplated
+in these Terms.</p>
+<p><strong>C4 Performance Obligations.</strong> The Talent shall: (i)
+deliver Deliverables by the deadlines and to the specifications set out
+in the Sponsorship Contract; (ii) ensure all posted Content is genuine,
+accurate and not misleading, and carries all required disclosures; (iii)
+not remove or take down sponsored Content before the end of the agreed
+posting period; and (iv) cooperate in good faith with reasonable Brand
+change requests that fall within the agreed scope of clause 4.3.</p>
+<p><strong>C5 Gift-in-Kind Commitment.</strong> The Talent acknowledges
+that acceptance of Gift-in-Kind commits the Talent to the Deliverables
+in the Sponsorship Contract, and that non-performance triggers the
+return and liquidated damages remedies in clause 6.4.</p>
+<p><strong>C6 Brand Safety and Morality.</strong> During the term of any
+Sponsorship Contract, and for ninety (90) days thereafter, the Talent
+shall not engage in conduct that is materially likely to bring the Brand
+or Sport Endorse into serious disrepute or which would reasonably be
+expected to cause significant reputational harm to the Brand. Breach may
+result in forfeiture of unpaid Deal Payment, a claim for damages, and
+account restriction under clause 12.4.</p>
+<p><strong>C7 Disclosure Compliance.</strong> The Talent shall comply
+with all advertising-disclosure rules in every jurisdiction where the
+Content is accessible, as set out in clause 10.</p>
+<p><strong>C8 Exclusivity.</strong> Exclusivity, if any, shall be as
+specifically set out in the Sponsorship Contract. Absent express
+agreement, no category exclusivity applies, but the Talent shall not
+include conflicting brand content within the same Deliverables.</p>
+<p><strong>C9 Promotional Image Rights.</strong> The Talent acknowledges
+and consents to Sport Endorse's limited use of name, image, likeness and
+profile Content to promote the Service, as set out in clause 8.8, and to
+the protections against synthetic media in clause 8.6.</p>
+<p><strong>C10 Tax and Settlement Data.</strong> The Talent is solely
+responsible for its own tax, social security, VAT/GST and other filings
+in every relevant jurisdiction, and shall provide Sport Endorse with the
+bank, identification and tax-residence documentation reasonably
+requested for settlement, withholding and reporting purposes under
+clauses 3.4, 5.12 and 5.13.</p>
+<p><strong>C11 Minors.</strong> Where the Talent is a minor under the
+laws of the Talent's home jurisdiction, a parent or legal guardian must
+co-sign the account and each Sponsorship Contract and shall be jointly
+and severally liable for the Talent's obligations. Sport Endorse may
+require verification of parental or guardian identity. Part G applies
+additionally in South Africa.</p>
+<p><strong>C12 Anti-Circumvention Acknowledgement.</strong> The Talent
+acknowledges that clause 7 applies to the Talent and that engaging with
+a Brand introduced through the Service on an off-Platform basis during
+the Tail Period constitutes a breach of these Terms.</p>
+<p><strong>C13 Success Stories.</strong> The Talent acknowledges and
+consents to Sport Endorse's Success Story rights under clause 8.9 and
+shall review drafts in good faith within the period stated there.</p>
+<p><strong>C14 Agent Representation.</strong> Where the Talent is
+represented by an Agent Partner, the Talent authorises that Agent
+Partner to act on its behalf on the Service to the extent notified, and
+acknowledges that share-back under clause 5.8 is paid from Sport
+Endorse's Commission and does not reduce the Talent's Deal Payment.</p>
+<h2 id="part-d-agent-partner-programme">PART D — AGENT PARTNER
+PROGRAMME</h2>
+<p><strong>D1 Scope.</strong> Part D applies to Agencies that subscribe
+to the Agent Partner Programme. Parts A and B also apply.</p>
+<p><strong>D2 Tiers and Fees.</strong> Agent Partner subscriptions are
+tiered by roster size and by region, on quarterly or annual terms, as
+published on the Service or as set out in an Order Form. Movement
+between tiers takes effect at the next renewal unless otherwise agreed.
+Roster size is measured by the number of Talent the Agent Partner
+represents and lists on the Service.</p>
+<p><strong>D3 Roster Warranty.</strong> The Agent Partner warrants that
+it holds a current, valid mandate to represent each Talent it lists,
+that each listed Talent has consented to being listed and to the
+processing of their personal data for that purpose, and that it will
+remove any Talent whose mandate ends within ten (10) Business Days.
+Sport Endorse may require evidence of mandate and may remove listings
+where evidence is not provided.</p>
+<p><strong>D4 Commission Share-Back.</strong> Where an Agent Partner's
+tier confers commission share-back, Sport Endorse will pay the Agent
+Partner the stated percentage of the Commission actually received and
+retained by Sport Endorse in respect of qualifying deals concluded
+on-Platform with Talent on the Agent Partner's roster during the
+subscription term. Share-back is calculated and paid in arrears,
+normally quarterly, against a self-billing statement issued by Sport
+Endorse or an invoice raised by the Agent Partner. Share-back is not
+payable on: Commission not actually collected; deals concluded
+off-Platform; Gift-in-Kind; Kill Fees; Subscription Fees; Managed
+Campaign or Additional Services fees; Academy or institutional fees; or
+deals in respect of which the Agent Partner is in breach of these Terms.
+Share-back never reduces the Deal Payment settled to Talent.</p>
+<p><strong>D5 Suspension of Share-Back.</strong> Sport Endorse may
+withhold or set off share-back against amounts owed by the Agent
+Partner, and may suspend share-back during any period in which the Agent
+Partner's subscription is unpaid or its account is restricted under
+clause 12.4.</p>
+<p><strong>D6 Agent Obligations to Talent and Conflict of
+Interest.</strong> The Agent Partner remains solely responsible to its
+Talent for its own agency obligations, fees and fiduciary duties. The
+Agent Partner acknowledges that Commission is deducted from the Talent's
+Deal Payment under clause 5.4, and that share-back is therefore a
+payment to the Agent Partner derived from sums that would otherwise have
+been received by its own client. The Agent Partner shall accordingly
+disclose the existence, basis and amount of share-back to each affected
+Talent, in writing and in advance, and shall obtain the Talent's
+informed consent where required by Applicable Law, by any fiduciary duty
+owed, or by the rules of any relevant governing body or agent-regulation
+regime. The Agent Partner warrants that receipt of share-back does not
+breach any such rule or duty, and indemnifies Sport Endorse under clause
+13.2 in respect of any claim arising from a failure to disclose.</p>
+<p><strong>D7 Anti-Circumvention.</strong> Clause 7 applies to Agent
+Partners and to Talent on their rosters, subject to the carve-out in
+clause 7.6(ii).</p>
+<h2 id="part-e-sport-endorse-academy">PART E — SPORT ENDORSE
+ACADEMY</h2>
+<p><strong>E1 Scope.</strong> Part E applies to all Users accessing the
+Academy, whether as an individual learner, under an institutional
+licence, or as part of another product.</p>
+<p><strong>E2 Nature of the Academy.</strong> The Academy is a
+non-academic education programme. It does not confer any academic
+credit, degree, professional qualification, accreditation or licence,
+and completion does not guarantee any commercial opportunity, deal,
+income, eligibility, selection or outcome. Content is general
+educational information and is not legal, tax, financial, immigration,
+eligibility or compliance advice (clause 2.10).</p>
+<p><strong>E3 Licence to Learners.</strong> Sport Endorse grants each
+authorised learner a personal, limited, non-exclusive, non-transferable,
+revocable licence to access and use the Academy content for that
+learner's own educational purposes for the duration of the licence term.
+Learners may not share credentials, record, download (except where a
+download function is expressly offered), reproduce, redistribute,
+publish, resell, sublicense, translate, adapt or use the Academy content
+to build or train any competing course, product or model. Each seat is
+for one named individual.</p>
+<p><strong>E4 Institutional Licences.</strong> Where an Institutional
+Partner purchases Academy access, licences are granted per seat or per
+cohort as stated in the Order Form. The Institutional Partner is
+responsible for allocating seats to named individuals, for withdrawing
+access when an individual ceases to be eligible, and for ensuring it has
+the lawful basis and consents required to provide learner personal data
+to Sport Endorse. Licences are non-transferable between institutions and
+unused seats do not carry over between terms unless the Order Form says
+so.</p>
+<p><strong>E5 Live and On-Campus Sessions.</strong> Where the Order Form
+includes live or on-campus sessions, the number, format, duration and
+delivery window are as stated in that Order Form. Sessions cancelled by
+the Institutional Partner with fewer than fourteen (14) days' notice may
+be charged in full, and travel and accommodation costs already committed
+are recoverable. Sport Endorse may substitute an equally qualified
+presenter, or deliver online where travel is prevented by circumstances
+beyond its reasonable control.</p>
+<p><strong>E6 Learner Records and Progress Data.</strong> Where Sport
+Endorse processes learner records on behalf of an Institutional Partner,
+it acts as processor under clause 11.3. Completion and progress data may
+be reported to the Institutional Partner where the learner has been
+informed of this and it is lawful.</p>
+<p><strong>E7 Availability and Changes.</strong> The Academy curriculum
+is updated periodically. Sport Endorse may add, amend, replace or retire
+lessons and modules to keep content current, provided it does not
+materially reduce the scope of a licence already paid for during its
+current term.</p>
+<p><strong>E8 Fees and Refunds.</strong> Academy fees are payable in
+advance and are non-refundable once access has been granted, save as
+required by Applicable Law or where Sport Endorse fails to make the
+Academy available for a material part of the licence term. Consumer
+withdrawal rights under clause 5.14 apply to individual consumer
+learners.</p>
+<h2 id="part-f-university-and-institutional-partners">PART F —
+UNIVERSITY AND INSTITUTIONAL PARTNERS</h2>
+<p><strong>F1 Scope and Structure.</strong> Part F applies to
+universities, colleges, athletic departments and conferences contracting
+with Sport Endorse. Institutional engagement is structured as four
+commercially independent products, each sold under its own contract and
+priced according to its own delivery economics: (a) the Academy (Part
+E); (b) the Platform Partnership; (c) the Marketplace (Parts A to C);
+and (d) Sport Endorse Global. No cash, value or earmarked pool crosses
+between the institutional-services products and the Marketplace.</p>
+<p><strong>F2 Platform Partnership.</strong> The Platform Partnership is
+a premium institutional tier providing access, visibility and support.
+It is priced as a flat annual fee, not metered by student-athlete
+headcount. For the avoidance of doubt, the Platform Partnership
+expressly does not include, and Sport Endorse does not offer, guarantee
+or represent: (i) any guaranteed number of deals; (ii) any guaranteed
+deal value or revenue to any student-athlete or to the institution;
+(iii) any direction of which brands are introduced to which
+student-athletes; (iv) any subsidy, funding or supplementation of
+athlete compensation by Sport Endorse or by the institution through
+Sport Endorse; or (v) any recruiting inducement or benefit contingent on
+enrolment, transfer, athletic performance or continued
+participation.</p>
+<p><strong>F3 No Pay-for-Play and No Institutional Funding of Athlete
+Compensation.</strong> No portion of any payment made by an
+Institutional Partner to Sport Endorse (whether for the Academy, the
+Platform Partnership, Sport Endorse Global, workshops or any other
+institutional service) is or may be applied, directly or indirectly, to
+compensation payable to any student-athlete. Brand-funded Deal Payments
+on the Marketplace are funded solely by the paying Brand on its own
+commercial rationale.</p>
+<p><strong>F4 Arm's-Length Marketplace.</strong> On the Marketplace,
+Sport Endorse acts as a marketing-services facilitator. The Brand
+selects the Talent on its own commercial rationale, the Brand is the
+originating source of compensation, and Sport Endorse's economic
+interest is limited to Commission and platform fees. The Institutional
+Partner does not direct which brands are introduced to which
+student-athletes.</p>
+<p><strong>F5 Compliance Responsibilities.</strong> The Institutional
+Partner is responsible for its own compliance determinations, including
+eligibility, institutional policy, conference rules, state NIL law,
+Title IX, FERPA and any applicable participation agreement. Sport
+Endorse will, where the Order Form provides for it, supply deal
+documentation and reporting extracts to support the institution's own
+compliance and reporting obligations, and will cooperate reasonably with
+clearinghouse submission processes. Sport Endorse does not make
+eligibility determinations and gives no assurance that any deal will be
+approved (clause 10.3).</p>
+<p><strong>F6 Sport Endorse Global.</strong> Sport Endorse Global
+provides access and best-efforts support enabling international
+student-athletes to commercialise with Sport Endorse's non-U.S. brand
+portfolio while physically outside the United States. It is priced on a
+per-athlete annual basis on the athlete side, with an optional
+institutional subsidy pool where the Order Form provides for one,
+subject always to clause F3. Sport Endorse gives no immigration, tax or
+eligibility advice and no assurance as to visa compliance (clause
+10.4).</p>
+<p><strong>F7 Endowed or Prepaid Funding.</strong> Where an institution
+funds Academy or Platform Partnership services through an endowment,
+gift or prepayment vehicle, the funds may be applied only to those
+university-facing services and may not be applied to athlete
+compensation. Any such arrangement shall be documented in the
+Institutional Agreement.</p>
+<p><strong>F8 Term and Notice.</strong> Institutional Agreements run for
+the term stated in the Order Form. Where an institution's participation
+in a governing-body framework changes, or a change in Applicable Law
+materially affects the lawfulness of a product, either party may on
+notice suspend or terminate the affected product without penalty, and
+prepaid unused fees for that product shall be refunded pro rata.</p>
+<p><strong>F9 Publicity.</strong> Neither party shall issue public
+statements naming the other without prior written approval, save that
+Sport Endorse may list the institution's name and logo as a customer
+with the institution's prior written consent.</p>
+<h2 id="part-g-schools-programme-and-minors-south-africa">PART G
+— SCHOOLS PROGRAMME AND MINORS (SOUTH AFRICA)</h2>
+<p><strong>G1 Scope and Priority.</strong> Part G applies to the Schools
+Programme offered in South Africa and to any other engagement involving
+learners under 18. Where Part G conflicts with any other Part, Part G
+prevails. The Schools Programme is a school partnership. It is not a
+marketplace sold to learners.</p>
+<p><strong>G2 Contracting Parties.</strong> Sport Endorse contracts with
+the school. No learner under 18 may register for an account, hold a
+wallet, contract, transact, receive payment or accept Gift-in-Kind
+independently. Any participation by a learner requires: (i) the school's
+written authorisation; (ii) the prior written consent of the learner's
+parent or legal guardian, who co-signs and is jointly and severally
+liable; and (iii) the learner's own age-appropriate assent. Consent may
+be withdrawn at any time without penalty to the learner.</p>
+<p><strong>G3 Purpose.</strong> The programme's core purpose is
+education and personal development. Any commercial element is optional,
+occasional and fully consented, and must never be presented to a learner
+as a target, entitlement, incentive or condition of selection, team
+place or bursary.</p>
+<p><strong>G4 Prohibited Categories and Practices.</strong> No
+Opportunity involving a learner may relate to alcohol, betting or
+gambling, tobacco, vaping or e-cigarettes, cannabis, weapons,
+supplements, high-risk financial products, cryptoassets, dating,
+cosmetic procedures, weight-loss products or any age-restricted or
+otherwise unsuitable category. No Opportunity may involve
+performance-based payment, pay-for-play, recruitment or transfer
+inducement, exclusivity binding beyond school-leaving,
+appearance-related or body-image content, or unsupervised one-to-one
+contact between a Brand representative and a learner.</p>
+<p><strong>G5 Brand Vetting and Supervision.</strong> Brands must be
+vetted and approved by Sport Endorse and the school before any contact
+with a learner. All communications concerning a learner are routed
+through the school and the parent or guardian. A responsible adult
+nominated by the school must supervise any shoot, appearance or
+activation involving a learner.</p>
+<p><strong>G6 Payments.</strong> Any consideration payable in respect of
+a learner is paid to the parent or guardian, or to a school-designated
+account or trust, as agreed in writing, and never directly to the
+learner. The parties are responsible for their own tax treatment.</p>
+<p><strong>G7 Legal Framework.</strong> The programme operates subject
+to South African law, including POPIA (with particular regard to the
+processing of children's personal information and the requirement for
+competent-person consent), the Children's Act 38 of 2005, the
+child-labour and child-performance provisions of the Basic Conditions of
+Employment Act, the Consumer Protection Act, and the rules of SA Rugby,
+provincial unions and the relevant schools' governing bodies. The school
+warrants that it holds the authority to enter the programme and that
+participation does not breach any school, union or federation rule.</p>
+<p><strong>G8 Safeguarding.</strong> Sport Endorse maintains a
+safeguarding policy for the programme, including vetting of personnel
+who have contact with learners, a reporting route for concerns, data
+minimisation and restricted visibility of learner data, and prohibition
+of the publication of learner contact details. Any safeguarding concern
+must be reported immediately to safeguarding@sportendorse.com and, where
+required, to the relevant statutory authority.</p>
+<p><strong>G9 Data and Imagery.</strong> Learner personal information is
+processed only for programme purposes, on the basis of guardian consent,
+and is retained no longer than necessary. Learner images may be used
+only for purposes expressly consented to; the deemed-approval mechanism
+in clause 8.9 does not apply, and no learner image may be used in Sport
+Endorse's general marketing without specific written guardian consent,
+which may be withdrawn.</p>
+<p><strong>G10 Independent Advice.</strong> The school and each parent
+or guardian is advised to take independent legal and safeguarding advice
+before participating.</p>
+<p><strong>G11 Programme Availability.</strong> The Schools Programme is
+offered only where the platform mechanics described in this Part —
+guardian-managed accounts, brand vetting and school authorisation — are
+operative. Sport Endorse will not accept a learner into a commercial
+element of the programme before those mechanics are in place for that
+school.</p>
+<h2 id="part-h-managed-campaigns-and-additional-services">PART H
+— MANAGED CAMPAIGNS AND ADDITIONAL SERVICES</h2>
+<p><strong>H1 Scope.</strong> Part H applies where Sport Endorse agrees
+to deliver a Managed Campaign or Additional Services under a Statement
+of Work. Additional Services may include campaign strategy and
+management, talent sourcing and negotiation, creative and content
+production, photography and videography, public relations and
+communications, events, activations and competitions, and media planning
+and buying.</p>
+<p><strong>H2 Statement of Work.</strong> Each engagement is governed by
+a Statement of Work stating the scope, deliverables, timelines, fees,
+expenses, approval process, assumptions and any third-party costs. Work
+outside the agreed scope is chargeable and requires a written change
+order. Where a Statement of Work conflicts with these Terms, the
+Statement of Work prevails in respect of that engagement.</p>
+<p><strong>H3 Fees, Expenses and Pass-Through Costs.</strong> Management
+fees are as stated in the Statement of Work and are charged in addition
+to Commission on any Deal Payments within the campaign, unless expressly
+stated otherwise. Third-party costs (including talent fees, production,
+venue, travel, media spend and licence fees) are either pre-approved and
+passed through at cost plus any stated handling fee, or invoiced
+directly to the Brand. Media spend is payable in advance of booking
+unless credit terms are agreed in writing. Cancellation of a campaign
+after commitment of third-party costs leaves those costs payable in
+full.</p>
+<p><strong>H4 Sport Endorse's Role.</strong> In a Managed Campaign,
+Sport Endorse acts as service provider to the Brand and may contract
+with Talent and suppliers as principal or as disclosed agent, as stated
+in the Statement of Work. This does not make Sport Endorse a party to
+any other User's Sponsorship Contract.</p>
+<p><strong>H5 Approvals and Client Responsibilities.</strong> The Brand
+shall provide brand assets, guidelines, regulatory constraints and
+approvals promptly. Delays in Brand approval that affect the timeline do
+not relieve the Brand of fee obligations and may result in rescheduling
+and additional cost. The Brand is responsible for the accuracy and
+legality of claims it requires to be made about its products.</p>
+<p><strong>H6 Intellectual Property in Produced Assets.</strong> Subject
+to payment in full, Sport Endorse assigns or licenses to the Brand the
+rights in campaign assets produced under the Statement of Work to the
+extent stated in it. Rights in Talent likeness and performance remain
+subject to clauses 8.5 and 8.6 and to the underlying Sponsorship
+Contract. Sport Endorse retains ownership of its own pre-existing
+materials, tools, templates and methodologies, and grants the Brand a
+licence to use them to the extent embedded in the deliverables.</p>
+<p><strong>H7 Third-Party Suppliers.</strong> Where Sport Endorse
+engages third-party suppliers, it will select and manage them with
+reasonable care but is not liable for their acts or omissions beyond the
+remedies it can obtain from them, save where Sport Endorse contracts as
+principal and the Statement of Work provides otherwise.</p>
+<p><strong>H8 Results.</strong> Sport Endorse gives no warranty as to
+reach, engagement, conversion, sales or other campaign outcomes. Any
+forecasts, benchmarks or projections are estimates only.</p>
+<h2 id="part-i-websites-apps-and-online-content">PART I —
+WEBSITES, APPS AND ONLINE CONTENT</h2>
+<p><strong>I1 Scope.</strong> Part I applies to all visitors to the
+Sport Endorse websites (including localised language versions), the Help
+Centre, the blog, podcast and other published content, and to users of
+the Sport Endorse iOS and Android applications, whether or not they hold
+an account.</p>
+<p><strong>I2 Licence to Use.</strong> Sport Endorse grants a limited,
+revocable, non-exclusive, non-transferable licence to access and use the
+websites and apps for personal or internal business purposes. All other
+rights are reserved, including under clauses 8.1 to 8.3.</p>
+<p><strong>I3 Mobile Applications.</strong> Use of the apps is
+additionally subject to the terms of the relevant app store. The licence
+granted is a licence to use the app on devices the User owns or
+controls, in accordance with the applicable app store rules. Where
+required by Apple's terms, Apple is a third-party beneficiary of those
+licence terms and may enforce them, but Apple has no responsibility for
+the app, its content, maintenance, support or any claim relating to it,
+and Sport Endorse (not Apple) is responsible for addressing any claim
+relating to the app. The User warrants it is not located in a territory
+subject to a U.S. Government embargo or designated as a
+terrorist-supporting country and is not on any U.S. Government
+restricted-party list.</p>
+<p><strong>I4 Help Centre and Published Content.</strong> The Help
+Centre, blog, podcast, guides, comparison pages, benchmarks, rate
+guidance, FAQ content and similar materials are provided for general
+information. They may become out of date, may not apply to a User's
+circumstances, and do not constitute advice (clause 2.10). Comparative
+statements about other providers are based on publicly available
+information at the date of publication and are provided in good faith;
+Users should verify current details with the provider concerned.</p>
+<p><strong>I5 Localised Versions.</strong> Localised language versions
+are provided for convenience. In the event of any inconsistency between
+a translated page and the English version, the English version prevails
+(clause 18.8). Prices, products and availability may differ by region
+(clause 2.6).</p>
+<p><strong>I6 Third-Party Links.</strong> The websites contain links to
+third-party sites and resources. Sport Endorse does not control and is
+not responsible for their content, availability, accuracy or privacy
+practices.</p>
+<p><strong>I7 Cookies and Tracking.</strong> Cookies and similar
+technologies are used as described in the Cookie Notice, and
+non-essential cookies are set only with consent where required by the
+ePrivacy Directive, the Irish ePrivacy Regulations, POPIA or other
+Applicable Law.</p>
+<p><strong>I8 Accessibility.</strong> Sport Endorse aims to make the
+websites and apps accessible in line with WCAG 2.1 AA and applicable
+accessibility legislation, including Directive (EU) 2019/882 (the
+European Accessibility Act) as implemented in Ireland. Accessibility
+issues may be reported to platform.hello@sportendorse.com.</p>
+<p><strong>I9 Availability.</strong> The websites, apps and Service are
+provided on an "as available" basis. Sport Endorse may carry out
+maintenance, and will use reasonable efforts to schedule planned
+maintenance outside peak periods and to give notice of significant
+planned downtime. No uptime service level applies unless expressly
+agreed in an Order Form.</p>
+<p><strong>I10 Beta and Preview Features.</strong> Features labelled
+beta, preview, pilot or early access are provided without warranty, may
+be changed or withdrawn at any time, and should not be relied on in
+production. Fees are not refundable by reason of the withdrawal of a
+beta feature.</p>
+<p><strong>I11 Prohibited Uses.</strong> Clause 9 applies in full to the
+websites and apps, including the prohibitions on scraping, automated
+extraction and use for AI training.</p>
+<h2
+id="schedule-1-fee-and-commission-summary-reference">SCHEDULE 1
+— FEE AND COMMISSION SUMMARY (Reference)</h2>
+<p>This Schedule is a summary for convenience. Current published rates
+on the Service, and any signed Order Form, prevail over this Schedule.
+In the event of any inconsistency with the body of the Terms, the body
+prevails.</p>
+<div class="tablewrap"><table>
+<colgroup>
+<col style="width: 39%" />
+<col style="width: 30%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Charge</strong></th>
+<th><strong>Basis</strong></th>
+<th><strong>Reference</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Subscription Fees</td>
+<td>Payable in advance; priced by region and by the roster/market
+accessed; quarterly or annual; auto-renewing</td>
+<td>Clause 5.2, B1</td>
+</tr>
+<tr class="even">
+<td>Trial</td>
+<td>Paid trial with published limits; payment details required;
+auto-converts unless cancelled</td>
+<td>Clause 5.3</td>
+</tr>
+<tr class="odd">
+<td>Once-Off Campaign</td>
+<td>One-off fee for a single campaign with published limits; does not
+renew</td>
+<td>Clause 5.3</td>
+</tr>
+<tr class="even">
+<td>Commission — on-Platform</td>
+<td>14% (Deal Payment up to 500), 16% (above 500 to 2,000), 18% (above
+2,000); deducted from the Deal Payment before settlement to Talent</td>
+<td>Clause 5.4</td>
+</tr>
+<tr class="odd">
+<td>Commission — off-Platform</td>
+<td>20% of the Deal Payment</td>
+<td>Clauses 5.4, 7.1</td>
+</tr>
+<tr class="even">
+<td>Commission — Gift-in-Kind</td>
+<td>None</td>
+<td>Clause 5.4</td>
+</tr>
+<tr class="odd">
+<td>Commission — basis</td>
+<td>Single rate applied to the whole Deal Payment; thresholds per
+currency as published; related deals may be aggregated</td>
+<td>Clauses 5.4.1, 5.4.4</td>
+</tr>
+<tr class="even">
+<td>Other facilitated revenue</td>
+<td>10% of consideration unless otherwise agreed</td>
+<td>Clause 5.5</td>
+</tr>
+<tr class="odd">
+<td>Managed Campaigns / Additional Services</td>
+<td>As per Statement of Work; in addition to Commission</td>
+<td>Part H</td>
+</tr>
+<tr class="even">
+<td>Academy</td>
+<td>Per seat, per cohort or per licence; sessions per session</td>
+<td>Part E, clause 5.7</td>
+</tr>
+<tr class="odd">
+<td>Platform Partnership</td>
+<td>Flat annual fee; not metered by athlete headcount</td>
+<td>Part F, clause 5.7</td>
+</tr>
+<tr class="even">
+<td>Sport Endorse Global</td>
+<td>Per athlete per annum</td>
+<td>Part F6</td>
+</tr>
+<tr class="odd">
+<td>Agent Partner share-back</td>
+<td>Percentage of Commission actually retained by Sport Endorse, by
+roster tier</td>
+<td>Part D, clause 5.8</td>
+</tr>
+<tr class="even">
+<td>Kill Fee</td>
+<td>25% / 50% / 100% of Deal Payment by stage, plus expenses; Commission
+payable on the Kill Fee</td>
+<td>Clause 6.2</td>
+</tr>
+<tr class="odd">
+<td>Talent non-performance</td>
+<td>Return of Gift-in-Kind or its value; refund of advances; 25%
+liquidated damages</td>
+<td>Clause 6.4</td>
+</tr>
+<tr class="even">
+<td>Circumvention</td>
+<td>200% of the Commission that would have been payable, or €2,500
+minimum for Gift-in-Kind deals, plus costs</td>
+<td>Clause 7.2</td>
+</tr>
+<tr class="odd">
+<td>Late payment</td>
+<td>ECB main refinancing rate plus 4%, plus statutory compensation and
+recovery costs</td>
+<td>Clause 5.15</td>
+</tr>
+<tr class="even">
+<td>Payment processing costs</td>
+<td>Borne by the Brand / subscribing User</td>
+<td>Clause 5.11</td>
+</tr>
+</tbody>
+</table></div>
+<h2
+id="schedule-2-cancellation-and-kill-fee-matrix-reference">SCHEDULE
+2 — CANCELLATION AND KILL-FEE MATRIX (Reference)</h2>
+<p>This Schedule summarises clauses 6.2 and 6.4. In the event of any
+inconsistency, the body of the Terms prevails.</p>
+<p><strong>Brand cancellation — payable to Talent</strong></p>
+<div class="tablewrap"><table>
+<colgroup>
+<col style="width: 39%" />
+<col style="width: 30%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Stage at which Brand cancels</strong></th>
+<th><strong>Kill Fee (% of Deal Payment)</strong></th>
+<th><strong>Gift-in-Kind</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Brand confirms Talent; Talent has not yet begun production</td>
+<td>25%</td>
+<td>Talent retains, or returns at Brand's cost (Brand's election)</td>
+</tr>
+<tr class="even">
+<td>Talent has commenced production but not delivered</td>
+<td>50%</td>
+<td>Talent retains</td>
+</tr>
+<tr class="odd">
+<td>Talent has delivered Deliverables to Brand</td>
+<td>100%</td>
+<td>Talent retains</td>
+</tr>
+<tr class="even">
+<td>Deliverables approved, posted or published</td>
+<td>100% plus agreed usage/licence fees</td>
+<td>Talent retains</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Talent cancellation or non-performance — payable to
+Brand</strong></p>
+<ul>
+<li><p>Return of all Gift-in-Kind within 14 days (undamaged, saleable),
+or payment of the declared retail value.</p></li>
+<li><p>Refund of any advance Deal Payment.</p></li>
+<li><p>Liquidated damages of 25% of the Deal Payment (or, if none, 25%
+of the declared retail value of the Gift-in-Kind).</p></li>
+<li><p>Sport Endorse may invoice the defaulting Talent, or set off
+amounts against sums otherwise payable to the Talent on other deals
+(clause 6.4(d)).</p></li>
+<li><p>Repeated default may lead to restriction, suspension or
+termination under clause 12.4.</p></li>
+</ul>
+<h2
+id="schedule-3-jurisdiction-specific-acknowledgements">SCHEDULE
+3 — JURISDICTION-SPECIFIC ACKNOWLEDGEMENTS</h2>
+<p><strong>Ireland (home jurisdiction).</strong> Irish law governs. The
+courts of Ireland have non-exclusive jurisdiction. The Arbitration Act
+2010 applies to any arbitration seated in Dublin. Consumer Users have
+the non-waivable rights conferred by the Consumer Rights Act 2022, and
+nothing in these Terms limits those rights. Statutory Instrument No.
+580/2012 applies to late payment in commercial transactions.</p>
+<p><strong>European Union.</strong> The GDPR, the Digital Services Act,
+the P2B Regulation, the Unfair Commercial Practices Directive as amended
+by the Omnibus Directive, the Consumer Rights Directive, Directive (EU)
+2019/882 (accessibility) and applicable national consumer law apply.
+Nothing in these Terms excludes non-waivable EU consumer protections,
+and EU consumers retain the right to bring proceedings in their home
+courts where Applicable Law so requires and to use the ODR platform and
+national ADR bodies. Clause 12 contains the disclosures required by
+Articles 3, 4, 5, 7, 9, 11 and 12 of the P2B Regulation. Sport Endorse
+reserves its rights in respect of text and data mining under Article
+4(3) of Directive (EU) 2019/790.</p>
+<p><strong>United Kingdom.</strong> The UK GDPR, the Data Protection Act
+2018, the CAP Code, the Consumer Rights Act 2015, the Digital Markets,
+Competition and Consumers Act 2024 (including its subscription-contract
+and consumer-protection provisions as they come into force) and the Late
+Payment of Commercial Debts (Interest) Act 1998 apply to relevant Users.
+Non-waivable consumer rights are preserved.</p>
+<p><strong>United States.</strong> U.S. Users acknowledge that the FTC
+Endorsement Guides apply; that applicable state NIL statutes,
+institutional and conference policies, and the rules and processes of
+the College Sports Commission (including NIL Go reporting) apply to
+college athletes; that the Restore Online Shoppers' Confidence Act and
+applicable state automatic-renewal laws govern subscription renewals;
+and that the ESIGN Act and the Uniform Electronic Transactions Act
+recognise electronic signature. Right-of-publicity and digital-replica
+statutes apply to clauses 8.5, 8.6 and 8.8. The class-action waiver,
+limitation provisions and the jury-trial waiver below apply to the
+maximum extent permitted by Applicable Law. TO THE EXTENT PERMITTED BY
+APPLICABLE LAW, EACH U.S. USER WAIVES ITS RIGHT TO A TRIAL BY JURY IN
+RESPECT OF ANY DISPUTE ARISING OUT OF OR RELATING TO THESE TERMS.
+California residents' rights under the CCPA/CPRA, and equivalent rights
+under other state privacy statutes, are preserved. California and other
+state automatic-renewal law disclosures, and the ability to cancel by
+the same means used to subscribe, are given effect by clause 5.2.</p>
+<p><strong>South Africa.</strong> POPIA, the Consumer Protection Act
+2008, the Children's Act 38 of 2005, the Basic Conditions of Employment
+Act (child-performance provisions), the Electronic Communications and
+Transactions Act 2002 and applicable exchange control regulations apply.
+Where a User qualifies as a consumer under the CPA, non-waivable CPA
+protections are preserved, including the section 14 right to cancel a
+fixed-term agreement on twenty business days' notice subject to a
+reasonable cancellation penalty, and section 44 ECTA cooling-off rights
+where applicable. Clause 7 is intended to operate as a reasonable
+restraint of trade and is severable under South African law to the
+extent required to preserve enforceability. Part G contains additional
+provisions for learners under 18.</p>

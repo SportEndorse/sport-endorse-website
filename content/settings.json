@@ -2,76 +2,106 @@
   "video_id": "",
   "logos": [
     {
-      "name": "Puma"
+      "name": "Puma",
+      "image": "images/logos/puma.svg",
+      "scale": 1.1
     },
     {
-      "name": "WHOOP"
+      "name": "WHOOP",
+      "image": "images/logos/whoop.svg"
     },
     {
-      "name": "Kellogg's"
+      "name": "Kellogg's",
+      "image": "images/logos/kelloggs.svg"
     },
     {
-      "name": "PwC"
+      "name": "PwC",
+      "image": "images/logos/pwc.svg",
+      "scale": 1.3
     },
     {
-      "name": "Red Bull"
+      "name": "Red Bull",
+      "image": "images/logos/red-bull.svg"
     },
     {
-      "name": "Skechers"
+      "name": "Skechers",
+      "image": "images/logos/skechers.svg"
     },
     {
-      "name": "Optimum Nutrition"
+      "name": "Optimum Nutrition",
+      "image": "images/logos/optimum-nutrition.svg"
     },
     {
-      "name": "Specsavers"
+      "name": "Specsavers",
+      "image": "images/logos/specsavers.svg"
     },
     {
-      "name": "Sports Direct"
+      "name": "Sports Direct",
+      "image": "images/logos/sports-direct.svg"
     },
     {
-      "name": "Alpro"
+      "name": "Alpro",
+      "image": "images/logos/alpro.svg"
     },
     {
-      "name": "ISDIN"
+      "name": "ISDIN",
+      "image": "images/logos/isdin.svg"
     },
     {
-      "name": "Pringles"
+      "name": "Pringles",
+      "image": "images/logos/pringles.svg",
+      "scale": 1.25
     },
     {
-      "name": "Grant Thornton"
+      "name": "Grant Thornton",
+      "image": "images/logos/grant-thornton.svg"
     },
     {
-      "name": "Active Iron"
+      "name": "Active Iron",
+      "image": "images/logos/active-iron.svg",
+      "scale": 1.45
     },
     {
-      "name": "Uniphar / AYA"
+      "name": "Uniphar / AYA",
+      "image": "images/logos/uniphar.svg"
     },
     {
-      "name": "Glanbia"
+      "name": "Glanbia",
+      "image": "images/logos/glanbia.svg"
     },
     {
-      "name": "Dalata Hotels"
+      "name": "Dalata Hotels",
+      "image": "images/logos/dalata.svg"
     },
     {
-      "name": "Movember"
+      "name": "Movember",
+      "image": "images/logos/movember.svg"
     },
     {
-      "name": "Shokz"
+      "name": "Shokz",
+      "image": "images/logos/shokz.svg"
     },
     {
-      "name": "Hard Rock Cafe"
+      "name": "Hard Rock Cafe",
+      "image": "images/logos/hard-rock-cafe.svg",
+      "scale": 1.2
     },
     {
-      "name": "SKINS"
+      "name": "SKINS",
+      "image": "images/logos/skins.svg",
+      "scale": 1.3
     },
     {
-      "name": "Revive Active"
+      "name": "Uriage",
+      "image": "images/logos/uriage.svg"
     },
     {
-      "name": "Uriage"
+      "name": "Lovable",
+      "image": "images/logos/lovable.svg"
     },
     {
-      "name": "Mini"
+      "name": "HoverAir",
+      "image": "images/logos/hoverair.png"
     }
   ],
   "hubspot": {

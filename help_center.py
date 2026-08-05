@@ -185,11 +185,12 @@ ARTICLES = [
 
  dict(slug="deal-commission", cat="payments-billing", status="live",
    q="Is there a commission on deals?",
-   lead="Yes — a transparent 14–18% platform commission on deal value, depending on deal size. That's well below the 30% take-rates common on US marketplaces, with no hidden agency mark-ups on athlete fees.",
+   lead="Yes — a transparent 14–18% platform commission on deal value, depending on deal size (and 20% on deals we introduce that are completed off-platform). That's well below the 30% take-rates common on US marketplaces, with no hidden agency mark-ups on athlete fees.",
    keywords="commission deal fee percentage 14 18 30 take rate transparent",
    related=["brand-subscriptions", "do-athletes-pay", "south-africa-billing"],
    body=_p(
      "Deals done through the platform carry a transparent commission of 14–18% on deal value, depending on the size of the deal. There are no hidden agency mark-ups on athlete fees.",
+     "Deals that Sport Endorse introduces but that are completed off-platform carry a 20% commission. Gift-in-kind — product, kit or experiences rather than cash — carries no commission; the commission applies only to the cash deal value.",
      "By comparison, the take-rates on many US athlete marketplaces are around 30%. The commission is the same whichever market you're in — including for South African brands billed in rand.")
    ),
 

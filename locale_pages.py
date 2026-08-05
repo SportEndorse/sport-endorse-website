@@ -43,9 +43,9 @@ def footer(t, e):
   <div class="cols">
     <div>
       <a class="logo" href="index.html">Sport <b>Endorse</b></a>
-      <p class="tagline">Engaging Athletes. Empowering Brands.</p>
+      <p class="tagline">{t['ft_tagline']}</p>
       <p class="entity" style="margin-top:14px">{t['footer_entity']}</p>
-      <p class="entity" style="margin-top:10px">HQ: Dublin, {t['ireland']} &middot; {t['us_office']}: Indianapolis, USA</p>
+      <p class="entity" style="margin-top:10px">{t['hq_office']}: {t['dublin']}, {t['ireland']}<br>{t['us_office']}: Indianapolis, Indiana<br>{t['za_office']}: Hilton, KZN</p>
     </div>
     <div><h4>{t['f_platform']}</h4><ul>
       <li><a href="brands.html">{t['nav']['brands.html']}</a></li>
@@ -65,19 +65,19 @@ def footer(t, e):
   </div>
   <div class="legal">
     <span>© 2026 Sport Endorse Limited. {t['rights']}</span>
-    <span><a href="https://www.sportendorse.com/privacy-center">Privacy Centre</a> &middot; <a href="https://www.sportendorse.com/terms-and-conditions">Terms &amp; Conditions</a></span>
+    <span><a href="https://www.sportendorse.com/privacy-center">{t['ft_privacy']}</a> &middot; <a href="/terms-and-conditions">{t['ft_terms']}</a></span>
   </div>
 </div></footer>
 <script src="../assets/site.js" defer></script>"""
 
 
 def ticker(t):
-    items = (f"<span>{t['tk_founded']} <b>Dublin, Ireland</b></span>"
+    items = (f"<span>{t['tk_founded']} <b>{t['tk_city_founded']}</b></span>"
              f"<span><b>9,000+</b> {t['tk_athletes']}</span>"
              f"<span><b>280+</b> {t['tk_sports']}</span><span><b>85+</b> {t['tk_countries']}</span>"
              f"<span>{t['tk_live']} <b>2021</b></span>"
              f"<span>{t['tk_trusted']} <b>Puma · WHOOP · PwC · Kellogg's</b></span>"
-             f"<span>{t['tk_offices']} <b>Dublin &amp; Indianapolis</b></span>")
+             f"<span>{t['tk_offices']} <b>{t['tk_city_offices']}</b></span>")
     return f'<div class="ticker"><div class="track">{items}{items}</div></div>'
 
 

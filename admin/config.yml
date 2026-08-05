@@ -62,6 +62,7 @@ collections:
                 media_folder: "/images/logos"
                 public_folder: "/images/logos"
                 hint: "Optional — without an image the name shows as styled text. Best on the dark background: white/mono transparent PNG or SVG. Export at ~2× display size, max 320px on the longest edge, under 50KB."
+              - { label: "Size adjust (optional)", name: "scale", widget: "number", required: false, value_type: "float", step: 0.05, hint: "Optical size tweak so this logo matches the others — 1.1 makes it 10% bigger, 0.9 makes it 10% smaller. Leave blank for the default. Editing a logo without this field set would otherwise reset it." }
 
   - name: "entity"
     label: "Company facts"
