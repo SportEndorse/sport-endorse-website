@@ -31,7 +31,7 @@ def header(active, t):
     </select>
     <select class="chip" data-lang-picker aria-label="{t['lang_label']}">
       <option value="en">EN</option><option value="es">ES</option><option value="de">DE</option>
-      <option value="fr">FR</option><option value="it">IT</option>
+      <option value="fr">FR</option><option value="it">IT</option><option value="nl">NL</option>
     </select>
     <a class="btn gold sm" href="{CAL}">{t['cta_demo']}</a>
   </div>
@@ -131,6 +131,15 @@ CUSTOM_PKG_L10N = {
    form_label="Richiesta pacchetto personalizzato",
    fallback="Preferisci iniziare subito la conversazione? Prenota una call o scrivici e definiremo il tuo pacchetto su misura.",
    cta="Parla con il team vendite"),
+ "nl": dict(eyebrow="Op maat / Maatwerk",
+   h2="Full-servicepakket: wij voeren de campagne voor je uit",
+   intro="Voor teams zonder tijd om zelf atleten te vinden en te beheren: ons team selecteert en onderhandelt talent, beheert deliverables en goedkeuringen en rapporteert de resultaten van begin tot eind. Vertel ons wat je nodig hebt en we stellen een pakket op maat samen.",
+   incl_label="Wat is inbegrepen",
+   items=["Talentselectie en onderhandeling","Campagne- en deliverablebeheer","Compliancegerichte goedkeuringsworkflows","Rapportage bij einde campagne","Directe ondersteuning van de oprichters"],
+   note="Elk pakket op maat wordt afgestemd op je campagne, markten en budget.",
+   form_label="Aanvraag pakket op maat",
+   fallback="Liever nu het gesprek starten? Boek een gesprek of stuur ons een bericht en we stellen je pakket op maat samen.",
+   cta="Praat met sales"),
 }
 
 
@@ -151,9 +160,18 @@ SA_L10N = {
    sa_intro="Prezzi locali per i brand sudafricani, in rand. Abbonati agli atleti sudafricani a una tariffa locale, o raggiungi USA, Regno Unito, Europa e il resto del mondo — ogni mercato si aggiunge separatamente.",
    sa_market="Sudafrica",
    sa_note="Fatturato dall'Irlanda in rand sudafricani, senza IVA. Gli accordi con gli atleti prevedono la commissione standard del 14–18 %."),
+ "nl": dict(sa_head="Zuid-Afrikaanse merken — facturering in ZAR",
+   sa_intro="Lokale prijzen voor Zuid-Afrikaanse merken, in rand. Abonneer je op Zuid-Afrikaanse atleten tegen een lokaal tarief, of bereik de VS, het VK, Europa en de rest van de wereld — elke markt wordt apart toegevoegd.",
+   sa_market="Zuid-Afrika",
+   sa_note="Gefactureerd vanuit Ierland in Zuid-Afrikaanse rand, zonder btw. Atletendeals kennen de standaardcommissie van 14–18%."),
 }
 
 def build(lang, sh):
+    # Point the demo CTA at this language's own demo page only where one is
+    # actually built; otherwise fall back to the English page one level up.
+    # (Dutch has no i18n.json entry, so nl/demo.html never gets generated.)
+    global CAL
+    CAL = "demo.html" if lang in sh.get("DEMO_LANGS", ()) else "../demo.html"
     t = importlib.import_module("t_" + lang).T
     fl = sh["faq_ld"]
     chrome = lambda slug: (header(slug, t), footer(t, sh["ENTITY"]))
@@ -194,6 +212,7 @@ def build(lang, sh):
   <h2>{t['hx_final_h2']}</h2>
   <p class="lead muted" style="margin:12px auto 24px;max-width:620px">{t['hx_final_p']}</p>
   <a class="btn gold" href="{CAL}">{t['cta_demo']}</a>
+  <a class="btn ghost" href="subscription.html">{t['cta_pricing']}</a>
 </div></section>"""
     P["index.html"] = dict(title=t["hx_title"], desc=t["hx_desc"], body=body,
                            jsonld=[fl(t["hx_faq"])] + sh["video_ld"](lang), chrome=chrome("index.html"))
@@ -217,6 +236,12 @@ def build(lang, sh):
   <h2>{t['br_cmp_h2']}</h2>
   <p class="lead muted" style="margin:12px auto 24px;max-width:640px">{t['br_cmp_p']}</p>
   <a class="btn gold" href="../compare-athlete-marketing-platforms.html">{t['br_cmp_cta']} (EN)</a>
+</div></section>
+<section><div class="wrap" style="text-align:center">
+  <h2>{t['br_final_h2']}</h2>
+  <p class="lead muted" style="margin:12px auto 24px;max-width:600px">{t['br_final_p']}</p>
+  <a class="btn gold" href="subscription.html">{t['cta_pricing']}</a>
+  <a class="btn ghost" href="{CAL}">{t['cta_demo']}</a>
 </div></section>"""
     P["brands.html"] = dict(title=t["br_title"], desc=t["br_desc"], body=body,
                             jsonld=[fl(t["br_faq"])], chrome=chrome("brands.html"))

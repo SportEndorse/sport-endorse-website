@@ -167,6 +167,9 @@ hr.rule{border:0;border-top:1px solid var(--line);margin:44px 0}
 .g4{grid-template-columns:repeat(4,1fr)}
 @media(max-width:1080px){.g4{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.g4{grid-template-columns:1fr}}
+.g5{grid-template-columns:repeat(5,1fr);gap:16px}
+@media(max-width:1080px){.g5{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:600px){.g5{grid-template-columns:repeat(2,1fr)}}
 
 /* ---------- profile & team cards ---------- */
 .profile{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;gap:14px}

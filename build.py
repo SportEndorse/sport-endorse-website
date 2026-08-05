@@ -51,7 +51,7 @@ CAREERS_EMAIL = "careers@sportendorse.com"        # confirm before launch
 # These slugs ship as full native-language builds at /es/ /fr/ /de/ /it/.
 # Deep editorial pages (comparison, case studies, compliance guides) stay
 # English-only until translated copy is signed off — standard hreflang practice.
-LOCALES = ("es", "fr", "de", "it")
+LOCALES = ("es", "fr", "de", "it", "nl")
 LOCALIZED_SLUGS = ("index.html", "brands.html", "talent.html", "athletes.html",
                    "subscription.html", "about.html", "faqs.html")
 
@@ -193,7 +193,7 @@ BRANDS_SHOWCASE = [
 
 def brand_card(name, desc, markets, prefix=""):
     img = _LOGO_IMG.get(name)
-    logo = (f'<span class="bshow-logo"><img src="/{img.lstrip("/")}" alt="{html.escape(name)}" loading="lazy"></span>'
+    logo = (f'<span class="bshow-logo"><img src="/{img.lstrip('/')}" alt="{html.escape(name)}" loading="lazy"></span>'
             if img else f'<span class="bshow-name">{html.escape(name)}</span>')
     tags = "".join(f"<span>{html.escape(m)}</span>" for m in markets)
     return (f'<div class="card bshow-card">{logo}'
@@ -253,7 +253,7 @@ def header(active):
     </select>
     <select class="chip" data-lang-picker aria-label="Choose language">
       <option value="en">EN</option><option value="es">ES</option><option value="de">DE</option>
-      <option value="fr">FR</option><option value="it">IT</option>
+      <option value="fr">FR</option><option value="it">IT</option><option value="nl">NL</option>
     </select>
     <a class="btn gold sm" href="demo.html" data-i18n="cta.demo">Book a Demo</a>
   </div>
@@ -366,7 +366,7 @@ def page(slug, title, desc, body, jsonld=None, active=None, lang="en", prefix=""
 <meta property="og:description" content="{html.escape(desc)}">
 <meta property="og:url" content="{canon(slug, lang)}">
 {f'<meta property="og:image" content="{html.escape(og_image)}"><meta name="twitter:image" content="{html.escape(og_image)}">' if og_image else ''}
-<meta property="og:locale" content="{ {'en':'en_IE','es':'es_ES','fr':'fr_FR','de':'de_DE','it':'it_IT'}[lang] }">
+<meta property="og:locale" content="{ {'en':'en_IE','es':'es_ES','fr':'fr_FR','de':'de_DE','it':'it_IT','nl':'nl_NL'}[lang] }">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -480,6 +480,7 @@ home_body = f"""
   <h2>See Sport Endorse in action</h2>
   <p class="lead muted" style="margin:12px auto 24px;max-width:620px">Book a short demo and see how easy it is to set up, connect, and drive results through authentic athlete partnerships.</p>
   <a class="btn gold" href="demo.html" data-i18n="cta.demo">Book a Demo</a>
+  <a class="btn ghost" href="subscription.html">See Pricing &amp; Sign Up</a>
 </div></section>
 """
 PAGES["index.html"] = dict(
@@ -550,6 +551,12 @@ brands_body = f"""
   <h2>Compare us before you choose</h2>
   <p class="lead muted" style="margin:12px auto 24px;max-width:640px">See how Sport Endorse stacks up against Opendorse, OpenSponsorship and Pickstar — including where each competitor is stronger.</p>
   <a class="btn gold" href="compare-athlete-marketing-platforms.html">View the comparison</a>
+</div></section>
+<section class="light"><div class="wrap" style="text-align:center">
+  <h2>Ready to run your first campaign?</h2>
+  <p class="lead muted" style="margin:12px auto 24px;max-width:600px">See the simple flat pricing and start today, or book a short demo to see the platform on real campaigns from your industry.</p>
+  <a class="btn gold" href="subscription.html">See Pricing &amp; Sign Up</a>
+  <a class="btn ghost" href="demo.html">Book a Demo</a>
 </div></section>
 """
 PAGES["brands.html"] = dict(
@@ -1659,7 +1666,7 @@ def sa_plan_block(default=False, t=None):
     <div class="frow" style="justify-content:space-between;margin-bottom:6px"><h3>{g('sa_head','South African brands — billed in ZAR')}</h3>
       <div class="fgroup" role="group"><button class="fpill on" data-bill="annual" type="button">{g('bill_a','Annual — save ~1/3')}</button><button class="fpill" data-bill="quarterly" type="button">{g('bill_q','Quarterly')}</button></div></div>
     <p class="muted" style="margin:0 0 14px;max-width:64ch">{g('sa_intro','Local pricing for South African brands, in rand. Subscribe to South African athletes at a local rate, or reach the USA, UK, Europe and the rest of the world — each market added separately.')}</p>
-    <div class="grid g4 mgrid">{cards}</div>
+    <div class="grid g5 mgrid">{cards}</div>
     <div class="msummary" data-msummary hidden>
       <div><p class="eyebrow" style="margin-bottom:4px">{g('sel','Your selection')}</p><p><b data-msel></b></p></div>
       <div class="mright"><p class="mtotal" data-mtotal></p>
@@ -2088,7 +2095,8 @@ def story_card(s):
     lab = lambda k: F_LABEL.get(s.get(k), s.get(k, ""))
     sport = s.get("sport", "")
     tags = f'<span>{e(lab("ctype"))}</span>' + (f'<span>{e(sport)}</span>' if sport else "") + f'<span>{e(lab("region"))}</span>'
-    cover = s.get("cover", ""); logo = s.get("logo", "")
+    _abs = lambda u: ("/" + u) if (u and not u.startswith(("http:", "https:", "/"))) else u
+    cover = _abs(s.get("cover", "")); logo = _abs(s.get("logo", ""))
     coverimg = (f'<div class="storyimg"><img src="{e(cover)}" alt="{e(s.get("title",""))}" loading="lazy"></div>' if cover else "")
     logoimg = (f'<img class="storylogo" src="{e(logo)}" alt="" loading="lazy">' if logo else "")
     sid = e(s.get("id", ""))
@@ -2116,6 +2124,8 @@ def story_page(s):
     lab = lambda k: F_LABEL.get(s.get(k), s.get(k, ""))
     sport = s.get("sport", "")
     cover, logo = s.get("cover", ""), s.get("logo", "")
+    _rel = lambda u: (px + u) if (u and not u.startswith(("http:", "https:", "/"))) else u
+    cover, logo = _rel(cover), _rel(logo)
     tags = f'<span>{e(lab("ctype"))}</span>' + (f'<span>{e(sport)}</span>' if sport else "") + f'<span>{e(lab("region"))}</span>'
     logoimg = (f'<img class="storylogo" src="{e(logo)}" alt="" loading="lazy">' if logo else "")
     coverimg = (f'<div class="storyhero-img"><img src="{e(cover)}" alt="{e(s.get("title",""))}" loading="eager"></div>' if cover else "")
@@ -2640,7 +2650,11 @@ SHARED = dict(ENTITY=ENTITY, BASE=BASE, TODAY=TODAY, ATHLETES=ATHLETES, TEAM=TEA
               VIDEO_ID=VIDEO_ID, video_section=video_section, video_ld=video_ld,
               faq_ld=faq_ld, profile_card=profile_card, team_card=team_card,
               geo_profile_grids=geo_profile_grids, REGION_ROSTER=REGION_ROSTER,
-              custom_package_section=custom_package_section, sa_plan_block=sa_plan_block)
+              custom_package_section=custom_package_section, sa_plan_block=sa_plan_block,
+              # Languages that actually get a localized demo page. Dutch has no
+              # i18n.json entry, so /nl/demo.html is never built — those pages must
+              # link out to the English /demo rather than a dead sibling.
+              DEMO_LANGS=frozenset(LOC_AVAIL.get("demo.html", ())))
 for lang in LOCALES:
     ldir = os.path.join(OUT, lang)
     os.makedirs(ldir, exist_ok=True)

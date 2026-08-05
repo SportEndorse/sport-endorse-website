@@ -5,6 +5,7 @@ T = {
  "nav": {"brands.html": "Para marcas", "talent.html": "Para deportistas", "athletes.html": "Perfiles",
          "subscription.html": "Precios", "faqs.html": "FAQ", "about.html": "Quiénes somos"},
  "region_label": "Elige tu región", "lang_label": "Elige idioma", "europe": "Europa",
+ "cta_pricing": "Ver precios y registrarse", "br_final_h2": "¿Listo para lanzar tu primera campaña?", "br_final_p": "Consulta nuestros precios fijos y empieza hoy, o reserva una breve demo para ver la plataforma con campañas reales de tu sector.",
  "cta_demo": "Solicitar una demo",
  "footer_entity": "Sport Endorse Limited fue fundada en Dublín, Irlanda por Trevor Twamley y Declan Bourke. La plataforma opera desde principios de 2021 y hoy conecta marcas con más de 9.000 deportistas y creadores verificados de más de 280 deportes en más de 85 países.",
   "hq_office": "Oficina central", "za_office": "Oficina en Sudáfrica",
