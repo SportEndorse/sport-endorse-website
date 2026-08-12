@@ -245,16 +245,11 @@ def header(active):
   <button class="menu-toggle" aria-expanded="false" aria-controls="mainnav">Menu</button>
   <ul id="mainnav">{items}</ul>
   <div class="push">
-    <label class="sr-only" for="regionpick" style="position:absolute;left:-9999px">Region</label>
-    <select id="regionpick" class="chip" data-region-picker aria-label="Choose your region">
-      <option value="ie">🇮🇪 Ireland</option><option value="uk">🇬🇧 UK</option>
-      <option value="us">🇺🇸 USA</option><option value="eu">🇪🇺 Europe</option>
-      <option value="za">🇿🇦 South Africa</option><option value="row">🌍 Global</option>
-    </select>
     <select class="chip" data-lang-picker aria-label="Choose language">
       <option value="en">EN</option><option value="es">ES</option><option value="de">DE</option>
       <option value="fr">FR</option><option value="it">IT</option><option value="nl">NL</option>
     </select>
+    <a class="btn ghost sm" href="https://platform.sportendorse.com/login">Login</a>
     <a class="btn gold sm" href="demo.html" data-i18n="cta.demo">Book a Demo</a>
   </div>
 </div></header>"""
@@ -290,6 +285,15 @@ def footer():
       <li><a href="https://apps.apple.com/gb/app/sport-endorse/id1524881578">iOS App</a></li>
       <li><a href="https://play.google.com/store/apps/details?id=com.sportendorse.app">Android App</a></li>
       <li><a href="demo.html">Book a Demo</a></li></ul></div>
+  </div>
+  <div class="footsupport">
+    <p>We have been supported by our Local Enterprise Office</p>
+    <div class="supportlogos">
+      <img src="images/support/eu-structural.png" alt="EU Structural Funds Ireland 2014–2020" loading="lazy">
+      <img src="images/support/eu-erdf.png" alt="European Union — European Regional Development Fund" loading="lazy">
+      <img src="images/support/dlr.png" alt="Dún Laoghaire–Rathdown County Council" loading="lazy">
+      <img src="images/support/leo.png" alt="Local Enterprise Office" loading="lazy">
+    </div>
   </div>
   <div class="legal">
     <span>© 2026 Sport Endorse Limited. All rights reserved.</span>
@@ -873,7 +877,7 @@ agency_body = f"""
 </div></section>
 <section><div class="wrap">
   <div class="section-head"><p class="eyebrow">Agent Partner Programme · Launching soon</p><h2>Roster-based tiers that reward scale</h2>
-  <p>Shown for your region in your billing currency — use the region picker in the header if we guessed wrong. Pick the tier that fits your roster; per-athlete cost <em>falls</em> as your roster grows, and the commission share-back rises with your tier.</p></div>
+  <p>Shown for your region in your billing currency. Pick the tier that fits your roster; per-athlete cost <em>falls</em> as your roster grows, and the commission share-back rises with your tier.</p></div>
   {agent_geo_block(0, default=True)}
   {agent_geo_block(1)}
   {agent_geo_block(2)}
@@ -1605,7 +1609,7 @@ def _flat_price_card(cur, geo, default, s):
             f'<div class="price">{cur}{FLAT_QTR:,}<span class="perunit">{qtr}</span></div>'
             f'<p class="muted">{g("flat_qsub", "Billed every three months.")}</p>'
             f'<a class="btn ghost" href="{SIGNUP_BRAND_Q}">{start}</a></div>'
-            f'<div class="card plan"><span class="eyebrow">{bill_a} &middot; {save}</span>'
+            f'<div class="card plan"><span class="eyebrow">{bill_a}</span>'
             f'<div class="price">{cur}{FLAT_ANN:,}<span class="perunit">{yr}</span></div>'
             f'<p class="muted">{g("flat_asub", "One flat rate, billed yearly.")}</p>'
             f'<a class="btn gold" href="{SIGNUP_BRAND_A}">{start}</a></div></div>'
@@ -1748,7 +1752,7 @@ sub_body = f"""
 </div></section>
 <section class="light"><div class="wrap">
   <div class="section-head"><p class="eyebrow">Rate card</p><h2>Simple, flat pricing</h2>
-  <p>One price for every market, in your local currency — shown for your region (use the region picker in the header if we guessed wrong). Choose quarterly or annual billing; annual saves you about a third.</p></div>
+  <p>One price for every market, in your local currency — shown for your region. Choose quarterly or annual billing; annual saves you about a third.</p></div>
   {plan_builder_block(0, default=True)}
   <p class="muted geo-on" data-geo="us" style="margin-top:10px;font-size:.9rem">Compare: leading US marketplaces charge up to a 30% transaction fee on every deal.</p>
   {plan_builder_block(1)}

@@ -13,6 +13,11 @@
     set: function (k, v) { try { localStorage.setItem(k, v); } catch (e) {} mem[k] = v; }
   };
 
+  function readCookie(name) {
+    var m = (document.cookie || "").match(new RegExp("(?:^|;\\s*)" + name + "=([^;]+)"));
+    return m ? decodeURIComponent(m[1]) : null;
+  }
+
   /* ---------- REGION (geotargeting) ----------
      Regions: us, uk, ie, eu, za, row.
      First visit: infer from browser locale + timezone. Always user-overridable.
@@ -22,7 +27,9 @@
 
   function detectRegion() {
     var saved = store.get("se-region");
-    if (saved && REGIONS.indexOf(saved) > -1) return saved;
+    if (saved && REGIONS.indexOf(saved) > -1) return saved;  // explicit choice (future)
+    var ip = readCookie("se-geo");  // set at the edge by Vercel middleware (true IP)
+    if (ip && REGIONS.indexOf(ip) > -1) return ip;
     var loc = (navigator.language || "").toLowerCase();
     var tz = "";
     try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ""; } catch (e) {}
@@ -230,11 +237,63 @@
     apply();
   }
 
+  /* ---------- gentle language suggestion banner ----------
+     If the visitor's browser prefers a language we ship (and it isn't the
+     current page's language), offer a one-tap switch. Never auto-redirects;
+     dismissible and remembered. */
+  function langSuggest() {
+    var SUP = { es: 1, fr: 1, de: 1, it: 1, nl: 1 };
+    var SENT = {
+      es: "Esta p\u00e1gina tambi\u00e9n est\u00e1 disponible en espa\u00f1ol.",
+      fr: "Cette page est aussi disponible en fran\u00e7ais.",
+      de: "Diese Seite ist auch auf Deutsch verf\u00fcgbar.",
+      it: "Questa pagina \u00e8 disponibile anche in italiano.",
+      nl: "Deze pagina is ook beschikbaar in het Nederlands.",
+      en: "This page is also available in English."
+    };
+    var ACT = { es: "Ver en espa\u00f1ol", fr: "Voir en fran\u00e7ais", de: "Auf Deutsch ansehen",
+                it: "Vedi in italiano", nl: "Bekijk in het Nederlands", en: "View in English" };
+    var DIS = { es: "Cerrar", fr: "Fermer", de: "Schlie\u00dfen", it: "Chiudi", nl: "Sluiten", en: "Dismiss" };
+    try { if (localStorage.getItem("se-lang-suggest") === "off") return; } catch (e) {}
+    if (store.get("se-lang")) return;                 // user already chose a language
+    var cur = (document.documentElement.lang || "en").slice(0, 2).toLowerCase();
+    var langs = navigator.languages || [navigator.language || ""];
+    var pref = null;
+    for (var i = 0; i < langs.length; i++) {
+      var two = (langs[i] || "").slice(0, 2).toLowerCase();
+      if (two === "en" || SUP[two]) { pref = two; break; }   // first language we support
+    }
+    if (!pref || pref === cur) return;                 // none, or already on it
+    var slug = pageSlug();
+    var avail = (window.SE_LOC && window.SE_LOC[slug]) || [];
+    if (!(pref === "en" || LOCALIZED.indexOf(slug) > -1 || avail.indexOf(pref) > -1)) return;
+
+    var bar = document.createElement("div");
+    bar.className = "langbar";
+    bar.setAttribute("role", "region");
+    bar.setAttribute("aria-label", "Language");
+    var span = document.createElement("span");
+    span.textContent = SENT[pref] || SENT.en;
+    var go = document.createElement("button");
+    go.className = "langbar-go"; go.type = "button";
+    go.textContent = ACT[pref] || ACT.en;
+    var x = document.createElement("button");
+    x.className = "langbar-x"; x.type = "button";
+    x.setAttribute("aria-label", DIS[pref] || "Dismiss");
+    x.innerHTML = "&#10005;";
+    go.addEventListener("click", function () { switchLang(pref); });
+    x.addEventListener("click", function () {
+      try { localStorage.setItem("se-lang-suggest", "off"); } catch (e) {}
+      if (bar.parentNode) bar.parentNode.removeChild(bar);
+    });
+    bar.appendChild(span); bar.appendChild(go); bar.appendChild(x);
+    document.body.appendChild(bar);
+  }
+
   /* ---------- boot ---------- */
   document.addEventListener("DOMContentLoaded", function () {
     var region = detectRegion();
     applyRegion(region);
-    store.set("se-region", region);
 
     var pageLang = document.documentElement.lang || "en";
     var saved = store.get("se-lang");
@@ -247,6 +306,8 @@
       var pickers = document.querySelectorAll("select[data-lang-picker]");
       for (var k = 0; k < pickers.length; k++) pickers[k].value = pageLang;
     }
+
+    langSuggest();
 
     document.addEventListener("change", function (e) {
       if (e.target.matches("select[data-region-picker]")) {

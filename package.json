@@ -1,0 +1,9 @@
+{
+  "name": "sport-endorse-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sport Endorse marketing site. The site itself is a static build produced by build.py; this package.json exists only so Vercel installs @vercel/edge for the IP-geotargeting Edge Middleware (middleware.js).",
+  "dependencies": {
+    "@vercel/edge": "^1.2.1"
+  }
+}

@@ -50,7 +50,6 @@
   "The platform shares its own commission back with you on every deal — and your athlete relationships stay yours.": "La plataforma comparte su propia comisión contigo en cada acuerdo, y tus relaciones con los atletas siguen siendo tuyas.",
   "Agent Partner Programme · Launching soon": "Programa de Agentes Partner · Próximamente",
   "Roster-based tiers that reward scale": "Niveles según roster que premian la escala",
-  "Shown for your region in your billing currency — use the region picker in the header if we guessed wrong. Pick the tier that fits your roster; per-athlete cost": "Mostrado para tu región en tu moneda de facturación: usa el selector de región de la cabecera si nos hemos equivocado. Elige el nivel que encaja con tu roster; el coste por atleta",
   "falls": "baja",
   "as your roster grows, and the commission share-back rises with your tier.": "a medida que crece tu roster, y el retorno de comisión aumenta con tu nivel.",
   "US agencies — billed in USD": "Agencias de EE. UU. — facturado en USD",
@@ -637,7 +636,8 @@
   "Sports agencies see a different session — roster management, the brand pipeline and commission share-back through the Agent Partner Programme.": "Las agencias deportivas ven una sesión distinta: gestión del roster, el pipeline de marcas y el share-back de comisiones a través del Agent Partner Programme.",
   "This demo is built for sports agencies and agents, not brands. We'll show you the roster dashboard, the live pipeline of brand opportunities your athletes can apply for, and how the Agent Partner Programme returns 20&ndash;40% of Sport Endorse's deal commission to your agency. Around 30 minutes, no obligation.": "Esta demo está pensada para agencias deportivas y agentes, no para marcas. Te mostraremos el panel de roster, el pipeline en directo de oportunidades de marca a las que pueden postularse tus deportistas, y cómo el Agent Partner Programme devuelve a tu agencia entre el 20 y el 40% de la comisión de Sport Endorse. Unos 30 minutos, sin compromiso.",
   "Book an agency demo &rarr;": "Reserva una demo para agencias &rarr;",
-  "Book an Agency Demo — Sport Endorse for Sports Agencies": "Reserva una demo para agencias — Sport Endorse para agencias deportivas"
+  "Book an Agency Demo — Sport Endorse for Sports Agencies": "Reserva una demo para agencias — Sport Endorse para agencias deportivas",
+  "Shown for your region in your billing currency. Pick the tier that fits your roster; per-athlete cost": "Mostrado para tu región en tu moneda de facturación. Elige el nivel que encaja con tu roster; el coste por atleta"
  },
  "fr": {
   "For Agencies": "Pour les agences",
@@ -688,7 +688,6 @@
   "The platform shares its own commission back with you on every deal — and your athlete relationships stay yours.": "La plateforme partage sa propre commission avec vous sur chaque accord, et vos relations avec vos athlètes restent les vôtres.",
   "Agent Partner Programme · Launching soon": "Programme Agent Partenaire · Bientôt disponible",
   "Roster-based tiers that reward scale": "Des paliers selon le roster qui récompensent l'échelle",
-  "Shown for your region in your billing currency — use the region picker in the header if we guessed wrong. Pick the tier that fits your roster; per-athlete cost": "Affiché pour votre région dans votre devise de facturation : utilisez le sélecteur de région dans l'en-tête si nous nous sommes trompés. Choisissez le palier qui correspond à votre roster ; le coût par athlète",
   "falls": "baisse",
   "as your roster grows, and the commission share-back rises with your tier.": "à mesure que votre roster grandit, et la rétrocession de commission augmente avec votre palier.",
   "US agencies — billed in USD": "Agences américaines — facturé en USD",
@@ -1277,7 +1276,8 @@
   "Sports agencies see a different session — roster management, the brand pipeline and commission share-back through the Agent Partner Programme.": "Les agences sportives voient une session différente : gestion du roster, pipeline de marques et share-back de commission via l'Agent Partner Programme.",
   "This demo is built for sports agencies and agents, not brands. We'll show you the roster dashboard, the live pipeline of brand opportunities your athletes can apply for, and how the Agent Partner Programme returns 20&ndash;40% of Sport Endorse's deal commission to your agency. Around 30 minutes, no obligation.": "Cette démo est conçue pour les agences sportives et les agents, pas pour les marques. Nous vous montrerons le tableau de bord du roster, le pipeline en direct d'opportunités de marque auxquelles vos athlètes peuvent postuler, et comment l'Agent Partner Programme reverse à votre agence 20 à 40 % de la commission de Sport Endorse. Environ 30 minutes, sans engagement.",
   "Book an agency demo &rarr;": "Réserver une démo agence &rarr;",
-  "Book an Agency Demo — Sport Endorse for Sports Agencies": "Réserver une démo agence — Sport Endorse pour les agences sportives"
+  "Book an Agency Demo — Sport Endorse for Sports Agencies": "Réserver une démo agence — Sport Endorse pour les agences sportives",
+  "Shown for your region in your billing currency. Pick the tier that fits your roster; per-athlete cost": "Affiché pour votre région dans votre devise de facturation. Choisissez le palier qui correspond à votre roster ; le coût par athlète"
  },
  "de": {
   "For Agencies": "Für Agenturen",
@@ -1329,7 +1329,6 @@
   "The platform shares its own commission back with you on every deal — and your athlete relationships stay yours.": "Die Plattform teilt bei jedem Deal ihre eigene Provision mit Ihnen – und Ihre Athletenbeziehungen bleiben Ihre.",
   "Agent Partner Programme · Launching soon": "Agent-Partner-Programm · Bald verfügbar",
   "Roster-based tiers that reward scale": "Kaderbasierte Stufen, die Skalierung belohnen",
-  "Shown for your region in your billing currency — use the region picker in the header if we guessed wrong. Pick the tier that fits your roster; per-athlete cost": "Angezeigt für Ihre Region in Ihrer Abrechnungswährung – nutzen Sie die Regionsauswahl im Header, falls wir falsch geraten haben. Wählen Sie die Stufe, die zu Ihrem Kader passt; die Kosten pro Athlet",
   "falls": "sinken",
   "as your roster grows, and the commission share-back rises with your tier.": "während Ihr Kader wächst, und die Provisionsrückvergütung steigt mit Ihrer Stufe.",
   "US agencies — billed in USD": "US-Agenturen – abgerechnet in USD",
@@ -1915,7 +1914,8 @@
   "Sports agencies see a different session — roster management, the brand pipeline and commission share-back through the Agent Partner Programme.": "Sportagenturen sehen eine andere Session: Roster-Management, die Marken-Pipeline und Provisions-Share-back über das Agent Partner Programme.",
   "This demo is built for sports agencies and agents, not brands. We'll show you the roster dashboard, the live pipeline of brand opportunities your athletes can apply for, and how the Agent Partner Programme returns 20&ndash;40% of Sport Endorse's deal commission to your agency. Around 30 minutes, no obligation.": "Diese Demo richtet sich an Sportagenturen und Agenten, nicht an Marken. Wir zeigen Ihnen das Roster-Dashboard, die aktuelle Pipeline an Markenchancen, auf die sich Ihre Athleten bewerben können, und wie das Agent Partner Programme 20–40% der Provision von Sport Endorse an Ihre Agentur zurückgibt. Rund 30 Minuten, unverbindlich.",
   "Book an agency demo &rarr;": "Agentur-Demo buchen &rarr;",
-  "Book an Agency Demo — Sport Endorse for Sports Agencies": "Agentur-Demo buchen — Sport Endorse für Sportagenturen"
+  "Book an Agency Demo — Sport Endorse for Sports Agencies": "Agentur-Demo buchen — Sport Endorse für Sportagenturen",
+  "Shown for your region in your billing currency. Pick the tier that fits your roster; per-athlete cost": "Angezeigt für Ihre Region in Ihrer Abrechnungswährung. Wählen Sie die Stufe, die zu Ihrem Kader passt; die Kosten pro Athlet"
  },
  "it": {
   "For Agencies": "Per le agenzie",
@@ -1967,7 +1967,6 @@
   "The platform shares its own commission back with you on every deal — and your athlete relationships stay yours.": "La piattaforma condivide con te la propria commissione su ogni accordo, e le tue relazioni con gli atleti restano tue.",
   "Agent Partner Programme · Launching soon": "Agent Partner Programme · In arrivo",
   "Roster-based tiers that reward scale": "Livelli basati sul roster che premiano la scala",
-  "Shown for your region in your billing currency — use the region picker in the header if we guessed wrong. Pick the tier that fits your roster; per-athlete cost": "Mostrato per la tua regione nella tua valuta di fatturazione: usa il selettore di regione nell'header se abbiamo sbagliato. Scegli il livello adatto al tuo roster; il costo per atleta",
   "falls": "diminuisce",
   "as your roster grows, and the commission share-back rises with your tier.": "man mano che il tuo roster cresce, e la retrocessione della commissione aumenta con il tuo livello.",
   "US agencies — billed in USD": "Agenzie USA — fatturate in USD",
@@ -2553,6 +2552,7 @@
   "Sports agencies see a different session — roster management, the brand pipeline and commission share-back through the Agent Partner Programme.": "Le agenzie sportive vedono una sessione diversa: gestione del roster, pipeline dei brand e share-back delle commissioni tramite l'Agent Partner Programme.",
   "This demo is built for sports agencies and agents, not brands. We'll show you the roster dashboard, the live pipeline of brand opportunities your athletes can apply for, and how the Agent Partner Programme returns 20&ndash;40% of Sport Endorse's deal commission to your agency. Around 30 minutes, no obligation.": "Questa demo è pensata per agenzie sportive e agenti, non per i brand. Ti mostreremo la dashboard del roster, la pipeline in tempo reale di opportunità con i brand a cui i tuoi atleti possono candidarsi e come l'Agent Partner Programme restituisce alla tua agenzia il 20–40% della commissione di Sport Endorse. Circa 30 minuti, senza impegno.",
   "Book an agency demo &rarr;": "Prenota una demo per agenzie &rarr;",
-  "Book an Agency Demo — Sport Endorse for Sports Agencies": "Prenota una demo per agenzie — Sport Endorse per agenzie sportive"
+  "Book an Agency Demo — Sport Endorse for Sports Agencies": "Prenota una demo per agenzie — Sport Endorse per agenzie sportive",
+  "Shown for your region in your billing currency. Pick the tier that fits your roster; per-athlete cost": "Mostrato per la tua regione nella tua valuta di fatturazione. Scegli il livello adatto al tuo roster; il costo per atleta"
  }
 }

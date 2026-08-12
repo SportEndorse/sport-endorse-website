@@ -24,15 +24,11 @@ def header(active, t):
   <button class="menu-toggle" aria-expanded="false" aria-controls="mainnav">Menu</button>
   <ul id="mainnav">{items}</ul>
   <div class="push">
-    <select id="regionpick" class="chip" data-region-picker aria-label="{t['region_label']}">
-      <option value="ie">🇮🇪 Ireland</option><option value="uk">🇬🇧 UK</option>
-      <option value="us">🇺🇸 USA</option><option value="eu">🇪🇺 {t['europe']}</option>
-      <option value="za">🇿🇦 South Africa</option><option value="row">🌍 Global</option>
-    </select>
     <select class="chip" data-lang-picker aria-label="{t['lang_label']}">
       <option value="en">EN</option><option value="es">ES</option><option value="de">DE</option>
       <option value="fr">FR</option><option value="it">IT</option><option value="nl">NL</option>
     </select>
+    <a class="btn ghost sm" href="https://platform.sportendorse.com/login">{t['login']}</a>
     <a class="btn gold sm" href="{CAL}">{t['cta_demo']}</a>
   </div>
 </div></header>"""
@@ -62,6 +58,15 @@ def footer(t, e):
       <li><a href="faqs.html">{t['nav']['faqs.html']}</a></li>
       <li><a href="{IOS}">iOS App</a></li><li><a href="{ANDROID}">Android App</a></li>
       <li><a href="{CAL}">{t['cta_demo']}</a></li></ul></div>
+  </div>
+  <div class="footsupport">
+    <p>{t['ft_support']}</p>
+    <div class="supportlogos">
+      <img src="../images/support/eu-structural.png" alt="EU Structural Funds Ireland 2014–2020" loading="lazy">
+      <img src="../images/support/eu-erdf.png" alt="European Union — European Regional Development Fund" loading="lazy">
+      <img src="../images/support/dlr.png" alt="Dún Laoghaire–Rathdown County Council" loading="lazy">
+      <img src="../images/support/leo.png" alt="Local Enterprise Office" loading="lazy">
+    </div>
   </div>
   <div class="legal">
     <span>© 2026 Sport Endorse Limited. {t['rights']}</span>
@@ -318,7 +323,8 @@ def build(lang, sh):
     pb = dict(add=t["su_add"], added=t["su_added"], orx=t["su_or"], yr=t["su_yr"], qtr=t["su_qtr"],
               sel=t["su_sel"], start=t["su_start"], bill_a=t["su_bill_a"], bill_q=t["su_bill_q"],
               eye=t["su_market_eye"], demo=t["cta_demo"], markets=t["su_markets"],
-              heads=t["su_geo_h"], cal=CAL)
+              heads=t["su_geo_h"], cal=CAL,
+              flat_qsub=t.get("flat_qsub"), flat_asub=t.get("flat_asub"))
     geo_blocks = "".join(sh["plan_builder_block"](i, default=(i == 2), t=pb) for i in range(4))
     _sa = dict(pb); _sa.update(SA_L10N.get(lang, {}))
     _sa["sa_labels"] = [_sa.get("sa_market", "South Africa")] + list(pb["markets"])
