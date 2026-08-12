@@ -2622,6 +2622,28 @@ if _terms_body:
                  "name": "Terms & Conditions", "url": canon("terms-and-conditions.html"),
                  "isPartOf": {"@type": "WebSite", "name": "Sport Endorse", "url": BASE}}])
 
+# ---- SoFi student offer disclosures (partner legal page, English only) ------
+# Deliberately absent from LOCALIZED_SLUGS and TEXT_LOCALIZED_SLUGS, so it builds
+# at /sofistudentoffer only and carries just hreflang en + x-default. Copy lives in
+# content/ so it can be revised without touching code; styling reuses .legaldoc.
+_sofi_body = _load_text("content/sofi-disclosures.html") or ""
+
+if _sofi_body:
+    PAGES["sofistudentoffer.html"] = dict(
+        title="SoFi Checking & Savings — Disclosures | Sport Endorse",
+        desc="Disclosures for the SoFi Checking and Savings student offer: bonus terms, APY rates, fees, FDIC insurance, ATM access, overdraft coverage and APY boost.",
+        body=('<section class="hero"><div class="wrap">'
+              '<p class="eyebrow">Disclosures</p>'
+              '<h1>SoFi Checking &amp; Savings</h1>'
+              '</div></section>'
+              '<section class="light"><div class="wrap"><div class="legaldoc">'
+              + _sofi_body +
+              '</div></div></section>'),
+        jsonld=[{"@context": "https://schema.org", "@type": "WebPage",
+                 "name": "SoFi Checking & Savings — Disclosures",
+                 "url": canon("sofistudentoffer.html"),
+                 "isPartOf": {"@type": "WebSite", "name": "Sport Endorse", "url": BASE}}])
+
 for slug, p in PAGES.items():
     with open(os.path.join(OUT, slug), "w", encoding="utf-8") as f:
         f.write(page(slug, p["title"], p["desc"], p["body"], p.get("jsonld"), active=slug))
