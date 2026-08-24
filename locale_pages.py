@@ -7,7 +7,7 @@ English-only for now; locale footers link to them labelled "(EN)".
 """
 import importlib
 
-CAL = "demo.html"
+CAL = "../demo.html"
 SIGNUP = "https://platform.sportendorse.com/signup/talent"
 IOS = "https://apps.apple.com/gb/app/sport-endorse/id1524881578"
 ANDROID = "https://play.google.com/store/apps/details?id=com.sportendorse.app"
@@ -34,16 +34,15 @@ def header(active, t):
 </div></header>"""
 
 
-def footer(t, e):
-    return f"""<footer class="site"><div class="wrap">
-  <div class="cols">
-    <div>
-      <a class="logo" href="index.html">Sport <b>Endorse</b></a>
-      <p class="tagline">{t['ft_tagline']}</p>
-      <p class="entity" style="margin-top:14px">{t['footer_entity']}</p>
-      <p class="entity" style="margin-top:10px">{t['hq_office']}: {t['dublin']}, {t['ireland']}<br>{t['us_office']}: Indianapolis, Indiana<br>{t['za_office']}: Hilton, KZN</p>
-    </div>
-    <div><h4>{t['f_platform']}</h4><ul>
+def footer_columns(t):
+    """Full footer columns when the locale supplies footer_cols; otherwise the simple set."""
+    if t.get("footer_cols"):
+        return "".join(
+            f'<div><h4>{head}</h4><ul>'
+            + "".join(f'<li><a href="{href}">{label}</a></li>' for label, href in links)
+            + '</ul></div>'
+            for head, links in t["footer_cols"])
+    return (f'''<div><h4>{t['f_platform']}</h4><ul>
       <li><a href="brands.html">{t['nav']['brands.html']}</a></li>
       <li><a href="talent.html">{t['nav']['talent.html']}</a></li>
       <li><a href="athletes.html">{t['nav']['athletes.html']}</a></li>
@@ -57,7 +56,18 @@ def footer(t, e):
       <li><a href="about.html">{t['nav']['about.html']}</a></li>
       <li><a href="faqs.html">{t['nav']['faqs.html']}</a></li>
       <li><a href="{IOS}">iOS App</a></li><li><a href="{ANDROID}">Android App</a></li>
-      <li><a href="{CAL}">{t['cta_demo']}</a></li></ul></div>
+      <li><a href="{CAL}">{t['cta_demo']}</a></li></ul></div>''')
+
+def footer(t, e):
+    return f"""<footer class="site"><div class="wrap">
+  <div class="cols">
+    <div>
+      <a class="logo" href="index.html">Sport <b>Endorse</b></a>
+      <p class="tagline">{t['ft_tagline']}</p>
+      <p class="entity" style="margin-top:14px">{t['footer_entity']}</p>
+      <p class="entity" style="margin-top:10px">{t['hq_office']}: {t['dublin']}, {t['ireland']}<br>{t['us_office']}: Indianapolis, Indiana<br>{t['za_office']}: Hilton, KZN</p>
+    </div>
+    {footer_columns(t)}
   </div>
   <div class="footsupport">
     <p>{t['ft_support']}</p>
@@ -96,6 +106,109 @@ def faq_section(title, items, light=True):
 def cards(items, cls="grid g3"):
     return f'<div class="{cls}">' + "".join(
         f'<div class="card"><h3>{h}</h3><p>{p}</p></div>' for h, p in items) + "</div>"
+
+def ss_teaser(t):
+    """Homepage Success Stories teaser — rendered only for locales that supply the content."""
+    if not t.get("hx_ss_cards"):
+        return ""
+    cta = t.get("hx_ss_cta", "Read the case study")
+    cs = "".join(
+        f'<div class="card"><span class="eyebrow">{e}</span><h3>{h}</h3><p>{p}</p>'
+        f'<p style="margin-top:10px"><a href="{href}">{cta} &rarr;</a></p></div>'
+        for e, h, p, href in t["hx_ss_cards"])
+    return (f'<section class="light"><div class="wrap">'
+            f'<div class="section-head"><p class="eyebrow">{t["hx_ss_eye"]}</p><h2>{t["hx_ss_h2"]}</h2></div>'
+            f'<div class="answer" style="margin-bottom:20px"><p>{t["hx_ss_p"]}</p></div>'
+            f'<div class="grid g3">{cs}</div></div></section>')
+
+def hx_cards(t):
+    """Homepage three cards: rich (eyebrow, headline, body, cta, href) for locales
+    that supply it, else the simple (title, body) fallback."""
+    items = t["hx_three"]
+    if items and len(items[0]) >= 5:
+        cs = "".join(
+            f'<div class="card"><span class="eyebrow">{e}</span><h3>{h}</h3><p>{p}</p>'
+            f'<p style="margin-top:14px"><a class="btn gold sm" href="{href}">{cta}</a></p></div>'
+            for e, h, p, cta, href in items)
+        return f'<div class="grid g3">{cs}</div>'
+    return cards(items)
+
+def by_industry(t):
+    """Brands 'By Industry' section — only for locales that supply the content."""
+    if not t.get("br_ind_cards"):
+        return ""
+    cs = "".join(
+        f'<div class="card"><span class="eyebrow">{e}</span><h3>{h}</h3><p>{p}</p>'
+        f'<p style="margin-top:10px"><a href="{href}">{cta} &rarr;</a></p></div>'
+        for e, h, p, cta, href in t["br_ind_cards"])
+    return (f'<section><div class="wrap">'
+            f'<div class="section-head"><p class="eyebrow">{t["br_ind_eye"]}</p><h2>{t["br_ind_h2"]}</h2></div>'
+            f'<div class="grid g2">{cs}</div></div></section>')
+
+def the_talent(t):
+    """Brands 'The Talent' teaser — only for locales that supply the content."""
+    if not t.get("br_talent_cards"):
+        return ""
+    badge = t.get("br_talent_badge", "")
+    cs = "".join(
+        f'<div class="card"><span class="eyebrow">{sc}</span><h3>{n}</h3>'
+        f'<p>{p}</p><p class="muted" style="margin-top:10px;font-size:.82rem">{badge} &middot; {tags}</p></div>'
+        for n, sc, p, tags in t["br_talent_cards"])
+    return (f'<section class="light"><div class="wrap">'
+            f'<div class="section-head"><p class="eyebrow">{t["br_talent_eye"]}</p><h2>{t["br_talent_h2"]}</h2>'
+            f'<p>{t["br_talent_p"]}</p></div>'
+            f'<div class="grid g3">{cs}</div>'
+            f'<p style="margin-top:16px"><a href="{t["br_talent_cta_href"]}">{t["br_talent_cta"]} &rarr;</a></p>'
+            f'</div></section>')
+
+def it_brand_athletes(lang, sh):
+    """Italian brands page: 'Gli atleti che puoi raggiungere' with the Italy roster (photos)."""
+    if lang != "it" or not sh.get("ITALY_ROSTER"):
+        return ""
+    pc = sh["profile_card"]
+    cards = "".join(pc(a, badge="Atleta verificato", prefix="../") for a in sh["ITALY_ROSTER"][:3])
+    return (f'<section><div class="wrap">'
+            f'<div class="section-head"><p class="eyebrow">I talenti</p><h2>Gli atleti che puoi raggiungere</h2>'
+            f'<p>Ogni profilo e verificato singolarmente: identita, livello sportivo e audience. Ecco alcuni degli atleti italiani disponibili sulla piattaforma.</p></div>'
+            f'<div class="grid g3">{cards}</div>'
+            f'<p style="margin-top:18px"><a class="btn ghost" href="athletes.html">Scopri altri atleti verificati &rarr;</a></p>'
+            f'</div></section>')
+
+def brands_showcase(t):
+    """Talent 'De merken' section — content-gated."""
+    if not t.get("ta_brands"):
+        return ""
+    cs = "".join(
+        f'<div class="card"><h3>{n}</h3><p>{d}</p>'
+        f'<p class="muted" style="margin-top:8px;font-size:.85rem">{m}</p></div>'
+        for n, d, m in t["ta_brands"])
+    cta = (f'<p style="margin-top:18px"><a class="btn ghost" href="{t["ta_brands_cta_href"]}">{t["ta_brands_cta"]} &rarr;</a></p>'
+           if t.get("ta_brands_cta") else "")
+    return (f'<section><div class="wrap">'
+            f'<div class="section-head"><p class="eyebrow">{t["ta_brands_eye"]}</p><h2>{t["ta_brands_h2"]}</h2>'
+            f'<p>{t["ta_brands_p"]}</p></div>'
+            f'<div class="grid g3">{cs}</div>{cta}</div></section>')
+
+def academy_section(t):
+    """Talent 'Sport Endorse Academy' section — content-gated."""
+    if not t.get("ta_academy_h2"):
+        return ""
+    return (f'<section class="light"><div class="wrap"><div class="grid g2">'
+            f'<div><p class="eyebrow">{t["ta_academy_eye"]}</p>'
+            f'<h2 style="margin-top:8px">{t["ta_academy_h2"]}</h2></div>'
+            f'<div><p>{t["ta_academy_p"]}</p>'
+            f'<p style="margin-top:14px"><a class="btn ghost sm" href="{t["ta_academy_cta_href"]}">{t["ta_academy_cta"]}</a></p></div>'
+            f'</div></div></section>')
+
+def agent_partner(t):
+    """Talent 'Agent Partner' cross-link section — content-gated."""
+    if not t.get("ta_agent_h2"):
+        return ""
+    return (f'<section><div class="wrap"><div class="crosslink">'
+            f'<div><p class="eyebrow">{t["ta_agent_eye"]}</p><h2>{t["ta_agent_h2"]}</h2>'
+            f'<p class="muted">{t["ta_agent_p"]}</p></div>'
+            f'<p class="clbtns"><a class="btn ghost" href="{t["ta_agent_cta_href"]}">{t["ta_agent_cta"]} &rarr;</a></p>'
+            f'</div></div></section>')
 
 
 
@@ -180,6 +293,9 @@ def build(lang, sh):
     t = importlib.import_module("t_" + lang).T
     fl = sh["faq_ld"]
     chrome = lambda slug: (header(slug, t), footer(t, sh["ENTITY"]))
+    _cmp_local = bool(t.get("cmp_h1"))
+    cmp_href = "compare-athlete-marketing-platforms.html" if _cmp_local else "../compare-athlete-marketing-platforms.html"
+    cmp_sfx = "" if _cmp_local else " (EN)"
     P = {}
 
     vs = {"video_eyebrow": t["v_eyebrow"], "video_title": t["v_title"], "video_sub": t["v_sub"],
@@ -192,6 +308,7 @@ def build(lang, sh):
   <h1>{t['hx_h1']}</h1>
   <div class="answer"><p>{t['positioning']}</p></div>
   <p style="margin-top:18px" class="lead muted">{t['hx_lead']}</p>
+  {("<p class=\"muted\" style=\"margin-top:12px\">" + t['hx_europe'] + "</p>") if t.get('hx_europe') else ""}
   <div class="cta">
     <a class="btn gold" href="brands.html">{t['hx_cta1']}</a>
     <a class="btn ghost" href="{CAL}">{t['cta_demo']}</a>
@@ -206,14 +323,15 @@ def build(lang, sh):
 </div></section>
 <section><div class="wrap">
   <div class="section-head"><p class="eyebrow">{t['hx_three_eye']}</p><h2>{t['hx_three_h2']}</h2></div>
-  {cards(t['hx_three'])}
+  {hx_cards(t)}
 </div></section>
 <section class="light"><div class="wrap">
   <div class="section-head"><p class="eyebrow">{t['hx_how_eye']}</p><h2>{t['hx_how_h2']}</h2></div>
   {cards(t['hx_steps'], 'steps grid')}
 </div></section>
 {faq_section(t['hx_faq_h2'], t['hx_faq'], light=False)}
-<section class="light"><div class="wrap" style="text-align:center">
+{ss_teaser(t)}
+<section><div class="wrap" style="text-align:center">
   <h2>{t['hx_final_h2']}</h2>
   <p class="lead muted" style="margin:12px auto 24px;max-width:620px">{t['hx_final_p']}</p>
   <a class="btn gold" href="{CAL}">{t['cta_demo']}</a>
@@ -236,11 +354,14 @@ def build(lang, sh):
   <div class="section-head"><p class="eyebrow">{t['br_cap_eye']}</p><h2>{t['br_cap_h2']}</h2></div>
   {cards(t['br_caps'])}
 </div></section>
+{by_industry(t)}
+{the_talent(t)}
+{it_brand_athletes(lang, sh)}
 {faq_section(t['br_faq_h2'], t['br_faq'], light=False)}
 <section class="light"><div class="wrap" style="text-align:center">
   <h2>{t['br_cmp_h2']}</h2>
   <p class="lead muted" style="margin:12px auto 24px;max-width:640px">{t['br_cmp_p']}</p>
-  <a class="btn gold" href="../compare-athlete-marketing-platforms.html">{t['br_cmp_cta']} (EN)</a>
+  <a class="btn gold" href="{cmp_href}">{t['br_cmp_cta']}{cmp_sfx}</a>
 </div></section>
 <section><div class="wrap" style="text-align:center">
   <h2>{t['br_final_h2']}</h2>
@@ -265,7 +386,10 @@ def build(lang, sh):
   <div class="section-head"><p class="eyebrow">{t['ta_why_eye']}</p><h2>{t['ta_why_h2']}</h2></div>
   {cards(t['ta_cards'])}
 </div></section>
+{brands_showcase(t)}
+{academy_section(t)}
 {faq_section(t['ta_faq_h2'], t['ta_faq'], light=False)}
+{agent_partner(t)}
 <section class="light"><div class="wrap" style="text-align:center">
   <h2>{t['ta_final_h2']}</h2>
   <p class="lead" style="margin:12px auto 24px;max-width:600px">{t['ta_final_p']}</p>
@@ -415,5 +539,80 @@ def build(lang, sh):
 </div></section>"""
     P["faqs.html"] = dict(title=t["fq_title"], desc=t["fq_desc"], body=body,
                           jsonld=[fl(t["fq_items"])], chrome=chrome("faqs.html"))
+
+    # ---------- compare (content-gated; nl only for now) ----------
+    if t.get("cmp_h1"):
+        thead = "".join(
+            f'<th class="you">{c}</th>' if i == 1 else f'<th>{c}</th>'
+            for i, c in enumerate(t["cmp_cols"]))
+        rows = ""
+        for r in t["cmp_rows"]:
+            cells = "".join(
+                (f'<td class="you">{c}</td>' if i == 0 else f'<td>{c}</td>')
+                for i, c in enumerate(r[1:]))
+            rows += f'<tr><th>{r[0]}</th>{cells}</tr>'
+        choose = "".join(f'<li><strong>{b}</strong> {txt}</li>' for b, txt in t["cmp_choose"])
+        body = f"""
+<section class="hero"><div class="wrap">
+  <p class="eyebrow">{t['cmp_eyebrow']}</p>
+  <h1>{t['cmp_h1']}</h1>
+  <p class="lead">{t['cmp_lead']}</p>
+</div></section>
+<section class="light"><div class="wrap">
+  <div class="section-head"><p class="eyebrow">{t['cmp_side_eye']}</p><h2>{t['cmp_side_h2']}</h2>
+  <p>{t['cmp_side_p']}</p></div>
+  <div class="tablewrap"><table class="compare">
+    <thead><tr>{thead}</tr></thead>
+    <tbody>{rows}</tbody>
+  </table></div>
+</div></section>
+<section><div class="wrap">
+  <div class="section-head"><p class="eyebrow">{t['cmp_choose_eye']}</p><h2>{t['cmp_choose_h2']}</h2></div>
+  <ul class="kicker-list">{choose}</ul>
+</div></section>
+{faq_section(t['cmp_faq_h2'], t['cmp_faq'])}
+<section><div class="wrap" style="text-align:center">
+  <h2>{t['cmp_demo_h2']}</h2>
+  <p class="lead muted" style="margin:12px auto 24px;max-width:620px">{t['cmp_demo_p']}</p>
+  <a class="btn gold" href="{CAL}">{t['cmp_demo_cta']}</a>
+</div></section>
+<section><div class="wrap">
+  <p class="disclaimer">{t['cmp_disclaimer']}</p>
+</div></section>"""
+        P["compare-athlete-marketing-platforms.html"] = dict(
+            title=t["cmp_title"], desc=t["cmp_desc"], body=body,
+            jsonld=[fl(t["cmp_faq"])], chrome=chrome("compare-athlete-marketing-platforms.html"))
+
+    # ---------- success stories (lighter Dutch overview; nl only) ----------
+    if t.get("ss_h1"):
+        _esc = lambda x: x.replace("&", "&amp;")
+        _rc = lambda c: c if c.startswith("http") else "../" + c
+        stories = [s for s in sh["STORIES"] if s.get("cover", "").startswith("images/")][:12]
+        scards = "".join(
+            f'<a class="card" href="../success-stories/{s["id"]}.html" '
+            f'style="padding:0;overflow:hidden;text-decoration:none;display:block">'
+            f'<img src="{_rc(s["cover"])}" alt="{_esc(s["title"])}" loading="lazy" '
+            f'style="width:100%;aspect-ratio:16/10;object-fit:cover;display:block">'
+            f'<div style="padding:16px 18px"><h3 style="font-size:1rem;margin:0;line-height:1.3">{_esc(s["title"])}</h3>'
+            f'<p style="margin-top:10px;color:var(--gold);font-weight:600;font-size:.82rem">{t["ss_card_cta"]} &rarr;</p>'
+            f'</div></a>'
+            for s in stories)
+        body = f"""
+<section class="hero"><div class="wrap">
+  <p class="eyebrow">{t['ss_eyebrow']}</p>
+  <h1>{t['ss_h1']}</h1>
+  <p class="lead">{t['ss_lead']}</p>
+</div></section>
+<section class="light"><div class="wrap">
+  <div class="grid g3">{scards}</div>
+  <p style="margin-top:24px"><a class="btn ghost" href="../success-stories.html">{t['ss_all_cta']} &rarr;</a></p>
+</div></section>
+<section><div class="wrap" style="text-align:center">
+  <h2>{t['ss_final_h2']}</h2>
+  <p class="lead muted" style="margin:12px auto 24px;max-width:620px">{t['ss_final_p']}</p>
+  <a class="btn gold" href="{CAL}">{t['ss_final_cta']}</a>
+</div></section>"""
+        P["success-stories.html"] = dict(title=t["ss_title"], desc=t["ss_desc"],
+                                         body=body, jsonld=[], chrome=chrome("success-stories.html"))
 
     return P

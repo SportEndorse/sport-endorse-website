@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,follow">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TK4NZ6T');</script>
+<!-- End Google Tag Manager -->
+<title>Athlete Marketing Toolkit | Sport Endorse</title>
+<meta name="description" content="Know what your athlete campaign could deliver before you spend your budget. Get the free Sport Endorse Athlete Marketing ROI Calculator and 2026 Athlete Marketing Guide.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sport Endorse">
+<meta property="og:title" content="Athlete Marketing Toolkit | Sport Endorse">
+<meta property="og:description" content="The free Athlete Marketing ROI Calculator and 2026 Athlete Marketing Guide - plan your campaign with clearer numbers before you commit spend.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900&family=Spline+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+/* ---- Toolkit landing page (standalone) - built on the site design tokens ---- */
+.lp-header{position:sticky;top:0;z-index:60;background:rgba(10,20,36,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.lp-header .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:13px;padding-bottom:13px}
+.lp-header .lp-logo img{display:block;height:29px;width:auto}
+
+.lp-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.lp-hero-cta{margin-top:28px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.lp-hero-note{color:var(--muted);font-size:.9rem}
+
+/* interactive ROI preview card */
+.lp-preview{background:#fff;color:var(--dark-text);border-radius:var(--r);padding:24px;box-shadow:0 26px 64px rgba(0,0,0,.38)}
+.lp-prev-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.lp-prev-top strong{font-family:"Archivo",sans-serif;font-size:1.05rem}
+.lp-badge{background:var(--paper-2);color:var(--dark-muted);font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:5px 10px;border-radius:999px}
+.lp-field{margin-bottom:12px}
+.lp-field label{display:block;font-size:.82rem;color:var(--dark-muted);margin-bottom:5px;font-weight:600}
+.lp-field input{width:100%;padding:11px 13px;border:1px solid #DDE0D2;border-radius:10px;font-family:"Spline Sans",system-ui,sans-serif;font-size:1rem;color:var(--dark-text);background:#fff}
+.lp-field input:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(255,206,0,.28)}
+.lp-result{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--ink);color:var(--text);border-radius:12px;padding:16px 18px;margin-top:8px}
+.lp-lbl{font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:4px}
+.lp-roi{font-family:"Archivo",sans-serif;font-size:2rem;font-weight:800;color:var(--gold);line-height:1}
+.lp-val{font-family:"Archivo",sans-serif;font-size:1.35rem;font-weight:700}
+.lp-prev-note{font-size:.78rem;color:var(--dark-muted);margin-top:12px}
+
+/* brand strip */
+.lp-brandstrip{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 0}
+.lp-brandrow{display:flex;align-items:center;gap:26px;flex-wrap:wrap;justify-content:space-between}
+.lp-brandlabel{font-size:.76rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:600}
+.lp-brands{display:flex;gap:26px;flex-wrap:wrap}
+.lp-brands span{font-family:"Archivo",sans-serif;font-weight:800;font-stretch:75%;letter-spacing:.05em;color:var(--text);opacity:.72}
+
+/* tags + lists */
+.lp-tag{display:inline-block;font-family:"Archivo",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.7rem;padding:5px 11px;border-radius:999px;background:var(--gold);color:#141a10;margin-bottom:12px}
+.lp-tag.green{background:#1F7A58;color:#fff}
+.lp-list{list-style:none;padding:0;margin:14px 0 0}
+.lp-list li{position:relative;padding-left:26px;margin-bottom:9px;color:var(--dark-muted)}
+.lp-list li::before{content:"\2713";position:absolute;left:0;top:0;color:#1F7A58;font-weight:800}
+
+/* proof: quote + campaign card */
+.lp-qmark{font-family:"Archivo",sans-serif;font-size:3.4rem;color:var(--gold);line-height:.55;height:26px}
+.lp-qtext{font-size:1.25rem;line-height:1.45;margin:12px 0 18px;color:var(--text)}
+.lp-qby{color:var(--muted);font-size:.92rem}
+.lp-qby strong{color:var(--text)}
+.lp-stat{display:flex;align-items:baseline;gap:12px;margin:16px 0 14px}
+.lp-stat strong{font-family:"Archivo",sans-serif;font-size:3rem;color:var(--gold);line-height:1}
+.lp-stat span{color:var(--muted)}
+
+/* access + form */
+.lp-access-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+.lp-access-list{list-style:none;padding:0;margin:22px 0 0}
+.lp-access-list li{position:relative;padding-left:30px;margin-bottom:12px;font-size:1.05rem}
+.lp-access-list li::before{content:"\2713";position:absolute;left:0;top:0;color:var(--gold);font-weight:800;font-size:1.1rem}
+.lp-form-card{background:#fff;border:1px solid #DDE0D2;border-radius:var(--r);padding:28px;box-shadow:0 18px 50px rgba(7,27,54,.09)}
+.lp-form-card h3{margin:0 0 6px}
+.lp-form-card .lp-form-sub{margin:0 0 14px;color:var(--dark-muted);font-size:.95rem}
+/* best-effort styling for HubSpot's rendered form (native embeds only) */
+.lp-form-card input:not([type=submit]):not([type=checkbox]):not([type=radio]),
+.lp-form-card select,.lp-form-card textarea{width:100%;padding:11px 13px;border:1px solid #DDE0D2;border-radius:10px;font-family:"Spline Sans",system-ui,sans-serif;font-size:1rem;margin-top:4px}
+.lp-form-card .hs-button,.lp-form-card input[type=submit]{background:var(--gold);color:#141a10;border:none;border-radius:999px;padding:12px 22px;font-family:"Archivo",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:.88rem;cursor:pointer}
+.lp-form-card .hs-button:hover,.lp-form-card input[type=submit]:hover{background:var(--gold-dark)}
+
+/* footer */
+.lp-footer{background:var(--ink);border-top:1px solid var(--line);padding:26px 0}
+.lp-footer .wrap{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:.9rem;flex-wrap:wrap;gap:10px}
+.lp-footer a{color:var(--muted);text-decoration:none}
+.lp-footer a:hover{color:var(--text)}
+
+@media(max-width:880px){
+  .lp-hero-grid,.lp-access-grid{grid-template-columns:1fr;gap:32px}
+  .lp-brandrow{gap:16px}
+}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK4NZ6T"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="lp-header">
+  <div class="wrap">
+    <a class="lp-logo" href="index.html" aria-label="Sport Endorse home"><img src="images/logo/sport-endorse-white.png" alt="Sport Endorse" width="182" height="31"></a>
+    <a class="btn gold sm" href="#get-toolkit">Get the toolkit</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="lp-hero-grid">
+        <div>
+          <p class="eyebrow">For brands planning athlete campaigns</p>
+          <h1>Know what your athlete campaign <span>could deliver</span> before you spend your budget.</h1>
+          <p class="lead" style="margin-top:18px;color:var(--muted)">Use the free Athlete Marketing ROI Calculator and 2026 Athlete Marketing Guide to plan your campaign with clearer numbers before you commit spend.</p>
+          <div class="lp-hero-cta">
+            <a class="btn gold" href="#get-toolkit">Get the free toolkit</a>
+            <span class="lp-hero-note">Calculator + guide &middot; free access</span>
+          </div>
+        </div>
+
+        <div class="lp-preview">
+          <div class="lp-prev-top">
+            <strong>Quick ROI preview</strong>
+            <span class="lp-badge">Sample estimate</span>
+          </div>
+          <div class="lp-field">
+            <label for="mini-budget">Campaign budget (&euro;)</label>
+            <input id="mini-budget" type="number" value="5000" min="1">
+          </div>
+          <div class="lp-field">
+            <label for="mini-athletes">Number of athletes</label>
+            <input id="mini-athletes" type="number" value="5" min="1">
+          </div>
+          <div class="lp-field">
+            <label for="mini-followers">Average followers per athlete</label>
+            <input id="mini-followers" type="number" value="50000" min="1">
+          </div>
+          <div class="lp-result">
+            <div>
+              <div class="lp-lbl">Potential ROI</div>
+              <div class="lp-roi" id="mini-roi">275%</div>
+            </div>
+            <div style="text-align:right">
+              <div class="lp-lbl">Estimated campaign value</div>
+              <div class="lp-val" id="mini-value">&euro;18,750</div>
+            </div>
+          </div>
+          <p class="lp-prev-note">Preview only. Unlock the full calculator to enter all campaign details.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="lp-brandstrip">
+    <div class="wrap lp-brandrow">
+      <div class="lp-brandlabel">Brands running measurable athlete campaigns</div>
+      <div class="lp-brands">
+        <span>PUMA</span><span>WHOOP</span><span>RED BULL</span><span>KELLOGG'S</span><span>SKECHERS</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="light">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">What's inside</p>
+        <h2>One toolkit, two practical resources.</h2>
+      </div>
+      <div class="grid g2">
+        <article class="card">
+          <span class="lp-tag">Calculator</span>
+          <h3>Athlete Marketing ROI Calculator</h3>
+          <p>Enter your campaign details and estimate potential reach, website or profile visits, purchases, campaign value and ROI.</p>
+          <ul class="lp-list">
+            <li>Estimate campaign reach and visits</li>
+            <li>Estimate potential purchases and revenue</li>
+            <li>See potential ROI and return per &euro;1 spent</li>
+          </ul>
+        </article>
+        <article class="card">
+          <span class="lp-tag green">Guide</span>
+          <h3>2026 Athlete Marketing Guide</h3>
+          <p>A simple guide to planning athlete campaigns, choosing the right athletes and building campaigns that can be measured.</p>
+          <ul class="lp-list">
+            <li>How brands are using athletes</li>
+            <li>What to plan before a campaign starts</li>
+            <li>How to think about measurable results</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Proven with real campaigns</p>
+        <h2>Real campaign delivery, not just theory.</h2>
+      </div>
+      <div class="grid g2">
+        <article class="card">
+          <div class="lp-qmark">&ldquo;</div>
+          <div class="lp-qtext">Sport Endorse were instrumental in sourcing the right talent - easy, professional and cost-effective.</div>
+          <div class="lp-qby"><strong>Claire Lynch</strong><br>Head of Marketing, Active Iron</div>
+        </article>
+        <article class="card">
+          <span class="lp-tag green">Active Iron campaign</span>
+          <h3>Campaign delivery</h3>
+          <div class="lp-stat"><strong>4</strong><span>Inter-county athletes</span></div>
+          <ul class="lp-list">
+            <li>1 full-day content shoot</li>
+            <li>1 month image usage</li>
+            <li>Athlete-led social content</li>
+            <li>Retail activation</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="light" id="get-toolkit">
+    <div class="wrap">
+      <div class="lp-access-grid">
+        <div>
+          <p class="eyebrow">Get access</p>
+          <h2>Unlock the free Athlete Marketing Toolkit.</h2>
+          <p style="margin-top:16px;max-width:520px;color:var(--dark-muted)">Get the full ROI calculator and 2026 Athlete Marketing Guide.</p>
+          <ul class="lp-access-list">
+            <li>Full Athlete Marketing ROI Calculator</li>
+            <li>2026 Athlete Marketing Guide</li>
+            <li>Unlimited calculator use</li>
+          </ul>
+        </div>
+        <div class="lp-form-card">
+          <h3>Get instant access</h3>
+          <p class="lp-form-sub">Enter your details and we'll send the toolkit straight over.</p>
+          <div class="hubspot-form-wrap">
+            <script src="https://js.hsforms.net/forms/embed/4025606.js" defer></script>
+            <div class="hs-form-frame" data-region="na1" data-form-id="3318b150-fa69-47f6-921e-75def7dcc299" data-portal-id="4025606"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="lp-footer">
+  <div class="wrap">
+    <span>&copy; 2026 Sport Endorse Limited</span>
+    <a href="https://www.sportendorse.com">sportendorse.com</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var budget=document.getElementById("mini-budget"),
+      athletes=document.getElementById("mini-athletes"),
+      followers=document.getElementById("mini-followers"),
+      roiEl=document.getElementById("mini-roi"),
+      valueEl=document.getElementById("mini-value");
+  function n(el){var v=Number(el.value);return Number.isFinite(v)&&v>0?v:0;}
+  function updatePreview(){
+    var campaignBudget=n(budget),numberAthletes=n(athletes),avgFollowers=n(followers);
+    var reach=numberAthletes*avgFollowers*0.30;
+    var purchases=reach*0.005;
+    var campaignValue=purchases*50;
+    var roi=campaignBudget>0?((campaignValue-campaignBudget)/campaignBudget)*100:0;
+    roiEl.textContent=campaignBudget>0?Math.round(roi)+"%":"-";
+    valueEl.textContent=new Intl.NumberFormat("en-IE",{style:"currency",currency:"EUR",maximumFractionDigits:0}).format(campaignValue);
+  }
+  [budget,athletes,followers].forEach(function(el){el.addEventListener("input",updatePreview);});
+  updatePreview();
+})();
+</script>
+
+</body>
+</html>

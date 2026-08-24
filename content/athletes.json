@@ -112,5 +112,49 @@
    ],
    "photo": "images/athletes/peter-plavec.jpg"
   }
+ ],
+ "italy": [
+  {
+   "ini": "MZ",
+   "hue": 28,
+   "name": "Miky Zanirato",
+   "sport": "HYROX",
+   "loc": "Italia / UK",
+   "bio": "Atleta HYROX PRO e personal trainer, fondatore di MZ9 Fitness. Gareggia nella categoria Pro del circuito internazionale HYROX, dove forza e resistenza contano allo stesso modo. Vive e si allena tra l'Italia e il Regno Unito.",
+   "tags": [
+    "HYROX",
+    "Ambasciatore",
+    "Content"
+   ],
+   "photo": "images/athletes/miky-zanirato.jpg"
+  },
+  {
+   "ini": "RM",
+   "hue": 210,
+   "name": "Rodrigo Mattiuz",
+   "sport": "Ciclismo",
+   "loc": "Italia / UK",
+   "bio": "Ciclista su strada e content creator, scalatore di natura che vive a Londra e corre con il team London Dynamo. Tra criterium, salite e recensioni tech, racconta il ciclismo a una community appassionata tra Italia e Regno Unito.",
+   "tags": [
+    "Ciclismo",
+    "Ambasciatore",
+    "Content"
+   ],
+   "photo": "images/athletes/rodrigo-mattiuz.jpg"
+  },
+  {
+   "ini": "MA",
+   "hue": 150,
+   "name": "Matteo Agostini",
+   "sport": "Corsa in montagna",
+   "loc": "Italia",
+   "bio": "Runner italiano specializzato nella corsa in montagna e nel trail running. Dai vertical alle skyrace, gareggia su sentieri e vette portando il pubblico tra le montagne piu belle d'Italia.",
+   "tags": [
+    "Corsa in montagna",
+    "Ambasciatore",
+    "Eventi"
+   ],
+   "photo": "images/athletes/matteo-agostini.jpg"
+  }
  ]
 }

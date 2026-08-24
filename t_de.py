@@ -165,7 +165,7 @@ T = {
  "su_answer": "Markenabonnements sind marktbasiert und richten sich nach Ihrem Heimatmarkt und den Athletenmärkten, auf die Sie zugreifen. Sehen Sie sich unten die Abonnementpläne für Ihre Region an. Plattform-Deals haben eine transparente Provision von 14–18 % — nicht die anderswo üblichen 30 %. Maßgeschneiderte Full-Service-Pakete sind verfügbar, und Athleten und Creator treten kostenlos bei.",
  "su_rate_eye": "Preisliste",
  "su_rates_h2": "Stellen Sie Ihren Plan zusammen — in Ihrer Währung",
- "su_geo_p": "Angezeigt für Ihre Region. Wählen Sie die Athleten-Märkte, in denen Sie Kampagnen fahren möchten, entscheiden Sie sich für jährliche oder quartalsweise Abrechnung und sehen Sie Ihre Summe sofort. Jeder Markt ist ein eigenes Abo: Sie zahlen nur dort, wo Sie wirklich aktiv sind.",
+ "su_geo_p": "Angezeigt für Ihre Region — nutzen Sie die Regionsauswahl im Header, falls wir daneben liegen. Wählen Sie die Athleten-Märkte, in denen Sie Kampagnen fahren möchten, entscheiden Sie sich für jährliche oder quartalsweise Abrechnung und sehen Sie Ihre Summe sofort. Jeder Markt ist ein eigenes Abo: Sie zahlen nur dort, wo Sie wirklich aktiv sind.",
  "su_annual_lbl": "Jährlich", "su_quarter_lbl": "Quartalsweise",
  "su_geo_h": ["US-Marken — Abrechnung in USD", "UK-Marken — Abrechnung in GBP", "Europäische Marken — Abrechnung in EUR", "Internationale Marken — Abrechnung in EUR"],
  "su_full_sum": "Vollständige Preisliste — alle Marken-Herkünfte und Athleten-Märkte",

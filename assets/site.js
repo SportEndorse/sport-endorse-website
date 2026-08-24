@@ -1,4 +1,4 @@
-/* Sport Endorse — progressive enhancement layer.
+/* Sport Endorse - progressive enhancement layer.
    Everything meaningful is server-rendered in the HTML (AEO requirement).
    This script only: (1) picks a region variant, (2) swaps UI strings for
    non-English visitors, (3) runs the mobile menu. */
@@ -23,7 +23,7 @@
      First visit: infer from browser locale + timezone. Always user-overridable.
      For true server-side geotargeting use the CDN header (see README):
      Cloudflare adds CF-IPCountry; map it to one of these codes at the edge. */
-  var REGIONS = ["us", "uk", "ie", "eu", "za", "row"];
+  var REGIONS = ["us", "uk", "ie", "eu", "it", "za", "row"];
 
   function detectRegion() {
     var saved = store.get("se-region");
@@ -37,6 +37,7 @@
     if (/-ie$/.test(loc) || tz === "Europe/Dublin") return "ie";
     if (/-gb$/.test(loc) || tz === "Europe/London") return "uk";
     if (/-za$/.test(loc) || tz === "Africa/Johannesburg") return "za";
+    if (/^it\b/.test(loc) || /-it$/.test(loc) || tz === "Europe/Rome") return "it";
     if (/^(de|fr|es|it|nl|pt|pl|sv|da|fi)\b/.test(loc) || /^europe\//.test(tz)) return "eu";
     return "row";
   }
@@ -58,13 +59,13 @@
     for (var k = 0; k < pickers.length; k++) pickers[k].value = region;
   }
 
-  /* ---------- LANGUAGE (UI chrome only — full localized pages ship as
+  /* ---------- LANGUAGE (UI chrome only - full localized pages ship as
      /es/, /de/, /fr/, /it/ static builds with hreflang; see README) ---------- */
   var I18N = {
-    es: { "nav.brands": "Para marcas", "nav.talent": "Para atletas", "nav.agencies": "Para agencias", "nav.athletes": "Perfiles", "nav.blog": "Blog", "nav.pricing": "Precios", "nav.compare": "Comparar", "nav.stories": "Casos de éxito", "cta.demo": "Reservar demo", "cta.signup": "Registrarse", "cta.explore": "Explorar atletas", "hero.note": "Plataforma de marketing de atletas y patrocinio deportivo — más de 9.000 atletas de élite verificados." },
-    de: { "nav.brands": "Für Marken", "nav.talent": "Für Athleten", "nav.agencies": "Für Agenturen", "nav.athletes": "Profile", "nav.blog": "Blog", "nav.pricing": "Preise", "nav.compare": "Vergleich", "nav.stories": "Erfolgsgeschichten", "cta.demo": "Demo buchen", "cta.signup": "Registrieren", "cta.explore": "Athleten entdecken", "hero.note": "Plattform für Athletenmarketing und Sportsponsoring — über 9.000 verifizierte Spitzenathleten." },
-    fr: { "nav.brands": "Pour les marques", "nav.talent": "Pour les athlètes", "nav.agencies": "Pour les agences", "nav.athletes": "Profils", "nav.blog": "Blog", "nav.pricing": "Tarifs", "nav.compare": "Comparer", "nav.stories": "Études de cas", "cta.demo": "Réserver une démo", "cta.signup": "S'inscrire", "cta.explore": "Découvrir les athlètes", "hero.note": "Plateforme de marketing d'athlètes et de sponsoring sportif — plus de 9 000 athlètes d'élite vérifiés." },
-    it: { "nav.brands": "Per i brand", "nav.talent": "Per gli atleti", "nav.agencies": "Per le agenzie", "nav.athletes": "Profili", "nav.blog": "Blog", "nav.pricing": "Prezzi", "nav.compare": "Confronta", "nav.stories": "Casi di successo", "cta.demo": "Prenota una demo", "cta.signup": "Registrati", "cta.explore": "Scopri gli atleti", "hero.note": "Piattaforma di athlete marketing e sponsorizzazioni sportive — oltre 9.000 atleti d'élite verificati." }
+    es: { "nav.brands": "Para marcas", "nav.talent": "Para atletas", "nav.agencies": "Para agencias", "nav.athletes": "Perfiles", "nav.blog": "Blog", "nav.pricing": "Precios", "nav.compare": "Comparar", "nav.stories": "Casos de éxito", "cta.demo": "Reservar demo", "cta.signup": "Registrarse", "cta.explore": "Explorar atletas", "hero.note": "Plataforma de marketing de atletas y patrocinio deportivo - más de 9.000 atletas de élite verificados." },
+    de: { "nav.brands": "Für Marken", "nav.talent": "Für Athleten", "nav.agencies": "Für Agenturen", "nav.athletes": "Profile", "nav.blog": "Blog", "nav.pricing": "Preise", "nav.compare": "Vergleich", "nav.stories": "Erfolgsgeschichten", "cta.demo": "Demo buchen", "cta.signup": "Registrieren", "cta.explore": "Athleten entdecken", "hero.note": "Plattform für Athletenmarketing und Sportsponsoring - über 9.000 verifizierte Spitzenathleten." },
+    fr: { "nav.brands": "Pour les marques", "nav.talent": "Pour les athlètes", "nav.agencies": "Pour les agences", "nav.athletes": "Profils", "nav.blog": "Blog", "nav.pricing": "Tarifs", "nav.compare": "Comparer", "nav.stories": "Études de cas", "cta.demo": "Réserver une démo", "cta.signup": "S'inscrire", "cta.explore": "Découvrir les athlètes", "hero.note": "Plateforme de marketing d'athlètes et de sponsoring sportif - plus de 9 000 athlètes d'élite vérifiés." },
+    it: { "nav.brands": "Per i brand", "nav.talent": "Per gli atleti", "nav.agencies": "Per le agenzie", "nav.athletes": "Profili", "nav.blog": "Blog", "nav.pricing": "Prezzi", "nav.compare": "Confronta", "nav.stories": "Casi di successo", "cta.demo": "Prenota una demo", "cta.signup": "Registrati", "cta.explore": "Scopri gli atleti", "hero.note": "Piattaforma di athlete marketing e sponsorizzazioni sportive - oltre 9.000 atleti d'élite verificati." }
   };
 
   function applyLang(lang) {

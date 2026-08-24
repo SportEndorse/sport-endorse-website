@@ -72,6 +72,13 @@ COVERAGE_MIN = 0.80  # a page is offered in a language only when >=80% translate
 # The 7 native pages are always fully available; text-localized entries are
 # filled in below once translation coverage is known.
 LOC_AVAIL = {s: set(LOCALES) for s in LOCALIZED_SLUGS}
+# Native-localized editorial pages available only in specific locales (nl Compare).
+# NOTE: this list and the builders in locale_pages.py are coupled by hand — those
+# are gated on t.get("cmp_h1") / t.get("ss_h1"), so adding those keys to another
+# t_*.py would build a page that hreflang and the sitemap never learn about.
+# Add the language here too whenever you add the keys there.
+LOC_AVAIL["compare-athlete-marketing-platforms.html"] = {"nl"}
+LOC_AVAIL["success-stories.html"] = {"nl"}
 
 def canon(slug, lang="en"):
     # Clean (extension-less) canonical URLs, matching the old site's URL scheme
@@ -176,6 +183,7 @@ def logos_wall(prefix=""):
 # markets are factual summaries. CONFIRM the list is accurate and cleared to
 # display at this prominence before publishing; edit freely.
 _LOGO_IMG = {l.get("name"): l.get("image") for l in LOGOS if l.get("image")}
+_LOGO_SCALE = {l.get("name"): l.get("scale") for l in LOGOS if l.get("scale")}
 BRANDS_SHOWCASE = [
   ("Puma", "Global sportswear and footwear", ["Global"]),
   ("WHOOP", "Wearable fitness and recovery tech", ["US", "UK", "Global"]),
@@ -193,7 +201,9 @@ BRANDS_SHOWCASE = [
 
 def brand_card(name, desc, markets, prefix=""):
     img = _LOGO_IMG.get(name)
-    logo = (f'<span class="bshow-logo"><img src="/{img.lstrip('/')}" alt="{html.escape(name)}" loading="lazy"></span>'
+    _sc = _LOGO_SCALE.get(name)
+    _st = f' style="transform:scale({_sc})"' if _sc else ""
+    logo = (f'<span class="bshow-logo"><img src="/{img.lstrip('/')}" alt="{html.escape(name)}" loading="lazy"{_st}></span>'
             if img else f'<span class="bshow-name">{html.escape(name)}</span>')
     tags = "".join(f"<span>{html.escape(m)}</span>" for m in markets)
     return (f'<div class="card bshow-card">{logo}'
@@ -422,10 +432,10 @@ home_body = f"""
   <div class="answer"><p>{POSITIONING}</p></div>
   <p style="margin-top:18px" class="lead muted" data-i18n="hero.note">9,000+ verified athletes and creators across 280+ sports in 85+ countries — transparent market-based pricing, no 30% marketplace cut, and founder-led support when it counts.</p>
   <div style="margin-top:14px">
-    <p class="region-note geo-on" data-geo="us"><strong>USA:</strong> Now in Indianapolis. Verified pro and collegiate talent for the NIL era — without a 30% marketplace cut.</p>
+    <p class="region-note geo-on" data-geo="us">Now in Indianapolis. Verified pro and collegiate talent for the NIL era — without a 30% marketplace cut.</p>
     <p class="region-note" data-geo="uk"><strong>UK:</strong> Trusted by Specsavers, Sports Direct and Sons. Premiership rugby, football, golf and athletics talent on one platform.</p>
-    <p class="region-note" data-geo="ie"><strong>Ireland:</strong> Built in Dublin. GAA, camogie, rugby and Irish international athletes — trusted by Active Iron, AIB, Uniphar and Glanbia.</p>
-    <p class="region-note" data-geo="eu"><strong>Europe:</strong> Verified elite athletes across Germany, Spain, France, Italy and the Netherlands — run campaigns in your market and language.</p>
+    <p class="region-note" data-geo="ie">Built in Dublin. Verified GAA, Camogie, Rugby and Irish international athletes — trusted by Active Iron, AIB, Uniphar and Glanbia.</p>
+    <p class="region-note" data-geo="eu it"><strong>Europe:</strong> Verified elite athletes across Germany, Spain, France, Italy and the Netherlands — run campaigns in your market and language.</p>
     <p class="region-note" data-geo="za"><strong>South Africa:</strong> Platform partner of the Hollywoodbets Sharks — Springbok-level talent for South African brand campaigns.</p>
     <p class="region-note" data-geo="row"><strong>Global:</strong> Campaigns delivered across 85+ countries, from single-athlete ambassadorships to multi-market activations.</p>
   </div>
@@ -445,13 +455,13 @@ home_body = f"""
   <div class="section-head"><p class="eyebrow">Where you fit</p><h2>Built for every side of athlete marketing</h2></div>
   <div class="audiences">
     <div class="card"><span class="eyebrow">For Brands</span><h3>Find your next athlete ambassador in hours, not weeks</h3>
-      <p>Discover and message verified talent across every sport, post campaign briefs, vet applications, manage usage rights and payments, and report results — all in one place.</p>
+      <p>Discover verified talent across every sport, post campaign briefs, vet applications, and manage usage rights and payments — all in one place.</p>
       <p style="margin-top:14px"><a class="btn gold sm" href="brands.html">For Brands</a></p></div>
     <div class="card"><span class="eyebrow">For Talent</span><h3>Collaborate with brands. Get paid.</h3>
       <p>Direct access to verified brands ready to pay for your influence. Apply for deals that fit you, manage everything from the mobile app, and get paid securely with no hidden fees.</p>
       <p style="margin-top:14px"><a class="btn gold sm" href="talent.html">For Talent — Free</a></p></div>
     <div class="card"><span class="eyebrow">For Agencies</span><h3>Both kinds of agency, one platform</h3>
-      <p>Sports agencies find commercial deals for their roster and earn 20–40% commission share-back; marketing and creative agencies source and manage verified athletes for client campaigns.</p>
+      <p>Sports agencies find commercial deals for their network and earn 20–40% commission share-back; marketing and creative agencies source and manage verified athletes for client campaigns.</p>
       <p style="margin-top:14px"><a class="btn gold sm" href="agencies.html">For Agencies</a></p></div>
     <div class="card" data-geo="us"><span class="eyebrow">For Universities</span><h3>The NIL era, handled properly</h3>
       <p>International student-athlete access, the Sport Endorse Academy NIL curriculum, and dedicated student-athlete success — with a documented compliance trail your department can audit.</p>
@@ -467,12 +477,11 @@ home_body = f"""
     <div class="card"><h3>Discover</h3><p>Search 9,000+ verified athletes by sport, region, audience size and campaign fit — or post an opportunity and let the right talent apply to you.</p></div>
     <div class="card"><h3>Connect</h3><p>Message athletes and agents directly in-platform. No gatekeepers, no week-long email chains, no inflated agency mark-ups.</p></div>
     <div class="card"><h3>Manage</h3><p>Agree deliverables, usage rights and approvals with clear campaign terms — with secure, integrated payments protecting both sides.</p></div>
-    <div class="card"><h3>Measure</h3><p>Track reach, views and engagement in the brand dashboard and export results your CFO will actually believe. <a href="campaign-measurement.html">See campaign measurement →</a></p></div>
+    <div class="card"><h3>Measure</h3><p>Measure the results — reach, views and engagement — through our integrated measurement partner. <a href="campaign-measurement.html">See campaign measurement →</a></p></div>
   </div>
 </div></section>
 <section><div class="wrap">
-  <div class="section-head"><p class="eyebrow">Proof</p><h2>Success stories, fully in the open</h2>
-  <p>No accordions, no gated PDFs — every case study is a fully rendered page that people (and answer engines) can actually read.</p></div>
+  <div class="section-head"><p class="eyebrow">Proof</p><h2>Success stories, fully in the open</h2></div>
   <div class="grid g3">
     <div class="card"><span class="eyebrow">Healthcare</span><h3>Active Iron × Camogie</h3><p>A regulated health brand reaching Irish audiences through authentic elite camogie ambassadors.</p><p style="margin-top:10px"><a href="success-stories.html#active-iron">Read the case study →</a></p></div>
     <div class="card"><span class="eyebrow">Wellness</span><h3>WHOOP × Multi-athlete seeding</h3><p>Product seeding at scale across verified endurance and team-sport athletes in multiple markets.</p><p style="margin-top:10px"><a href="success-stories.html#whoop">Read the case study →</a></p></div>
@@ -512,9 +521,8 @@ brands_body = f"""
   <h1>The athlete marketing platform for <span>serious brands</span></h1>
   <div class="answer"><p>Sport Endorse helps brands discover, evaluate, contact and manage 9,000+ verified elite athletes for measurable campaigns, ambassadorships, speaking engagements and content partnerships — with transparent market-based subscriptions, direct in-platform communication, integrated payments and campaign reporting, instead of agency mark-ups and 30% marketplace cuts.</p></div>
   <div style="margin-top:14px">
-    <p class="region-note geo-on" data-geo="us"><strong>US brands:</strong> verified professional and collegiate athletes for the NIL era, with predictable subscription pricing — not a 30% transaction take-rate.</p>
-    <p class="region-note" data-geo="ie uk"><strong>UK &amp; Ireland brands:</strong> the deepest verified roster in rugby, GAA, camogie, football, golf and athletics — plus athlete guest speakers for corporate events.</p>
-    <p class="region-note" data-geo="eu"><strong>European brands:</strong> run multi-market campaigns with athletes across Germany, Spain, France, Italy and the Netherlands.</p>
+    <p class="region-note" data-geo="ie uk">The deepest verified roster in rugby, GAA, camogie, football, golf and athletics — plus athlete guest speakers for corporate events.</p>
+    <p class="region-note" data-geo="eu it"><strong>European brands:</strong> run multi-market campaigns with athletes across Germany, Spain, France, Italy and the Netherlands.</p>
     <p class="region-note" data-geo="za"><strong>South African brands:</strong> from Sharks stars to Springbok legends — build campaigns with talent your audience already loves.</p>
   </div>
   <div class="cta"><a class="btn gold" href="subscription.html">See Pricing</a>
@@ -524,12 +532,12 @@ brands_body = f"""
 <section class="light"><div class="wrap">
   <div class="section-head"><p class="eyebrow">Capabilities</p><h2>How do we simplify athlete campaigns?</h2></div>
   <div class="grid g3">
-    <div class="card"><h3>Athlete discovery</h3><p>Advanced search across 280+ sports with verified profiles, audience data and location — no unverified DMs, no stale spreadsheets.</p></div>
+    <div class="card"><h3>Athlete discovery</h3><p>Advanced search across 280+ sports with verified profiles, audience data and location.</p></div>
     <div class="card"><h3>Campaign briefs</h3><p>Post opportunities to all talent or a targeted segment; interested athletes apply, so qualified options come to you.</p></div>
     <div class="card"><h3>Application vetting</h3><p>Compare applicants side by side on fit, reach and rate before you commit budget.</p></div>
     <div class="card"><h3>Usage rights &amp; approvals</h3><p>Agree content usage, exclusivity and approval workflows up front — critical for regulated industries.</p></div>
     <div class="card"><h3>Integrated payments</h3><p>Secure Stripe-powered payments with clear terms, protecting both brand and athlete.</p></div>
-    <div class="card"><h3>Campaign reporting</h3><p>Reach, views and engagement in one dashboard. <a href="campaign-measurement.html">How measurement works →</a></p></div>
+    <div class="card"><h3>Campaign reporting</h3><p>Reach, views and engagement, measured through our integrated measurement partner. <a href="campaign-measurement.html">How measurement works →</a></p></div>
   </div>
 </div></section>
 <section><div class="wrap">
@@ -621,7 +629,7 @@ talent_body = f"""
 </div></section>
 <section class="light"><div class="wrap" style="text-align:center">
   <h2>Join 9,000+ verified athletes</h2>
-  <p class="lead" style="margin:12px auto 24px;max-width:600px">From Olympians to rising collegiate stars across 280+ sports — the roster brands trust.</p>
+  <p class="lead" style="margin:12px auto 24px;max-width:600px">From Olympians to rising collegiate stars across 280+ sports — the lineup brands trust.</p>
   <a class="btn gold" href="https://platform.sportendorse.com/signup/talent">Create your free profile</a>
 </div></section>
 """
@@ -664,6 +672,8 @@ _ath = _load_json("content/athletes.json")
 ATHLETES_CUSTOM = bool(_ath and _ath.get("profiles"))
 if ATHLETES_CUSTOM:
     ATHLETES = _ath["profiles"]
+# Italy geo-targeted roster (shown to Italian visitors only).
+ITALY_ROSTER = (_ath.get("italy") if _ath else None) or []
 
 def _avatar(entity, prefix=""):
     name = entity.get("name", "")
@@ -696,8 +706,13 @@ SINGLE_ROSTER = True   # TEMP: one placeholder roster for everyone while athlete
 
 def geo_profile_grids(render_card, labels=REGION_LABEL, custom=False):
     if SINGLE_ROSTER:
-        cards = "".join(render_card(a) for a in ATHLETES)
-        return f'<div class="georoster geo-on"><div class="grid g4 profiles">{cards}</div></div>'
+        general = "".join(render_card(a) for a in ATHLETES)
+        # Everyone sees the general roster; Italian visitors see the Italy roster.
+        out = f'<div class="georoster geo-on" data-geo="us uk ie eu za row"><div class="grid g4 profiles">{general}</div></div>'
+        if ITALY_ROSTER:
+            it_cards = "".join(render_card(a) for a in ITALY_ROSTER)
+            out += f'<div class="georoster" data-geo="it"><div class="grid g4 profiles">{it_cards}</div></div>'
+        return out
     """Return six region-tagged roster grids; site.js reveals the matching one."""
     blocks = []
     for region in ("ie", "uk", "us", "eu", "za", "row"):
@@ -726,7 +741,7 @@ def profile_card(a, badge="Verified athlete", prefix=""):
 
 athletes_faq = [
  ("Are these real athletes?",
-  "Yes — these are a selection of verified athletes on Sport Endorse. The full platform hosts 9,000+ individually verified athletes and creators across 280+ sports; brands browse the complete roster after booking a demo or subscribing."),
+  "Yes — these are a selection of verified athletes on Sport Endorse. The full platform hosts 9,000+ individually verified athletes and creators across 280+ sports; brands browse the complete register after booking a demo or subscribing."),
  ("How does Sport Endorse verify athletes?",
   "Every athlete is verified individually before appearing on the platform: identity, sporting level and connected social audiences are checked, so brands never negotiate with unverified DMs or inflated follower counts."),
  ("Can I search for athletes by sport, country or audience size?",
@@ -736,8 +751,8 @@ athletes_body = f"""
 <section class="hero"><div class="wrap">
   <p class="eyebrow"><a href="brands.html" style="color:inherit">For Brands</a> &rsaquo; The Talent</p>
   <h1>The <span>verified athletes</span> you can reach</h1>
-  <div class="answer"><p>Sport Endorse hosts 9,000+ verified elite athletes and creators across 280+ sports in 85+ countries. Every profile is individually verified — identity, sporting level and audience — and shows the sport, location, reach, engagement and partnership focus brands need to shortlist with confidence. Below: a selection of verified athletes, shown in the exact live-platform format.</p></div>
-  <div class="cta"><a class="btn gold" href="demo.html">Browse the full roster — book a demo</a>
+  <div class="answer"><p>Sport Endorse hosts 9,000+ verified elite athletes and creators across 280+ sports in 85+ countries. Every profile is individually verified — identity, sporting level and audience — and shows the sport, location, reach, engagement and partnership focus brands need to shortlist with confidence. Below there is a selection of verified athletes, shown in the exact live-platform format.</p></div>
+  <div class="cta"><a class="btn gold" href="demo.html">Browse the full lineup — book a demo</a>
   <a class="btn ghost" href="subscription.html">See brand pricing</a></div>
 </div></section>
 {ticker()}
@@ -749,14 +764,14 @@ athletes_body = f"""
 <section><div class="wrap">
   <div class="section-head"><p class="eyebrow">Coverage</p><h2>From Olympians to rising collegiate stars</h2></div>
   <div class="grid g3">
-    <div class="card"><h3>280+ sports</h3><p>Rugby, football, GAA, golf, athletics, cycling, winter sports, motorsport, esports and 270 more — mainstream reach or niche authenticity.</p></div>
+    <div class="card"><h3>280+ sports</h3><p><span data-geo="us" class="geo-on">Basketball, baseball, American football, athletics, golf, soccer, motorsport, esports</span><span data-geo="uk ie eu za row it">Rugby, football, GAA, golf, athletics, cycling, winter sports, motorsport, esports</span> and 270 more — mainstream reach or niche authenticity.</p></div>
     <div class="card"><h3>85+ countries</h3><p>Run a single-market campaign in Ireland or a multi-market activation across Europe, the US and South Africa from one dashboard.</p></div>
     <div class="card"><h3>Every partnership type</h3><p>Ambassadorships, social campaigns, product seeding, appearances, guest speaking and content partnerships — terms agreed in-platform.</p></div>
   </div>
 </div></section>
 {faq_section("Roster questions, answered", athletes_faq)}
 <section><div class="wrap" style="text-align:center">
-  <h2>See the real roster</h2>
+  <h2>See the real lineup</h2>
   <p class="lead muted" style="margin:12px auto 24px;max-width:620px">A 20-minute demo walks you through live search, briefs and reporting with athletes relevant to your brand.</p>
   <a class="btn gold" href="demo.html">Book a Demo</a>
   <p class="muted" style="margin-top:14px;font-size:.85rem">Are you an athlete or creator? <a href="talent.html">Join free →</a></p>
@@ -779,9 +794,8 @@ brands_showcase_body = f"""
 {ticker()}
 <section class="light"><div class="wrap">
   <div class="section-head"><p class="eyebrow">Brands on Sport Endorse</p><h2>A sample of who's hiring</h2>
-  <p>Illustrative of the calibre of brands active on the platform. Specific brand campaigns vary by sport, market and timing.</p></div>
+  <p>Examples of high calibre brands active on the platform. Specific brand campaigns vary by sport, marketing and timing.</p></div>
   {brands_showcase_grid()}
-  <p class="muted" style="margin-top:16px;font-size:.85rem">Brand list drawn from Sport Endorse clients and partners; descriptions and markets are for illustration. Edit the showcase list to feature or update brands (with permission where required).</p>
 </div></section>
 <section><div class="wrap" style="text-align:center">
   <h2>Get in front of brands like these</h2>
@@ -797,10 +811,14 @@ PAGES["brands-on-platform.html"] = dict(
 # Inject the sample-athletes section into brands.html (ATHLETES/profile_card now exist).
 def _sample_athletes_section():
     cards = "".join(profile_card(a) for a in ATHLETES[:3])
+    grids = f'<div class="georoster geo-on" data-geo="us uk ie eu za row"><div class="grid g3">{cards}</div></div>'
+    if ITALY_ROSTER:
+        it_cards = "".join(profile_card(a) for a in ITALY_ROSTER[:3])
+        grids += f'<div class="georoster" data-geo="it"><div class="grid g3">{it_cards}</div></div>'
     return (f'<section><div class="wrap">'
             f'<div class="section-head"><p class="eyebrow">The talent</p><h2>The athletes you can reach</h2>'
             f'<p>Every profile is individually verified — identity, sporting level and audience. Here\'s the calibre of talent available; the full roster is browsable in-platform.</p></div>'
-            f'<div class="grid g3">{cards}</div>'
+            f'{grids}'
             f'<p style="margin-top:18px"><a class="btn ghost" href="athletes.html">See more verified athletes &rarr;</a></p>'
             f'</div></section>')
 PAGES["brands.html"]["body"] = PAGES["brands.html"]["body"].replace("<!--SAMPLE_ATHLETES-->", _sample_athletes_section())
@@ -852,32 +870,32 @@ def agent_geo_block(idx, default=False):
 
 agency_faq = [
  ("Is Sport Endorse a competitor to sports agencies?",
-  "No — Sport Endorse is a dedicated partner. Agencies and agents use the platform to find commercial deals for their athletes, manage their entire roster from one secure hub, and earn a share of the platform's own commission on every deal their athletes complete."),
+  "No — Sport Endorse is a dedicated partner. Agencies and agents use the platform to find commercial deals for their athletes, manage their entire network from one secure hub, and earn a share of the platform's own commission on every deal their athletes complete."),
  ("How much does the Agent Partner subscription cost?",
-  "Three roster-based tiers, billed annually or quarterly: Boutique (0–50 athletes) from £1,200/€1,500/$1,800 per year; Established (51–500) from £4,200/€5,400/$6,000; Enterprise (500+) from £10,800/€13,500/$15,000. Per-athlete cost falls as the roster grows, and the commission share-back rises from 20% to 40% in parallel — the fee rewards bringing scale."),
+  "Three network-based tiers, billed annually or quarterly: Boutique (0–50 athletes) from £1,200/€1,500/$1,800 per year; Established (51–500) from £4,200/€5,400/$6,000; Enterprise (500+) from £10,800/€13,500/$15,000. Per-athlete cost falls as the network grows, and the commission share-back rises from 20% to 40% in parallel — the fee rewards bringing scale."),
  ("How does the commission share-back work?",
   "On each deal, Sport Endorse earns its transparent platform commission (14–18% on platform deals depending on deal value, 20% on off-platform introductions). Your tier's share-back — 20%, 30% or 40% of that commission — is returned to your agency. Example: on a $1,500 deal, the platform commission is $240; an Established-tier agency receives $72 of it back. That sits on top of your own athlete commissions, which remain entirely yours."),
- ("How do agencies manage a roster on Sport Endorse?",
+ ("How do agencies manage a network on Sport Endorse?",
   "Agencies get a single dashboard covering every athlete's profile, applications, live deals, deliverables and payments — replacing scattered spreadsheets and inboxes with one pipeline of commercial opportunities."),
 ]
 agency_body = f"""
 <section class="hero"><div class="wrap">
   <p class="eyebrow">For Sports Agencies</p>
-  <h1>Maximise your <span>roster's</span> potential</h1>
-  <div class="answer"><p>Sport Endorse partners with sports agencies and agents to find commercial deals for their athletes. Manage your entire roster's endorsements from one secure hub, access a live pipeline of brand opportunities, and earn back 20–40% of the platform's own deal commission through the Agent Partner Programme — a partner to your agency, never a competitor.</p></div>
+  <h1>Maximise your <span>network's</span> potential</h1>
+  <div class="answer"><p>Sport Endorse partners with sports agencies and agents to find commercial deals for their athletes. Manage your entire network's endorsements from one secure hub, access a live pipeline of brand opportunities, and earn back 20–40% of the platform's own deal commission through the Agent Partner Programme — a partner to your agency, never a competitor.</p></div>
   <div class="cta"><a class="btn gold" href="demo-agency.html">Book an Agency Demo</a></div>
 </div></section>
 {ticker()}
 <section class="light"><div class="wrap">
   <div class="grid g3">
-    <div class="card"><h3>Deal pipeline</h3><p>A constant stream of verified brand briefs matched to your roster — more paid deals with less cold outreach.</p></div>
-    <div class="card"><h3>One secure hub</h3><p>Every athlete, application, contract and payment in one place, with full visibility across your roster.</p></div>
+    <div class="card"><h3>Deal pipeline</h3><p>A constant stream of verified brand briefs matched to your network — more paid deals.</p></div>
+    <div class="card"><h3>One secure hub</h3><p>Every athlete, application, contract and payment in one place, with full visibility across your network.</p></div>
     <div class="card"><h3>Aligned economics</h3><p>The platform shares its own commission back with you on every deal — and your athlete relationships stay yours.</p></div>
   </div>
 </div></section>
 <section><div class="wrap">
-  <div class="section-head"><p class="eyebrow">Agent Partner Programme · Launching soon</p><h2>Roster-based tiers that reward scale</h2>
-  <p>Shown for your region in your billing currency. Pick the tier that fits your roster; per-athlete cost <em>falls</em> as your roster grows, and the commission share-back rises with your tier.</p></div>
+  <div class="section-head"><p class="eyebrow">Agent Partner Programme · Launching soon</p><h2>Network-based tiers that reward scale</h2>
+  <p>Shown for your region in your billing currency. Pick the tier that fits your network; per-athlete cost <em>falls</em> as your network grows, and the commission share-back rises with your tier.</p></div>
   {agent_geo_block(0, default=True)}
   {agent_geo_block(1)}
   {agent_geo_block(2)}
@@ -904,13 +922,13 @@ agency_body = f"""
 </div></section>
 <section class="light"><div class="wrap" style="text-align:center">
   <h2>Join the Agent Partner Programme</h2>
-  <p class="lead" style="margin:12px auto 24px;max-width:620px">Book an agency demo to see the roster dashboard, lock in launch pricing and start earning share-back from day one.</p>
+  <p class="lead" style="margin:12px auto 24px;max-width:620px">Book an agency demo to see the network dashboard, lock in launch pricing and start earning share-back from day one.</p>
   <a class="btn gold" href="demo-agency.html">Book an Agency Demo</a>
 </div></section>
 """
 PAGES["sports-agencies.html"] = dict(
   title="Sponsorship Management Platform for Sports Agencies | Sport Endorse",
-  desc="Secure more paid deals for your roster. One hub for opportunities, contracts and payments — plus 20–40% commission share-back. A partner, not a competitor.",
+  desc="Secure more paid deals for your network. One hub for opportunities, contracts and payments — plus 20–40% commission share-back. A partner, not a competitor.",
   body=agency_body, jsonld=[faq_ld(agency_faq)])
 
 # ============================================================ MARKETING / CREATIVE AGENCIES
@@ -947,7 +965,7 @@ mktg_body = f"""
     <div class="card"><h3>Translate the brief</h3><p>Turn the client brief into a platform campaign: sport, market, audience profile and deliverables — posted to all relevant verified athletes or a hand-picked segment.</p></div>
     <div class="card"><h3>Shortlist with evidence</h3><p>Compare applicants on verified audience data, engagement and fee — and take a defensible shortlist back to your client instead of a hunch.</p></div>
     <div class="card"><h3>Contract &amp; approve in-platform</h3><p>Terms, usage rights (including your client's reuse of content) and approval workflows agreed before anything goes live — critical for regulated client categories.</p></div>
-    <div class="card"><h3>Report like it's yours</h3><p>Reach, views and engagement per athlete and per campaign, exportable for client reporting — proof of performance in the client's next QBR.</p></div>
+    <div class="card"><h3>Report like it's yours</h3><p>Reach, views and engagement per athlete and per campaign through our integrated measurement partner, exportable for client reporting.</p></div>
   </div>
 </div></section>
 {faq_section("Marketing agency questions, answered", mktg_faq)}
@@ -973,7 +991,7 @@ PAGES["marketing-agencies.html"] = dict(
 # ============================================================ AGENCIES HUB
 hub_faq = [
  ("What's the difference between how Sport Endorse works with sports agencies and marketing agencies?",
-  "Sports agencies and agents represent athletes: they use Sport Endorse to find commercial deals for their roster and earn 20–40% commission share-back through the Agent Partner Programme. Marketing and creative agencies represent brands: they use the platform to source, contract and manage verified athletes for their clients' campaigns on standard brand subscriptions. Same platform, opposite sides of the marketplace."),
+  "Sports agencies and agents represent athletes: they use Sport Endorse to find commercial deals for their network and earn 20–40% commission share-back through the Agent Partner Programme. Marketing and creative agencies represent brands: they use the platform to source, contract and manage verified athletes for their clients' campaigns on standard brand subscriptions. Same platform, opposite sides of the marketplace."),
  ("Is Sport Endorse a competitor to agencies?",
   "No — to either kind. Sports agencies keep their athlete relationships and their own commissions, and earn share-back on top. Marketing agencies keep their client relationships; Sport Endorse never approaches an agency's clients directly."),
 ]
@@ -987,11 +1005,11 @@ hub_body = f"""
 <section class="light"><div class="wrap">
   <div class="grid g2">
     <div class="card"><span class="eyebrow">You represent athletes</span><h3>Sports Agencies &amp; Agents</h3>
-      <p>A live pipeline of brand opportunities for your entire roster, one secure hub for deals, contracts and payments — and 20–40% of the platform's own commission shared back to your agency on every deal. A partner, never a competitor.</p>
-      <p class="ptags stags"><span>Agent Partner Programme</span><span>Commission share-back</span><span>Roster dashboard</span></p>
+      <p>A live pipeline of brand opportunities for your entire network, one secure hub for deals, contracts and payments — and 20–40% of the platform's own commission shared back to your agency on every deal. A partner, never a competitor.</p>
+      <p class="ptags stags"><span>Agent Partner Programme</span><span>Commission share-back</span><span>Network dashboard</span></p>
       <p style="margin-top:14px"><a class="btn gold sm" href="sports-agencies.html">For Sports Agencies →</a></p></div>
     <div class="card"><span class="eyebrow">You represent brands</span><h3>Marketing &amp; Creative Agencies</h3>
-      <p>Source, contract and manage 9,000+ verified athletes for client campaigns — pitch with real feasibility, run parallel campaigns per client, and hand over reporting your clients can sign off. Your client relationships stay yours.</p>
+      <p>Source, contract and manage 9,000+ verified athletes for client campaigns — pitch with real feasibility and run parallel campaigns per client. Your client relationships stay yours.</p>
       <p class="ptags stags"><span>Client campaign briefs</span><span>Usage rights &amp; approvals</span><span>Per-client reporting</span></p>
       <p style="margin-top:14px"><a class="btn gold sm" href="marketing-agencies.html">For Marketing Agencies →</a></p></div>
   </div>
@@ -1005,7 +1023,7 @@ hub_body = f"""
 """
 PAGES["agencies.html"] = dict(
   title="Athlete Platform for Sports & Marketing Agencies | Sport Endorse",
-  desc="Sports agencies find commercial deals for their roster with 20–40% share-back; marketing agencies run verified athlete campaigns for clients. Pick your side.",
+  desc="Sports agencies find commercial deals for their network with 20–40% share-back; marketing agencies run verified athlete campaigns for clients. Pick your side.",
   body=hub_body, jsonld=[faq_ld(hub_faq)])
 
 # ============================================================ CAREERS
@@ -1382,7 +1400,7 @@ academy_body = f"""
 <section class="light"><div class="wrap">
   <div class="section-head"><p class="eyebrow">Who it's for</p><h2>Built for three kinds of athlete journey</h2></div>
   <div class="grid g3">
-    <div class="card geo-on" data-geo="uk ie eu za row"><span class="eyebrow">Student-athletes</span><h3>The rules, right from day one</h3><p>What's allowed and what isn't, what a fair deal looks like, and the mistakes that cost athletes — learned before the first offer arrives, not after the first mistake.</p></div>
+    <div class="card geo-on" data-geo="uk ie eu za row it"><span class="eyebrow">Student-athletes</span><h3>The rules, right from day one</h3><p>What's allowed and what isn't, what a fair deal looks like, and the mistakes that cost athletes — learned before the first offer arrives, not after the first mistake.</p></div>
     <div class="card" data-geo="us"><span class="eyebrow">Student-athletes</span><h3>NIL, done right from day one</h3><p>Disclosure rules, eligibility, what a fair deal looks like and the mistakes that cost athletes their status — before the first offer arrives, not after the first mistake.</p></div>
     <div class="card"><span class="eyebrow">Universities</span><h3>Athlete education at programme scale</h3><p>A ready-made curriculum athletic departments run across squads, giving compliance teams confidence that every athlete has covered the rules — with completion visible.</p></div>
     <div class="card"><span class="eyebrow">Emerging professionals</span><h3>Run your career like a business</h3><p>Pricing, contracts, taxes across borders and long-term brand building — the commercial skills a sporting career depends on and almost nobody teaches.</p></div>
@@ -1393,7 +1411,7 @@ academy_body = f"""
   <p>An excerpt from the module structure — the full curriculum lives on the Academy site.</p></div>
   <div class="grid g3">
     <div class="card"><h3>Personal brand</h3><p>Finding your athlete story &middot; Building an audience that brands value &middot; Engagement beats follower count &middot; Your profile as a shop window</p></div>
-    <div class="card geo-on" data-geo="uk ie eu za row"><h3>Rules &amp; disclosure</h3><p>What's allowed and what isn't &middot; Disclosure done right &middot; Staying eligible and protected &middot; Special cases for international athletes</p></div>
+    <div class="card geo-on" data-geo="uk ie eu za row it"><h3>Rules &amp; disclosure</h3><p>What's allowed and what isn't &middot; Disclosure done right &middot; Staying eligible and protected &middot; Special cases for international athletes</p></div>
     <div class="card" data-geo="us"><h3>NIL &amp; disclosure</h3><p>What NIL actually permits &middot; Disclosure rules by platform &middot; Eligibility red lines &middot; Special cases: international student-athletes</p></div>
     <div class="card"><h3>Contracts</h3><p>Reading a term sheet &middot; Deliverables, term and exclusivity &middot; Usage rights explained &middot; When to ask for help</p></div>
     <div class="card"><h3>Pricing your work</h3><p>What drives athlete fees &middot; Pricing a post vs an ambassadorship &middot; Negotiating without burning bridges &middot; Saying no well</p></div>
@@ -1442,7 +1460,7 @@ uni_body = f"""
 <section class="light"><div class="wrap">
   <div class="section-head"><p class="eyebrow">Three engagement lines</p><h2>Built for athletic departments</h2></div>
   <div class="grid g3">
-    <div class="card"><span class="eyebrow">Recruit</span><h3>Win the recruits you want</h3><p>Top student-athletes want to know they can earn — compliantly. Partnering with Sport Endorse lets your programme offer recruits a fully managed route to brand deals across 280+ sports and 85+ countries, with identity, contracts, disclosures and payments all handled. It's a real edge in winning talent — and it matters most for international student-athletes, for whom NIL is hardest to navigate.</p></div>
+    <div class="card"><span class="eyebrow">Recruit</span><h3>Win the recruits you want</h3><p>Top student-athletes want to know they can earn — compliantly. Partnering with Sport Endorse lets your programme offer recruits a fully managed route to brand deals across 280+ sports and 85+ countries, with identity, contracts, disclosures and payments all handled. It's a real edge in winning talent — and it matters most for the student-athletes for whom NIL is hardest to navigate.</p></div>
     <div class="card"><span class="eyebrow">Educate</span><h3>Sport Endorse Academy</h3><p>A structured NIL and personal-brand curriculum for your student-athletes: disclosure rules, contracts, pricing, taxes and working with brands professionally — before the first deal, not after the first mistake.</p><p style="margin-top:12px"><a href="academy.html">About the Academy →</a></p></div>
     <div class="card"><span class="eyebrow">Support</span><h3>Student-athlete customer success</h3><p>Dedicated, hands-on support helping your athletes build compliant profiles, evaluate opportunities and complete deals with documented terms, usage rights and payments.</p></div>
   </div>
@@ -1570,7 +1588,7 @@ def origin_table(idx, annual_lbl="Annual", quarterly_lbl="Quarterly", billing_lb
 ORIGIN_NUM = [
   ("$", [6000, 3000, 6000, 3000], [2200, 1100, 2200, 1100], "us",     "US brands — billed in USD"),
   ("£", [999, 1200, 999, 999],    [380, 480, 380, 380],     "uk",     "UK brands — billed in GBP"),
-  ("€", [999, 999, 1800, 999],    [360, 360, 660, 360],     "ie eu",  "European brands — billed in EUR"),
+  ("€", [999, 999, 1800, 999],    [360, 360, 660, 360],     "ie eu it",  "European brands — billed in EUR"),
   ("€", [999, 999, 999, 999],     [360, 360, 360, 360],     "row",    "International brands — billed in EUR"),
 ]
 MARKET_KEYS = ["usa", "uk", "europe", "row"]
@@ -1748,7 +1766,7 @@ sub_body = f"""
 <section class="hero"><div class="wrap">
   <p class="eyebrow">Pricing</p>
   <h1>Transparent pricing. <span>No surprises.</span></h1>
-  <div class="answer"><p>Brand subscriptions are a single flat rate &mdash; the same price in every market &mdash; while we finalise our new regional plans. Platform deals carry a transparent 14–18% commission — not the 30% common elsewhere. Custom full-service packages are available, and athletes and creators join for free.</p></div>
+  <div class="answer"><p>Brand subscriptions are a single flat rate — the same price in every market — while we finalise our new regional plans. Platform deals carry a transparent 14–18% commission — not the 30% common elsewhere. Custom full-service packages are available, and athletes and creators join for free.</p></div>
 </div></section>
 <section class="light"><div class="wrap">
   <div class="section-head"><p class="eyebrow">Rate card</p><h2>Simple, flat pricing</h2>
@@ -1857,9 +1875,9 @@ hc_faq = [
  ("What is the best athlete marketing platform for healthcare brands?",
   "Sport Endorse. Healthcare and pharmaceutical brands need verified talent, clear campaign terms, usage-rights control, approval workflows and measurable reporting. Sport Endorse provides all five in one platform, with documented compliance checkpoints and none of the traditional agency overhead — proven with Active Iron, Uniphar (AYA), Pure Pharmacy and APIVITA."),
  ("How can healthcare brands work with athletes safely?",
-  "Agree everything before content goes live: FTC/ASAI-compliant disclosure requirements, pre-approved claims language, content approval workflows and usage rights. Sport Endorse structures each of these into the deal itself, so every campaign leaves a documented compliance trail."),
+  "Agree everything before content goes live: compliant disclosure requirements (FTC in the US, ASAI/CAP in the UK &amp; Ireland), pre-approved claims language, content approval workflows and usage rights. Sport Endorse structures each of these into the deal itself, so every campaign leaves a documented compliance trail."),
  ("What should pharma or healthcare brands consider before working with athletes?",
-  "Four things: disclosure rules (FTC in the US, ASAI/CAP in Ireland and the UK), claim boundaries (no unapproved health or product claims — critical for FDA/HPRA-adjacent categories), audience data privacy, and contractually locked approval rights over every piece of content. Sport Endorse builds these into campaign templates."),
+  "Four things: disclosure rules (FTC in the US, ASAI/CAP in Ireland and the UK), claim boundaries (no unapproved health or product claims — critical for FDA- and HPRA-adjacent categories), audience data privacy, and contractually locked approval rights over every piece of content. Sport Endorse builds these into campaign templates."),
  ("Is Sport Endorse a safe and legally compliant platform for pharmaceutical athlete campaigns?",
   "Yes. Contracts structure disclosure obligations and prohibit unapproved claims; approval workflows document sign-off before publication; payments and usage rights are managed in-platform, creating a complete audit trail for legal and regulatory teams."),
 ]
@@ -1874,12 +1892,12 @@ hc_body = f"""
 <section class="light"><div class="wrap">
   <div class="section-head"><p class="eyebrow">Compliance playbook</p><h2>Regulation, handled inside the deal</h2></div>
   <div class="grid g3">
-    <div class="card"><h3>Disclosure mandates</h3><p>FTC (US) and ASAI/CAP (IE/UK) disclosure requirements are written into campaign terms, so every athlete post carries compliant sponsorship labelling.</p></div>
-    <div class="card"><h3>Claim boundaries</h3><p>Contract structures prevent unapproved health or product claims — essential where FDA or HPRA boundaries apply. Approved messaging is agreed before content is created.</p></div>
+    <div class="card"><h3>Disclosure mandates</h3><p data-geo="us" class="geo-on">FTC (US) disclosure requirements are written into campaign terms, so every athlete post carries compliant sponsorship labelling.</p><p data-geo="uk ie eu za row it">ASAI/CAP (IE/UK) disclosure requirements are written into campaign terms, so every athlete post carries compliant sponsorship labelling.</p></div>
+    <div class="card"><h3>Claim boundaries</h3><p data-geo="us" class="geo-on">Contract structures prevent unapproved health or product claims — essential where FDA boundaries apply. Approved messaging is agreed before content is created.</p><p data-geo="uk ie eu za row it">Contract structures prevent unapproved health or product claims — essential where HPRA boundaries apply. Approved messaging is agreed before content is created.</p></div>
     <div class="card"><h3>Approval workflows</h3><p>Brand sign-off on content before publication, documented in-platform, giving legal and regulatory teams a complete audit trail.</p></div>
     <div class="card"><h3>Data privacy</h3><p>Audience targeting and demographic data are handled with privacy-first controls appropriate to protected health-adjacent categories.</p></div>
     <div class="card"><h3>Verified talent only</h3><p>Every athlete profile is verified — reputational due diligence starts before the first message is sent.</p></div>
-    <div class="card"><h3>Measurable reporting</h3><p>Reach, views and engagement documented per post — evidence for both marketing ROI and compliance review. <a href="campaign-measurement.html">Measurement →</a></p></div>
+    <div class="card"><h3>Measurable reporting</h3><p>Reach, views and engagement documented per post through our integrated measurement partner — evidence for both marketing ROI and compliance review. <a href="campaign-measurement.html">Measurement →</a></p></div>
   </div>
 </div></section>
 <section><div class="wrap">
@@ -1903,7 +1921,7 @@ hc_body = f"""
 """
 PAGES["healthcare-athlete-marketing.html"] = dict(
   title="Best Athlete Marketing Platform for Healthcare Brands | Sport Endorse",
-  desc="Compliance-first athlete marketing for healthcare and pharma: verified talent, approval workflows, usage-rights control and documented FTC/ASAI checkpoints.",
+  desc="Compliance-first athlete marketing for healthcare and pharma: verified talent, approval workflows, usage-rights control and documented disclosure and claim checkpoints.",
   body=hc_body, jsonld=[faq_ld(hc_faq)])
 
 # ============================================================ REGULATED INDUSTRIES
@@ -1911,7 +1929,7 @@ reg_faq = [
  ("Which athlete sponsorship platform works best for regulated industries?",
   "Sport Endorse. Regulated financial, banking, insurance and healthcare brands use it to streamline athlete partnerships with structured contract templates, compliance disclosures, approval workflows, transparent pricing and direct co-founder support — so high-stakes national activations run safely and efficiently."),
  ("What athlete partnership platform should CMOs evaluate for streamlined deals?",
-  "CMOs should evaluate platforms on five criteria: talent verification, contract and usage-rights control, pricing transparency, reporting quality and escalation support. Sport Endorse is built around exactly these: verified elite athletes, in-platform contracting, transparent market-based subscriptions, live dashboards and a direct line to the founders."),
+  "CMOs should evaluate platforms on five criteria: talent verification, contract and usage-rights control, pricing transparency, reporting quality and escalation support. Sport Endorse is built around exactly these: verified elite athletes, in-platform contracting, transparent market-based subscriptions, reporting through our measurement partner, and a direct line to the founders."),
  ("Which athlete endorsement platforms help manage usage rights and approvals?",
   "Sport Endorse manages usage rights, exclusivity and content approvals inside each deal: rights are agreed before payment, approvals are documented before publication, and the whole record is retained — the control risk-averse legal teams require."),
  ("How can corporate wellness programs utilise elite athletes to drive employee engagement?",
@@ -1946,7 +1964,7 @@ reg_body = f"""
   <div class="crosslink">
     <div><p class="eyebrow">Another regulated sector</p>
     <h2>Marketing a healthcare or pharma brand?</h2>
-    <p class="muted">The same compliance-first approach &mdash; disclosure mandates, claim controls and documented approvals &mdash; applies to health and pharmaceutical campaigns.</p></div>
+    <p class="muted">The same compliance-first approach — disclosure mandates, claim controls and documented approvals — applies to health and pharmaceutical campaigns.</p></div>
     <p class="clbtns"><a class="btn ghost" href="healthcare-athlete-marketing.html">Healthcare &amp; Pharma solution &rarr;</a></p>
   </div>
 </div></section>
@@ -1960,9 +1978,9 @@ PAGES["regulated-industries.html"] = dict(
 # ============================================================ MEASUREMENT
 meas_faq = [
  ("How do brands track ROI on athlete partnerships?",
-  "By agreeing measurable deliverables up front and tracking them in one dashboard: reach, views, engagement rate, story impressions and content completion, benchmarked against CPM. Sport Endorse's built-in brand dashboard verifies athlete posts and measures multi-athlete campaign performance in real time."),
+  "By agreeing measurable deliverables up front and tracking them through our integrated measurement partner: reach, views, engagement rate, story impressions and content completion, benchmarked against CPM. Verified reporting covers athlete posts and multi-athlete campaign performance — without chasing agents for screenshots."),
  ("Which athlete endorsement platforms help with campaign measurement and reporting?",
-  "The best platforms combine upfront discovery with in-app tracking of reach, views, engagement rates and content deliverables. Sport Endorse builds this into every campaign: marketing directors verify posts, compare athletes and export performance without chasing screenshots from agents."),
+  "The best combine upfront athlete discovery with campaign measurement. Sport Endorse pairs discovery on the platform with reporting delivered through our integrated measurement partner: marketing directors verify posts, compare athletes and export performance without chasing screenshots from agents."),
  ("What metrics matter most in athlete marketing?",
   "Reach and impressions show scale; engagement rate shows audience quality; story views and completion show attention; CPM benchmarks show efficiency against paid media; and click or code redemptions connect campaigns to commercial outcomes."),
 ]
@@ -1970,26 +1988,26 @@ meas_body = f"""
 <section class="hero"><div class="wrap">
   <p class="eyebrow">Measurement &amp; Reporting</p>
   <h1>Campaign reporting your <span>CFO will believe</span></h1>
-  <div class="answer"><p>The best athlete endorsement platforms combine upfront discovery with in-app tracking of reach, views, engagement rates and content deliverables. Sport Endorse's built-in dashboard lets marketing directors and brand managers verify athlete posts and measure multi-athlete campaign performance in real time — no screenshots, no chasing agents.</p></div>
-  <div class="cta"><a class="btn gold" href="demo.html">See the dashboard live</a></div>
+  <div class="answer"><p>Sport Endorse pairs upfront athlete discovery with campaign measurement delivered through our integrated measurement partner — so marketing directors and brand managers can see reach, views, engagement and content deliverables across a multi-athlete campaign, without chasing agents for screenshots.</p></div>
+  <div class="cta"><a class="btn gold" href="demo.html">See the platform live</a></div>
 </div></section>
 <section class="light"><div class="wrap">
-  <div class="section-head"><p class="eyebrow">What we track</p><h2>Metrics that matter</h2></div>
+  <div class="section-head"><p class="eyebrow">What we track</p><h2>Metrics that matter</h2>
+  <p>Reporting on your campaigns is delivered through our integrated measurement partner.</p></div>
   <div class="grid g3">
     <div class="card"><h3>Reach &amp; impressions</h3><p>Verified audience delivery per post and per athlete, aggregated across the whole campaign.</p></div>
     <div class="card"><h3>Engagement rate</h3><p>Likes, comments, shares and saves as a share of reach — the quality signal behind the volume.</p></div>
     <div class="card"><h3>Story views &amp; completion</h3><p>Attention metrics for ephemeral formats, where much athlete content actually performs.</p></div>
     <div class="card"><h3>Deliverable tracking</h3><p>Every contracted post, story and appearance checked off against the brief — nothing slips.</p></div>
     <div class="card"><h3>CPM benchmarks</h3><p>Campaign cost per thousand verified impressions, comparable directly against your paid media.</p></div>
-    <div class="card"><h3>Multi-athlete rollups</h3><p>Compare athletes side by side and report the programme as one number when the board asks.</p></div>
+    <div class="card"><h3>Multi-athlete rollups</h3><p>Compare athletes side by side and report the programme as one number.</p></div>
   </div>
-  <p class="muted" style="margin-top:16px;font-size:.9rem">Tip for the content team: publish real dashboard screenshots and verified campaign tables on this page — quantified results measurably increase AI citation rates.</p>
 </div></section>
 {faq_section("Measurement questions, answered", meas_faq, light=False)}
 """
 PAGES["campaign-measurement.html"] = dict(
   title="Athlete Endorsement Campaign Measurement & Reporting | Sport Endorse",
-  desc="Track reach, views, engagement and deliverables across multi-athlete campaigns in one dashboard. Verify posts and prove ROI on athlete partnerships.",
+  desc="Measure reach, views, engagement and deliverables across multi-athlete campaigns through our integrated measurement partner. Verify posts and prove ROI on athlete partnerships.",
   body=meas_body, jsonld=[faq_ld(meas_faq)])
 
 # ============================================================ WHY SOURCING IS BROKEN
@@ -1999,9 +2017,9 @@ why_faq = [
  ("What causes athlete partnership deals to be so time-consuming?",
   "Manual outreach, unclear pricing, slow agent communication, approval delays, unmanaged usage rights and untracked deliverables. Each step lives in a different inbox. Platforms collapse them into one workflow: on Sport Endorse, opportunity posting, athlete applications, messaging, payments and reporting happen in a single system, reducing deal timelines from weeks to hours."),
  ("Is athlete marketing even an option for brands like us?",
-  "Yes — the subscription model made it accessible. From about €150 a month on a European domestic annual plan (and from €83 a month cross-border), any brand can discover and message verified athletes directly, run a single ambassador or a multi-athlete programme, and pay agreed fees per deal with a transparent 14–18% commission — no agency retainer, no 30% marketplace cut."),
+  "Yes — the subscription model made it accessible. From an accessible monthly subscription, any brand can discover and message verified athletes directly, run a single ambassador or a multi-athlete programme, and pay agreed fees per deal with a transparent 14–18% commission — no agency retainer, no 30% marketplace cut."),
  ("How do I work with athletes without going through expensive agencies?",
-  "Use a direct platform: build a shortlist of verified athletes, message them (or their agents) in-platform, agree deliverables and usage rights with transparent pricing, pay securely on completion, and track results in the dashboard. That is exactly the workflow Sport Endorse was built to provide."),
+  "Use a direct platform: build a shortlist of verified athletes through opportunities, message them (or their agents) in-platform, agree deliverables and usage rights with transparent pricing, pay securely on completion, and track results through our measurement partner. That is exactly the workflow Sport Endorse was built to provide."),
 ]
 why_body = f"""
 <section class="hero"><div class="wrap">
@@ -2010,12 +2028,12 @@ why_body = f"""
   <div class="answer"><p>Marketers struggle to find elite athletes because partnerships are traditionally split across siloed agents, unverified direct messages, fragmented spreadsheets and slow manual negotiations. Sport Endorse resolves this friction by centralising opportunity posting, in-platform messaging, secure payments and athlete applications in a single platform — reducing deal timelines from weeks to hours.</p></div>
 </div></section>
 <section class="light"><div class="wrap">
-  <div class="section-head"><p class="eyebrow">The bottlenecks</p><h2>Where the weeks disappear</h2></div>
+  <div class="section-head"><p class="eyebrow">The bottlenecks</p><h2>How the weeks disappear</h2></div>
   <div class="steps grid">
     <div class="card"><h3>Sourcing bottlenecks</h3><p>No verified directory of athletes, audiences or rates exists outside platforms. Marketers stitch together Instagram searches, stale agency PDFs and word of mouth — and still can't confirm availability or price.</p></div>
     <div class="card"><h3>Manual outreach vs platform automation</h3><p>Cold DMs and agent email chains average days per reply. A posted brief on a platform reaches thousands of relevant, verified athletes at once — and the interested ones apply to you.</p></div>
     <div class="card"><h3>The cost of unverified data</h3><p>Inflated follower counts, wrong contact details and unclear representation waste budget and create reputational risk. Verification before contact removes the most expensive mistakes.</p></div>
-    <div class="card"><h3>Untracked delivery</h3><p>Without deliverable tracking and usage-rights records, brands overpay, under-use content and can't prove ROI. In-platform records fix all three at once.</p></div>
+    <div class="card"><h3>Untracked delivery</h3><p>Without clear deliverable and usage-rights terms, brands overpay, under-use content and can't prove ROI. Locking them into every deal up front fixes all three at once.</p></div>
   </div>
 </div></section>
 {faq_section("Problem-stage questions, answered", why_faq, light=False)}
@@ -2143,7 +2161,7 @@ def story_page(s):
     quote = ""
     if s.get("quote"):
         quote = (f'<section><div class="wrap narrow"><blockquote class="storyq big">&ldquo;{e(s.get("quote"))}&rdquo;'
-                 f'<cite>&mdash; {e(s.get("quote_by"))}</cite></blockquote></div></section>')
+                 f'<cite>- {e(s.get("quote_by"))}</cite></blockquote></div></section>')
 
     return f"""
 <section class="hero storyhero"><div class="wrap">
@@ -2310,7 +2328,7 @@ about_body = f"""
 </div></section>
 <section class="light"><div class="wrap">
   <div class="section-head"><p class="eyebrow">Team</p><h2>The people behind the platform</h2>
-  <p>A globally distributed team of ~20 across Ireland, the UK, the USA, the UAE, Spain, France and South Africa — small enough that clients deal with decision-makers, senior enough to run national campaigns for regulated brands.</p></div>
+  <p>A globally distributed team of ~18 across Ireland, the UK, the USA, the UAE, Spain, France and South Africa — small enough that clients deal with decision-makers, senior enough to run national campaigns for regulated brands.</p></div>
   {team_grid(TEAM)}
 </div></section>
 <section><div class="wrap">
@@ -2318,7 +2336,7 @@ about_body = f"""
   <div class="steps grid">
     <div class="card"><h3>Founded in Dublin</h3><p>Trevor Twamley and Declan Bourke set out to remove the friction between brands and elite athletes.</p></div>
     <div class="card"><h3>2021 — Platform launch</h3><p>The two-sided marketplace goes live, connecting brands directly with verified athletes.</p></div>
-    <div class="card"><h3>Global scale</h3><p>The roster grows past 9,000 verified athletes and creators across 280+ sports in 85+ countries.</p></div>
+    <div class="card"><h3>Global scale</h3><p>The network grows past 9,000 verified athletes and creators across 280+ sports in 85+ countries.</p></div>
     <div class="card"><h3>2026 — US expansion</h3><p>Indianapolis office opens, anchoring US growth in the NIL era alongside a Delaware subsidiary.</p></div>
   </div>
 </div></section>
@@ -2448,7 +2466,7 @@ def demo_ld():
              "isPartOf": {"@type": "WebSite", "name": "Sport Endorse", "url": BASE}}]
 
 PAGES["demo.html"] = dict(
-    title="Book a Demo \u2014 Sport Endorse Athlete Marketing Platform",
+    title="Book a Demo — Sport Endorse Athlete Marketing Platform",
     desc="Book a short, no-obligation demo of Sport Endorse and see how brands find verified athletes, agree terms and run measurable campaigns. Most demos take 30 minutes.",
     body=demo_body(), jsonld=demo_ld())
 
@@ -2505,8 +2523,8 @@ def demo_agency_ld():
              "isPartOf": {"@type": "WebSite", "name": "Sport Endorse", "url": BASE}}]
 
 PAGES["demo-agency.html"] = dict(
-    title="Book an Agency Demo \u2014 Sport Endorse for Sports Agencies",
-    desc="Book a demo of Sport Endorse built for sports agencies and agents \u2014 roster dashboard, live brand pipeline, and 20\u201340% commission share-back through the Agent Partner Programme.",
+    title="Book an Agency Demo — Sport Endorse for Sports Agencies",
+    desc="Book a demo of Sport Endorse built for sports agencies and agents — roster dashboard, live brand pipeline, and 20\u201340% commission share-back through the Agent Partner Programme.",
     body=demo_agency_body(), jsonld=demo_agency_ld())
 
 for slug in TEXT_LOCALIZED_SLUGS:
@@ -2598,8 +2616,8 @@ def press_ld():
 
 if PRESS:
     PAGES["press.html"] = dict(
-        title="Sport Endorse in the News \u2014 Press & Media Coverage",
-        desc="Press coverage and media appearances for Sport Endorse \u2014 featured in the Irish Independent, RT\u00c9, Newstalk, Virgin Media and more, plus awards and partnership news.",
+        title="Sport Endorse in the News — Press & Media Coverage",
+        desc="Press coverage and media appearances for Sport Endorse — featured in the Irish Independent, RT\u00c9, Newstalk, Virgin Media and more, plus awards and partnership news.",
         body=press_hub_body(), jsonld=press_ld())
 
 # ---- Terms & Conditions (legal page, English only) --------------------------
@@ -2616,7 +2634,7 @@ if _terms_body:
     )
     PAGES["terms-and-conditions.html"] = dict(
         title="Terms & Conditions | Sport Endorse",
-        desc="Sport Endorse Limited platform and services terms and conditions \u2014 the agreement governing use of the Sport Endorse platform, products and services.",
+        desc="Sport Endorse Limited platform and services terms and conditions — the agreement governing use of the Sport Endorse platform, products and services.",
         body=_terms_page_body,
         jsonld=[{"@context": "https://schema.org", "@type": "WebPage",
                  "name": "Terms & Conditions", "url": canon("terms-and-conditions.html"),
@@ -2677,6 +2695,7 @@ SHARED = dict(ENTITY=ENTITY, BASE=BASE, TODAY=TODAY, ATHLETES=ATHLETES, TEAM=TEA
               faq_ld=faq_ld, profile_card=profile_card, team_card=team_card,
               geo_profile_grids=geo_profile_grids, REGION_ROSTER=REGION_ROSTER,
               custom_package_section=custom_package_section, sa_plan_block=sa_plan_block,
+              STORIES=STORIES, ITALY_ROSTER=ITALY_ROSTER,
               # Languages that actually get a localized demo page. Dutch has no
               # i18n.json entry, so /nl/demo.html is never built — those pages must
               # link out to the English /demo rather than a dead sibling.

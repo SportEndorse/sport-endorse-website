@@ -165,7 +165,7 @@ T = {
  "su_answer": "Les abonnements marque sont basés sur le marché et reflètent votre marché d'origine et les marchés d'athlètes auxquels vous accédez. Consultez les tarifs ci-dessous pour les formules d'abonnement de votre région. Les accords sur la plateforme comportent une commission transparente de 14–18 % — pas les 30 % courants ailleurs. Des offres full-service sur mesure sont disponibles, et les athlètes et créateurs s'inscrivent gratuitement.",
  "su_rate_eye": "Grille tarifaire",
  "su_rates_h2": "Composez votre forfait, dans votre devise",
- "su_geo_p": "Affiché pour votre région. Choisissez les marchés d'athlètes où vous voulez faire campagne, sélectionnez une facturation annuelle ou trimestrielle et voyez votre total instantanément. Chaque marché est un abonnement distinct : vous ne payez que là où vous menez réellement des campagnes.",
+ "su_geo_p": "Affiché pour votre région — utilisez le sélecteur de région dans l'en-tête si nous nous sommes trompés. Choisissez les marchés d'athlètes où vous voulez faire campagne, sélectionnez une facturation annuelle ou trimestrielle et voyez votre total instantanément. Chaque marché est un abonnement distinct : vous ne payez que là où vous menez réellement des campagnes.",
  "su_annual_lbl": "Annuel", "su_quarter_lbl": "Trimestriel",
  "su_geo_h": ["Marques américaines — facturation en USD", "Marques britanniques — facturation en GBP", "Marques européennes — facturation en EUR", "Marques internationales — facturation en EUR"],
  "su_full_sum": "Grille complète — toutes les origines de marque et tous les marchés d'athlètes",

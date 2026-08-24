@@ -165,7 +165,7 @@ T = {
  "su_answer": "Las suscripciones de marca se basan en el mercado y reflejan tu mercado de origen y los mercados de deportistas a los que accedes. Consulta los precios a continuación para ver los planes de suscripción de tu región. Los acuerdos en plataforma tienen una comisión transparente del 14–18% — no el 30% habitual en otros sitios. Hay paquetes full-service a medida disponibles, y los deportistas y creadores se unen gratis.",
  "su_rate_eye": "Tarifas",
  "su_rates_h2": "Configura tu plan, en tu moneda",
- "su_geo_p": "Se muestra para tu región. Elige los mercados de deportistas en los que quieres hacer campañas, selecciona facturación anual o trimestral y ve tu total al instante. Cada mercado es una suscripción independiente: solo pagas por donde realmente haces campañas.",
+ "su_geo_p": "Se muestra para tu región — usa el selector de región en la cabecera si nos hemos equivocado. Elige los mercados de deportistas en los que quieres hacer campañas, selecciona facturación anual o trimestral y ve tu total al instante. Cada mercado es una suscripción independiente: solo pagas por donde realmente haces campañas.",
  "su_annual_lbl": "Anual", "su_quarter_lbl": "Trimestral",
  "su_geo_h": ["Marcas de EE. UU. — facturación en USD", "Marcas del Reino Unido — facturación en GBP", "Marcas europeas — facturación en EUR", "Marcas internacionales — facturación en EUR"],
  "su_full_sum": "Tarifa completa — todos los orígenes de marca y mercados de deportistas",

@@ -165,7 +165,7 @@ T = {
  "su_answer": "Gli abbonamenti brand sono basati sul mercato e riflettono il tuo mercato di origine e i mercati di atleti a cui accedi. Consulta i prezzi qui sotto per i piani di abbonamento della tua regione. Gli accordi sulla piattaforma prevedono una commissione trasparente del 14–18% — non il 30% comune altrove. Sono disponibili pacchetti full-service su misura, e atleti e creator si iscrivono gratuitamente.",
  "su_rate_eye": "Listino",
  "su_rates_h2": "Configura il tuo piano nella tua valuta",
- "su_geo_p": "Prezzi mostrati in base alla tua regione. Scegli i mercati degli atleti in cui vuoi fare campagne, seleziona la fatturazione annuale o trimestrale e visualizza subito il totale. Ogni mercato è un abbonamento separato: paghi solo dove fai davvero campagne.",
+ "su_geo_p": "Prezzi mostrati in base alla tua regione: usa il selettore di regione nell'header se l'impostazione non è corretta. Scegli i mercati degli atleti in cui vuoi fare campagne, seleziona la fatturazione annuale o trimestrale e visualizza subito il totale. Ogni mercato è un abbonamento separato: paghi solo dove fai davvero campagne.",
  "su_annual_lbl": "Annuale", "su_quarter_lbl": "Trimestrale",
  "su_geo_h": ["Brand USA — fatturazione in USD", "Brand del Regno Unito — fatturazione in GBP", "Brand europei — fatturazione in EUR", "Brand internazionali — fatturazione in EUR"],
  "su_full_sum": "Listino completo - tutte le origini dei brand e i mercati degli atleti",

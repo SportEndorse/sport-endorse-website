@@ -1,4 +1,4 @@
-// Vercel Edge Middleware — true IP-based region geotargeting.
+// Vercel Edge Middleware - true IP-based region geotargeting.
 //
 // Reads the visitor's IP country at Vercel's edge and stores a short-lived
 // `se-geo` cookie holding the matching Sport Endorse pricing region. The
@@ -7,7 +7,7 @@
 //
 // Graceful fallback: if this middleware is ever removed or disabled, site.js
 // still detects the region client-side from browser language + timezone, so
-// nothing breaks — it's just slightly less precise.
+// nothing breaks - it's just slightly less precise.
 //
 // See NOTE-FOR-COLLIN-geotargeting.md for the Vercel-side setup.
 
@@ -27,7 +27,7 @@ const REGION_BY_COUNTRY = {
   // EU / EEA / CH -> eu
   AT: 'eu', BE: 'eu', BG: 'eu', HR: 'eu', CY: 'eu', CZ: 'eu', DK: 'eu',
   EE: 'eu', FI: 'eu', FR: 'eu', DE: 'eu', GR: 'eu', HU: 'eu', IS: 'eu',
-  IT: 'eu', LV: 'eu', LI: 'eu', LT: 'eu', LU: 'eu', MT: 'eu', NL: 'eu',
+  IT: 'it', LV: 'eu', LI: 'eu', LT: 'eu', LU: 'eu', MT: 'eu', NL: 'eu',
   NO: 'eu', PL: 'eu', PT: 'eu', RO: 'eu', SK: 'eu', SI: 'eu', ES: 'eu',
   SE: 'eu', CH: 'eu',
   // everything else falls through to 'row'
