@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sport Endorse — Content Manager</title>
   <meta name="robots" content="noindex">
+  <!-- Point Decap at the config explicitly. Vercel serves this page at /admin with
+       no trailing slash (cleanUrls + trailingSlash:false, and /admin/ 308s to /admin),
+       so Decap's default relative lookup would request /config.yml and 404. A
+       root-absolute path resolves correctly however the page is reached. -->
+  <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url">
 </head>
 <body>
   <!-- Decap CMS (open-source, Git-based). Editors log in here at /admin/ -->
