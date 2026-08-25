@@ -262,6 +262,20 @@ section:not(.light) .fpill.on{background:var(--gold);border-color:var(--gold);co
 /* team headshots: neutral light-grey backdrop behind the transparent cut-outs */
 .tcard .avatar img{background:#E8E9E5}
 
+/* ---------- success-story deliverables + metrics ---------- */
+.ss-deliv{max-width:720px;margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.ss-deliv li{position:relative;padding-left:28px;line-height:1.55}
+.ss-deliv li::before{content:"¹3";position:absolute;left:0;top:0;color:var(--gold);font-weight:800}
+.light .ss-deliv li::before{color:#9A7B00}
+.ss-metrics{max-width:720px;margin:20px 0 0;border-top:1px solid var(--line)}
+.light .ss-metrics{border-top-color:#D3D8C8}
+.ss-metric{display:flex;justify-content:space-between;align-items:baseline;gap:24px;padding:12px 0;border-bottom:1px solid var(--line)}
+.light .ss-metric{border-bottom-color:#D3D8C8}
+.ss-m-lbl{color:var(--muted)}
+.light .ss-m-lbl{color:var(--dark-muted)}
+.ss-m-val{font-family:"Archivo",sans-serif;font-weight:700;text-align:right;color:var(--text)}
+.light .ss-m-val{color:var(--dark-text)}
+
 /* ---------- blog ---------- */
 .post-meta{font-size:.88rem;opacity:.8;margin-top:14px}
 .prose{max-width:720px}
@@ -381,6 +395,13 @@ header.site .logo img{height:31px;width:182px;max-width:none;display:block}
 .btags{display:inline-flex;gap:6px;flex-wrap:wrap}
 .btags span{font-size:.74rem;font-weight:600;border:1px solid var(--line);border-radius:999px;padding:3px 9px;color:var(--muted)}
 .light .btags span{border-color:#D3D8C8;color:var(--dark-muted)}
+
+/* white brand cards (Talent six-brand showcase) — readable on white even in a dark section */
+.bshow-white .bshow-card{background:#ffffff;border-color:#DDE0D2;box-shadow:0 1px 0 rgba(20,30,50,.05)}
+.bshow-white .bshow-name{color:var(--dark-text)}
+.bshow-white .bshow-desc{color:var(--dark-muted)}
+.bshow-white .eyebrow{color:#9A7B00}
+.bshow-white .btags span{border-color:#D3D8C8;color:var(--dark-muted)}
 
 /* ---- Marketplace-side cross-link band ---- */
 .crosslink{display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap;

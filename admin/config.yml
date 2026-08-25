@@ -179,8 +179,22 @@ collections:
               - { label: "Objective (detail page section)", name: "objective", widget: "text", required: false, hint: "What the brand set out to achieve. Leave blank to hide this section." }
               - { label: "Planning & approach (detail page section)", name: "approach", widget: "text", required: false, hint: "How the campaign was planned and delivered. Blank = hidden." }
               - { label: "Athletes involved (detail page section)", name: "athletes", widget: "text", required: false, hint: "Athletes/talent and why they fit. Blank = hidden." }
-              - { label: "Deliverables (detail page section)", name: "deliverables", widget: "text", required: false, hint: "What was produced/delivered. Blank = hidden." }
+              # A list, not free text: build.py renders it as a ticked bullet list
+              # (_bullets). A "text" widget here would flatten the list on save.
+              - { label: "Deliverables (detail page section)", name: "deliverables", widget: "list", required: false, hint: "One bullet per line. Blank = hidden." }
               - { label: "Results & performance (detail page section)", name: "results", widget: "text", required: false, hint: "Reach, engagement, outcomes. Blank = hidden." }
+              # Declared so Decap round-trips it. An undeclared field is dropped on
+              # save, which would silently wipe the metrics table for that story.
+              - label: "Results metrics (detail page table)"
+                name: "metrics"
+                widget: "list"
+                required: false
+                label_singular: "Metric"
+                summary: "{{fields.label}}: {{fields.value}}"
+                hint: "Headline numbers shown under Results. Blank = no table."
+                fields:
+                  - { label: "Label", name: "label", widget: "string", hint: "e.g. Media Impressions" }
+                  - { label: "Value", name: "value", widget: "string", hint: "e.g. 2.5 million" }
 
   - name: "careers"
     label: "Careers — open roles"

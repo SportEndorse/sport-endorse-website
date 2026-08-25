@@ -44,7 +44,7 @@ FONTS_HREF = ("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@
               if THEME == "brand" else
               "https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900&family=Spline+Sans:wght@400;500;600&display=swap")
 
-ACADEMY_URL = "https://academy.sportendorse.com"  # sister site — confirm final URL
+ACADEMY_URL = "https://academy.sportendorse.com"  # sister site (own Vercel project)
 CAREERS_EMAIL = "careers@sportendorse.com"        # confirm before launch
 
 # ---- Localisation ----------------------------------------------------------
@@ -210,9 +210,11 @@ def brand_card(name, desc, markets, prefix=""):
             f'<p class="bshow-desc">{html.escape(desc)}</p>'
             f'<div class="bshow-markets"><span class="eyebrow">Markets</span><span class="btags">{tags}</span></div></div>')
 
-def brands_showcase_grid(items=None, prefix=""):
+def brands_showcase_grid(items=None, prefix="", white=False):
+    """`white=True` forces light cards, for placing the grid in a dark section."""
     cards = "".join(brand_card(n, d, m, prefix) for n, d, m in (items or BRANDS_SHOWCASE))
-    return f'<div class="grid g3 bshow-grid">{cards}</div>'
+    cls = "grid g3 bshow-grid" + (" bshow-white" if white else "")
+    return f'<div class="{cls}">{cards}</div>'
 
 POSITIONING = ("Sport Endorse is an athlete marketing and sports sponsorship platform that helps "
 "brands and businesses discover, evaluate, contact, and manage verified elite athletes for "
@@ -382,6 +384,9 @@ def page(slug, title, desc, body, jsonld=None, active=None, lang="en", prefix=""
 {f'<meta property="og:image" content="{html.escape(og_image)}"><meta name="twitter:image" content="{html.escape(og_image)}">' if og_image else ''}
 <meta property="og:locale" content="{ {'en':'en_IE','es':'es_ES','fr':'fr_FR','de':'de_DE','it':'it_IT','nl':'nl_NL'}[lang] }">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="{prefix}favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="{prefix}assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{prefix}assets/favicon-16x16.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="{FONTS_HREF}" rel="stylesheet">
@@ -608,7 +613,7 @@ talent_body = f"""
 <section><div class="wrap">
   <div class="section-head"><p class="eyebrow">The brands</p><h2>Brands you could work with</h2>
   <p>Real companies with real budgets, across sportswear, nutrition, health, finance and retail. Here's a sample of who's on the platform — and the markets they operate in.</p></div>
-  {brands_showcase_grid(BRANDS_SHOWCASE[:6])}
+  {brands_showcase_grid(BRANDS_SHOWCASE[:6], white=True)}
   <p style="margin-top:18px"><a class="btn ghost" href="brands-on-platform.html">See more brands →</a></p>
 </div></section>
 <section class="light"><div class="wrap">
@@ -1392,7 +1397,7 @@ academy_body = f"""
   <p class="eyebrow">Sport Endorse Academy · Sister site</p>
   <h1>Learn the business side <span>of sport</span></h1>
   <div class="answer"><p>The Sport Endorse Academy is our education platform for athletes: a structured curriculum of 52 bite-size lessons on personal brand, contracts and disclosure, pricing your work, money and taxes, and working with brands professionally — drawn from real deals on the Sport Endorse platform, so athletes learn how it actually works, not how a textbook imagines it.</p></div>
-  <div class="cta"><span class="btn gold soon" aria-disabled="true">Coming Soon</span>
+  <div class="cta"><a class="btn gold" href="{ACADEMY_URL}" rel="noopener">Visit the Academy</a>
   <a class="btn ghost" data-geo="us" href="universities.html">For universities</a>
   <a class="btn ghost" data-geo="za" href="school-rugby.html">For SA schools</a></div>
 </div></section>
@@ -1418,13 +1423,13 @@ academy_body = f"""
     <div class="card"><h3>Money &amp; taxes</h3><p>Endorsement income basics &middot; Invoicing and getting paid securely &middot; Tax obligations at home and abroad &middot; Building financial habits early</p></div>
     <div class="card"><h3>Working with brands</h3><p>What brand teams actually want &middot; Briefs, deadlines and approvals &middot; Being re-booked: the professional's edge &middot; Turning one deal into a relationship</p></div>
   </div>
-  <p style="margin-top:24px"><span class="btn gold soon" aria-disabled="true">Coming Soon</span></p>
+  <p style="margin-top:24px"><a class="btn gold" href="{ACADEMY_URL}" rel="noopener">See the full curriculum</a></p>
 </div></section>
 {faq_section("Academy questions, answered", academy_faq)}
 <section><div class="wrap" style="text-align:center">
   <h2>Education and execution, together</h2>
   <p class="lead muted" style="margin:12px auto 24px;max-width:640px">Athletes learn on the Academy; deals happen on the platform, with documented terms and compliant trails. Universities: ask us about running both across your programme.</p>
-  <span class="btn gold soon" aria-disabled="true">Coming Soon</span>
+  <a class="btn gold" href="{ACADEMY_URL}" rel="noopener">Visit the Academy</a>
   <a class="btn ghost" href="demo.html" style="margin-left:10px">Talk to us</a>
 </div></section>
 """
@@ -2137,6 +2142,11 @@ def _paras(txt):
     """Plain CMS text -> paragraphs (split on blank lines)."""
     return "".join(f"<p>{html.escape(p.strip())}</p>" for p in str(txt or "").split("\n\n") if p.strip())
 
+def _bullets(items):
+    """CMS list field -> a ticked bullet list (used for story deliverables)."""
+    lis = "".join(f"<li>{html.escape(str(x).strip())}</li>" for x in items if str(x).strip())
+    return f"<ul class='ss-deliv'>{lis}</ul>" if lis else ""
+
 def story_page(s):
     """Full, standalone case-study page for one success story. Optional deeper
     sections (objective / approach / athletes / deliverables / results) render
@@ -2152,16 +2162,34 @@ def story_page(s):
     logoimg = (f'<img class="storylogo" src="{e(logo)}" alt="" loading="lazy">' if logo else "")
     coverimg = (f'<div class="storyhero-img"><img src="{e(cover)}" alt="{e(s.get("title",""))}" loading="eager"></div>' if cover else "")
 
-    def sect(title, key):
+    def sect(title, key, light=True):
         val = s.get(key)
-        return (f'<section class="light"><div class="wrap narrow">'
+        if not val:
+            return ""
+        body = _bullets(val) if isinstance(val, list) else _paras(val)
+        cls = ' class="light"' if light else ""
+        return (f'<section{cls}><div class="wrap narrow">'
                 f'<div class="section-head"><h2>{e(title)}</h2></div>'
-                f'<div class="prose">{_paras(val)}</div></div></section>') if val else ""
+                f'<div class="prose">{body}</div></div></section>')
+
+    # Results and metrics share one section: the prose reads as the summary and the
+    # metrics table as its evidence, so splitting them would strand the numbers.
+    results_section = ""
+    if s.get("results") or s.get("metrics"):
+        body = _paras(s.get("results"))
+        if s.get("metrics"):
+            body += ('<div class="ss-metrics">' + "".join(
+                f'<div class="ss-metric"><span class="ss-m-lbl">{e(m.get("label"))}</span>'
+                f'<span class="ss-m-val">{e(m.get("value"))}</span></div>'
+                for m in s["metrics"]) + '</div>')
+        results_section = ('<section class="light"><div class="wrap narrow">'
+                           '<div class="section-head"><h2>Results</h2></div>'
+                           f'<div class="prose">{body}</div></div></section>')
 
     quote = ""
     if s.get("quote"):
         quote = (f'<section><div class="wrap narrow"><blockquote class="storyq big">&ldquo;{e(s.get("quote"))}&rdquo;'
-                 f'<cite>- {e(s.get("quote_by"))}</cite></blockquote></div></section>')
+                 f'<cite>&mdash; {e(s.get("quote_by"))}</cite></blockquote></div></section>')
 
     return f"""
 <section class="hero storyhero"><div class="wrap">
@@ -2176,11 +2204,11 @@ def story_page(s):
   <div class="section-head"><p class="eyebrow">Overview</p><h2>The campaign</h2></div>
   <div class="prose">{_paras(s.get("full"))}</div>
 </div></section>
-{sect("Objective", "objective")}
-{sect("Planning &amp; approach", "approach")}
-{sect("Athletes involved", "athletes")}
-{sect("Deliverables", "deliverables")}
-{sect("Results &amp; performance", "results")}
+{sect("The challenge", "objective", light=True)}
+{sect("The Sport Endorse solution", "approach", light=False)}
+{sect("Athlete fit", "athletes", light=True)}
+{sect("Deliverables", "deliverables", light=False)}
+{results_section}
 {quote}
 <section class="light"><div class="wrap" style="text-align:center">
   <h2>Run a campaign like this</h2>
@@ -2472,7 +2500,7 @@ PAGES["demo.html"] = dict(
 
 
 # ---- Agency demo booking page (HubSpot meetings embed) ----------------------
-HUBSPOT_MEETING_AGENCY = "https://meetings.hubspot.com/sean-armada/sport-endorse-demo-agency"
+HUBSPOT_MEETING_AGENCY = "https://meetings.hubspot.com/alicia269/sport-endorse-demo"
 
 def demo_agency_body():
     embed = (
