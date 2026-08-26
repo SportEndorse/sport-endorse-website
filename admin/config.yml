@@ -8,6 +8,19 @@
 # Every collection below edits a JSON file that build.py reads, so a CMS save
 # → git commit → CI rebuild → live site, with no developer involved.
 #
+# TWO THINGS MAKE THIS SITE DIFFERENT FROM A NORMAL ONE — see the in-CMS guide
+# "📖 Start here" (content/editing-guide.md) for the full explanation:
+#   • GEO-TARGETING: the same URL shows different content by visitor location
+#     across seven regions (us, uk, ie, eu, it, za, row) — e.g. US visitors see
+#     FTC/FDA on Healthcare while IE/UK/EU see ASAI/HPRA; Italy sees Italian
+#     athletes and euro pricing. Geo-variant copy lives in the build system.
+#   • LANGUAGES: English plus five localized languages (es, fr, de, it, nl),
+#     each with its own /xx/ pages. Translations live in the localization files.
+# Editing English content here updates the English pages immediately; the
+# translated pages are refreshed by a developer. The main marketing-page COPY
+# (hero/section text, FAQs) also lives in the build system and can be moved into
+# this CMS page-by-page on request.
+#
 # SETUP (one-time, developer) — Vercel + GitHub hosting:
 #   The GitHub backend needs a small OAuth handler so editors can log in.
 #   1. Set `repo` below to the real GitHub repo (OWNER/REPO).
@@ -30,8 +43,21 @@ media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
+  - name: "guide"
+    label: "📖 Start here — how to edit"
+    description: "Read this first: what you can edit, and how geo-targeting (content by location) and the different languages fit together."
+    files:
+      - file: "content/editing-guide.md"
+        label: "How to edit this site (geo-targeting & languages)"
+        name: "guide"
+        description: "The full guide. Open it to see what is editable here, how the seven regions (us/uk/ie/eu/it/za/row) work, and how the five translated languages (es/fr/de/it/nl) are handled."
+        fields:
+          - { label: "Title", name: "title", widget: "hidden", default: "How to edit the Sport Endorse site" }
+          - { label: "Guide", name: "body", widget: "markdown" }
+
   - name: "site"
     label: "Site settings"
+    description: "Homepage logo wall and overview video. The logo wall shows on the homepage in every language."
     files:
       - file: "content/settings.json"
         label: "Logos & video"
@@ -112,6 +138,7 @@ collections:
 
   - name: "athletes"
     label: "Featured athlete profiles"
+    description: "Athlete cards shown to brands. Editing sets the ENGLISH bio (the localized pages show it until re-translated). Italian visitors see a separate Italian roster — ask a developer to change that."
     files:
       - file: "content/athletes.json"
         label: "Athlete showcase cards"
@@ -144,6 +171,7 @@ collections:
 
   - name: "stories"
     label: "Case-study cards (Success Stories grid)"
+    description: "The card on the grid plus the full story page. 'Region' here is a filter LABEL on the card (Ireland/UK/Europe/...), not a visitor-targeting rule. Editing updates the English pages."
     files:
       - file: "content/stories.json"
         label: "Story cards"

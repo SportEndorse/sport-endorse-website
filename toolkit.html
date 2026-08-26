@@ -4,10 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,follow">
-<link rel="canonical" href="https://www.sportendorse.com/athlete-marketing-toolkit">
-<link rel="icon" href="favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="canonical" href="https://www.sportendorse.com/toolkit">
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -26,8 +23,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900&family=Spline+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
 <style>
-/* ---- Toolkit landing page (standalone) - built on the site design tokens ---- */
+/* ---- Athlete Marketing Toolkit landing page (standalone) - built on the site design tokens ---- */
 .lp-header{position:sticky;top:0;z-index:60;background:rgba(10,20,36,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .lp-header .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:13px;padding-bottom:13px}
 .lp-header .lp-logo img{display:block;height:29px;width:auto}
@@ -58,29 +58,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .lp-brands{display:flex;gap:26px;flex-wrap:wrap}
 .lp-brands span{font-family:"Archivo",sans-serif;font-weight:800;font-stretch:75%;letter-spacing:.05em;color:var(--text);opacity:.72}
 
-/* tags + lists */
+/* what's inside cards */
 .lp-tag{display:inline-block;font-family:"Archivo",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.7rem;padding:5px 11px;border-radius:999px;background:var(--gold);color:#141a10;margin-bottom:12px}
 .lp-tag.green{background:#1F7A58;color:#fff}
 .lp-list{list-style:none;padding:0;margin:14px 0 0}
 .lp-list li{position:relative;padding-left:26px;margin-bottom:9px;color:var(--dark-muted)}
-.lp-list li::before{content:"\2713";position:absolute;left:0;top:0;color:#1F7A58;font-weight:800}
+.lp-list li::before{content:"";position:absolute;left:3px;top:6px;width:5px;height:10px;border:solid #1F7A58;border-width:0 2px 2px 0;transform:rotate(45deg)}
+.light .lp-list li{color:var(--dark-muted)}
 
 /* proof: quote + campaign card */
 .lp-qmark{font-family:"Archivo",sans-serif;font-size:3.4rem;color:var(--gold);line-height:.55;height:26px}
 .lp-qtext{font-size:1.25rem;line-height:1.45;margin:12px 0 18px;color:var(--text)}
 .lp-qby{color:var(--muted);font-size:.92rem}
 .lp-qby strong{color:var(--text)}
-.lp-stat{display:flex;align-items:baseline;gap:12px;margin:16px 0 14px}
+.lp-stat{display:flex;align-items:baseline;gap:12px;margin:4px 0 14px}
 .lp-stat strong{font-family:"Archivo",sans-serif;font-size:3rem;color:var(--gold);line-height:1}
 .lp-stat span{color:var(--muted)}
+.lp-deliv{list-style:none;padding:0;margin:0}
+.lp-deliv li{position:relative;padding-left:26px;margin-bottom:10px;color:var(--muted)}
+.lp-deliv li::before{content:"";position:absolute;left:3px;top:6px;width:5px;height:10px;border:solid var(--gold);border-width:0 2px 2px 0;transform:rotate(45deg)}
 
 /* access + form */
 .lp-access-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
 .lp-access-list{list-style:none;padding:0;margin:22px 0 0}
 .lp-access-list li{position:relative;padding-left:30px;margin-bottom:12px;font-size:1.05rem}
-.lp-access-list li::before{content:"\2713";position:absolute;left:0;top:0;color:var(--gold);font-weight:800;font-size:1.1rem}
+.lp-access-list li::before{content:"";position:absolute;left:4px;top:7px;width:6px;height:12px;border:solid var(--gold);border-width:0 2px 2px 0;transform:rotate(45deg)}
 .lp-form-card{background:#fff;border:1px solid #DDE0D2;border-radius:var(--r);padding:28px;box-shadow:0 18px 50px rgba(7,27,54,.09)}
-.lp-form-card h3{margin:0 0 6px}
+.lp-form-card h3{margin:0 0 6px;color:var(--dark-text)}
 .lp-form-card .lp-form-sub{margin:0 0 14px;color:var(--dark-muted);font-size:.95rem}
 /* best-effort styling for HubSpot's rendered form (native embeds only) */
 .lp-form-card input:not([type=submit]):not([type=checkbox]):not([type=radio]),
@@ -120,30 +124,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="lp-hero-grid">
         <div>
           <p class="eyebrow">For brands planning athlete campaigns</p>
-          <h1>Know what your athlete campaign <span>could deliver</span> before you spend your budget.</h1>
-          <p class="lead" style="margin-top:18px;color:var(--muted)">Use the free Athlete Marketing ROI Calculator and 2026 Athlete Marketing Guide to plan your campaign with clearer numbers before you commit spend.</p>
+          <h1>Know what your athlete campaign could deliver <span>before you spend your budget.</span></h1>
+          <p class="lead">Use the free Athlete Marketing ROI Calculator and 2026 Athlete Marketing Guide to plan your campaign with clearer numbers before you commit spend.</p>
           <div class="lp-hero-cta">
             <a class="btn gold" href="#get-toolkit">Get the free toolkit</a>
             <span class="lp-hero-note">Calculator + guide &middot; free access</span>
           </div>
         </div>
 
-        <div class="lp-preview">
+        <div class="lp-preview" aria-label="Quick ROI preview">
           <div class="lp-prev-top">
             <strong>Quick ROI preview</strong>
             <span class="lp-badge">Sample estimate</span>
           </div>
           <div class="lp-field">
             <label for="mini-budget">Campaign budget (&euro;)</label>
-            <input id="mini-budget" type="number" value="5000" min="1">
+            <input id="mini-budget" type="number" value="5000" min="1" inputmode="numeric">
           </div>
           <div class="lp-field">
             <label for="mini-athletes">Number of athletes</label>
-            <input id="mini-athletes" type="number" value="5" min="1">
+            <input id="mini-athletes" type="number" value="5" min="1" inputmode="numeric">
           </div>
           <div class="lp-field">
             <label for="mini-followers">Average followers per athlete</label>
-            <input id="mini-followers" type="number" value="50000" min="1">
+            <input id="mini-followers" type="number" value="50000" min="1" inputmode="numeric">
           </div>
           <div class="lp-result">
             <div>
@@ -162,10 +166,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
 
   <div class="lp-brandstrip">
-    <div class="wrap lp-brandrow">
-      <div class="lp-brandlabel">Brands running measurable athlete campaigns</div>
-      <div class="lp-brands">
-        <span>PUMA</span><span>WHOOP</span><span>RED BULL</span><span>KELLOGG'S</span><span>SKECHERS</span>
+    <div class="wrap">
+      <div class="lp-brandrow">
+        <span class="lp-brandlabel">Brands running measurable athlete campaigns</span>
+        <div class="lp-brands">
+          <span>PUMA</span><span>WHOOP</span><span>RED BULL</span><span>KELLOGG'S</span><span>SKECHERS</span>
+        </div>
       </div>
     </div>
   </div>
@@ -177,7 +183,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h2>One toolkit, two practical resources.</h2>
       </div>
       <div class="grid g2">
-        <article class="card">
+        <div class="card">
           <span class="lp-tag">Calculator</span>
           <h3>Athlete Marketing ROI Calculator</h3>
           <p>Enter your campaign details and estimate potential reach, website or profile visits, purchases, campaign value and ROI.</p>
@@ -186,8 +192,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li>Estimate potential purchases and revenue</li>
             <li>See potential ROI and return per &euro;1 spent</li>
           </ul>
-        </article>
-        <article class="card">
+        </div>
+        <div class="card">
           <span class="lp-tag green">Guide</span>
           <h3>2026 Athlete Marketing Guide</h3>
           <p>A simple guide to planning athlete campaigns, choosing the right athletes and building campaigns that can be measured.</p>
@@ -196,7 +202,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li>What to plan before a campaign starts</li>
             <li>How to think about measurable results</li>
           </ul>
-        </article>
+        </div>
       </div>
     </div>
   </section>
@@ -208,22 +214,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h2>Real campaign delivery, not just theory.</h2>
       </div>
       <div class="grid g2">
-        <article class="card">
+        <div>
           <div class="lp-qmark">&ldquo;</div>
-          <div class="lp-qtext">Sport Endorse were instrumental in sourcing the right talent - easy, professional and cost-effective.</div>
-          <div class="lp-qby"><strong>Claire Lynch</strong><br>Head of Marketing, Active Iron</div>
-        </article>
-        <article class="card">
-          <span class="lp-tag green">Active Iron campaign</span>
-          <h3>Campaign delivery</h3>
+          <p class="lp-qtext">Sport Endorse were instrumental in sourcing the right talent - easy, professional and cost-effective.</p>
+          <p class="lp-qby"><strong>Claire Lynch</strong><br>Head of Marketing, Active Iron</p>
+        </div>
+        <div class="card">
+          <span class="lp-tag">Active Iron campaign</span>
+          <p class="lp-lbl" style="color:var(--muted)">Campaign delivery</p>
           <div class="lp-stat"><strong>4</strong><span>Inter-county athletes</span></div>
-          <ul class="lp-list">
+          <ul class="lp-deliv">
             <li>1 full-day content shoot</li>
             <li>1 month image usage</li>
             <li>Athlete-led social content</li>
             <li>Retail activation</li>
           </ul>
-        </article>
+        </div>
       </div>
     </div>
   </section>
@@ -234,7 +240,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div>
           <p class="eyebrow">Get access</p>
           <h2>Unlock the free Athlete Marketing Toolkit.</h2>
-          <p style="margin-top:16px;max-width:520px;color:var(--dark-muted)">Get the full ROI calculator and 2026 Athlete Marketing Guide.</p>
+          <p class="lead">Get the full ROI calculator and 2026 Athlete Marketing Guide.</p>
           <ul class="lp-access-list">
             <li>Full Athlete Marketing ROI Calculator</li>
             <li>2026 Athlete Marketing Guide</li>
@@ -243,11 +249,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="lp-form-card">
           <h3>Get instant access</h3>
-          <p class="lp-form-sub">Enter your details and we'll send the toolkit straight over.</p>
-          <div class="hubspot-form-wrap">
-            <script src="https://js.hsforms.net/forms/embed/4025606.js" defer></script>
-            <div class="hs-form-frame" data-region="na1" data-form-id="3318b150-fa69-47f6-921e-75def7dcc299" data-portal-id="4025606"></div>
-          </div>
+          <p class="lp-form-sub">Enter your details and we'll unlock the toolkit for you.</p>
+          <!-- HubSpot form -->
+          <script src="https://js.hsforms.net/forms/embed/4025606.js" defer></script>
+          <div class="hs-form-frame" data-region="na1" data-form-id="3318b150-fa69-47f6-921e-75def7dcc299" data-portal-id="4025606"></div>
         </div>
       </div>
     </div>
@@ -270,19 +275,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       roiEl=document.getElementById("mini-roi"),
       valueEl=document.getElementById("mini-value");
   function n(el){var v=Number(el.value);return Number.isFinite(v)&&v>0?v:0;}
-  function updatePreview(){
-    var campaignBudget=n(budget),numberAthletes=n(athletes),avgFollowers=n(followers);
-    var reach=numberAthletes*avgFollowers*0.30;
-    var purchases=reach*0.005;
-    var campaignValue=purchases*50;
-    var roi=campaignBudget>0?((campaignValue-campaignBudget)/campaignBudget)*100:0;
-    roiEl.textContent=campaignBudget>0?Math.round(roi)+"%":"-";
-    valueEl.textContent=new Intl.NumberFormat("en-IE",{style:"currency",currency:"EUR",maximumFractionDigits:0}).format(campaignValue);
+  var fmt=new Intl.NumberFormat("en-IE",{style:"currency",currency:"EUR",maximumFractionDigits:0});
+  function update(){
+    var b=n(budget),a=n(athletes),f=n(followers);
+    var reach=a*f*0.30, purchases=reach*0.005, value=purchases*50;
+    var roi=b>0?((value-b)/b)*100:0;
+    roiEl.textContent=b>0?Math.round(roi)+"%":"-";
+    valueEl.textContent=fmt.format(value);
   }
-  [budget,athletes,followers].forEach(function(el){el.addEventListener("input",updatePreview);});
-  updatePreview();
+  [budget,athletes,followers].forEach(function(el){el.addEventListener("input",update);});
+  update();
 })();
 </script>
-
 </body>
 </html>

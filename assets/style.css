@@ -263,10 +263,10 @@ section:not(.light) .fpill.on{background:var(--gold);border-color:var(--gold);co
 .tcard .avatar img{background:#E8E9E5}
 
 /* ---------- success-story deliverables + metrics ---------- */
-.ss-deliv{max-width:720px;margin:0;padding:0;list-style:none;display:grid;gap:10px}
-.ss-deliv li{position:relative;padding-left:28px;line-height:1.55}
-.ss-deliv li::before{content:"¹3";position:absolute;left:0;top:0;color:var(--gold);font-weight:800}
-.light .ss-deliv li::before{color:#9A7B00}
+.ss-deliv{max-width:720px;margin:0;padding:0 0 0 22px;list-style:disc;display:grid;gap:10px}
+.ss-deliv li{padding-left:4px;line-height:1.55}
+.ss-deliv li::marker{color:var(--gold)}
+.light .ss-deliv li::marker{color:#9A7B00}
 .ss-metrics{max-width:720px;margin:20px 0 0;border-top:1px solid var(--line)}
 .light .ss-metrics{border-top-color:#D3D8C8}
 .ss-metric{display:flex;justify-content:space-between;align-items:baseline;gap:24px;padding:12px 0;border-bottom:1px solid var(--line)}
