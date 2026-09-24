@@ -2842,10 +2842,11 @@ print("built help/search-index.json (", len(help_center.search_index(_hctx)), "l
 os.makedirs(os.path.join(OUT, "success-stories"), exist_ok=True)
 _sschrome = (_prefix_links(header("success-stories.html"), "../"), _prefix_links(footer(), "../"))
 for _s in STORIES:
+    # An editor-supplied meta title/description is used verbatim; otherwise derive from title/blurb.
     with open(os.path.join(OUT, "success-stories", _s["id"] + ".html"), "w", encoding="utf-8") as f:
         f.write(page(f"success-stories/{_s['id']}.html",
-                     (_s["title"] + " | Sport Endorse")[:70],
-                     (_s.get("blurb", "") or _s["title"])[:158],
+                     _s.get("meta_title") or (_s["title"] + " | Sport Endorse")[:70],
+                     _s.get("meta_desc") or (_s.get("blurb", "") or _s["title"])[:158],
                      story_page(_s), jsonld=story_ld(_s), active="success-stories.html",
                      prefix="../", chrome=_sschrome))
 print("built", len(STORIES), "success-stories/ detail pages")

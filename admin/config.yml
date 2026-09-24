@@ -185,6 +185,8 @@ collections:
             fields:
               - { label: "ID (short, no spaces)", name: "id", widget: "string", hint: "e.g. aib-bori-akinola" }
               - { label: "Title", name: "title", widget: "string" }
+              - { label: "SEO meta title (optional)", name: "meta_title", widget: "string", required: false, hint: "Browser-tab/Google title for the story page. Blank = Title + ' | Sport Endorse'." }
+              - { label: "SEO meta description (optional)", name: "meta_desc", widget: "text", required: false, hint: "Google snippet, ~150 characters. Blank = the card blurb." }
               - { label: "Cover image URL", name: "cover", widget: "string", required: false, hint: "Full https:// URL to the cover image" }
               - { label: "Brand logo URL", name: "logo", widget: "string", required: false, hint: "Full https:// URL to the brand logo" }
               - label: "Industry"
