@@ -1151,7 +1151,7 @@ affiliates_body = f"""
   <p class="eyebrow">Affiliate Programme</p>
   <h1>Earn by connecting brands to <span>athlete marketing</span></h1>
   <div class="answer"><p>The Sport Endorse Affiliate Programme lets consultants, creators and sports-business networks earn recurring commission by referring brands to Sport Endorse subscriptions. Apply, get approved, share your tracked referral link — and earn on every subscription you introduce, for as long as it stays active.</p></div>
-  <div class="cta"><a class="btn gold" href="demo.html">Apply to become an affiliate</a></div>
+  <div class="cta"><a class="btn gold" href="#apply">Apply to become an affiliate</a></div>
 </div></section>
 {ticker()}
 <section class="light"><div class="wrap">
@@ -1171,10 +1171,10 @@ affiliates_body = f"""
   </div>
 </div></section>
 {faq_section("Affiliate questions, answered", affiliates_faq)}
-<section><div class="wrap" style="text-align:center">
+<section id="apply"><div class="wrap" style="text-align:center">
   <h2>Apply to the Affiliate Programme</h2>
-  <p class="lead muted" style="margin:12px auto 24px;max-width:600px">A 15-minute call covers your audience, the commission structure and how tracking works.</p>
-  <a class="btn gold" href="demo.html">Apply now</a>
+  <p class="lead muted" style="margin:12px auto 24px;max-width:600px">Join the Sport Endorse Affiliate Programme and start earning commission by introducing brands to athlete marketing.</p>
+  <div class="affiliateform"><div id="widget-register-refer" data-subdomain="sportendorse" data-phone-required="false" data-heading-color="#000000" data-description-color="#000000" data-label-color="#000000" data-bg-color="#ffffff" data-shadow="" data-form-size="md" data-padding="md" data-border-radius="md" data-button-color="#000000" data-button-size="md"></div><script src="https://widget.partner.io/registerRefer.js"></script></div>
 </div></section>
 """
 PAGES["affiliates.html"] = dict(
