@@ -2434,7 +2434,7 @@ OUT = os.path.dirname(os.path.abspath(__file__))
 import localize
 I18N = localize.load_i18n()
 # ---- Demo booking page (HubSpot meetings embed) -----------------------------
-HUBSPOT_MEETING = "https://meetings.hubspot.com/alicia269/sport-endorse-demo"
+HUBSPOT_MEETING = "https://meetings.hubspot.com/liam-forster/sport-endorse-platform-demo"
 
 def demo_body():
     embed = (
@@ -2500,7 +2500,7 @@ PAGES["demo.html"] = dict(
 
 
 # ---- Agency demo booking page (HubSpot meetings embed) ----------------------
-HUBSPOT_MEETING_AGENCY = "https://meetings.hubspot.com/alicia269/sport-endorse-demo"
+HUBSPOT_MEETING_AGENCY = "https://meetings.hubspot.com/liam-forster/sport-endorse-platform-demo"
 
 def demo_agency_body():
     embed = (
