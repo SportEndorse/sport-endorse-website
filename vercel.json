@@ -13,6 +13,15 @@
           "value": "noindex"
         }
       ]
+    },
+    {
+      "source": "/survey(.*)",
+      "headers": [
+        {
+          "key": "x-robots-tag",
+          "value": "noindex, nofollow"
+        }
+      ]
     }
   ],
   "redirects": [
