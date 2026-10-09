@@ -2,12 +2,12 @@
 title: Sport Endorse x add-victor: Connecting Athletes with Career Opportunities
 date: 2024-01-16
 author: Sport Endorse Team
-description: Sport Endorse's partnership with add-victor — creating an ecosystem that connects athletes with brand opportunities and career pathways beyond sport.
+description: Sport Endorse's partnership with add-victor - creating an ecosystem that connects athletes with brand opportunities and career pathways beyond sport.
 category: Platform News
 image: https://cms.sportendorse.com/wp-content/uploads/2023/11/Sport-Endorse-x-add-victor-thumbnail-LinkedIn-banner.png
 ---
 
-Sport Endorse has partnered with add-victor to connect athletes with more than brand deals — building a bridge to career opportunities beyond sport. Here's what the partnership means for the athletes on our platform.
+Sport Endorse has partnered with add-victor to connect athletes with more than brand deals - building a bridge to career opportunities beyond sport. Here's what the partnership means for the athletes on our platform.
 
 We are delighted to announce a pioneering partnership that is set to create a powerful ecosystem bringing together unique talent and exciting opportunities. Sport Endorse and add-victor are teaming up to unleash more talent for brands and bespoke career support for athletes. We are excited to introduce [add-victor](https://add-victor.com/candidates) as the go-to career platform, matching high-performing individuals with exciting career paths across industry. With add-victor’s extensive database of 5,500 talents spanning Olympians, Paralympians, Student-Athletes, and Military Veterans, the collaboration will empower both talent and brands to thrive in new dimensions.
 

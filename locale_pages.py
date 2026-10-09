@@ -1,5 +1,5 @@
 """Localized page builder for Sport Endorse (/es/ /fr/ /de/ /it/).
-Each language ships as fully server-rendered native HTML — same AEO rules as
+Each language ships as fully server-rendered native HTML - same AEO rules as
 English: answer-first block under a single H1, FAQPage JSON-LD, no JS needed
 to read anything. Translations live in t_es.py / t_fr.py / t_de.py / t_it.py.
 Deep editorial pages (comparison, case studies, compliance guides) remain
@@ -73,7 +73,7 @@ def footer(t, e):
     <p>{t['ft_support']}</p>
     <div class="supportlogos">
       <img src="../images/support/eu-structural.png" alt="EU Structural Funds Ireland 2014–2020" loading="lazy">
-      <img src="../images/support/eu-erdf.png" alt="European Union — European Regional Development Fund" loading="lazy">
+      <img src="../images/support/eu-erdf.png" alt="European Union - European Regional Development Fund" loading="lazy">
       <img src="../images/support/dlr.png" alt="Dún Laoghaire–Rathdown County Council" loading="lazy">
       <img src="../images/support/leo.png" alt="Local Enterprise Office" loading="lazy">
     </div>
@@ -83,12 +83,12 @@ def footer(t, e):
     <span><a href="https://www.sportendorse.com/privacy-center">{t['ft_privacy']}</a> &middot; <a href="/terms-and-conditions">{t['ft_terms']}</a></span>
   </div>
 </div></footer>
-<script src="../assets/site.js" defer></script>"""
+<script src="../assets/site.js" defer></script>\n<script src="../assets/motion.js" defer></script>"""
 
 
 def ticker(t):
     items = (f"<span>{t['tk_founded']} <b>{t['tk_city_founded']}</b></span>"
-             f"<span><b>9,000+</b> {t['tk_athletes']}</span>"
+             f"<span><b>12,000+</b> {t['tk_athletes']}</span>"
              f"<span><b>280+</b> {t['tk_sports']}</span><span><b>85+</b> {t['tk_countries']}</span>"
              f"<span>{t['tk_live']} <b>2021</b></span>"
              f"<span>{t['tk_trusted']} <b>Puma · WHOOP · PwC · Kellogg's</b></span>"
@@ -108,7 +108,7 @@ def cards(items, cls="grid g3"):
         f'<div class="card"><h3>{h}</h3><p>{p}</p></div>' for h, p in items) + "</div>"
 
 def ss_teaser(t):
-    """Homepage Success Stories teaser — rendered only for locales that supply the content."""
+    """Homepage Success Stories teaser - rendered only for locales that supply the content."""
     if not t.get("hx_ss_cards"):
         return ""
     cta = t.get("hx_ss_cta", "Read the case study")
@@ -134,7 +134,7 @@ def hx_cards(t):
     return cards(items)
 
 def by_industry(t):
-    """Brands 'By Industry' section — only for locales that supply the content."""
+    """Brands 'By Industry' section - only for locales that supply the content."""
     if not t.get("br_ind_cards"):
         return ""
     cs = "".join(
@@ -146,7 +146,7 @@ def by_industry(t):
             f'<div class="grid g2">{cs}</div></div></section>')
 
 def the_talent(t):
-    """Brands 'The Talent' teaser — only for locales that supply the content."""
+    """Brands 'The Talent' teaser - only for locales that supply the content."""
     if not t.get("br_talent_cards"):
         return ""
     badge = t.get("br_talent_badge", "")
@@ -161,21 +161,47 @@ def the_talent(t):
             f'<p style="margin-top:16px"><a href="{t["br_talent_cta_href"]}">{t["br_talent_cta"]} &rarr;</a></p>'
             f'</div></section>')
 
+def nl_brand_athletes(lang, sh):
+    """Dutch brands page: 'De atleten die je kunt bereiken' with the Dutch-speaking roster (photos)."""
+    if lang != "nl" or not sh.get("DUTCH_ROSTER"):
+        return ""
+    pc = sh["profile_card"]
+    cards = "".join(pc(a, badge="Geverifieerde atleet", prefix="../") for a in sh["DUTCH_ROSTER"])
+    return (f'<section><div class="wrap">'
+            f'<div class="section-head"><p class="eyebrow">Het talent</p><h2>De atleten die je kunt bereiken</h2>'
+            f'<p>Elk profiel wordt afzonderlijk geverifieerd: identiteit, sportief niveau en bereik. Dit is een greep uit de atleten uit Nederland en Vlaanderen op het platform.</p></div>'
+            f'<div class="grid g4">{cards}</div>'
+            f'<p style="margin-top:18px"><a class="btn ghost" href="athletes.html">Ontdek meer geverifieerde atleten &rarr;</a></p>'
+            f'</div></section>')
+
+def de_brand_athletes(lang, sh):
+    """German brands page: 'Die Athleten, die Sie erreichen' with the DACH roster (photos)."""
+    if lang != "de" or not sh.get("DACH_ROSTER"):
+        return ""
+    pc = sh["profile_card"]
+    cards = "".join(pc(a, badge="Verifizierter Athlet", prefix="../") for a in sh["DACH_ROSTER"])
+    return (f'<section><div class="wrap">'
+            f'<div class="section-head"><p class="eyebrow">Die Talente</p><h2>Die Athleten, die Sie erreichen</h2>'
+            f'<p>Jedes Profil wird einzeln verifiziert: Identität, sportliches Niveau und Reichweite. Hier eine Auswahl der Athletinnen und Athleten aus Deutschland, Österreich und der Schweiz auf der Plattform.</p></div>'
+            f'<div class="grid g3">{cards}</div>'
+            f'<p style="margin-top:18px"><a class="btn ghost" href="athletes.html">Weitere verifizierte Athleten entdecken &rarr;</a></p>'
+            f'</div></section>')
+
 def it_brand_athletes(lang, sh):
     """Italian brands page: 'Gli atleti che puoi raggiungere' with the Italy roster (photos)."""
     if lang != "it" or not sh.get("ITALY_ROSTER"):
         return ""
     pc = sh["profile_card"]
-    cards = "".join(pc(a, badge="Atleta verificato", prefix="../") for a in sh["ITALY_ROSTER"][:3])
+    cards = "".join(pc(a, badge="Atleta verificato", prefix="../") for a in sh["ITALY_ROSTER"])
     return (f'<section><div class="wrap">'
             f'<div class="section-head"><p class="eyebrow">I talenti</p><h2>Gli atleti che puoi raggiungere</h2>'
             f'<p>Ogni profilo e verificato singolarmente: identita, livello sportivo e audience. Ecco alcuni degli atleti italiani disponibili sulla piattaforma.</p></div>'
-            f'<div class="grid g3">{cards}</div>'
+            f'<div class="grid g5">{cards}</div>'
             f'<p style="margin-top:18px"><a class="btn ghost" href="athletes.html">Scopri altri atleti verificati &rarr;</a></p>'
             f'</div></section>')
 
 def brands_showcase(t):
-    """Talent 'De merken' section — content-gated."""
+    """Talent 'De merken' section - content-gated."""
     if not t.get("ta_brands"):
         return ""
     cs = "".join(
@@ -190,7 +216,7 @@ def brands_showcase(t):
             f'<div class="grid g3">{cs}</div>{cta}</div></section>')
 
 def academy_section(t):
-    """Talent 'Sport Endorse Academy' section — content-gated."""
+    """Talent 'Sport Endorse Academy' section - content-gated."""
     if not t.get("ta_academy_h2"):
         return ""
     return (f'<section class="light"><div class="wrap"><div class="grid g2">'
@@ -201,7 +227,7 @@ def academy_section(t):
             f'</div></div></section>')
 
 def agent_partner(t):
-    """Talent 'Agent Partner' cross-link section — content-gated."""
+    """Talent 'Agent Partner' cross-link section - content-gated."""
     if not t.get("ta_agent_h2"):
         return ""
     return (f'<section><div class="wrap"><div class="crosslink">'
@@ -262,24 +288,24 @@ CUSTOM_PKG_L10N = {
 
 
 SA_L10N = {
- "es": dict(sa_head="Marcas sudafricanas — facturación en ZAR",
+ "es": dict(sa_head="Marcas sudafricanas - facturación en ZAR",
    sa_intro="Precios locales para las marcas sudafricanas, en rands. Suscríbete a deportistas sudafricanos a una tarifa local, o llega a EE. UU., Reino Unido, Europa y el resto del mundo: cada mercado se añade por separado.",
    sa_market="Sudáfrica",
    sa_note="Facturado desde Irlanda en rands sudafricanos, sin IVA. Los acuerdos con deportistas conllevan la comisión estándar del 14–18 %."),
- "fr": dict(sa_head="Marques sud-africaines — facturé en ZAR",
-   sa_intro="Tarifs locaux pour les marques sud-africaines, en rands. Abonnez-vous aux athlètes sud-africains à un tarif local, ou touchez les États-Unis, le Royaume-Uni, l'Europe et le reste du monde — chaque marché s'ajoute séparément.",
+ "fr": dict(sa_head="Marques sud-africaines - facturé en ZAR",
+   sa_intro="Tarifs locaux pour les marques sud-africaines, en rands. Abonnez-vous aux athlètes sud-africains à un tarif local, ou touchez les États-Unis, le Royaume-Uni, l'Europe et le reste du monde - chaque marché s'ajoute séparément.",
    sa_market="Afrique du Sud",
    sa_note="Facturé depuis l'Irlande en rands sud-africains, sans TVA. Les accords avec les athlètes comportent la commission standard de 14–18 %."),
- "de": dict(sa_head="Südafrikanische Marken — Abrechnung in ZAR",
-   sa_intro="Lokale Preise für südafrikanische Marken, in Rand. Abonnieren Sie südafrikanische Athleten zum lokalen Tarif oder erreichen Sie die USA, das UK, Europa und den Rest der Welt — jeder Markt wird separat hinzugefügt.",
+ "de": dict(sa_head="Südafrikanische Marken - Abrechnung in ZAR",
+   sa_intro="Lokale Preise für südafrikanische Marken, in Rand. Abonnieren Sie südafrikanische Athleten zum lokalen Tarif oder erreichen Sie die USA, das UK, Europa und den Rest der Welt - jeder Markt wird separat hinzugefügt.",
    sa_market="Südafrika",
    sa_note="Abgerechnet aus Irland in südafrikanischen Rand, ohne MwSt. Athleten-Deals unterliegen der Standardprovision von 14–18 %."),
- "it": dict(sa_head="Brand sudafricani — fatturazione in ZAR",
-   sa_intro="Prezzi locali per i brand sudafricani, in rand. Abbonati agli atleti sudafricani a una tariffa locale, o raggiungi USA, Regno Unito, Europa e il resto del mondo — ogni mercato si aggiunge separatamente.",
+ "it": dict(sa_head="Brand sudafricani - fatturazione in ZAR",
+   sa_intro="Prezzi locali per i brand sudafricani, in rand. Abbonati agli atleti sudafricani a una tariffa locale, o raggiungi USA, Regno Unito, Europa e il resto del mondo - ogni mercato si aggiunge separatamente.",
    sa_market="Sudafrica",
    sa_note="Fatturato dall'Irlanda in rand sudafricani, senza IVA. Gli accordi con gli atleti prevedono la commissione standard del 14–18 %."),
- "nl": dict(sa_head="Zuid-Afrikaanse merken — facturering in ZAR",
-   sa_intro="Lokale prijzen voor Zuid-Afrikaanse merken, in rand. Abonneer je op Zuid-Afrikaanse atleten tegen een lokaal tarief, of bereik de VS, het VK, Europa en de rest van de wereld — elke markt wordt apart toegevoegd.",
+ "nl": dict(sa_head="Zuid-Afrikaanse merken - facturering in ZAR",
+   sa_intro="Lokale prijzen voor Zuid-Afrikaanse merken, in rand. Abonneer je op Zuid-Afrikaanse atleten tegen een lokaal tarief, of bereik de VS, het VK, Europa en de rest van de wereld - elke markt wordt apart toegevoegd.",
    sa_market="Zuid-Afrika",
    sa_note="Gefactureerd vanuit Ierland in Zuid-Afrikaanse rand, zonder btw. Atletendeals kennen de standaardcommissie van 14–18%."),
 }
@@ -349,6 +375,7 @@ def build(lang, sh):
   <div class="cta"><a class="btn gold" href="subscription.html">{t['br_cta1']}</a>
   <a class="btn ghost" href="{CAL}">{t['cta_demo']}</a></div>
 </div></section>
+{sh.get("BRANDS_PITCH_L10N", {}).get(lang, "")}
 {ticker(t)}
 <section class="light"><div class="wrap">
   <div class="section-head"><p class="eyebrow">{t['br_cap_eye']}</p><h2>{t['br_cap_h2']}</h2></div>
@@ -356,7 +383,7 @@ def build(lang, sh):
 </div></section>
 {by_industry(t)}
 {the_talent(t)}
-{it_brand_athletes(lang, sh)}
+{it_brand_athletes(lang, sh)}{de_brand_athletes(lang, sh)}{nl_brand_athletes(lang, sh)}
 {faq_section(t['br_faq_h2'], t['br_faq'], light=False)}
 <section class="light"><div class="wrap" style="text-align:center">
   <h2>{t['br_cmp_h2']}</h2>
@@ -505,8 +532,8 @@ def build(lang, sh):
 <section><div class="wrap">
   <div class="section-head"><p class="eyebrow">{t['ab_found_eye']}</p><h2>{t['ab_found_h2']}</h2></div>
   <div class="grid g2">
-    <div class="card"><h3>Trevor Twamley — {t['ab_ceo']}</h3><p>{t['ab_trevor']}</p></div>
-    <div class="card"><h3>Declan Bourke — {t['ab_coo']}</h3><p>{t['ab_declan']}</p></div>
+    <div class="card"><h3>Trevor Twamley - {t['ab_ceo']}</h3><p>{t['ab_trevor']}</p></div>
+    <div class="card"><h3>Declan Bourke - {t['ab_coo']}</h3><p>{t['ab_declan']}</p></div>
   </div>
 </div></section>
 <section class="light"><div class="wrap">

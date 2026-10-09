@@ -2,7 +2,7 @@
 title: Sponsorship Management 101: Building Successful Athlete-Brand Partnerships
 date: 2024-07-22
 author: Sport Endorse Team
-description: A practical guide to athlete-brand sponsorship management — the basics, choosing the right athlete, win-win agreements, social amplification and measuring success.
+description: A practical guide to athlete-brand sponsorship management - the basics, choosing the right athlete, win-win agreements, social amplification and measuring success.
 category: Athlete Marketing
 image: https://cms.sportendorse.com/wp-content/uploads/2024/08/image.webp
 ---

@@ -2,7 +2,7 @@
 title: Women in Sports: Catalysts for Business Growth
 date: 2024-08-21
 author: Sport Endorse Team
-description: Women's sports are a fast-growing, under-tapped market — how brands drive growth through female athlete partnerships, sponsorship value and global reach.
+description: Women's sports are a fast-growing, under-tapped market - how brands drive growth through female athlete partnerships, sponsorship value and global reach.
 category: Athlete Marketing
 image: https://cms.sportendorse.com/wp-content/uploads/2024/08/jeffrey-f-lin-vYkZPsz4ZEA-unsplash-scaled.jpg
 ---

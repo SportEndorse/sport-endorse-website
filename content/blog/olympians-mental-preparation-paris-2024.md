@@ -2,12 +2,12 @@
 title: How Athletes Prepare Off the Field for the Olympics
 date: 2024-06-14
 author: Sport Endorse Team
-description: How Olympians prepare mentally for the Games — living in the moment, keeping perspective, controlling the controllables, connection and storytelling.
+description: How Olympians prepare mentally for the Games - living in the moment, keeping perspective, controlling the controllables, connection and storytelling.
 category: Athlete Marketing
 image: https://cms.sportendorse.com/wp-content/uploads/2024/06/image.jpeg
 ---
 
-Olympic performance is as much mental as physical. Ahead of Paris 2024, elite athletes and coaches shared how they prepare off the field — living in the moment, keeping perspective, controlling what they can, staying connected, and owning their own story. Here's what brands and fans can learn from how Olympians get ready.
+Olympic performance is as much mental as physical. Ahead of Paris 2024, elite athletes and coaches shared how they prepare off the field - living in the moment, keeping perspective, controlling what they can, staying connected, and owning their own story. Here's what brands and fans can learn from how Olympians get ready.
 
 ### Live in the moment
 

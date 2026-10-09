@@ -2,12 +2,12 @@
 title: NFL London's Impact and Opportunities for Brands
 date: 2024-10-03
 author: Sport Endorse Team
-description: How the NFL's London games open sports marketing opportunities for UK brands — reaching a growing, diverse American-football audience through partnerships and sponsorship.
+description: How the NFL's London games open sports marketing opportunities for UK brands - reaching a growing, diverse American-football audience through partnerships and sponsorship.
 category: Athlete Marketing
 image: https://cms.sportendorse.com/wp-content/uploads/2024/10/63492052-66ff-46ba-a89b-1e07402bd6f3.webp
 ---
 
-The NFL's London games have become a fixture of the UK sports calendar — and a distinctive opportunity for brands to reach a growing, diverse American-football audience. Here's why NFL London matters for UK marketers, and how brands can activate around it.
+The NFL's London games have become a fixture of the UK sports calendar - and a distinctive opportunity for brands to reach a growing, diverse American-football audience. Here's why NFL London matters for UK marketers, and how brands can activate around it.
 
 ### The Rise of American Football in the UK
 

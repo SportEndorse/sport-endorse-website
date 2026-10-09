@@ -18,20 +18,30 @@ export const config = {
   matcher: ['/((?!assets/|images/|admin/|_vercel/|favicon).*)'],
 };
 
-// ISO 3166-1 alpha-2 country code -> pricing region (us | uk | ie | eu | za | row)
+// ISO 3166-1 alpha-2 country code -> region (us | uk | ie | eu | it | de | nl | za | row)
+// 'it', 'de' and 'nl' are content regions (Italian / DACH / Dutch-speaking athlete rosters); all inherit EU pricing.
 const REGION_BY_COUNTRY = {
   US: 'us',
   GB: 'uk',
   IE: 'ie',
   ZA: 'za',
   // EU / EEA / CH -> eu
-  AT: 'eu', BE: 'eu', BG: 'eu', HR: 'eu', CY: 'eu', CZ: 'eu', DK: 'eu',
-  EE: 'eu', FI: 'eu', FR: 'eu', DE: 'eu', GR: 'eu', HU: 'eu', IS: 'eu',
-  IT: 'it', LV: 'eu', LI: 'eu', LT: 'eu', LU: 'eu', MT: 'eu', NL: 'eu',
+  AT: 'de', BE: 'nl',  // BE refined by province below (Wallonia / Brussels -> eu)
+  BG: 'eu', HR: 'eu', CY: 'eu', CZ: 'eu', DK: 'eu',
+  EE: 'eu', FI: 'eu', FR: 'eu', DE: 'de', GR: 'eu', HU: 'eu', IS: 'eu',
+  IT: 'it', LV: 'eu', LI: 'eu', LT: 'eu', LU: 'eu', MT: 'eu', NL: 'nl',
   NO: 'eu', PL: 'eu', PT: 'eu', RO: 'eu', SK: 'eu', SI: 'eu', ES: 'eu',
-  SE: 'eu', CH: 'eu',
+  SE: 'eu', CH: 'de',  // CH refined by canton below (French/Italian cantons -> eu)
   // everything else falls through to 'row'
 };
+
+// Swiss cantons (ISO 3166-2:CH) where French or Italian is the main language.
+// Bilingual Fribourg (FR) and Valais (VS) are treated as French-majority.
+const NON_GERMAN_CH_CANTONS = ['GE', 'VD', 'NE', 'JU', 'FR', 'VS', 'TI'];
+// Belgian subdivisions (ISO 3166-2:BE) that are NOT Dutch-speaking: the Walloon
+// region + provinces, and bilingual (French-majority) Brussels. Everything else
+// (Flanders: VLG / VAN / VBR / VLI / VOV / VWV) keeps the Dutch roster.
+const NON_DUTCH_BE_REGIONS = ['WAL', 'WBR', 'WHT', 'WLG', 'WLX', 'WNA', 'BRU'];
 
 export default function middleware(request) {
   const res = next();
@@ -39,8 +49,17 @@ export default function middleware(request) {
   // Only tag the visitor once; the cookie persists for 30 days.
   const cookie = request.headers.get('cookie') || '';
   if (cookie.indexOf('se-geo=') === -1) {
-    const { country } = geolocation(request);
-    const region = REGION_BY_COUNTRY[(country || '').toUpperCase()] || 'row';
+    const { country, countryRegion } = geolocation(request);
+    const cc = (country || '').toUpperCase();
+    let region = REGION_BY_COUNTRY[cc] || 'row';
+    // Switzerland: only German-speaking cantons get the DACH roster.
+    if (cc === 'CH' && NON_GERMAN_CH_CANTONS.indexOf((countryRegion || '').toUpperCase()) > -1) {
+      region = 'eu';
+    }
+    // Belgium: only Flanders gets the Dutch-language roster.
+    if (cc === 'BE' && NON_DUTCH_BE_REGIONS.indexOf((countryRegion || '').toUpperCase()) > -1) {
+      region = 'eu';
+    }
     res.headers.append(
       'Set-Cookie',
       `se-geo=${region}; Path=/; Max-Age=2592000; SameSite=Lax`

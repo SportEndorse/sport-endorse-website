@@ -2,7 +2,7 @@
 title: Why Choose Sports Speakers for Brand Endorsements?
 date: 2024-11-20
 author: Sport Endorse Team
-description: Why sports speakers make powerful brand endorsers — credibility, emotional connection, broad reach and value alignment — and how to use them well.
+description: Why sports speakers make powerful brand endorsers - credibility, emotional connection, broad reach and value alignment - and how to use them well.
 category: Athlete Marketing
 image: https://cms.sportendorse.com/wp-content/uploads/2024/11/image-5.webp
 ---

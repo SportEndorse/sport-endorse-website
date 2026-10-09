@@ -2,12 +2,12 @@
 title: Unrivaled: The 3x3 Women's Basketball League Redefining the Game
 date: 2025-04-10
 author: Sport Endorse Team
-description: How Unrivaled — the 3x3 women's basketball league co-founded by Breanna Stewart and Napheesa Collier — is reshaping the sport through equity, viewership and sponsorship.
+description: How Unrivaled - the 3x3 women's basketball league co-founded by Breanna Stewart and Napheesa Collier - is reshaping the sport through equity, viewership and sponsorship.
 category: Athlete Marketing
 image: https://cms.sportendorse.com/wp-content/uploads/2025/04/image3.jpg
 ---
 
-Unrivaled, the 3x3 women's basketball league co-founded by WNBA stars Breanna Stewart and Napheesa Collier, is reshaping the women's game — putting player equity first, drawing record viewership and attracting major sponsors. Here's why it matters for the sport, and for brands watching women's sport rise.
+Unrivaled, the 3x3 women's basketball league co-founded by WNBA stars Breanna Stewart and Napheesa Collier, is reshaping the women's game - putting player equity first, drawing record viewership and attracting major sponsors. Here's why it matters for the sport, and for brands watching women's sport rise.
 
 ### A New Era in Women’s Basketball
 
@@ -57,7 +57,7 @@ These partnerships not only provide financial support but also enhance the leagu
 
 ### A Transformative Force in Women’s Basketball
 
-In conclusion, *Unrivaled* is not merely a new entrant in women’s basketball—it is a transformative force reshaping the dynamics of the sport. Through its commitment to innovation, player empowerment, and strategic collaboration, *Unrivaled* exemplifies how visionary leadership can drive meaningful change in the sports industry. With growing fan interest, strong corporate backing, and a game-changing approach to player equity, *Unrivaled* is setting a new standard for professional basketball and beyond.
+In conclusion, *Unrivaled* is not merely a new entrant in women’s basketball-it is a transformative force reshaping the dynamics of the sport. Through its commitment to innovation, player empowerment, and strategic collaboration, *Unrivaled* exemplifies how visionary leadership can drive meaningful change in the sports industry. With growing fan interest, strong corporate backing, and a game-changing approach to player equity, *Unrivaled* is setting a new standard for professional basketball and beyond.
 
 > [       View this post on Instagram            ](https://www.instagram.com/p/DHU42elAGVk/?utm_source=ig_embed&utm_campaign=loading)[A post shared by Brittney Sykes (@brittbundlez)](https://www.instagram.com/p/DHU42elAGVk/?utm_source=ig_embed&utm_campaign=loading)
 

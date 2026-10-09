@@ -2,12 +2,12 @@
 title: How to Automate Athlete Endorsement Deals
 date: 2026-05-26
 author: Sport Endorse Team
-description: Automate athlete endorsement deals end to end — sourcing, contracts, disclosures and payments — without losing the human fit that makes campaigns work.
+description: Automate athlete endorsement deals end to end - sourcing, contracts, disclosures and payments - without losing the human fit that makes campaigns work.
 category: Athlete Marketing
 image: https://cms.sportendorse.com/wp-content/uploads/2026/05/How-to-Automate-Athlete-Endorsement-Deals-with-Sport-Endorse-image.jpg
 ---
 
-Running athlete endorsement deals by hand — chasing talent, drafting one-off contracts, tracking disclosures, processing payments — doesn't scale. Automating the workflow lets your team run more campaigns with fewer errors and a complete audit trail, while keeping human judgement where it matters most: choosing the right athlete. Here's how to automate each stage of an endorsement deal with [Sport Endorse](../brands.html).
+Running athlete endorsement deals by hand - chasing talent, drafting one-off contracts, tracking disclosures, processing payments - doesn't scale. Automating the workflow lets your team run more campaigns with fewer errors and a complete audit trail, while keeping human judgement where it matters most: choosing the right athlete. Here's how to automate each stage of an endorsement deal with [Sport Endorse](../brands.html).
 
 ## **Why do brands need to automate athlete endorsement deals?**
 

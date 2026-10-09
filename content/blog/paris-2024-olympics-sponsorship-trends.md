@@ -2,7 +2,7 @@
 title: Olympic Sponsorship Trends to Look Out For in Paris 2024
 date: 2024-07-09
 author: Sport Endorse Team
-description: The sponsorship trends shaping Paris 2024 — sustainability, technology, influencer and athlete-ambassador partnerships, and diversity and inclusion.
+description: The sponsorship trends shaping Paris 2024 - sustainability, technology, influencer and athlete-ambassador partnerships, and diversity and inclusion.
 category: Athlete Marketing
 image: https://cms.sportendorse.com/wp-content/uploads/2024/07/paris-2024.jpg
 ---

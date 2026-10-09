@@ -41,27 +41,11 @@
       "group": "Executive Team"
     },
     {
-      "name": "Seán Armadà",
-      "role": "Markets Development Manager",
-      "loc": "Spain",
-      "photo": "/images/teamPhotos/sean-armada-headshot.png",
-      "hue": 0,
-      "group": "Team Members"
-    },
-    {
       "name": "Lara-Lyn Connellan",
       "role": "Customer Success Executive",
       "loc": "South Africa",
-      "photo": "/images/teamPhotos/lara-lyn-connellan-headshot.webp",
+      "photo": "/images/teamPhotos/lara-lyn-connellan-headshot-2026.webp",
       "hue": 185,
-      "group": "Team Members"
-    },
-    {
-      "name": "Priyanka Deodhar",
-      "role": "HR Consultant",
-      "loc": "Ireland",
-      "photo": "/images/teamPhotos/priyanka-deodhar-headshot.webp",
-      "hue": 330,
       "group": "Team Members"
     },
     {
@@ -69,7 +53,8 @@
       "role": "Bookkeeper",
       "loc": "South Africa",
       "hue": 100,
-      "group": "Team Members"
+      "group": "Team Members",
+      "photo": "/images/teamPhotos/cameron-duckham-headshot-2026.webp"
     },
     {
       "name": "Collin Fiske",
@@ -97,25 +82,17 @@
     },
     {
       "name": "Arthur Groslier",
-      "role": "Market Development Executive",
+      "role": "Country Manager France",
       "loc": "France",
       "photo": "/images/teamPhotos/arthur-groslier-headshot.webp",
       "hue": 150,
       "group": "Team Members"
     },
     {
-      "name": "Allison Melting",
-      "role": "Content Strategist",
-      "loc": "USA",
-      "photo": "/images/teamPhotos/allison-melting-min.webp",
-      "hue": 25,
-      "group": "Team Members"
-    },
-    {
       "name": "Clementine Philbin",
       "role": "Finance Director",
       "loc": "UK",
-      "photo": "/images/teamPhotos/clementine-philbin-headshot.webp",
+      "photo": "/images/teamPhotos/clementine-philbin-headshot-2026.webp",
       "hue": 0,
       "group": "Team Members"
     },
@@ -128,18 +105,10 @@
       "group": "Team Members"
     },
     {
-      "name": "Eliott Vauret",
-      "role": "Customer Success & Marketing Executive",
-      "loc": "Ireland",
-      "photo": "/images/teamPhotos/eliott-vauret-headshot.webp",
-      "hue": 100,
-      "group": "Team Members"
-    },
-    {
       "name": "Nicola Woodgate",
       "role": "Sales & Customer Success Executive",
       "loc": "South Africa",
-      "photo": "/images/teamPhotos/nicola-woodgate-headshot.webp",
+      "photo": "/images/teamPhotos/nicola-woodgate-headshot-2026.webp",
       "hue": 210,
       "group": "Team Members"
     }

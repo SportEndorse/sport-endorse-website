@@ -2,7 +2,7 @@
 title: Unlock 5X Sales with Sports Influencer Marketing
 date: 2023-09-26
 author: Sport Endorse Team
-description: How sports influencer marketing drives outsized returns — global reach, built-in trust and high engagement — with real campaign examples.
+description: How sports influencer marketing drives outsized returns - global reach, built-in trust and high engagement - with real campaign examples.
 category: Athlete Marketing
 image: https://cms.sportendorse.com/wp-content/uploads/2023/09/Untitled-design-7.png
 ---

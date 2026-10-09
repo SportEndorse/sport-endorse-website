@@ -3,7 +3,7 @@
 Rather than re-templating each page per language, we take the already-correct
 English body/title/desc and swap only human-readable text via per-language
 maps in i18n.json. Anything not in the map falls back to English, so a page
-can never break — and coverage() lets build.py gate hreflang/sitemap signals
+can never break - and coverage() lets build.py gate hreflang/sitemap signals
 so we never advertise a barely-translated page to search engines.
 """
 import os, re, json

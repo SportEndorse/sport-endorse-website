@@ -2,7 +2,7 @@
 title: 3 Reasons to Use Sports Talent in Digital Advertising
 date: 2022-09-09
 author: Sport Endorse Team
-description: Three reasons sports talent works in digital advertising — precise audience reach, authentic engagement, and the built-in recognition of known athletes.
+description: Three reasons sports talent works in digital advertising - precise audience reach, authentic engagement, and the built-in recognition of known athletes.
 category: Athlete Marketing
 image: https://cms.sportendorse.com/wp-content/uploads/2022/09/Basketball-1.jpg
 ---
