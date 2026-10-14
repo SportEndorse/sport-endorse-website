@@ -2,12 +2,12 @@
 title: 5 Tips for Using Pro Athletes in Influencer Marketing
 date: 2023-04-20
 author: Sport Endorse Team
-description: Five practical ways to use sports influencer marketing — gifting, giveaways, takeovers, in-person appearances and meet-and-greets — with real examples.
+description: Five practical ways to use sports influencer marketing - gifting, giveaways, takeovers, in-person appearances and meet-and-greets - with real examples.
 category: Athlete Marketing
 image: https://cms.sportendorse.com/wp-content/uploads/2023/04/5.-James-Lowe.png
 ---
 
-Sports influencer marketing works best when you match the tactic to the goal. Five of the most effective approaches — gifting, giveaways, channel takeovers, in-person appearances and meet-and-greets — each drive different outcomes, from awareness to conversion. Here's how to use each one, with examples from real campaigns.
+Sports influencer marketing works best when you match the tactic to the goal. Five of the most effective approaches - gifting, giveaways, channel takeovers, in-person appearances and meet-and-greets - each drive different outcomes, from awareness to conversion. Here's how to use each one, with examples from real campaigns.
 
 ## SUMMARY
 

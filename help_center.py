@@ -1,18 +1,18 @@
 # -*- coding: utf-8 -*-
 """
-Help Centre for Sport Endorse — Komi-style (search + category grid + articles),
+Help Centre for Sport Endorse - Komi-style (search + category grid + articles),
 rendered natively into /help/ by build.py.
 
 HOW TO EXTEND
 -------------
-* Content lives in CATEGORIES and ARTICLES below — plain data, safe to edit.
+* Content lives in CATEGORIES and ARTICLES below - plain data, safe to edit.
 * An article with status="live" and a non-empty `body` is published: it gets its
   own page, a sitemap entry, and appears in search + on its category page.
 * An article with status="draft" is a placeholder: it shows as a greyed
   "coming soon" line on its category page but has NO page, NO sitemap entry and
   is NOT searchable. Fill `body`, flip status to "live" and rebuild to publish.
 * Every published article should carry a one-sentence `lead` (the direct answer)
-  — it drives the answer-first paragraph AND the FAQPage schema for AEO.
+  - it drives the answer-first paragraph AND the FAQPage schema for AEO.
 * Keep operational specifics (exact button names, timings, payout mechanics) out
   until they are confirmed from the product walkthroughs. When unsure, draft it.
 """
@@ -60,18 +60,18 @@ ARTICLES = [
  # ---------------- Getting Started ----------------
  dict(slug="what-is-sport-endorse", cat="getting-started", status="live",
    q="What is Sport Endorse?",
-   lead="Sport Endorse is an athlete marketing and sports sponsorship platform where brands discover, evaluate, contact and manage verified athletes for campaigns — and where athletes, creators and their agents find commercial deals.",
+   lead="Sport Endorse is an athlete marketing and sports sponsorship platform where brands discover, evaluate, contact and manage verified athletes for campaigns - and where athletes, creators and their agents find commercial deals.",
    keywords="what is sport endorse platform athlete marketing sponsorship overview",
    related=["how-it-works", "who-is-it-for", "do-athletes-pay"],
    body=_p(
-     "Sport Endorse connects two sides of the sponsorship market on one platform. Brands and businesses use it to discover, evaluate, contact and manage 9,000+ verified athletes and creators across 280+ sports in 85+ countries — for campaigns, brand ambassadorships, speaking engagements and content partnerships. Athletes, creators and their agents use it to be found by brands and to agree commercial deals.",
+     "Sport Endorse connects two sides of the sponsorship market on one platform. Brands and businesses use it to discover, evaluate, contact and manage 12,000+ verified athletes and creators across 280+ sports in 85+ countries - for campaigns, brand ambassadorships, speaking engagements and content partnerships. Athletes, creators and their agents use it to be found by brands and to agree commercial deals.",
      "Instead of the manual outreach and opaque fees typical of agencies, everything happens in the platform: search and shortlisting, in-app messaging, agreed terms and usage rights, secure payment, and campaign reporting.",
-     "Commercially, brands pay a market-based subscription and a transparent 14–18% commission on deals — not the 30% cut common on other marketplaces. Athletes and creators join for free.")
+     "Commercially, brands pay a market-based subscription and a transparent 14–18% commission on deals - not the 30% cut common on other marketplaces. Athletes and creators join for free.")
    ),
 
  dict(slug="how-it-works", cat="getting-started", status="live",
    q="How does Sport Endorse work?",
-   lead="Brands search verified athletes, shortlist, agree terms and usage rights, pay securely and report on the campaign — all in the platform. Athletes build a free profile, get discovered, agree deals and get paid.",
+   lead="Brands search verified athletes, shortlist, agree terms and usage rights, pay securely and report on the campaign - all in the platform. Athletes build a free profile, get discovered, agree deals and get paid.",
    keywords="how does sport endorse work process flow steps brand athlete",
    related=["what-is-sport-endorse", "for-brands-overview", "join-as-athlete"],
    body=(
@@ -88,15 +88,15 @@ ARTICLES = [
    keywords="who is it for brands athletes agencies universities audience which",
    related=["for-brands-overview", "join-as-athlete", "agencies-overview", "universities-nil"],
    body=_p(
-     "<b>Brands and businesses</b> use Sport Endorse to discover and book verified athletes for campaigns — start with <a href=\"../brands.html\">For Brands</a>.",
-     "<b>Athletes and creators</b> join free to get discovered and paid — start with <a href=\"../talent.html\">For Talent</a>.",
-     "<b>Agencies</b> either run campaigns for clients on a brand subscription, or (for sports agencies and agents) monetise a roster through the Agent Partner Programme — start with <a href=\"../sports-agencies.html\">For Agencies</a>.",
-     "<b>Universities</b> run compliant NIL programmes with international athlete access and athlete education — start with <a href=\"../universities.html\">Universities &amp; NIL</a>.")
+     "<b>Brands and businesses</b> use Sport Endorse to discover and book verified athletes for campaigns - start with <a href=\"../brands.html\">For Brands</a>.",
+     "<b>Athletes and creators</b> join free to get discovered and paid - start with <a href=\"../talent.html\">For Talent</a>.",
+     "<b>Agencies</b> either run campaigns for clients on a brand subscription, or (for sports agencies and agents) monetise a roster through the Agent Partner Programme - start with <a href=\"../sports-agencies.html\">For Agencies</a>.",
+     "<b>Universities</b> run compliant NIL programmes with international athlete access and athlete education - start with <a href=\"../universities.html\">Universities &amp; NIL</a>.")
    ),
 
  dict(slug="do-athletes-pay", cat="getting-started", status="live",
    q="Do athletes and creators pay to join?",
-   lead="No. Athletes and creators join Sport Endorse for free — there's no cost to create a profile, get verified or be discovered by brands. Brands pay the subscription, and deals carry a platform commission.",
+   lead="No. Athletes and creators join Sport Endorse for free - there's no cost to create a profile, get verified or be discovered by brands. Brands pay the subscription, and deals carry a platform commission.",
    keywords="do athletes pay free cost join creators price",
    related=["join-as-athlete", "brand-subscriptions", "deal-commission"],
    body=_p(
@@ -107,22 +107,22 @@ ARTICLES = [
  # ---------------- For Brands ----------------
  dict(slug="for-brands-overview", cat="for-brands", status="live",
    q="How do brands use Sport Endorse?",
-   lead="Brands search and filter 9,000+ verified athletes, shortlist the right fit, agree the brief and usage rights, pay securely in-platform, and report on results — with a full-service managed option if you'd rather hand it over.",
+   lead="Brands search and filter 12,000+ verified athletes, shortlist the right fit, agree the brief and usage rights, pay securely in-platform, and report on results - with a full-service managed option if you'd rather hand it over.",
    keywords="brands how use find athletes campaign shortlist offer overview",
    related=["brand-subscriptions", "deal-commission", "full-service", "how-it-works"],
    body=(_p(
      "Sport Endorse gives brands direct access to verified athletes without the manual back-and-forth of an agency. You can search and filter by sport, market and audience, shortlist athletes that fit the brief, and handle messaging, agreed terms, usage rights, payment and reporting in one place.",
      "Two ways to run it: <b>self-serve</b>, where your team runs the campaign on the platform; or <b>full-service</b>, where the Sport Endorse team shortlists, negotiates, manages deliverables and reports for you. See <a href=\"full-service.html\">the full-service package</a>.")
-     + "<p class=\"muted\" style=\"font-size:.9rem\">Detailed click-by-click guides (searching, posting a brief, making an offer) are being added — see the &ldquo;coming soon&rdquo; items on the <a href=\"for-brands.html\">For Brands</a> category page.</p>")
+     + "<p class=\"muted\" style=\"font-size:.9rem\">Detailed click-by-click guides (searching, posting a brief, making an offer) are being added - see the &ldquo;coming soon&rdquo; items on the <a href=\"for-brands.html\">For Brands</a> category page.</p>")
    ),
 
  dict(slug="full-service", cat="for-brands", status="live",
    q="What's the full-service (managed) package?",
-   lead="Full-service is a hands-off option: the Sport Endorse team shortlists talent, negotiates, manages deliverables and approvals, and reports on results — everything in the platform, run for you.",
+   lead="Full-service is a hands-off option: the Sport Endorse team shortlists talent, negotiates, manages deliverables and approvals, and reports on results - everything in the platform, run for you.",
    keywords="full service managed package done for you campaign management bespoke custom",
    related=["for-brands-overview", "brand-subscriptions", "support-included"],
    body=_p(
-     "The full-service (custom) package includes everything in the platform plus hands-off campaign management. The team shortlists the right talent, negotiates fees, manages content deliverables and approvals, and reports on results — so it's the low-effort option for teams without time to run campaigns in-house.",
+     "The full-service (custom) package includes everything in the platform plus hands-off campaign management. The team shortlists the right talent, negotiates fees, manages content deliverables and approvals, and reports on results - so it's the low-effort option for teams without time to run campaigns in-house.",
      "Packages are tailored to your goals and budget. To scope one, <a href=\"../subscription.html#custom-package\">tell us what you need</a> or <a href=\"contact-us.html\">contact the team</a>.")
    ),
 
@@ -151,7 +151,7 @@ ARTICLES = [
 
  dict(slug="agent-partner", cat="for-agencies", status="live",
    q="What is the Agent Partner Programme for sports agencies?",
-   lead="The Agent Partner Programme lets sports agencies and agents list and monetise a roster on Sport Endorse, with tiered roster subscriptions and a commission share-back on deals. It's rolling out — talk to the team to get set up.",
+   lead="The Agent Partner Programme lets sports agencies and agents list and monetise a roster on Sport Endorse, with tiered roster subscriptions and a commission share-back on deals. It's rolling out - talk to the team to get set up.",
    keywords="agent partner programme sports agency roster commission share back tiers",
    related=["agencies-overview", "deal-commission", "contact-us"],
    body=(_p(
@@ -179,19 +179,19 @@ ARTICLES = [
    related=["quarterly-vs-annual", "deal-commission", "south-africa-billing", "vat-invoicing"],
    body=_p(
      "Pricing is market-based rather than one-size-fits-all: the rate reflects your brand's home market and the athlete market you want to reach. Because each athlete market is subscribed separately, you only pay for the markets you campaign in.",
-     "You can pay annually or quarterly — see <a href=\"quarterly-vs-annual.html\">quarterly vs annual billing</a>. Custom full-service packages are available, and athletes and creators join for free.",
+     "You can pay annually or quarterly - see <a href=\"quarterly-vs-annual.html\">quarterly vs annual billing</a>. Custom full-service packages are available, and athletes and creators join for free.",
      "See live plans for your region on the <a href=\"../subscription.html\">pricing page</a>.")
    ),
 
  dict(slug="deal-commission", cat="payments-billing", status="live",
    q="Is there a commission on deals?",
-   lead="Yes — a transparent 14–18% platform commission on deal value, depending on deal size (and 20% on deals we introduce that are completed off-platform). That's well below the 30% take-rates common on US marketplaces, with no hidden agency mark-ups on athlete fees.",
+   lead="Yes - a transparent 14–18% platform commission on deal value, depending on deal size (and 20% on deals we introduce that are completed off-platform). That's well below the 30% take-rates common on US marketplaces, with no hidden agency mark-ups on athlete fees.",
    keywords="commission deal fee percentage 14 18 30 take rate transparent",
    related=["brand-subscriptions", "do-athletes-pay", "south-africa-billing"],
    body=_p(
      "Deals done through the platform carry a transparent commission of 14–18% on deal value, depending on the size of the deal. There are no hidden agency mark-ups on athlete fees.",
-     "Deals that Sport Endorse introduces but that are completed off-platform carry a 20% commission. Gift-in-kind — product, kit or experiences rather than cash — carries no commission; the commission applies only to the cash deal value.",
-     "By comparison, the take-rates on many US athlete marketplaces are around 30%. The commission is the same whichever market you're in — including for South African brands billed in rand.")
+     "Deals that Sport Endorse introduces but that are completed off-platform carry a 20% commission. Gift-in-kind - product, kit or experiences rather than cash - carries no commission; the commission applies only to the cash deal value.",
+     "By comparison, the take-rates on many US athlete marketplaces are around 30%. The commission is the same whichever market you're in - including for South African brands billed in rand.")
    ),
 
  dict(slug="quarterly-vs-annual", cat="payments-billing", status="live",
@@ -201,12 +201,12 @@ ARTICLES = [
    related=["brand-subscriptions", "vat-invoicing", "support-included"],
    body=_p(
      "You can pay annually or quarterly on every market. Annual billing is priced to save roughly a third compared with paying for four quarters, so it's the best value for always-on programmes.",
-     "If budget cycles make annual difficult, quarterly keeps you flexible — and custom packages can be structured around your procurement process. <a href=\"contact-us.html\">Talk to us</a> if that helps.")
+     "If budget cycles make annual difficult, quarterly keeps you flexible - and custom packages can be structured around your procurement process. <a href=\"contact-us.html\">Talk to us</a> if that helps.")
    ),
 
  dict(slug="vat-invoicing", cat="payments-billing", status="live",
    q="Is VAT included, and how does invoicing work?",
-   lead="Prices are shown excluding VAT or sales tax, which is added at the applicable local rate at checkout and itemised on your invoice for reclaim where eligible. South African brands are an exception — see below.",
+   lead="Prices are shown excluding VAT or sales tax, which is added at the applicable local rate at checkout and itemised on your invoice for reclaim where eligible. South African brands are an exception - see below.",
    keywords="vat sales tax invoice included checkout reclaim billing tax",
    related=["south-africa-billing", "brand-subscriptions", "quarterly-vs-annual"],
    body=_p(
@@ -227,12 +227,12 @@ ARTICLES = [
 
  dict(slug="support-included", cat="payments-billing", status="live",
    q="What support is included once we've paid?",
-   lead="Every brand gets dedicated onboarding. Annual subscribers also get a named customer success manager and direct access to founder support — questions go to people who can act, not a ticket queue.",
+   lead="Every brand gets dedicated onboarding. Annual subscribers also get a named customer success manager and direct access to founder support - questions go to people who can act, not a ticket queue.",
    keywords="support included onboarding customer success manager founder help after paying",
    related=["full-service", "brand-subscriptions", "contact-us"],
    body=_p(
      "All brands receive dedicated onboarding to get set up and running. Annual subscribers additionally get a named customer success manager, and every annual client has direct access to founder support.",
-     "If you need help, <a href=\"contact-us.html\">contact the team</a> — or reach your customer success manager directly if you're an annual subscriber.")
+     "If you need help, <a href=\"contact-us.html\">contact the team</a> - or reach your customer success manager directly if you're an annual subscriber.")
    ),
 
  # ---------------- Contact ----------------
@@ -329,7 +329,7 @@ def index_body(ctx):
 <section class="hero hc-hero"><div class="wrap" style="text-align:center">
   <p class="eyebrow">Help Centre</p>
   <h1>How can we help?</h1>
-  <p class="lead" style="margin:0 auto 22px;max-width:52ch">Answers on using Sport Endorse — for brands, athletes, agencies and universities.</p>
+  <p class="lead" style="margin:0 auto 22px;max-width:52ch">Answers on using Sport Endorse - for brands, athletes, agencies and universities.</p>
   {_search_box()}
 </div></section>
 <section class="light"><div class="wrap">
@@ -408,13 +408,13 @@ def pages(ctx):
     # index
     out.append(dict(path="help/index.html",
                     title="Help Centre | Sport Endorse",
-                    desc="Answers on using Sport Endorse — for brands, athletes, agencies and universities. Search guides on pricing, deals, billing and getting started.",
+                    desc="Answers on using Sport Endorse - for brands, athletes, agencies and universities. Search guides on pricing, deals, billing and getting started.",
                     body=index_body(ctx), jsonld=[]))
     # categories
     for c in CATEGORIES:
         b, ld = category_body(ctx, c)
         out.append(dict(path=f"help/{c['slug']}.html",
-                        title=f"{c['title']} — Help Centre | Sport Endorse",
+                        title=f"{c['title']} - Help Centre | Sport Endorse",
                         desc=f"{c['blurb']} Sport Endorse help centre.",
                         body=b, jsonld=ld))
     # live articles

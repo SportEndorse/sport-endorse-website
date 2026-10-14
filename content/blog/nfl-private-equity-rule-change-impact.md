@@ -2,12 +2,12 @@
 title: NFL Embraces Private Equity: What the New Rule Changes Mean
 date: 2024-09-04
 author: Sport Endorse Team
-description: The NFL's decision to let private equity firms own up to 10% of teams — what it means for franchise values, investment and the league's future.
+description: The NFL's decision to let private equity firms own up to 10% of teams - what it means for franchise values, investment and the league's future.
 category: Athlete Marketing
 image: https://cms.sportendorse.com/wp-content/uploads/2024/09/NFL-private-equity.jpg
 ---
 
-The NFL's decision to let private equity firms take up to 10% ownership stakes in franchises marks a significant shift for the league. It opens a new era of investment — with implications for franchise values, stadiums and how the business of the NFL is run. Here's what changed and why it matters.
+The NFL's decision to let private equity firms take up to 10% ownership stakes in franchises marks a significant shift for the league. It opens a new era of investment - with implications for franchise values, stadiums and how the business of the NFL is run. Here's what changed and why it matters.
 
 ### The Josh Harris Sale: A Turning Point
 

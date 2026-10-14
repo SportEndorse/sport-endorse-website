@@ -2,12 +2,12 @@
 title: How Healthcare Brands Find Verified Athletes and Creators
 date: 2026-05-19
 author: Sport Endorse Team
-description: How regulated healthcare and pharma brands source verified athletes and creators — with disclosures, claim controls and approvals built into every deal.
+description: How regulated healthcare and pharma brands source verified athletes and creators - with disclosures, claim controls and approvals built into every deal.
 category: Athlete Marketing
 image: https://cms.sportendorse.com/wp-content/uploads/2026/05/AFFIDEA-CHLOE-01-1.png
 ---
 
-For healthcare and pharmaceutical brands, athlete marketing carries an extra layer: talent verification, claim boundaries, disclosure rules and documented approvals. The right platform builds those controls into the deal itself. Here's how healthcare brands use [Sport Endorse](../healthcare-athlete-marketing.html) to find verified athletes and creators safely — and keep a compliance trail their legal and regulatory teams can audit.
+For healthcare and pharmaceutical brands, athlete marketing carries an extra layer: talent verification, claim boundaries, disclosure rules and documented approvals. The right platform builds those controls into the deal itself. Here's how healthcare brands use [Sport Endorse](../healthcare-athlete-marketing.html) to find verified athletes and creators safely - and keep a compliance trail their legal and regulatory teams can audit.
 
 ## **Why do healthcare brands use athlete marketing?**
 

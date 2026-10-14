@@ -2,12 +2,12 @@
 title: How Athletes as Brand Ambassadors Make an Impact Beyond Sport
 date: 2024-05-31
 author: Sport Endorse Team
-description: How athletes as brand ambassadors drive impact beyond sport — partnering with brands on mental health, men's health and social causes, with real examples.
+description: How athletes as brand ambassadors drive impact beyond sport - partnering with brands on mental health, men's health and social causes, with real examples.
 category: Athlete Marketing
 image: https://cms.sportendorse.com/wp-content/uploads/2024/05/image.jpeg
 ---
 
-The best athlete-brand partnerships reach beyond product and into purpose. When athletes lend their voice to causes — mental health, men's health, sight loss — brands amplify real social impact and build deeper trust. Here's how athletes as brand ambassadors make a difference beyond sport, with examples from campaigns like Movember, Tackle Your Feelings and Vision Ireland.
+The best athlete-brand partnerships reach beyond product and into purpose. When athletes lend their voice to causes - mental health, men's health, sight loss - brands amplify real social impact and build deeper trust. Here's how athletes as brand ambassadors make a difference beyond sport, with examples from campaigns like Movember, Tackle Your Feelings and Vision Ireland.
 
 ## Lee Keegan opening up about his personal struggles with Movember Ireland
 

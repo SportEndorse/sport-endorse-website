@@ -2,7 +2,7 @@
 title: What Should Brands Consider When Choosing Athlete Ambassadors?
 date: 2024-11-20
 author: Sport Endorse Team
-description: The essentials for choosing an athlete ambassador — brand alignment, reach, authenticity, values and reliability — so the partnership feels genuine and delivers.
+description: The essentials for choosing an athlete ambassador - brand alignment, reach, authenticity, values and reliability - so the partnership feels genuine and delivers.
 category: Athlete Marketing
 image: https://cms.sportendorse.com/wp-content/uploads/2024/11/dbb30c03-0a8d-4a7c-90bf-2be9f62e0167.webp
 ---

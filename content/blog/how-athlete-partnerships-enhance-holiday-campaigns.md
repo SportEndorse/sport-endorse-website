@@ -2,12 +2,12 @@
 title: How Athlete Partnerships Turn Your Brand into the Holiday Season's MVP
 date: 2023-12-18
 author: Sport Endorse Team
-description: How athlete partnerships elevate holiday campaigns — boosting visibility, engaging audiences and creating authentic connections, with real examples.
+description: How athlete partnerships elevate holiday campaigns - boosting visibility, engaging audiences and creating authentic connections, with real examples.
 category: Athlete Marketing
 image: https://cms.sportendorse.com/wp-content/uploads/2023/11/Untitled-design-22.png
 ---
 
-The holiday season is the most competitive moment of the year for brand attention — and athlete partnerships are a way to cut through. Working with sports stars boosts visibility, engages audiences and builds authentic connection when it counts most. Here's how to use athlete partnerships in your holiday campaigns, with real examples.
+The holiday season is the most competitive moment of the year for brand attention - and athlete partnerships are a way to cut through. Working with sports stars boosts visibility, engages audiences and builds authentic connection when it counts most. Here's how to use athlete partnerships in your holiday campaigns, with real examples.
 
 ## **Elevating Your Brand with Athlete Partnerships**
 

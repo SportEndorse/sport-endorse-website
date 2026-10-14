@@ -1,4 +1,4 @@
-/* Sport Endorse — floodlit navy + kit gold. Display: Archivo (wide). Body: Spline Sans. */
+/* Sport Endorse - floodlit navy + kit gold. Display: Archivo (wide). Body: Spline Sans. */
 :root{
   --ink:#0A1424; --panel:#101D33; --panel-2:#152540;
   --line:#233450; --gold:#FFCE00; --gold-dark:#E5B900;
@@ -107,11 +107,11 @@ table.compare,table.plans{width:100%;border-collapse:collapse;font-size:.95rem}
 .price small{font-size:.95rem;font-weight:500;color:var(--muted)}
 .light .price small{color:var(--dark-muted)}
 .plan ul{list-style:none;display:grid;gap:8px;font-size:.95rem}
-.plan ul li::before{content:"— ";color:var(--gold)}
+.plan ul li::before{content:"- ";color:var(--gold)}
 .light .plan ul li::before{color:#9A7B00}
 .tag{display:inline-block;background:var(--gold);color:#141a10;font-family:"Archivo",sans-serif;font-weight:800;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;border-radius:6px;padding:4px 9px}
 
-/* FAQ — fully rendered, no toggles (AEO) */
+/* FAQ - fully rendered, no toggles (AEO) */
 .faq{display:grid;gap:22px;max-width:820px}
 .faq h3{font-size:1.1rem}
 .faq div{border-left:3px solid var(--gold);padding-left:18px}
@@ -296,7 +296,7 @@ section:not(.light) .fpill.on{background:var(--gold);border-color:var(--gold);co
 /* official tagline in footer */
 .tagline{font-style:italic;opacity:.85;font-size:.92rem;margin-top:6px}
 
-/* header logo image — flex-shrink:0 + max-width:none prevent the nav
+/* header logo image - flex-shrink:0 + max-width:none prevent the nav
    flexbox from compressing the width while the height stays pinned */
 header.site .logo{flex:0 0 auto}
 header.site .logo img{height:31px;width:182px;max-width:none;display:block}
@@ -396,7 +396,7 @@ header.site .logo img{height:31px;width:182px;max-width:none;display:block}
 .btags span{font-size:.74rem;font-weight:600;border:1px solid var(--line);border-radius:999px;padding:3px 9px;color:var(--muted)}
 .light .btags span{border-color:#D3D8C8;color:var(--dark-muted)}
 
-/* white brand cards (Talent six-brand showcase) — readable on white even in a dark section */
+/* white brand cards (Talent six-brand showcase) - readable on white even in a dark section */
 .bshow-white .bshow-card{background:#ffffff;border-color:#DDE0D2;box-shadow:0 1px 0 rgba(20,30,50,.05)}
 .bshow-white .bshow-name{color:var(--dark-text)}
 .bshow-white .bshow-desc{color:var(--dark-muted)}
@@ -491,7 +491,7 @@ html,body{overflow-x:clip}
 .pressec{scroll-margin-top:90px}
 @media (prefers-reduced-motion: no-preference){html{scroll-behavior:smooth}}
 
-/* Blog & press images (hotlinked; optimised for delivery — dimensions via aspect-ratio, lazy, cover-fit) */
+/* Blog & press images (hotlinked; optimised for delivery - dimensions via aspect-ratio, lazy, cover-fit) */
 .postcover{max-width:1000px;margin:10px auto 0;aspect-ratio:16/9;border-radius:14px;overflow:hidden}
 .postcover img{width:100%;height:100%;object-fit:cover;display:block}
 .card .postthumb,.card .presthumb{display:block;margin:-26px -26px 16px;aspect-ratio:16/9;overflow:hidden;border-radius:var(--r) var(--r) 0 0;background:var(--panel)}
@@ -544,3 +544,26 @@ html,body{overflow-x:clip}
 .langbar-x{background:none;border:none;color:var(--muted);font-size:1rem;cursor:pointer;padding:2px 6px;line-height:1}
 .langbar-x:hover{color:var(--text)}
 @media(max-width:520px){.langbar{flex-wrap:wrap}.langbar span{flex:1 1 100%}}
+
+/* ===== Motion layer (EISG-style reveals; progressive enhancement) =====
+   All classes below are added at runtime by site.js ONLY - the served HTML
+   never hides content, so no-JS visitors, crawlers and answer engines see
+   the full page. Animations use transform/opacity only (zero CLS). */
+.rv{opacity:0;transform:translateY(18px)}
+.rv.on{opacity:1;transform:none;transition:opacity .55s ease,transform .6s cubic-bezier(.16,1,.3,1);transition-delay:var(--rvd,0s)}
+.wsplit .w{display:inline-block;font-style:normal;opacity:0;transform:translateY(.55em)}  /* <i> word wrappers render upright */
+.wsplit.on .w{opacity:1;transform:none;transition:opacity .45s ease,transform .55s cubic-bezier(.16,1,.3,1)}
+
+.cnt{font-variant-numeric:tabular-nums}
+/* Brand logo wall -> two counter-scrolling rows (built by site.js from the grid) */
+.logos.lg-marquee{display:block;overflow:hidden}
+.logos.lg-marquee .lg-row{display:flex;gap:12px;width:max-content;animation:lgm var(--lgm-t,58s) linear infinite}
+.logos.lg-marquee .lg-row+.lg-row{margin-top:12px}
+.logos.lg-marquee .lg-row.rev{animation-direction:reverse}
+.logos.lg-marquee .lg-row:hover{animation-play-state:paused}
+.logos.lg-marquee span{flex:0 0 auto;min-width:150px}
+@keyframes lgm{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){
+  .rv,.wsplit .w{opacity:1!important;transform:none!important;transition:none!important}
+  .logos.lg-marquee .lg-row{animation:none}
+}

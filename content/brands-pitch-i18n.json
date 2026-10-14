@@ -1,0 +1,1269 @@
+{
+">Applicants<": {
+"es": ">Candidatos<",
+"fr": ">Candidats<",
+"it": ">Candidati<",
+"de": ">Bewerber<",
+"nl": ">Kandidaten<"
+},
+"New Opportunity": {
+"es": "Nueva oportunidad",
+"fr": "Nouvelle opportunité",
+"it": "Nuova opportunità",
+"de": "Neue Kampagne",
+"nl": "Nieuwe opportunity"
+},
+"Step 1 of 2 · Details": {
+"es": "Paso 1 de 2 · Detalles",
+"fr": "Étape 1 sur 2 · Détails",
+"it": "Passo 1 di 2 · Dettagli",
+"de": "Schritt 1 von 2 · Details",
+"nl": "Stap 1 van 2 · Details"
+},
+"Step 2 of 2 · Target": {
+"es": "Paso 2 de 2 · Segmentación",
+"fr": "Étape 2 sur 2 · Ciblage",
+"it": "Passo 2 di 2 · Target",
+"de": "Schritt 2 von 2 · Zielgruppe",
+"nl": "Stap 2 van 2 · Doelgroep"
+},
+"Opportunity name *": {
+"es": "Nombre de la oportunidad *",
+"fr": "Nom de l'opportunité *",
+"it": "Nome dell'opportunità *",
+"de": "Name der Kampagne *",
+"nl": "Naam van de opportunity *"
+},
+"Opportunity type *": {
+"es": "Tipo de oportunidad *",
+"fr": "Type d'opportunité *",
+"it": "Tipo di opportunità *",
+"de": "Art der Kampagne *",
+"nl": "Type opportunity *"
+},
+"Strategic brand ambassador": {
+"es": "Embajador de marca estratégico",
+"fr": "Ambassadeur de marque stratégique",
+"it": "Brand ambassador strategico",
+"de": "Strategischer Markenbotschafter",
+"nl": "Strategische merkambassadeur"
+},
+"One-off product / company endorsement": {
+"es": "Promoción puntual de producto / empresa",
+"fr": "Promotion ponctuelle produit / entreprise",
+"it": "Endorsement una tantum di prodotto / azienda",
+"de": "Einmaliges Produkt- / Unternehmens-Endorsement",
+"nl": "Eenmalige product- / bedrijfspromotie"
+},
+"One-off events / appearances": {
+"es": "Eventos / apariciones puntuales",
+"fr": "Événements / apparitions ponctuels",
+"it": "Eventi / apparizioni una tantum",
+"de": "Einmalige Events / Auftritte",
+"nl": "Eenmalige events / optredens"
+},
+"Leadership keynote / motivational speaker": {
+"es": "Ponencia de liderazgo / conferenciante motivacional",
+"fr": "Keynote leadership / conférencier motivation",
+"it": "Keynote di leadership / speaker motivazionale",
+"de": "Leadership-Keynote / Motivationsredner",
+"nl": "Leadership-keynote / motivational speaker"
+},
+">Other<": {
+"es": ">Otro<",
+"fr": ">Autre<",
+"it": ">Altro<",
+"de": ">Sonstiges<",
+"nl": ">Overig<"
+},
+"Start date *": {
+"es": "Fecha de inicio *",
+"fr": "Date de début *",
+"it": "Data di inizio *",
+"de": "Startdatum *",
+"nl": "Startdatum *"
+},
+"End date": {
+"es": "Fecha de fin",
+"fr": "Date de fin",
+"it": "Data di fine",
+"de": "Enddatum",
+"nl": "Einddatum"
+},
+"Budget *": {
+"es": "Presupuesto *",
+"fr": "Budget *",
+"it": "Budget *",
+"de": "Budget *",
+"nl": "Budget *"
+},
+"(total, no limit)": {
+"es": "(total, sin límite)",
+"fr": "(total, sans limite)",
+"it": "(totale, senza limiti)",
+"de": "(gesamt, ohne Limit)",
+"nl": "(totaal, geen limiet)"
+},
+"Number of athletes *": {
+"es": "Número de atletas *",
+"fr": "Nombre d'athlètes *",
+"it": "Numero di atleti *",
+"de": "Anzahl der Athleten *",
+"nl": "Aantal atleten *"
+},
+"Type or pick a number": {
+"es": "Escribe o elige un número",
+"fr": "Saisissez ou choisissez un nombre",
+"it": "Scrivi o scegli un numero",
+"de": "Zahl eingeben oder auswählen",
+"nl": "Typ of kies een aantal"
+},
+">Description<": {
+"es": ">Descripción<",
+"fr": ">Description<",
+"it": ">Descrizione<",
+"de": ">Beschreibung<",
+"nl": ">Omschrijving<"
+},
+"We're looking for an athlete with a strong personality, an engaged social following and a genuine connection to music, training and performance.": {
+"es": "Buscamos un atleta con mucha personalidad, una comunidad comprometida y una conexión real con la música, el entrenamiento y el rendimiento.",
+"fr": "Nous recherchons un athlète avec une forte personnalité, une communauté engagée et un lien authentique avec la musique, l'entraînement et la performance.",
+"it": "Cerchiamo un atleta con una forte personalità, una community coinvolta e un legame autentico con musica, allenamento e performance.",
+"de": "Wir suchen einen Athleten mit starker Persönlichkeit, einer engagierten Community und einem echten Bezug zu Musik, Training und Performance.",
+"nl": "We zoeken een atleet met een sterke persoonlijkheid, een betrokken community en een echte band met muziek, training en performance."
+},
+"+ Attach image (optional)": {
+"es": "+ Adjuntar imagen (opcional)",
+"fr": "+ Joindre une image (facultatif)",
+"it": "+ Allega un'immagine (facoltativo)",
+"de": "+ Bild anhängen (optional)",
+"nl": "+ Afbeelding toevoegen (optioneel)"
+},
+"Next: Target →": {
+"es": "Siguiente: Segmentación →",
+"fr": "Suivant : Ciblage →",
+"it": "Avanti: Target →",
+"de": "Weiter: Zielgruppe →",
+"nl": "Volgende: Doelgroep →"
+},
+"← Back to details": {
+"es": "← Volver a detalles",
+"fr": "← Retour aux détails",
+"it": "← Torna ai dettagli",
+"de": "← Zurück zu den Details",
+"nl": "← Terug naar details"
+},
+"Talent / sport": {
+"es": "Talento / deporte",
+"fr": "Talent / sport",
+"it": "Talento / sport",
+"de": "Talent / Sportart",
+"nl": "Talent / sport"
+},
+"Search sports… e.g. bas": {
+"es": "Busca deportes… p. ej. bal",
+"fr": "Rechercher un sport… ex. bas",
+"it": "Cerca sport… es. pal",
+"de": "Sportart suchen… z. B. Bas",
+"nl": "Zoek sporten… bv. bas"
+},
+"Country *": {
+"es": "País *",
+"fr": "Pays *",
+"it": "Paese *",
+"de": "Land *",
+"nl": "Land *"
+},
+">City<": {
+"es": ">Ciudad<",
+"fr": ">Ville<",
+"it": ">Città<",
+"de": ">Stadt<",
+"nl": ">Stad<"
+},
+"Any city": {
+"es": "Cualquier ciudad",
+"fr": "Toutes les villes",
+"it": "Qualsiasi città",
+"de": "Alle Städte",
+"nl": "Alle steden"
+},
+"Age from": {
+"es": "Edad desde",
+"fr": "Âge min.",
+"it": "Età da",
+"de": "Alter von",
+"nl": "Leeftijd vanaf"
+},
+"Age to": {
+"es": "Edad hasta",
+"fr": "Âge max.",
+"it": "Età a",
+"de": "Alter bis",
+"nl": "Leeftijd tot"
+},
+">Gender<": {
+"es": ">Género<",
+"fr": ">Genre<",
+"it": ">Genere<",
+"de": ">Geschlecht<",
+"nl": ">Geslacht<"
+},
+">All<": {
+"es": ">Todos<",
+"fr": ">Tous<",
+"it": ">Tutti<",
+"de": ">Alle<",
+"nl": ">Alle<"
+},
+">Male<": {
+"es": ">Masculino<",
+"fr": ">Homme<",
+"it": ">Uomo<",
+"de": ">Männlich<",
+"nl": ">Man<"
+},
+">Female<": {
+"es": ">Femenino<",
+"fr": ">Femme<",
+"it": ">Donna<",
+"de": ">Weiblich<",
+"nl": ">Vrouw<"
+},
+"Non-Binary": {
+"es": "No binario",
+"fr": "Non-binaire",
+"it": "Non binario",
+"de": "Nicht-binär",
+"nl": "Non-binair"
+},
+"Prefer not to say": {
+"es": "Prefiere no decirlo",
+"fr": "Préfère ne pas le dire",
+"it": "Preferisce non dirlo",
+"de": "Keine Angabe",
+"nl": "Zeg ik liever niet"
+},
+">Activity<": {
+"es": ">Actividad<",
+"fr": ">Activité<",
+"it": ">Attività<",
+"de": ">Status<",
+"nl": ">Activiteit<"
+},
+">Competing<": {
+"es": ">En activo<",
+"fr": ">En activité<",
+"it": ">In attività<",
+"de": ">Aktiv<",
+"nl": ">Actief<"
+},
+">Retired<": {
+"es": ">Retirado<",
+"fr": ">Retraité<",
+"it": ">Ritirato<",
+"de": ">Karriereende<",
+"nl": ">Gestopt<"
+},
+"Publish Opportunity →": {
+"es": "Publicar oportunidad →",
+"fr": "Publier l'opportunité →",
+"it": "Pubblica l'opportunità →",
+"de": "Kampagne veröffentlichen →",
+"nl": "Opportunity publiceren →"
+},
+"What the athlete sees · Sport Endorse app": {
+"es": "Lo que ve el atleta · app de Sport Endorse",
+"fr": "Ce que voit l'athlète · app Sport Endorse",
+"it": "Cosa vede l'atleta · app Sport Endorse",
+"de": "Was der Athlet sieht · Sport Endorse App",
+"nl": "Wat de atleet ziet · Sport Endorse-app"
+},
+">Opportunity<": {
+"es": ">Oportunidad<",
+"fr": ">Opportunité<",
+"it": ">Opportunità<",
+"de": ">Kampagne<",
+"nl": ">Opportunity<"
+},
+">Budget<": {
+"es": ">Presupuesto<",
+"fr": ">Budget<",
+"it": ">Budget<",
+"de": ">Budget<",
+"nl": ">Budget<"
+},
+"Review applicants →": {
+"es": "Revisar candidatos →",
+"fr": "Voir les candidats →",
+"it": "Esamina i candidati →",
+"de": "Bewerber ansehen →",
+"nl": "Kandidaten bekijken →"
+},
+"Published · notifying athletes…": {
+"es": "Publicado · avisando a los atletas…",
+"fr": "Publié · notification des athlètes…",
+"it": "Pubblicato · avviso agli atleti…",
+"de": "Veröffentlicht · Athleten werden benachrichtigt…",
+"nl": "Gepubliceerd · atleten worden op de hoogte gebracht…"
+},
+"● ${a.name} just applied": {
+"es": "● ${a.name} acaba de postularse",
+"fr": "● ${a.name} vient de postuler",
+"it": "● ${a.name} si è appena candidato",
+"de": "● ${a.name} hat sich gerade beworben",
+"nl": "● ${a.name} heeft zojuist gereageerd"
+},
+">Open /": {
+"es": ">Abiertas /",
+"fr": ">Ouvertes /",
+"it": ">Aperte /",
+"de": ">Offen /",
+"nl": ">Open /"
+},
+">Applicants /": {
+"es": ">Candidatos /",
+"fr": ">Candidats /",
+"it": ">Candidati /",
+"de": ">Bewerber /",
+"nl": ">Kandidaten /"
+},
+">Confirmed /": {
+"es": ">Confirmados /",
+"fr": ">Confirmés /",
+"it": ">Confermati /",
+"de": ">Bestätigt /",
+"nl": ">Bevestigd /"
+},
+">Deals /": {
+"es": ">Acuerdos /",
+"fr": ">Accords /",
+"it": ">Accordi /",
+"de": ">Deals /",
+"nl": ">Deals /"
+},
+">Declined /": {
+"es": ">Rechazados /",
+"fr": ">Refusés /",
+"it": ">Rifiutati /",
+"de": ">Abgelehnt /",
+"nl": ">Afgewezen /"
+},
+"Complete / 0": {
+"es": "Completados / 0",
+"fr": "Terminés / 0",
+"it": "Completati / 0",
+"de": "Abgeschlossen / 0",
+"nl": "Afgerond / 0"
+},
+">Open</span>": {
+"es": ">Abierta</span>",
+"fr": ">Ouverte</span>",
+"it": ">Aperta</span>",
+"de": ">Offen</span>",
+"nl": ">Open</span>"
+},
+" athletes confirmed": {
+"es": " atletas confirmados",
+"fr": " athlètes confirmés",
+"it": " atleti confermati",
+"de": " Athleten bestätigt",
+"nl": " atleten bevestigd"
+},
+"Waiting for applications.": {
+"es": "Esperando candidaturas.",
+"fr": "En attente de candidatures.",
+"it": "In attesa di candidature.",
+"de": "Warten auf Bewerbungen.",
+"nl": "Wachten op reacties."
+},
+"${a.name} applied for the opportunity": {
+"es": "${a.name} se postuló a la oportunidad",
+"fr": "${a.name} a postulé à l'opportunité",
+"it": "${a.name} si è candidato all'opportunità",
+"de": "${a.name} hat sich auf die Kampagne beworben",
+"nl": "${a.name} heeft op de opportunity gereageerd"
+},
+"</b> applied<small>": {
+"es": "</b> se postuló<small>",
+"fr": "</b> a postulé<small>",
+"it": "</b> si è candidato<small>",
+"de": "</b> hat sich beworben<small>",
+"nl": "</b> heeft gereageerd<small>"
+},
+"is typing…": {
+"es": "está escribiendo…",
+"fr": "est en train d'écrire…",
+"it": "sta scrivendo…",
+"de": "schreibt…",
+"nl": "is aan het typen…"
+},
+":\"You\"": {
+"es": ":\"Tú\"",
+"fr": ":\"Vous\"",
+"it": ":\"Tu\"",
+"de": ":\"Sie\"",
+"nl": ":\"Jij\""
+},
+"Ask a question · ${3-a.asked.length} left": {
+"es": "Haz una pregunta · quedan ${3-a.asked.length}",
+"fr": "Posez une question · ${3-a.asked.length} restantes",
+"it": "Fai una domanda · ne restano ${3-a.asked.length}",
+"de": "Frage stellen · noch ${3-a.asked.length}",
+"nl": "Stel een vraag · nog ${3-a.asked.length}"
+},
+"Send a message · ${3-a.dasked.length} left": {
+"es": "Envía un mensaje · quedan ${3-a.dasked.length}",
+"fr": "Envoyez un message · ${3-a.dasked.length} restants",
+"it": "Invia un messaggio · ne restano ${3-a.dasked.length}",
+"de": "Nachricht senden · noch ${3-a.dasked.length}",
+"nl": "Stuur een bericht · nog ${3-a.dasked.length}"
+},
+">Offer deal →</button>": {
+"es": ">Ofrecer acuerdo →</button>",
+"fr": ">Proposer un accord →</button>",
+"it": ">Proponi un accordo →</button>",
+"de": ">Deal anbieten →</button>",
+"nl": ">Deal aanbieden →</button>"
+},
+">Decline</button>": {
+"es": ">Rechazar</button>",
+"fr": ">Refuser</button>",
+"it": ">Rifiuta</button>",
+"de": ">Ablehnen</button>",
+"nl": ">Afwijzen</button>"
+},
+">Restore applicant</button>": {
+"es": ">Restaurar candidato</button>",
+"fr": ">Restaurer le candidat</button>",
+"it": ">Ripristina candidato</button>",
+"de": ">Bewerber wiederherstellen</button>",
+"nl": ">Kandidaat herstellen</button>"
+},
+"Offer sent · waiting for ${a.name.split(": {
+"es": "Oferta enviada · esperando a ${a.name.split(",
+"fr": "Offre envoyée · en attente de ${a.name.split(",
+"it": "Offerta inviata · in attesa di ${a.name.split(",
+"de": "Angebot gesendet · warten auf ${a.name.split(",
+"nl": "Aanbod verstuurd · wachten op ${a.name.split("
+},
+">View in Deals →</button>": {
+"es": ">Ver en Acuerdos →</button>",
+"fr": ">Voir dans Accords →</button>",
+"it": ">Vedi in Accordi →</button>",
+"de": ">In Deals ansehen →</button>",
+"nl": ">Bekijk bij Deals →</button>"
+},
+"lab={new:\"NEW\",accepted:\"ACCEPTED\",offer:\"OFFER SENT\",deal:\"✓ CONFIRMED\"}": {
+"es": "lab={new:\"NUEVO\",accepted:\"ACEPTADO\",offer:\"OFERTA ENVIADA\",deal:\"✓ CONFIRMADO\"}",
+"fr": "lab={new:\"NOUVEAU\",accepted:\"ACCEPTÉ\",offer:\"OFFRE ENVOYÉE\",deal:\"✓ CONFIRMÉ\"}",
+"it": "lab={new:\"NUOVO\",accepted:\"ACCETTATO\",offer:\"OFFERTA INVIATA\",deal:\"✓ CONFERMATO\"}",
+"de": "lab={new:\"NEU\",accepted:\"ANGENOMMEN\",offer:\"ANGEBOT GESENDET\",deal:\"✓ BESTÄTIGT\"}",
+"nl": "lab={new:\"NIEUW\",accepted:\"GEACCEPTEERD\",offer:\"AANBOD VERSTUURD\",deal:\"✓ BEVESTIGD\"}"
+},
+"lab={confirmed:\"CONFIRMED\",paid:\"PAID\",done:\"DONE\",rated:\"★ RATED\"}": {
+"es": "lab={confirmed:\"CONFIRMADO\",paid:\"PAGADO\",done:\"COMPLETADO\",rated:\"★ VALORADO\"}",
+"fr": "lab={confirmed:\"CONFIRMÉ\",paid:\"PAYÉ\",done:\"TERMINÉ\",rated:\"★ ÉVALUÉ\"}",
+"it": "lab={confirmed:\"CONFERMATO\",paid:\"PAGATO\",done:\"COMPLETATO\",rated:\"★ VALUTATO\"}",
+"de": "lab={confirmed:\"BESTÄTIGT\",paid:\"BEZAHLT\",done:\"ABGESCHLOSSEN\",rated:\"★ BEWERTET\"}",
+"nl": "lab={confirmed:\"BEVESTIGD\",paid:\"BETAALD\",done:\"AFGEROND\",rated:\"★ BEOORDEELD\"}"
+},
+">Sport</span>": {
+"es": ">Deporte</span>",
+"fr": ">Sport</span>",
+"it": ">Sport</span>",
+"de": ">Sportart</span>",
+"nl": ">Sport</span>"
+},
+">Location / region</span>": {
+"es": ">Ubicación / región</span>",
+"fr": ">Lieu / région</span>",
+"it": ">Località / regione</span>",
+"de": ">Ort / Region</span>",
+"nl": ">Locatie / regio</span>"
+},
+"✓ Verified": {
+"es": "✓ Verificado",
+"fr": "✓ Vérifié",
+"it": "✓ Verificato",
+"de": "✓ Verifiziert",
+"nl": "✓ Geverifieerd"
+},
+">Cover letter</b>": {
+"es": ">Carta de presentación</b>",
+"fr": ">Lettre de motivation</b>",
+"it": ">Lettera di presentazione</b>",
+"de": ">Anschreiben</b>",
+"nl": ">Motivatie</b>"
+},
+"Applied with cover letter": {
+"es": "Se postuló con carta de presentación",
+"fr": "A postulé avec une lettre de motivation",
+"it": "Candidato con lettera di presentazione",
+"de": "Mit Anschreiben beworben",
+"nl": "Gereageerd met motivatie"
+},
+"Final conditions": {
+"es": "Condiciones finales",
+"fr": "Conditions finales",
+"it": "Condizioni finali",
+"de": "Finale Konditionen",
+"nl": "Definitieve voorwaarden"
+},
+"What's the final agreed price with this athlete? You can edit it.": {
+"es": "¿Cuál es el precio final acordado con este atleta? Puedes editarlo.",
+"fr": "Quel est le prix final convenu avec cet athlète ? Vous pouvez le modifier.",
+"it": "Qual è il prezzo finale concordato con questo atleta? Puoi modificarlo.",
+"de": "Wie lautet der final vereinbarte Preis mit diesem Athleten? Sie können ihn anpassen.",
+"nl": "Wat is de definitief afgesproken prijs met deze atleet? Je kunt deze aanpassen."
+},
+">Final fee</span>": {
+"es": ">Importe final</span>",
+"fr": ">Montant final</span>",
+"it": ">Compenso finale</span>",
+"de": ">Finales Honorar</span>",
+"nl": ">Definitief bedrag</span>"
+},
+"VAT / sales tax excluded": {
+"es": "IVA / impuestos no incluidos",
+"fr": "Hors TVA / taxes",
+"it": "IVA / imposte escluse",
+"de": "zzgl. MwSt. / Steuern",
+"nl": "Excl. btw / belastingen"
+},
+"Additional conditions with this athlete": {
+"es": "Condiciones adicionales con este atleta",
+"fr": "Conditions supplémentaires avec cet athlète",
+"it": "Condizioni aggiuntive con questo atleta",
+"de": "Zusätzliche Konditionen mit diesem Athleten",
+"nl": "Aanvullende voorwaarden met deze atleet"
+},
+"e.g. 1 content shoot, 2 posts per month, usage on our socials for 12 months": {
+"es": "p. ej. 1 sesión de contenido, 2 publicaciones al mes, uso en nuestras redes durante 12 meses",
+"fr": "ex. 1 shooting, 2 publications par mois, utilisation sur nos réseaux pendant 12 mois",
+"it": "es. 1 shooting, 2 post al mese, utilizzo sui nostri social per 12 mesi",
+"de": "z. B. 1 Content-Shooting, 2 Posts pro Monat, Nutzung auf unseren Kanälen für 12 Monate",
+"nl": "bv. 1 contentshoot, 2 posts per maand, gebruik op onze kanalen gedurende 12 maanden"
+},
+">Cancel</button>": {
+"es": ">Cancelar</button>",
+"fr": ">Annuler</button>",
+"it": ">Annulla</button>",
+"de": ">Abbrechen</button>",
+"nl": ">Annuleren</button>"
+},
+">Confirm</button>": {
+"es": ">Confirmar</button>",
+"fr": ">Confirmer</button>",
+"it": ">Conferma</button>",
+"de": ">Bestätigen</button>",
+"nl": ">Bevestigen</button>"
+},
+"Athlete receives ${money(p*(1-COMM))} after the 18% commission.": {
+"es": "El atleta recibe ${money(p*(1-COMM))} tras la comisión del 18%.",
+"fr": "L'athlète reçoit ${money(p*(1-COMM))} après la commission de 18 %.",
+"it": "L'atleta riceve ${money(p*(1-COMM))} dopo la commissione del 18%.",
+"de": "Der Athlet erhält ${money(p*(1-COMM))} nach der Provision von 18 %.",
+"nl": "De atleet ontvangt ${money(p*(1-COMM))} na de commissie van 18%."
+},
+"VAT excluded · athlete receives ${money(p*(1-COMM))} · budget left ${money(Math.max(0,left))}": {
+"es": "Sin IVA · el atleta recibe ${money(p*(1-COMM))} · presupuesto restante ${money(Math.max(0,left))}",
+"fr": "Hors TVA · l'athlète reçoit ${money(p*(1-COMM))} · budget restant ${money(Math.max(0,left))}",
+"it": "IVA esclusa · l'atleta riceve ${money(p*(1-COMM))} · budget residuo ${money(Math.max(0,left))}",
+"de": "zzgl. MwSt. · Athlet erhält ${money(p*(1-COMM))} · Restbudget ${money(Math.max(0,left))}",
+"nl": "Excl. btw · atleet ontvangt ${money(p*(1-COMM))} · resterend budget ${money(Math.max(0,left))}"
+},
+"▲ Budget exceeded by ${money(-left)}": {
+"es": "▲ Presupuesto superado en ${money(-left)}",
+"fr": "▲ Budget dépassé de ${money(-left)}",
+"it": "▲ Budget superato di ${money(-left)}",
+"de": "▲ Budget um ${money(-left)} überschritten",
+"nl": "▲ Budget overschreden met ${money(-left)}"
+},
+"▲ over budget": {
+"es": "▲ fuera de presupuesto",
+"fr": "▲ hors budget",
+"it": "▲ oltre budget",
+"de": "▲ über Budget",
+"nl": "▲ boven budget"
+},
+"Budget left: <b>": {
+"es": "Presupuesto restante: <b>",
+"fr": "Budget restant : <b>",
+"it": "Budget residuo: <b>",
+"de": "Restbudget: <b>",
+"nl": "Resterend budget: <b>"
+},
+">Tax excluded</small>": {
+"es": ">Impuestos no incluidos</small>",
+"fr": ">Hors taxes</small>",
+"it": ">Imposte escluse</small>",
+"de": ">zzgl. Steuern</small>",
+"nl": ">Excl. belastingen</small>"
+},
+"FINAL CONDITIONS <span class='cf'>Confirmed</span>": {
+"es": "CONDICIONES FINALES <span class='cf'>Confirmadas</span>",
+"fr": "CONDITIONS FINALES <span class='cf'>Confirmées</span>",
+"it": "CONDIZIONI FINALI <span class='cf'>Confermate</span>",
+"de": "FINALE KONDITIONEN <span class='cf'>Bestätigt</span>",
+"nl": "DEFINITIEVE VOORWAARDEN <span class='cf'>Bevestigd</span>"
+},
+"FINAL CONDITIONS<b>": {
+"es": "CONDICIONES FINALES<b>",
+"fr": "CONDITIONS FINALES<b>",
+"it": "CONDIZIONI FINALI<b>",
+"de": "FINALE KONDITIONEN<b>",
+"nl": "DEFINITIEVE VOORWAARDEN<b>"
+},
+"✓ ${a.name} confirmed the final conditions": {
+"es": "✓ ${a.name} confirmó las condiciones finales",
+"fr": "✓ ${a.name} a confirmé les conditions finales",
+"it": "✓ ${a.name} ha confermato le condizioni finali",
+"de": "✓ ${a.name} hat die finalen Konditionen bestätigt",
+"nl": "✓ ${a.name} heeft de definitieve voorwaarden bevestigd"
+},
+"Deal confirmed at ${money(p)}. Pay to lock it in.": {
+"es": "Acuerdo confirmado por ${money(p)}. Paga para cerrarlo.",
+"fr": "Accord confirmé à ${money(p)}. Payez pour le verrouiller.",
+"it": "Accordo confermato a ${money(p)}. Paga per bloccarlo.",
+"de": "Deal zu ${money(p)} bestätigt. Zahlen Sie, um ihn zu fixieren.",
+"nl": "Deal bevestigd op ${money(p)}. Betaal om vast te leggen."
+},
+"${a.name} confirmed. They've moved to Deals.": {
+"es": "${a.name} confirmado. Pasa a Acuerdos.",
+"fr": "${a.name} confirmé. Passe dans Accords.",
+"it": "${a.name} confermato. Passa in Accordi.",
+"de": "${a.name} bestätigt. Jetzt unter Deals.",
+"nl": "${a.name} bevestigd. Staat nu bij Deals."
+},
+"${a.name} moved back to Applicants.": {
+"es": "${a.name} vuelve a Candidatos.",
+"fr": "${a.name} est revenu dans Candidats.",
+"it": "${a.name} è tornato in Candidati.",
+"de": "${a.name} ist zurück bei Bewerbern.",
+"nl": "${a.name} staat weer bij Kandidaten."
+},
+"You need at least ${OPP.num} applicant${OPP.num>1?": {
+"es": "Necesitas al menos ${OPP.num} candidato${OPP.num>1?",
+"fr": "Il vous faut au moins ${OPP.num} candidat${OPP.num>1?",
+"it": "Ti servono almeno ${OPP.num} candidat${OPP.num>1?",
+"de": "Sie brauchen mindestens ${OPP.num} Bewerber${OPP.num>1?",
+"nl": "Je hebt minstens ${OPP.num} kandidaat${OPP.num>1?"
+},
+"} for this opportunity, so this one can't be declined yet.": {
+"es": "} para esta oportunidad, así que este aún no se puede rechazar.",
+"fr": "} pour cette opportunité, celui-ci ne peut donc pas encore être refusé.",
+"it": "} per questa opportunità, quindi questo non può ancora essere rifiutato.",
+"de": "} für diese Kampagne - dieser kann daher noch nicht abgelehnt werden.",
+"nl": "} voor deze opportunity, dus deze kan nog niet worden afgewezen."
+},
+"All ${OPP.num} athlete slot${OPP.num>1?": {
+"es": "Las ${OPP.num} plaza${OPP.num>1?",
+"fr": "Les ${OPP.num} place${OPP.num>1?",
+"it": "Tutti i ${OPP.num} post${OPP.num>1?",
+"de": "Alle ${OPP.num} Plätze sind belegt${OPP.num>1?",
+"nl": "Alle ${OPP.num} plekken zijn bezet${OPP.num>1?"
+},
+"\"s are\":\" is\"} filled. Cancel a confirmed athlete to free one up.": {
+"es": "\"s están\":\" está\"} ocupadas. Cancela un atleta confirmado para liberar una.",
+"fr": "\"s sont\":\" est\"} occupées. Annulez un athlète confirmé pour en libérer une.",
+"it": "\"i sono\":\"o è\"} occupati. Annulla un atleta confermato per liberarne uno.",
+"de": "\"\":\"\"}. Stornieren Sie einen bestätigten Athleten, um einen Platz freizugeben.",
+"nl": "\"\":\"\"}. Annuleer een bevestigde atleet om een plek vrij te maken."
+},
+"No confirmed athletes yet.<br>Open an applicant, press <b style=": {
+"es": "Aún no hay atletas confirmados.<br>Abre un candidato, pulsa <b style=",
+"fr": "Pas encore d'athlète confirmé.<br>Ouvrez un candidat, cliquez sur <b style=",
+"it": "Nessun atleta confermato.<br>Apri un candidato, premi <b style=",
+"de": "Noch keine bestätigten Athleten.<br>Öffnen Sie einen Bewerber, klicken Sie auf <b style=",
+"nl": "Nog geen bevestigde atleten.<br>Open een kandidaat, klik op <b style="
+},
+">Accept</b> and confirm final conditions.</p>": {
+"es": ">Aceptar</b> y confirma las condiciones finales.</p>",
+"fr": ">Accepter</b> et validez les conditions finales.</p>",
+"it": ">Accetta</b> e conferma le condizioni finali.</p>",
+"de": ">Annehmen</b> und bestätigen Sie die finalen Konditionen.</p>",
+"nl": ">Accepteren</b> en bevestig de definitieve voorwaarden.</p>"
+},
+">Pay ${money(a.price)} →</button>": {
+"es": ">Pagar ${money(a.price)} →</button>",
+"fr": ">Payer ${money(a.price)} →</button>",
+"it": ">Paga ${money(a.price)} →</button>",
+"de": ">${money(a.price)} zahlen →</button>",
+"nl": ">Betaal ${money(a.price)} →</button>"
+},
+">Cancel confirmed athlete</button>": {
+"es": ">Cancelar atleta confirmado</button>",
+"fr": ">Annuler l'athlète confirmé</button>",
+"it": ">Annulla atleta confermato</button>",
+"de": ">Bestätigten Athleten stornieren</button>",
+"nl": ">Bevestigde atleet annuleren</button>"
+},
+">Mark work as complete</button>": {
+"es": ">Marcar trabajo como completado</button>",
+"fr": ">Marquer le travail comme terminé</button>",
+"it": ">Segna il lavoro come completato</button>",
+"de": ">Arbeit als abgeschlossen markieren</button>",
+"nl": ">Werk als afgerond markeren</button>"
+},
+"Athlete receives ${money(a.price*(1-COMM))} after commission.": {
+"es": "El atleta recibe ${money(a.price*(1-COMM))} tras la comisión.",
+"fr": "L'athlète reçoit ${money(a.price*(1-COMM))} après commission.",
+"it": "L'atleta riceve ${money(a.price*(1-COMM))} dopo la commissione.",
+"de": "Der Athlet erhält ${money(a.price*(1-COMM))} nach Provision.",
+"nl": "De atleet ontvangt ${money(a.price*(1-COMM))} na commissie."
+},
+">Paid</div>": {
+"es": ">Pagado</div>",
+"fr": ">Payé</div>",
+"it": ">Pagato</div>",
+"de": ">Bezahlt</div>",
+"nl": ">Betaald</div>"
+},
+"Final conditions confirmed": {
+"es": "Condiciones finales confirmadas",
+"fr": "Conditions finales confirmées",
+"it": "Condizioni finali confermate",
+"de": "Finale Konditionen bestätigt",
+"nl": "Definitieve voorwaarden bevestigd"
+},
+"Work complete · athlete paid out": {
+"es": "Trabajo completado · atleta pagado",
+"fr": "Travail terminé · athlète payé",
+"it": "Lavoro completato · atleta pagato",
+"de": "Arbeit abgeschlossen · Athlet ausgezahlt",
+"nl": "Werk afgerond · atleet uitbetaald"
+},
+"✓ Payment of ${money(a.price)} received. Funds are held until the work is complete.": {
+"es": "✓ Pago de ${money(a.price)} recibido. Los fondos se retienen hasta completar el trabajo.",
+"fr": "✓ Paiement de ${money(a.price)} reçu. Les fonds sont bloqués jusqu'à la fin du travail.",
+"it": "✓ Pagamento di ${money(a.price)} ricevuto. I fondi restano in deposito fino al completamento del lavoro.",
+"de": "✓ Zahlung über ${money(a.price)} eingegangen. Die Mittel werden bis zum Abschluss der Arbeit verwahrt.",
+"nl": "✓ Betaling van ${money(a.price)} ontvangen. Het bedrag blijft in bewaring tot het werk is afgerond."
+},
+"Payment released to ${a.name}.": {
+"es": "Pago liberado a ${a.name}.",
+"fr": "Paiement versé à ${a.name}.",
+"it": "Pagamento rilasciato a ${a.name}.",
+"de": "Zahlung an ${a.name} freigegeben.",
+"nl": "Betaling vrijgegeven aan ${a.name}."
+},
+"Pay for this deal": {
+"es": "Pagar este acuerdo",
+"fr": "Payer cet accord",
+"it": "Paga questo accordo",
+"de": "Diesen Deal bezahlen",
+"nl": "Deze deal betalen"
+},
+"Name on card": {
+"es": "Nombre en la tarjeta",
+"fr": "Nom sur la carte",
+"it": "Nome sulla carta",
+"de": "Name auf der Karte",
+"nl": "Naam op de kaart"
+},
+"Card number": {
+"es": "Número de tarjeta",
+"fr": "Numéro de carte",
+"it": "Numero della carta",
+"de": "Kartennummer",
+"nl": "Kaartnummer"
+},
+">Expiry<": {
+"es": ">Caducidad<",
+"fr": ">Expiration<",
+"it": ">Scadenza<",
+"de": ">Gültig bis<",
+"nl": ">Vervaldatum<"
+},
+"Fill demo card": {
+"es": "Rellenar tarjeta de prueba",
+"fr": "Remplir la carte démo",
+"it": "Compila carta demo",
+"de": "Demo-Karte ausfüllen",
+"nl": "Demokaart invullen"
+},
+"id=\"pgo\">Pay</button>": {
+"es": "id=\"pgo\">Pagar</button>",
+"fr": "id=\"pgo\">Payer</button>",
+"it": "id=\"pgo\">Paga</button>",
+"de": "id=\"pgo\">Zahlen</button>",
+"nl": "id=\"pgo\">Betalen</button>"
+},
+"Demo only. No real payment is taken. On the platform, funds are held securely and released to the athlete when the work is done.": {
+"es": "Solo demo. No se realiza ningún pago real. En la plataforma, los fondos se custodian de forma segura y se liberan al atleta cuando el trabajo está hecho.",
+"fr": "Démo uniquement. Aucun paiement réel n'est effectué. Sur la plateforme, les fonds sont conservés en sécurité et versés à l'athlète une fois le travail terminé.",
+"it": "Solo demo. Nessun pagamento reale. Sulla piattaforma i fondi sono custoditi in sicurezza e rilasciati all'atleta a lavoro completato.",
+"de": "Nur eine Demo. Es erfolgt keine echte Zahlung. Auf der Plattform werden die Mittel sicher verwahrt und nach Abschluss der Arbeit an den Athleten ausgezahlt.",
+"nl": "Alleen een demo. Er wordt niet echt betaald. Op het platform wordt het bedrag veilig bewaard en na afronding van het werk aan de atleet uitbetaald."
+},
+"Processing…": {
+"es": "Procesando…",
+"fr": "Traitement…",
+"it": "Elaborazione…",
+"de": "Wird verarbeitet…",
+"nl": "Verwerken…"
+},
+"Payment successful": {
+"es": "Pago realizado",
+"fr": "Paiement effectué",
+"it": "Pagamento riuscito",
+"de": "Zahlung erfolgreich",
+"nl": "Betaling geslaagd"
+},
+"Pay ${money(a.price)}`": {
+"es": "Pagar ${money(a.price)}`",
+"fr": "Payer ${money(a.price)}`",
+"it": "Paga ${money(a.price)}`",
+"de": "${money(a.price)} zahlen`",
+"nl": "Betaal ${money(a.price)}`"
+},
+">Opportunities</span>": {
+"es": ">Oportunidades</span>",
+"fr": ">Opportunités</span>",
+"it": ">Opportunità</span>",
+"de": ">Kampagnen</span>",
+"nl": ">Opportunities</span>"
+},
+"‹ Back": {
+"es": "‹ Atrás",
+"fr": "‹ Retour",
+"it": "‹ Indietro",
+"de": "‹ Zurück",
+"nl": "‹ Terug"
+},
+">Search</span>": {
+"es": ">Buscar</span>",
+"fr": ">Rechercher</span>",
+"it": ">Cerca</span>",
+"de": ">Suchen</span>",
+"nl": ">Zoeken</span>"
+},
+"OPPORTUNITIES · BRANDS": {
+"es": "OPORTUNIDADES · MARCAS",
+"fr": "OPPORTUNITÉS · MARQUES",
+"it": "OPPORTUNITÀ · BRAND",
+"de": "KAMPAGNEN · MARKEN",
+"nl": "OPPORTUNITIES · MERKEN"
+},
+">Apply</div>": {
+"es": ">Postularme</div>",
+"fr": ">Postuler</div>",
+"it": ">Candidati</div>",
+"de": ">Bewerben</div>",
+"nl": ">Reageren</div>"
+},
+"Add your comments, special conditions or cover letter.": {
+"es": "Añade tus comentarios, condiciones especiales o carta de presentación.",
+"fr": "Ajoutez vos commentaires, conditions particulières ou lettre de motivation.",
+"it": "Aggiungi commenti, condizioni particolari o la tua lettera di presentazione.",
+"de": "Fügen Sie Kommentare, besondere Konditionen oder Ihr Anschreiben hinzu.",
+"nl": "Voeg je opmerkingen, speciale voorwaarden of motivatie toe."
+},
+"Send application": {
+"es": "Enviar candidatura",
+"fr": "Envoyer la candidature",
+"it": "Invia candidatura",
+"de": "Bewerbung senden",
+"nl": "Reactie versturen"
+},
+">Applied!</b>": {
+"es": ">¡Enviada!</b>",
+"fr": ">Candidature envoyée !</b>",
+"it": ">Inviata!</b>",
+"de": ">Beworben!</b>",
+"nl": ">Verstuurd!</b>"
+},
+"'s application<br>is on its way to ": {
+"es": "</b>: tu candidatura<br>va de camino a ",
+"fr": "</b> : votre candidature<br>est en route vers ",
+"it": "</b>: la candidatura<br>è in viaggio verso ",
+"de": "</b>: Die Bewerbung<br>ist unterwegs zu ",
+"nl": "</b>: de reactie<br>is onderweg naar "
+},
+"✓ Applied · ": {
+"es": "✓ Enviada · ",
+"fr": "✓ Postulé · ",
+"it": "✓ Inviata · ",
+"de": "✓ Beworben · ",
+"nl": "✓ Gereageerd · "
+},
+"Greyhound Racing Ireland": {
+"es": "Greyhound Racing Ireland",
+"fr": "Greyhound Racing Ireland",
+"it": "Greyhound Racing Ireland",
+"de": "Greyhound Racing Ireland",
+"nl": "Greyhound Racing Ireland"
+},
+"First look at our new ground floor": {
+"es": "Primer vistazo a nuestra nueva planta baja",
+"fr": "Avant-première de notre nouveau rez-de-chaussée",
+"it": "Anteprima del nostro nuovo piano terra",
+"de": "Erster Blick auf unser neues Erdgeschoss",
+"nl": "Eerste blik op onze nieuwe begane grond"
+},
+"Host a rugby expedition to Malawi": {
+"es": "Lidera una expedición de rugby a Malaui",
+"fr": "Encadrez une expédition rugby au Malawi",
+"it": "Guida una spedizione di rugby in Malawi",
+"de": "Begleiten Sie eine Rugby-Expedition nach Malawi",
+"nl": "Begeleid een rugby-expeditie naar Malawi"
+},
+"Hi, I'm a ${a.age<23&&(a.market===\"USA\"||a.market===\"United States\")?\"D1 \":\"\"}${a.sport.toLowerCase()} ${a.act===\"Retired\"?\"athlete (retired)\":\"player\"}. Would love to work with ${brandName()} 👍": {
+"es": "Hola, soy ${a.age<23&&(a.market===\"USA\"||a.market===\"United States\")?\"D1 \":\"\"}atleta de ${a.sport.toLowerCase()}${a.act===\"Retired\"?\" (retirado)\":\"\"}. Me encantaría trabajar con ${brandName()} 👍",
+"fr": "Bonjour, je suis ${a.age<23&&(a.market===\"USA\"||a.market===\"United States\")?\"athlète D1 de \":\"athlète de \"}${a.sport.toLowerCase()}${a.act===\"Retired\"?\" (retraité)\":\"\"}. J'adorerais travailler avec ${brandName()} 👍",
+"it": "Ciao, sono ${a.age<23&&(a.market===\"USA\"||a.market===\"United States\")?\"atleta D1 di \":\"atleta di \"}${a.sport.toLowerCase()}${a.act===\"Retired\"?\" (ritirato)\":\"\"}. Mi piacerebbe molto lavorare con ${brandName()} 👍",
+"de": "Hallo, ich bin ${a.age<23&&(a.market===\"USA\"||a.market===\"United States\")?\"D1-\":\"\"}${a.sport}-${a.act===\"Retired\"?\"Athlet (Karriereende)\":\"Athlet\"}. Ich würde sehr gern mit ${brandName()} arbeiten 👍",
+"nl": "Hoi, ik ben ${a.age<23&&(a.market===\"USA\"||a.market===\"United States\")?\"D1-\":\"\"}${a.sport.toLowerCase()}${a.act===\"Retired\"?\"-atleet (gestopt)\":\"-atleet\"}. Ik zou heel graag met ${brandName()} werken 👍"
+},
+"Hi there, I already post training-day content every week. Happy to do a shoot plus regular posts and stories across the partnership.": {
+"es": "Hola, ya publico contenido de mis entrenamientos cada semana. Encantado de hacer una sesión además de publicaciones y stories durante toda la colaboración.",
+"fr": "Bonjour, je publie déjà du contenu d'entraînement chaque semaine. Ravi de faire un shooting plus des publications et stories régulières pendant le partenariat.",
+"it": "Ciao, pubblico già ogni settimana contenuti dei miei allenamenti. Felice di fare uno shooting più post e stories regolari per tutta la partnership.",
+"de": "Hallo, ich poste schon jede Woche Trainings-Content. Gern mache ich ein Shooting plus regelmäßige Posts und Stories über die gesamte Partnerschaft.",
+"nl": "Hoi, ik post al elke week trainingscontent. Ik doe graag een shoot plus vaste posts en stories gedurende het partnership."
+},
+"Hello! Music is a massive part of my pre-game routine, so this feels like a natural fit. I'd love to bring ${brandName()} into my training content.": {
+"es": "¡Hola! La música es parte esencial de mi rutina previa a la competición, así que esto encaja de forma natural. Me encantaría integrar ${brandName()} en mi contenido de entrenamiento.",
+"fr": "Bonjour ! La musique fait partie intégrante de ma routine d'avant-match, donc c'est une évidence. J'adorerais intégrer ${brandName()} à mon contenu d'entraînement.",
+"it": "Ciao! La musica è una parte enorme della mia routine pre-gara, quindi è un match naturale. Mi piacerebbe portare ${brandName()} nei miei contenuti di allenamento.",
+"de": "Hallo! Musik ist ein riesiger Teil meiner Pre-Game-Routine, das passt also perfekt. Ich würde ${brandName()} gern in meinen Trainings-Content einbauen.",
+"nl": "Hallo! Muziek is een groot deel van mijn pre-game routine, dus dit voelt heel natuurlijk. Ik breng ${brandName()} graag in mijn trainingscontent."
+},
+"Hi! I've been a fan of the brand for a while. My followers are really engaged with my day-to-day ${a.sport.toLowerCase()} life and I think they'd love this.": {
+"es": "¡Hola! Sigo la marca desde hace tiempo. Mis seguidores conectan mucho con mi día a día en ${a.sport.toLowerCase()} y creo que esto les encantaría.",
+"fr": "Bonjour ! Je suis fan de la marque depuis un moment. Ma communauté suit de près mon quotidien ${a.sport.toLowerCase()} et je pense qu'elle adorerait.",
+"it": "Ciao! Sono fan del brand da tempo. I miei follower seguono molto la mia vita quotidiana nel ${a.sport.toLowerCase()} e credo che lo adorerebbero.",
+"de": "Hallo! Ich bin seit Langem Fan der Marke. Meine Follower sind sehr nah an meinem ${a.sport}-Alltag dran und würden das lieben.",
+"nl": "Hoi! Ik ben al een tijd fan van het merk. Mijn volgers zijn erg betrokken bij mijn dagelijkse ${a.sport.toLowerCase()}-leven en zouden dit geweldig vinden."
+},
+"Really excited about this one! I've done two partnerships through Sport Endorse and delivered on time both times.": {
+"es": "¡Me hace mucha ilusión! He hecho dos colaboraciones a través de Sport Endorse y cumplí los plazos en ambas.",
+"fr": "Très enthousiaste ! J'ai déjà réalisé deux partenariats via Sport Endorse, livrés à temps les deux fois.",
+"it": "Davvero entusiasta! Ho già fatto due partnership tramite Sport Endorse, consegnando puntuale entrambe le volte.",
+"de": "Ich freue mich riesig! Ich habe schon zwei Partnerschaften über Sport Endorse umgesetzt - beide pünktlich geliefert.",
+"nl": "Hier word ik enthousiast van! Ik heb al twee partnerships via Sport Endorse gedaan en beide keren op tijd geleverd."
+},
+"Where are your followers based?": {
+"es": "¿Dónde están tus seguidores?",
+"fr": "Où se trouvent vos abonnés ?",
+"it": "Dove si trovano i tuoi follower?",
+"de": "Wo sind Ihre Follower zu Hause?",
+"nl": "Waar zitten je volgers?"
+},
+"Around ${55+a.id%25}% are in ${home}, then mostly ${o}. Happy to share my audience insights screenshot.": {
+"es": "Alrededor del ${55+a.id%25}% está en ${home}, y el resto sobre todo en ${o}. Puedo compartir una captura de mis estadísticas de audiencia.",
+"fr": "Environ ${55+a.id%25} % sont en ${home}, le reste surtout ${o}. Je peux partager une capture de mes statistiques d'audience.",
+"it": "Circa il ${55+a.id%25}% è in ${home}, il resto soprattutto ${o}. Posso condividere uno screenshot delle mie statistiche.",
+"de": "Rund ${55+a.id%25} % sind in ${home}, der Rest vor allem ${o}. Gern teile ich einen Screenshot meiner Audience-Insights.",
+"nl": "Zo'n ${55+a.id%25}% zit in ${home}, de rest vooral ${o}. Ik deel graag een screenshot van mijn statistieken."
+},
+"\"Canada and the UK\"": {
+"es": "\"Canadá y Reino Unido\"",
+"fr": "\"au Canada et au Royaume-Uni\"",
+"it": "\"in Canada e Regno Unito\"",
+"de": "\"Kanada und Großbritannien\"",
+"nl": "\"Canada en het VK\""
+},
+"\"the UK and the US\"": {
+"es": "\"Reino Unido y EE. UU.\"",
+"fr": "\"au Royaume-Uni et aux États-Unis\"",
+"it": "\"nel Regno Unito e negli USA\"",
+"de": "\"Großbritannien und die USA\"",
+"nl": "\"het VK en de VS\""
+},
+"How long does it normally take you to create your content?": {
+"es": "¿Cuánto sueles tardar en crear tu contenido?",
+"fr": "Combien de temps vous faut-il en général pour créer votre contenu ?",
+"it": "Quanto tempo impieghi di solito per creare i tuoi contenuti?",
+"de": "Wie lange brauchen Sie normalerweise für Ihren Content?",
+"nl": "Hoe lang doe je meestal over je content?"
+},
+"Usually 3–5 days from brief to first draft, then a day for any edits.": {
+"es": "Normalmente de 3 a 5 días del briefing al primer borrador, y un día más para los ajustes.",
+"fr": "En général 3 à 5 jours du brief à la première version, puis un jour pour les retouches.",
+"it": "Di solito 3–5 giorni dal brief alla prima bozza, poi un giorno per le modifiche.",
+"de": "Meist 3–5 Tage vom Briefing zum ersten Entwurf, plus ein Tag für Anpassungen.",
+"nl": "Meestal 3–5 dagen van briefing tot eerste versie, plus een dag voor aanpassingen."
+},
+"About a week for a full shoot and edit. Stories I can turn around in 24 hours.": {
+"es": "Una semana aproximadamente para una sesión completa con edición. Las stories las entrego en 24 horas.",
+"fr": "Environ une semaine pour un shooting complet avec montage. Les stories, en 24 heures.",
+"it": "Circa una settimana per uno shooting completo con editing. Le stories in 24 ore.",
+"de": "Etwa eine Woche für ein komplettes Shooting mit Schnitt. Stories schaffe ich in 24 Stunden.",
+"nl": "Ongeveer een week voor een volledige shoot met edit. Stories lever ik binnen 24 uur."
+},
+"2–3 days for posts. For a proper shoot I'd want a week to plan.": {
+"es": "2 o 3 días para publicaciones. Para una sesión en condiciones necesitaría una semana para planificar.",
+"fr": "2 à 3 jours pour des publications. Pour un vrai shooting, une semaine de préparation.",
+"it": "2–3 giorni per i post. Per uno shooting vero vorrei una settimana per pianificare.",
+"de": "2–3 Tage für Posts. Für ein richtiges Shooting bräuchte ich eine Woche Vorlauf.",
+"nl": "2–3 dagen voor posts. Voor een echte shoot wil ik een week om te plannen."
+},
+"Are you available on this date for the photo shoot / event?": {
+"es": "¿Estás disponible en esa fecha para la sesión de fotos / el evento?",
+"fr": "Êtes-vous disponible à cette date pour le shooting / l'événement ?",
+"it": "Sei disponibile in questa data per lo shooting / l'evento?",
+"de": "Sind Sie an diesem Termin für das Shooting / Event verfügbar?",
+"nl": "Ben je op deze datum beschikbaar voor de shoot / het event?"
+},
+"Yes, I'm free on ${fmtDate(OPP.start)}. I'll block it out in my calendar.": {
+"es": "Sí, estoy libre el ${fmtDate(OPP.start)}. Lo bloqueo en mi calendario.",
+"fr": "Oui, je suis libre le ${fmtDate(OPP.start)}. Je le bloque dans mon agenda.",
+"it": "Sì, sono libero il ${fmtDate(OPP.start)}. Lo blocco in agenda.",
+"de": "Ja, am ${fmtDate(OPP.start)} bin ich frei. Ich blocke den Termin.",
+"nl": "Ja, op ${fmtDate(OPP.start)} ben ik vrij. Ik zet het in mijn agenda."
+},
+"I have a game on ${fmtDate(OPP.start)}, but I'm free the day before or after. Would that work?": {
+"es": "Tengo partido el ${fmtDate(OPP.start)}, pero estoy libre el día antes o el día después. ¿Te vale?",
+"fr": "J'ai un match le ${fmtDate(OPP.start)}, mais je suis libre la veille ou le lendemain. Est-ce possible ?",
+"it": "Ho una partita il ${fmtDate(OPP.start)}, ma sono libero il giorno prima o dopo. Può andare?",
+"de": "Am ${fmtDate(OPP.start)} habe ich ein Spiel, aber am Tag davor oder danach bin ich frei. Passt das?",
+"nl": "Op ${fmtDate(OPP.start)} heb ik een wedstrijd, maar de dag ervoor of erna ben ik vrij. Werkt dat?"
+},
+"Confirmed for ${fmtDate(OPP.start)}. Morning works best for me, any time from 9am.": {
+"es": "Confirmado para el ${fmtDate(OPP.start)}. Por la mañana me viene mejor, a partir de las 9.",
+"fr": "Confirmé pour le ${fmtDate(OPP.start)}. Le matin me convient le mieux, à partir de 9 h.",
+"it": "Confermato per il ${fmtDate(OPP.start)}. La mattina è l'ideale, dalle 9 in poi.",
+"de": "Bestätigt für den ${fmtDate(OPP.start)}. Vormittags passt es am besten, ab 9 Uhr.",
+"nl": "Bevestigd voor ${fmtDate(OPP.start)}. 's Ochtends komt het best uit, vanaf 9 uur."
+},
+"Can you send us a content plan before we start?": {
+"es": "¿Puedes enviarnos un plan de contenidos antes de empezar?",
+"fr": "Pouvez-vous nous envoyer un plan de contenu avant de commencer ?",
+"it": "Puoi inviarci un piano dei contenuti prima di iniziare?",
+"de": "Können Sie uns vor dem Start einen Content-Plan schicken?",
+"nl": "Kun je ons vooraf een contentplan sturen?"
+},
+"Of course! I'll send a draft plan by Friday: shoot ideas, captions and posting dates.": {
+"es": "¡Claro! Te envío un borrador el viernes: ideas para la sesión, textos y fechas de publicación.",
+"fr": "Bien sûr ! Je vous envoie un plan d'ici vendredi : idées de shooting, légendes et dates de publication.",
+"it": "Certo! Invio una bozza entro venerdì: idee per lo shooting, caption e date di pubblicazione.",
+"de": "Natürlich! Bis Freitag schicke ich einen Entwurf: Shooting-Ideen, Captions und Posting-Termine.",
+"nl": "Natuurlijk! Vrijdag stuur ik een opzet: shoot-ideeën, captions en publicatiedata."
+},
+"Where should we ship the product to?": {
+"es": "¿A dónde enviamos el producto?",
+"fr": "Où devons-nous expédier le produit ?",
+"it": "Dove spediamo il prodotto?",
+"de": "Wohin sollen wir das Produkt schicken?",
+"nl": "Waar sturen we het product naartoe?"
+},
+"Please send it to my address in ${a.city}. I'll share the full details in my profile settings.": {
+"es": "Envíalo a mi dirección en ${a.city}. Compartiré los datos completos en los ajustes de mi perfil.",
+"fr": "Envoyez-le à mon adresse à ${a.city}. Je partagerai les coordonnées complètes dans mon profil.",
+"it": "Spediscilo al mio indirizzo a ${a.city}. Condivido i dettagli completi nelle impostazioni del profilo.",
+"de": "Bitte an meine Adresse in ${a.city}. Die vollständigen Daten hinterlege ich in meinen Profileinstellungen.",
+"nl": "Stuur het naar mijn adres in ${a.city}. De volledige gegevens zet ik in mijn profielinstellingen."
+},
+"Please confirm the shoot date and time.": {
+"es": "Confirma, por favor, la fecha y hora de la sesión.",
+"fr": "Merci de confirmer la date et l'heure du shooting.",
+"it": "Conferma per favore data e ora dello shooting.",
+"de": "Bitte bestätigen Sie Datum und Uhrzeit des Shootings.",
+"nl": "Bevestig alsjeblieft de datum en tijd van de shoot."
+},
+"+${list.length-show.length} more · type to search": {
+"es": "+${list.length-show.length} más · escribe para buscar",
+"fr": "+${list.length-show.length} de plus · tapez pour rechercher",
+"it": "+${list.length-show.length} altri · digita per cercare",
+"de": "+${list.length-show.length} weitere · zum Suchen tippen",
+"nl": "+${list.length-show.length} meer · typ om te zoeken"
+},
+"No sport matches ": {
+"es": "Ningún deporte coincide con ",
+"fr": "Aucun sport ne correspond à ",
+"it": "Nessuno sport corrisponde a ",
+"de": "Keine Sportart passt zu ",
+"nl": "Geen sport gevonden voor "
+},
+"\"en-IE\"": {
+"es": "\"es-ES\"",
+"fr": "\"fr-FR\"",
+"it": "\"it-IT\"",
+"de": "\"de-DE\"",
+"nl": "\"nl-NL\""
+},
+"\"Swimming\"": {
+"es": "\"Natación\"",
+"fr": "\"Natation\"",
+"it": "\"Nuoto\"",
+"de": "\"Schwimmen\"",
+"nl": "\"Zwemmen\""
+},
+"\"Boxing\"": {
+"es": "\"Boxeo\"",
+"fr": "\"Boxe\"",
+"it": "\"Pugilato\"",
+"de": "\"Boxen\"",
+"nl": "\"Boksen\""
+},
+"\"Cycling\"": {
+"es": "\"Ciclismo\"",
+"fr": "\"Cyclisme\"",
+"it": "\"Ciclismo\"",
+"de": "\"Radsport\"",
+"nl": "\"Wielrennen\""
+},
+"\"Gymnastics\"": {
+"es": "\"Gimnasia\"",
+"fr": "\"Gymnastique\"",
+"it": "\"Ginnastica\"",
+"de": "\"Turnen\"",
+"nl": "\"Turnen\""
+},
+"\"Athletics\"": {
+"es": "\"Atletismo\"",
+"fr": "\"Athlétisme\"",
+"it": "\"Atletica\"",
+"de": "\"Leichtathletik\"",
+"nl": "\"Atletiek\""
+},
+"\"Football (Soccer)\"": {
+"es": "\"Fútbol\"",
+"fr": "\"Football\"",
+"it": "\"Calcio\"",
+"de": "\"Fußball\"",
+"nl": "\"Voetbal\""
+},
+"\"Rowing\"": {
+"es": "\"Remo\"",
+"fr": "\"Aviron\"",
+"it": "\"Canottaggio\"",
+"de": "\"Rudern\"",
+"nl": "\"Roeien\""
+},
+"\"Ice Hockey\"": {
+"es": "\"Hockey sobre hielo\"",
+"fr": "\"Hockey sur glace\"",
+"it": "\"Hockey su ghiaccio\"",
+"de": "\"Eishockey\"",
+"nl": "\"IJshockey\""
+},
+"\"Field Hockey\"": {
+"es": "\"Hockey hierba\"",
+"fr": "\"Hockey sur gazon\"",
+"it": "\"Hockey su prato\"",
+"de": "\"Feldhockey\"",
+"nl": "\"Hockey\""
+},
+"\"Table Tennis\"": {
+"es": "\"Tenis de mesa\"",
+"fr": "\"Tennis de table\"",
+"it": "\"Tennis tavolo\"",
+"de": "\"Tischtennis\"",
+"nl": "\"Tafeltennis\""
+},
+"\"Wrestling\"": {
+"es": "\"Lucha\"",
+"fr": "\"Lutte\"",
+"it": "\"Lotta\"",
+"de": "\"Ringen\"",
+"nl": "\"Worstelen\""
+},
+"\"Weightlifting\"": {
+"es": "\"Halterofilia\"",
+"fr": "\"Haltérophilie\"",
+"it": "\"Sollevamento pesi\"",
+"de": "\"Gewichtheben\"",
+"nl": "\"Gewichtheffen\""
+},
+"\"Sailing\"": {
+"es": "\"Vela\"",
+"fr": "\"Voile\"",
+"it": "\"Vela\"",
+"de": "\"Segeln\"",
+"nl": "\"Zeilen\""
+},
+"\"Climbing\"": {
+"es": "\"Escalada\"",
+"fr": "\"Escalade\"",
+"it": "\"Arrampicata\"",
+"de": "\"Klettern\"",
+"nl": "\"Klimmen\""
+},
+"</i> Details</button>": {
+"es": "</i> Detalles</button>",
+"fr": "</i> Détails</button>",
+"it": "</i> Dettagli</button>",
+"de": "</i> Details</button>",
+"nl": "</i> Details</button>"
+},
+"</i> Target</button>": {
+"es": "</i> Segmentación</button>",
+"fr": "</i> Ciblage</button>",
+"it": "</i> Target</button>",
+"de": "</i> Zielgruppe</button>",
+"nl": "</i> Doelgroep</button>"
+},
+"</i> Applicants <span": {
+"es": "</i> Candidatos <span",
+"fr": "</i> Candidats <span",
+"it": "</i> Candidati <span",
+"de": "</i> Bewerber <span",
+"nl": "</i> Kandidaten <span"
+},
+"</i> Deals <span": {
+"es": "</i> Acuerdos <span",
+"fr": "</i> Accords <span",
+"it": "</i> Accordi <span",
+"de": "</i> Deals <span",
+"nl": "</i> Deals <span"
+},
+"Try it now · Interactive demo": {
+"es": "Pruébalo ahora · Demo interactiva",
+"fr": "Essayez maintenant · Démo interactive",
+"it": "Provalo ora · Demo interattiva",
+"de": "Jetzt testen · Interaktive Demo",
+"nl": "Probeer het nu · Interactieve demo"
+},
+"Find Your Athletes. Build Your Campaign": {
+"es": "Encuentra a tus atletas. Crea tu campaña",
+"fr": "Trouvez vos athlètes. Créez votre campagne",
+"it": "Trova i tuoi atleti. Crea la tua campagna",
+"de": "Finden Sie Ihre Athleten. Starten Sie Ihre Kampagne",
+"nl": "Vind je atleten. Bouw je campagne"
+},
+"Test out the interactive simulator below to see how Sport Endorse simplifies athlete marketing. Publish a brief, set your targeting criteria, and watch athletes apply to work with you. Accept the profiles you like, agree on final terms, and pay - all in one place. You only ever talk to athletes who <b style=\"color:var(--text)\">actually want</b> to work with you.": {
+"es": "Prueba el simulador interactivo de abajo para ver cómo Sport Endorse simplifica el marketing de atletas. Publica un briefing, define tus criterios de segmentación y observa cómo los atletas se postulan para trabajar contigo. Acepta los perfiles que te convenzan, acuerda los términos finales y paga, todo en un solo lugar. Solo hablas con atletas que <b style=\"color:var(--text)\">realmente quieren</b> trabajar contigo.",
+"fr": "Testez le simulateur interactif ci-dessous pour voir comment Sport Endorse simplifie le marketing d'athlètes. Publiez un brief, définissez vos critères de ciblage et regardez les athlètes postuler pour travailler avec vous. Acceptez les profils qui vous plaisent, validez les conditions finales et payez, le tout au même endroit. Vous ne parlez qu'à des athlètes qui <b style=\"color:var(--text)\">veulent vraiment</b> travailler avec vous.",
+"it": "Prova il simulatore interattivo qui sotto per vedere come Sport Endorse semplifica l'athlete marketing. Pubblica un brief, imposta i criteri di targeting e guarda gli atleti candidarsi per lavorare con te. Accetta i profili che ti convincono, concorda i termini finali e paga, tutto in un unico posto. Parli solo con atleti che <b style=\"color:var(--text)\">vogliono davvero</b> lavorare con te.",
+"de": "Testen Sie den interaktiven Simulator unten und sehen Sie, wie Sport Endorse das Athletenmarketing vereinfacht. Veröffentlichen Sie ein Briefing, legen Sie Ihre Zielkriterien fest und sehen Sie zu, wie sich Athleten bei Ihnen bewerben. Nehmen Sie die Profile an, die Sie überzeugen, bestätigen Sie die finalen Konditionen und zahlen Sie - alles an einem Ort. Sie sprechen nur mit Athleten, die <b style=\"color:var(--text)\">wirklich mit Ihnen arbeiten wollen</b>.",
+"nl": "Test de interactieve simulator hieronder en zie hoe Sport Endorse athlete marketing eenvoudig maakt. Publiceer een briefing, stel je targetingcriteria in en zie atleten reageren om met je te werken. Accepteer de profielen die je aanspreken, bevestig de definitieve voorwaarden en betaal - alles op één plek. Je praat alleen met atleten die <b style=\"color:var(--text)\">echt met je willen werken</b>."
+},
+"This simulator uses sample data and illustrative athlete profiles for demonstration purposes only.": {
+"es": "Este simulador utiliza datos de muestra y perfiles de atletas ilustrativos, únicamente con fines de demostración.",
+"fr": "Ce simulateur utilise des données d'exemple et des profils d'athlètes illustratifs, à des fins de démonstration uniquement.",
+"it": "Questo simulatore utilizza dati di esempio e profili di atleti illustrativi, a soli fini dimostrativi.",
+"de": "Dieser Simulator verwendet Beispieldaten und illustrative Athletenprofile, ausschließlich zu Demonstrationszwecken.",
+"nl": "Deze simulator gebruikt voorbeeldgegevens en illustratieve atletenprofielen, uitsluitend voor demonstratiedoeleinden."
+},
+"const RL={rate:\"Rate \",opt:\"Add a comment (optional)\",submit:\"Submit rating\",rated:\"Rated\",sys:\"You rated this athlete\",thanks:\"Rating submitted. Thank you!\"};": {
+"es": "const RL={rate:\"Valorar a \",opt:\"Añade un comentario (opcional)\",submit:\"Enviar valoración\",rated:\"Valorado\",sys:\"Has valorado a este atleta\",thanks:\"Valoración enviada. ¡Gracias!\"};",
+"fr": "const RL={rate:\"Évaluer \",opt:\"Ajoutez un commentaire (facultatif)\",submit:\"Envoyer l'évaluation\",rated:\"Évalué\",sys:\"Vous avez évalué cet athlète\",thanks:\"Évaluation envoyée. Merci !\"};",
+"it": "const RL={rate:\"Valuta \",opt:\"Aggiungi un commento (facoltativo)\",submit:\"Invia valutazione\",rated:\"Valutato\",sys:\"Hai valutato questo atleta\",thanks:\"Valutazione inviata. Grazie!\"};",
+"de": "const RL={rate:\"Bewerten: \",opt:\"Kommentar hinzufügen (optional)\",submit:\"Bewertung senden\",rated:\"Bewertet\",sys:\"Sie haben diesen Athleten bewertet\",thanks:\"Bewertung gesendet. Vielen Dank!\"};",
+"nl": "const RL={rate:\"Beoordeel \",opt:\"Voeg een opmerking toe (optioneel)\",submit:\"Beoordeling versturen\",rated:\"Beoordeeld\",sys:\"Je hebt deze atleet beoordeeld\",thanks:\"Beoordeling verstuurd. Bedankt!\"};"
+},
+">Rated</div>": {
+"es": ">Valorado</div>",
+"fr": ">Évalué</div>",
+"it": ">Valutato</div>",
+"de": ">Bewertet</div>",
+"nl": ">Beoordeeld</div>"
+},
+"const CTA={eye:\"Campaign complete\",h:\"That&rsquo;s athlete marketing on Sport Endorse.\",p:\"Brief to paid-out campaign in minutes. Now imagine it with 12,000+ real verified athletes.\",demo:\"Book a demo &rarr;\",pricing:\"See pricing\"};": {
+"es": "const CTA={eye:\"Campaña completada\",h:\"Así es el marketing de atletas en Sport Endorse.\",p:\"Del briefing a la campaña pagada en minutos. Ahora imagínalo con más de 12.000 atletas verificados reales.\",demo:\"Reserva una demo &rarr;\",pricing:\"Ver precios\"};",
+"fr": "const CTA={eye:\"Campagne terminée\",h:\"Voilà le marketing d&rsquo;athlètes sur Sport Endorse.\",p:\"Du brief à la campagne payée en quelques minutes. Imaginez maintenant avec plus de 12 000 vrais athlètes vérifiés.\",demo:\"Réserver une démo &rarr;\",pricing:\"Voir les tarifs\"};",
+"it": "const CTA={eye:\"Campagna completata\",h:\"Questo è l&rsquo;athlete marketing su Sport Endorse.\",p:\"Dal brief alla campagna pagata in pochi minuti. Ora immaginalo con oltre 12.000 veri atleti verificati.\",demo:\"Prenota una demo &rarr;\",pricing:\"Vedi i prezzi\"};",
+"de": "const CTA={eye:\"Kampagne abgeschlossen\",h:\"So funktioniert Athletenmarketing auf Sport Endorse.\",p:\"Vom Briefing zur bezahlten Kampagne in Minuten. Stellen Sie sich das jetzt mit über 12.000 echten verifizierten Athleten vor.\",demo:\"Demo buchen &rarr;\",pricing:\"Preise ansehen\"};",
+"nl": "const CTA={eye:\"Campagne afgerond\",h:\"Zo werkt athlete marketing op Sport Endorse.\",p:\"Van briefing tot uitbetaalde campagne in minuten. Stel je dit nu voor met 12.000+ echte geverifieerde atleten.\",demo:\"Boek een demo &rarr;\",pricing:\"Bekijk prijzen\"};"
+},
+"Motion Audio is looking for a collegiate sports person to become a brand ambassador for a 12-month partnership, helping bring the brand to life through authentic content, social media and live engagement.": {
+"es": "Motion Audio busca un deportista universitario como embajador de marca para una colaboración de 12 meses, dando vida a la marca con contenido auténtico, redes sociales y presencia en directo.",
+"fr": "Motion Audio recherche un sportif universitaire comme ambassadeur de marque pour un partenariat de 12 mois, afin de faire vivre la marque via du contenu authentique, les réseaux sociaux et des rencontres en direct.",
+"it": "Motion Audio cerca uno sportivo universitario come brand ambassador per una partnership di 12 mesi, per dare vita al brand con contenuti autentici, social media e presenza dal vivo.",
+"de": "Motion Audio sucht einen College-Sportler als Markenbotschafter für eine 12-monatige Partnerschaft, der die Marke mit authentischem Content, Social Media und Live-Auftritten zum Leben erweckt.",
+"nl": "Motion Audio zoekt een college-sporter als merkambassadeur voor een partnership van 12 maanden, die het merk tot leven brengt met authentieke content, social media en live optredens."
+}
+}

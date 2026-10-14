@@ -1,4 +1,4 @@
-/* Help centre search — loads the static index and filters as you type.
+/* Help centre search - loads the static index and filters as you type.
    No dependencies; enhances the search box on /help/. */
 (function () {
   var input = document.getElementById("hcq");

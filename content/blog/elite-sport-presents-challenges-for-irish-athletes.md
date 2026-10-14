@@ -2,12 +2,12 @@
 title: The Challenges Elite Sport Presents for Irish Athletes
 date: 2022-07-23
 author: Sport Endorse Team
-description: The financial, lifestyle and cultural pressures facing Irish athletes — and how brands can support the country's sporting talent.
+description: The financial, lifestyle and cultural pressures facing Irish athletes - and how brands can support the country's sporting talent.
 category: Athlete Marketing
 image: https://cms.sportendorse.com/wp-content/uploads/2022/07/image-911.png
 ---
 
-Elite sport in Ireland comes with real challenges: financial pressure, the pull of other career paths, and a culture that doesn't always put sport first. For brands, understanding these pressures is the first step to supporting Irish athletes meaningfully. Here's a look at the landscape — and where brands fit in.
+Elite sport in Ireland comes with real challenges: financial pressure, the pull of other career paths, and a culture that doesn't always put sport first. For brands, understanding these pressures is the first step to supporting Irish athletes meaningfully. Here's a look at the landscape - and where brands fit in.
 
 ## The lie of the land of Irish Sport
 		

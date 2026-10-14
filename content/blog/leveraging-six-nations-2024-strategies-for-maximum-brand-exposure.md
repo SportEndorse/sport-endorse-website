@@ -2,12 +2,12 @@
 title: Six Nations 2024: Strategies for Maximum Brand Exposure
 date: 2024-02-08
 author: Sport Endorse Team
-description: How brands can leverage the Six Nations — social media, rugby-star collaborations, authentic connection and immersive fan experiences — for maximum exposure.
+description: How brands can leverage the Six Nations - social media, rugby-star collaborations, authentic connection and immersive fan experiences - for maximum exposure.
 category: Athlete Marketing
 image: https://cms.sportendorse.com/wp-content/uploads/2024/02/Blog-Banner-for-Website-Content.png
 ---
 
-The Six Nations is one of the richest moments in the sporting calendar for brands — a captive, passionate audience across multiple nations. The brands that win it lean on social, authentic rugby-star collaborations and immersive fan experiences. Here's how to make the most of it.
+The Six Nations is one of the richest moments in the sporting calendar for brands - a captive, passionate audience across multiple nations. The brands that win it lean on social, authentic rugby-star collaborations and immersive fan experiences. Here's how to make the most of it.
 
 ## Why the Six Nations Rocks
 

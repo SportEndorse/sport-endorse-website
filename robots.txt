@@ -1,4 +1,4 @@
-# Sport Endorse — search & answer-engine access policy
+# Sport Endorse - search & answer-engine access policy
 User-agent: *
 Allow: /
 

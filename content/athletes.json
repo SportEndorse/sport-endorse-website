@@ -1,160 +1,488 @@
 {
- "profiles": [
-  {
-   "ini": "MD",
-   "hue": 210,
-   "name": "Marquis Dendy",
-   "sport": "Track & Field",
-   "loc": "USA",
-   "bio": "US long jumper and sprinter competing on the international track and field circuit.",
-   "tags": [
-    "Track & field",
-    "Ambassadorship",
-    "Content"
-   ],
-   "photo": "images/athletes/marquis-dendy.jpg"
-  },
-  {
-   "ini": "JL",
-   "hue": 150,
-   "name": "James Lowe",
-   "sport": "Rugby",
-   "loc": "Ireland & Japan",
-   "bio": "Professional rugby union winger and Ireland international known for his attacking play.",
-   "tags": [
-    "Rugby",
-    "Ambassadorship",
-    "Content"
-   ],
-   "photo": "images/athletes/james-lowe.jpg"
-  },
-  {
-   "ini": "KT",
-   "hue": 190,
-   "name": "Kira Toussaint",
-   "sport": "Swimming",
-   "loc": "Netherlands",
-   "bio": "Dutch international swimmer and backstroke specialist competing on the world stage.",
-   "tags": [
-    "Swimming",
-    "Ambassadorship",
-    "Speaking"
-   ],
-   "photo": "images/athletes/kira-toussaint.jpg"
-  },
-  {
-   "ini": "DS",
-   "hue": 25,
-   "name": "Danny Simpson",
-   "sport": "Football",
-   "loc": "UK",
-   "bio": "English footballer with a long career across the Premier League and Football League.",
-   "tags": [
-    "Football",
-    "Ambassadorship",
-    "Appearances"
-   ],
-   "photo": "images/athletes/danny-simpson.jpg"
-  },
-  {
-   "ini": "AD",
-   "hue": 320,
-   "name": "Annabel Dimmock",
-   "sport": "Golf",
-   "loc": "UK",
-   "bio": "English professional golfer competing on the Ladies European Tour.",
-   "tags": [
-    "Golf",
-    "Ambassadorship",
-    "Content"
-   ],
-   "photo": "images/athletes/annabel-dimmock.jpg"
-  },
-  {
-   "ini": "MB",
-   "hue": 42,
-   "name": "Matthias Bühler",
-   "sport": "Athletics",
-   "loc": "Germany",
-   "bio": "German international sprint hurdler with major-championship experience.",
-   "tags": [
-    "Athletics",
-    "Ambassadorship",
-    "Content"
-   ],
-   "photo": "images/athletes/matthias-buhler.jpg"
-  },
-  {
-   "ini": "NJ",
-   "hue": 265,
-   "name": "Noble Johnson",
-   "sport": "Football",
-   "loc": "USA",
-   "bio": "US professional footballer building his profile on and off the pitch.",
-   "tags": [
-    "Football",
-    "Ambassadorship",
-    "Content"
-   ],
-   "photo": "images/athletes/noble-johnson.jpg"
-  },
-  {
-   "ini": "PP",
-   "hue": 5,
-   "name": "Peter Plavec",
-   "sport": "Ice & Open Water Swimming",
-   "loc": "Austria",
-   "bio": "Austrian ice and open-water swimmer competing in extreme-endurance events.",
-   "tags": [
-    "Endurance",
-    "Ambassadorship",
-    "Content"
-   ],
-   "photo": "images/athletes/peter-plavec.jpg"
-  }
- ],
- "italy": [
-  {
-   "ini": "MZ",
-   "hue": 28,
-   "name": "Miky Zanirato",
-   "sport": "HYROX",
-   "loc": "Italia / UK",
-   "bio": "Atleta HYROX PRO e personal trainer, fondatore di MZ9 Fitness. Gareggia nella categoria Pro del circuito internazionale HYROX, dove forza e resistenza contano allo stesso modo. Vive e si allena tra l'Italia e il Regno Unito.",
-   "tags": [
-    "HYROX",
-    "Ambasciatore",
-    "Content"
-   ],
-   "photo": "images/athletes/miky-zanirato.jpg"
-  },
-  {
-   "ini": "RM",
-   "hue": 210,
-   "name": "Rodrigo Mattiuz",
-   "sport": "Ciclismo",
-   "loc": "Italia / UK",
-   "bio": "Ciclista su strada e content creator, scalatore di natura che vive a Londra e corre con il team London Dynamo. Tra criterium, salite e recensioni tech, racconta il ciclismo a una community appassionata tra Italia e Regno Unito.",
-   "tags": [
-    "Ciclismo",
-    "Ambasciatore",
-    "Content"
-   ],
-   "photo": "images/athletes/rodrigo-mattiuz.jpg"
-  },
-  {
-   "ini": "MA",
-   "hue": 150,
-   "name": "Matteo Agostini",
-   "sport": "Corsa in montagna",
-   "loc": "Italia",
-   "bio": "Runner italiano specializzato nella corsa in montagna e nel trail running. Dai vertical alle skyrace, gareggia su sentieri e vette portando il pubblico tra le montagne piu belle d'Italia.",
-   "tags": [
-    "Corsa in montagna",
-    "Ambasciatore",
-    "Eventi"
-   ],
-   "photo": "images/athletes/matteo-agostini.jpg"
-  }
- ]
+  "profiles": [
+    {
+      "ini": "MD",
+      "hue": 210,
+      "name": "Marquis Dendy",
+      "sport": "Track & Field",
+      "loc": "USA",
+      "bio": "US long jumper and sprinter competing on the international track and field circuit.",
+      "tags": [
+        "Track & field",
+        "Ambassadorship",
+        "Content"
+      ],
+      "photo": "images/athletes/marquis-dendy.jpg"
+    },
+    {
+      "ini": "JL",
+      "hue": 150,
+      "name": "James Lowe",
+      "sport": "Rugby",
+      "loc": "Ireland & Japan",
+      "bio": "Professional rugby union winger and Ireland international known for his attacking play.",
+      "tags": [
+        "Rugby",
+        "Ambassadorship",
+        "Content"
+      ],
+      "photo": "images/athletes/james-lowe.jpg"
+    },
+    {
+      "ini": "KT",
+      "hue": 190,
+      "name": "Kira Toussaint",
+      "sport": "Swimming",
+      "loc": "Netherlands",
+      "bio": "Dutch international swimmer and backstroke specialist competing on the world stage.",
+      "tags": [
+        "Swimming",
+        "Ambassadorship",
+        "Speaking"
+      ],
+      "photo": "images/athletes/kira-toussaint.jpg"
+    },
+    {
+      "ini": "DS",
+      "hue": 25,
+      "name": "Danny Simpson",
+      "sport": "Football",
+      "loc": "UK",
+      "bio": "English footballer with a long career across the Premier League and Football League.",
+      "tags": [
+        "Football",
+        "Ambassadorship",
+        "Appearances"
+      ],
+      "photo": "images/athletes/danny-simpson.jpg"
+    },
+    {
+      "ini": "AD",
+      "hue": 320,
+      "name": "Annabel Dimmock",
+      "sport": "Golf",
+      "loc": "UK",
+      "bio": "English professional golfer competing on the Ladies European Tour.",
+      "tags": [
+        "Golf",
+        "Ambassadorship",
+        "Content"
+      ],
+      "photo": "images/athletes/annabel-dimmock.jpg"
+    },
+    {
+      "ini": "MB",
+      "hue": 42,
+      "name": "Matthias Bühler",
+      "sport": "Athletics",
+      "loc": "Germany",
+      "bio": "German international sprint hurdler with major-championship experience.",
+      "tags": [
+        "Athletics",
+        "Ambassadorship",
+        "Content"
+      ],
+      "photo": "images/athletes/matthias-buhler.jpg"
+    },
+    {
+      "ini": "NJ",
+      "hue": 265,
+      "name": "Noble Johnson",
+      "sport": "Football",
+      "loc": "USA",
+      "bio": "US professional footballer building his profile on and off the pitch.",
+      "tags": [
+        "Football",
+        "Ambassadorship",
+        "Content"
+      ],
+      "photo": "images/athletes/noble-johnson.jpg"
+    },
+    {
+      "ini": "PP",
+      "hue": 5,
+      "name": "Peter Plavec",
+      "sport": "Ice & Open Water Swimming",
+      "loc": "Austria",
+      "bio": "Austrian ice and open-water swimmer competing in extreme-endurance events.",
+      "tags": [
+        "Endurance",
+        "Ambassadorship",
+        "Content"
+      ],
+      "photo": "images/athletes/peter-plavec.jpg"
+    }
+  ],
+  "italy": [
+    {
+      "ini": "MZ",
+      "hue": 28,
+      "name": "Miky Zanirato",
+      "sport": "HYROX",
+      "loc": "Italia / UK",
+      "bio": "Atleta HYROX PRO e personal trainer, fondatore di MZ9 Fitness. Gareggia nella categoria Pro del circuito internazionale HYROX, dove forza e resistenza contano allo stesso modo. Vive e si allena tra l'Italia e il Regno Unito.",
+      "tags": [
+        "HYROX",
+        "Ambasciatore",
+        "Content"
+      ],
+      "photo": "images/athletes/miky-zanirato.jpg"
+    },
+    {
+      "ini": "RM",
+      "hue": 210,
+      "name": "Rodrigo Mattiuz",
+      "sport": "Ciclismo",
+      "loc": "Italia / UK",
+      "bio": "Ciclista su strada e content creator, scalatore di natura che vive a Londra e corre con il team London Dynamo. Tra criterium, salite e recensioni tech, racconta il ciclismo a una community appassionata tra Italia e Regno Unito.",
+      "tags": [
+        "Ciclismo",
+        "Ambasciatore",
+        "Content"
+      ],
+      "photo": "images/athletes/rodrigo-mattiuz.jpg"
+    },
+    {
+      "ini": "MA",
+      "hue": 150,
+      "name": "Matteo Agostini",
+      "sport": "Corsa in montagna",
+      "loc": "Italia",
+      "bio": "Runner italiano specializzato nella corsa in montagna e nel trail running. Dai vertical alle skyrace, gareggia su sentieri e vette portando il pubblico tra le montagne piu belle d'Italia.",
+      "tags": [
+        "Corsa in montagna",
+        "Ambasciatore",
+        "Eventi"
+      ],
+      "photo": "images/athletes/matteo-agostini.jpg"
+    },
+    {
+      "ini": "AA",
+      "hue": 330,
+      "name": "Antonella Andriollo",
+      "sport": "HYROX",
+      "loc": "Latina, Italia",
+      "bio": "Atleta HYROX e runner di Latina, con un lungo percorso da ambassador per brand del running e del fitness. Gareggia nel circuito HYROX, anche in doppio, e racconta allenamento, costanza e mentalita a una community che la segue da anni.",
+      "tags": [
+        "HYROX",
+        "Ambasciatrice",
+        "Content"
+      ],
+      "photo": "images/athletes/antonella-andriollo.jpg"
+    },
+    {
+      "ini": "CM",
+      "hue": 270,
+      "name": "Chiara Mantovan",
+      "sport": "Ciclismo",
+      "loc": "Padova, Italia",
+      "bio": "Ciclista ed endurance runner padovana. Dalle maratone di New York e Venezia al trail in montagna, fino alla bici da strada: ambassador per brand del ciclismo e dell'outdoor, segue granfondo ed eventi raccontandoli sui suoi canali.",
+      "tags": [
+        "Ciclismo",
+        "Ambasciatrice",
+        "Eventi"
+      ],
+      "photo": "images/athletes/chiara-mantovan.jpg"
+    }
+  ],
+  "dach": [
+    {
+      "ini": "AW",
+      "hue": 200,
+      "name": "Alina Weidlich",
+      "sport": "CrossFit",
+      "loc": "Berlin, Deutschland",
+      "bio": "CrossFit-Athletin und Gewichtheberin aus Berlin, die sich 2026 als Weltranglistenerste für die CrossFit Adaptive Games in Kalifornien qualifiziert hat. Erzählt ihre Geschichte von Rückschlägen, Disziplin und Comeback auf der größten Bühne ihres Sports.",
+      "tags": [
+        "CrossFit",
+        "Botschafterin",
+        "Content"
+      ],
+      "photo": "images/athletes/alina-weidlich.jpg"
+    },
+    {
+      "ini": "ND",
+      "hue": 330,
+      "name": "Nathalie Dürbeck",
+      "sport": "HYROX",
+      "loc": "Österreich",
+      "bio": "Hybrid-Athletin und Content Creatorin aus Österreich. Startet im HYROX-Zirkus in Einzel- und Doubles-Rennen, zuletzt bei den Europameisterschaften, und teilt Training, Laufen und Functional Fitness mit einer stetig wachsenden Community.",
+      "tags": [
+        "HYROX",
+        "Botschafterin",
+        "Content"
+      ],
+      "photo": "images/athletes/nathalie-duerbeck.jpg"
+    },
+    {
+      "ini": "AL",
+      "hue": 28,
+      "name": "Anna & Lisa Hahner",
+      "sport": "Marathon",
+      "loc": "Deutschland",
+      "bio": "Die Hahnertwins: eineiige Zwillinge und Marathonläuferinnen, die Deutschland bei den Olympischen Spielen 2016 in Rio vertreten haben. Heute als Läuferinnen, Speakerinnen und Autorinnen eine der bekanntesten Laufmarken im deutschsprachigen Raum.",
+      "tags": [
+        "Marathon",
+        "Botschafterinnen",
+        "Events"
+      ],
+      "photo": "images/athletes/hahnertwins.jpg"
+    },
+    {
+      "ini": "FW",
+      "hue": 210,
+      "name": "Felix Wiemers",
+      "sport": "Freeride-Ski",
+      "loc": "Zillertal, Österreich",
+      "bio": "Deutscher Freeride-Skifahrer mit Homebase im Zillertal und Podestplätzen auf der Freeride World Tour. Ehemaliger Bundesliga-Kunstturner, Filmprotagonist und langjähriger Partner von Ski-, Outdoor- und Kamera-Marken.",
+      "tags": [
+        "Freeride",
+        "Botschafter",
+        "Content"
+      ],
+      "photo": "images/athletes/felix-wiemers.jpg"
+    },
+    {
+      "ini": "MB",
+      "hue": 42,
+      "name": "Matthias Bühler",
+      "sport": "Leichtathletik",
+      "loc": "Deutschland",
+      "bio": "Deutscher Hürdensprinter über 110 m mit Starts bei Olympischen Spielen sowie Welt- und Europameisterschaften. Mehrfacher Deutscher Meister und heute als Botschafter für Leichtathletik, Laufsport und Performance-Marken aktiv.",
+      "tags": [
+        "Leichtathletik",
+        "Botschafter",
+        "Content"
+      ],
+      "photo": "images/athletes/matthias-buhler.jpg"
+    },
+    {
+      "ini": "PP",
+      "hue": 5,
+      "name": "Peter Plavec",
+      "sport": "Eis- & Freiwasserschwimmen",
+      "loc": "Österreich",
+      "bio": "Österreichischer Eis- und Freiwasserschwimmer, der bei Extrem-Ausdauerevents in offenen Gewässern und bei Eisschwimm-Wettkämpfen startet. Steht für Willenskraft, Kälte und Abenteuer und arbeitet mit Outdoor-, Ausdauer- und Gesundheitsmarken.",
+      "tags": [
+        "Ausdauer",
+        "Botschafter",
+        "Content"
+      ],
+      "photo": "images/athletes/peter-plavec.jpg"
+    }
+  ],
+  "dutch": [
+    {
+      "ini": "NE",
+      "hue": 330,
+      "name": "Nathalie Erfanipour",
+      "sport": "HYROX",
+      "loc": "Nederland",
+      "bio": "Hybride atlete en content creator uit Nederland die HYROX-races rijdt en haar training, hardlopen en functional fitness deelt met een groeiende community. Geschikt voor fitness-, voedings- en sportkledingmerken die een actieve, trainende doelgroep willen bereiken.",
+      "tags": [
+        "HYROX",
+        "Ambassadeur",
+        "Content"
+      ],
+      "photo": "images/athletes/nathalie-erfanipour.jpg"
+    },
+    {
+      "ini": "NvE",
+      "hue": 28,
+      "name": "Noël van 't End",
+      "sport": "Judo",
+      "loc": "Nederland",
+      "bio": "Nederlandse judoka en wereldkampioen in de klasse tot 90 kg (Tokio 2019), met Olympische Spelen en meerdere EK-podia op zijn naam. Een herkenbaar gezicht van het Nederlandse judo dat staat voor discipline, respect en doorzettingsvermogen.",
+      "tags": [
+        "Judo",
+        "Ambassadeur",
+        "Events"
+      ],
+      "photo": "images/athletes/noel-van-t-end.jpg"
+    },
+    {
+      "ini": "KvD",
+      "hue": 20,
+      "name": "Kayleigh van Dooren",
+      "sport": "Voetbal",
+      "loc": "Nederland / Italië",
+      "bio": "Oranje Leeuwin en middenveldster die via PSV en FC Twente (landstitel, KNVB Beker en Champions League) de stap maakte naar AC Milan in de Serie A. Vocht terug van een zware knieblessure en is een sterk verhaal voor merken rond vrouwenvoetbal en herstel.",
+      "tags": [
+        "Voetbal",
+        "Ambassadeur",
+        "Content"
+      ],
+      "photo": "images/athletes/kayleigh-van-dooren.jpg"
+    },
+    {
+      "ini": "GC",
+      "hue": 5,
+      "name": "Glen Cuyle",
+      "sport": "Turnen",
+      "loc": "België",
+      "bio": "Belgische turner en olympiër (Parijs 2024) die als meerkamper België vertegenwoordigt op EK's en WK's. Een van de gezichten van het Belgische mannenturnen, met een jonge, sportieve achterban in Vlaanderen.",
+      "tags": [
+        "Turnen",
+        "Ambassadeur",
+        "Events"
+      ],
+      "photo": "images/athletes/glen-cuyle.jpg"
+    },
+    {
+      "ini": "WD",
+      "hue": 0,
+      "name": "Wout D'Heer",
+      "sport": "Volleybal",
+      "loc": "België / Italië",
+      "bio": "Belgische volleyballer en Red Dragon die als middenaanvaller in de Italiaanse SuperLega speelt, een van de sterkste competities ter wereld. Combineert internationale topsport met een groeiend profiel in Vlaanderen.",
+      "tags": [
+        "Volleybal",
+        "Ambassadeur",
+        "Content"
+      ],
+      "photo": "images/athletes/wout-dheer.jpg"
+    },
+    {
+      "ini": "JV",
+      "hue": 42,
+      "name": "Julie Vanloo",
+      "sport": "Basketbal",
+      "loc": "België / VS",
+      "bio": "Point guard van de Belgian Cats, Europees kampioene en olympiër, met ervaring in de WNBA en de Europese topcompetities. Een van de bekendste Belgische sportvrouwen, sterk op sociale media en geliefd om haar energie op en naast het veld.",
+      "tags": [
+        "Basketbal",
+        "Ambassadeur",
+        "Content"
+      ],
+      "photo": "images/athletes/julie-vanloo.jpg"
+    },
+    {
+      "ini": "SG",
+      "hue": 210,
+      "name": "Sander Gillé",
+      "sport": "Tennis",
+      "loc": "België",
+      "bio": "Belgische dubbelspecialist met meerdere ATP-titels en een vaste waarde in de Belgische Davis Cup-ploeg. Reist het hele jaar de ATP Tour rond, van Grand Slams tot Masters, en is een aantrekkelijke partner voor reis-, kleding- en lifestylemerken.",
+      "tags": [
+        "Tennis",
+        "Ambassadeur",
+        "Events"
+      ],
+      "photo": "images/athletes/sander-gille.jpg"
+    }
+  ],
+  "ireland": [
+    {
+      "ini": "LK",
+      "hue": 120,
+      "name": "Lee Keegan",
+      "sport": "Gaelic Football",
+      "loc": "Mayo, Ireland",
+      "bio": "Former Mayo captain and 2016 Footballer of the Year, with five All-Stars across a decade-long inter-county career. Now a broadcaster and pundit, he carries one of the most recognisable profiles in the GAA into media, lifestyle and sporting goods partnerships.",
+      "tags": [
+        "GAA",
+        "Ambassadorship",
+        "Media"
+      ],
+      "photo": "images/athletes/lee-keegan.jpg"
+    },
+    {
+      "ini": "SO",
+      "hue": 140,
+      "name": "Sophie O'Sullivan",
+      "sport": "Athletics",
+      "loc": "Cork, Ireland",
+      "bio": "Irish 800m runner and Olympian (Paris 2024) who has represented Ireland at World and European Championships, with a collegiate career in the US behind her. A rising name in middle-distance running with strong appeal for performance, footwear and nutrition brands.",
+      "tags": [
+        "Athletics",
+        "Ambassadorship",
+        "Content"
+      ],
+      "photo": "images/athletes/sophie-osullivan.jpg"
+    },
+    {
+      "ini": "MG",
+      "hue": 100,
+      "name": "Mia Griffin",
+      "sport": "Cycling",
+      "loc": "Kilkenny, Ireland",
+      "bio": "Irish track and road cyclist and Olympian (Paris 2024) who races professionally on the road and competes for Ireland at World and European track championships. Well placed for cycling, endurance and wearable-tech brands in Ireland and across Europe.",
+      "tags": [
+        "Cycling",
+        "Ambassadorship",
+        "Events"
+      ],
+      "photo": "images/athletes/mia-griffin.jpg"
+    },
+    {
+      "ini": "EK",
+      "hue": 150,
+      "name": "Erin King",
+      "sport": "Rugby",
+      "loc": "Wicklow, Ireland",
+      "bio": "Ireland women's rugby international across XVs and Sevens, Olympian (Paris 2024) and World Rugby Women's Breakthrough Player of the Year 2024. One of the brightest talents in Irish women's sport, with a fast-growing audience.",
+      "tags": [
+        "Rugby",
+        "Ambassadorship",
+        "Content"
+      ],
+      "photo": "images/athletes/erin-king.jpg"
+    },
+    {
+      "ini": "RW",
+      "hue": 0,
+      "name": "Rosa Walsh",
+      "sport": "Jiu-Jitsu",
+      "loc": "Cork, Ireland",
+      "bio": "Brazilian jiu-jitsu black belt and IBJJF European No-Gi champion, and the youngest Irish woman to reach black belt. A prolific competitor on the IBJJF, ADCC and professional grappling circuits, and a trailblazer for Irish jiu-jitsu.",
+      "tags": [
+        "Combat sports",
+        "Ambassadorship",
+        "Content"
+      ],
+      "photo": "images/athletes/rosa-walsh.jpg"
+    },
+    {
+      "ini": "RH",
+      "hue": 130,
+      "name": "Robbie Henshaw",
+      "sport": "Rugby",
+      "loc": "Athlone, Ireland",
+      "bio": "Leinster and Ireland centre with Six Nations Grand Slams and a British & Irish Lions tour to his name, and one of the most capped backs of his generation. A household name in Irish rugby with broad appeal across sportswear, automotive and lifestyle partnerships.",
+      "tags": [
+        "Rugby",
+        "Ambassadorship",
+        "Events"
+      ],
+      "photo": "images/athletes/robbie-henshaw.jpg"
+    },
+    {
+      "ini": "GM",
+      "hue": 195,
+      "name": "Gearóid McDaid",
+      "sport": "Surfing",
+      "loc": "Sligo, Ireland",
+      "bio": "Ireland's leading competitive surfer, a multiple national champion who represents Ireland at ISA World Surfing Games and competes on the European circuit from his base on the Sligo coast. A natural fit for outdoor, wetsuit, travel and Wild Atlantic Way brands.",
+      "tags": [
+        "Surfing",
+        "Ambassadorship",
+        "Content"
+      ],
+      "photo": "images/athletes/gearoid-mcdaid.jpg"
+    },
+    {
+      "ini": "GW",
+      "hue": 45,
+      "name": "Gavin White",
+      "sport": "Gaelic Football",
+      "loc": "Kerry, Ireland",
+      "bio": "Kerry captain and All-Ireland winning half-back, twice an All-Star and one of the most dynamic footballers in the country. Strong appeal to sporting goods, nutrition and lifestyle brands that want reach in Kerry and across the GAA.",
+      "tags": [
+        "GAA",
+        "Ambassadorship",
+        "Content"
+      ],
+      "photo": "images/athletes/gavin-white.jpg"
+    }
+  ]
 }
