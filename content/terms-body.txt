@@ -332,6 +332,7 @@ by the EU, UK, UN or the U.S. Office of Foreign Assets Control, or (ii)
 a designated person on any applicable sanctions or restricted-party
 list. Users must not use the Service in violation of any export control
 or sanctions law.</p>
+<p><strong>3.7 Acceptance of Applications.</strong> Registration for the Service, and the purchase or renewal of any Subscription Plan, Trial, Once-Off Campaign or Order Form, is subject to acceptance by Sport Endorse. Sport Endorse may, acting reasonably and in a non-discriminatory manner, decline any application or renewal where it considers that the applicant, its products or services, or the campaigns it is likely to run are inconsistent with the platform-neutrality principles in clause 10.5A, the restricted categories in clause 10.5, or the brand-safety, legal or reputational considerations in clause 12.5(v). Where Sport Endorse declines an application from a business user it will say so in writing. Nothing in this clause requires Sport Endorse to accept any applicant.</p>
 <h3 id="opportunities-engagements-and-deliverables">4.
 Opportunities, Engagements and Deliverables</h3>
 <p><strong>4.1 Posting Opportunities.</strong> A Brand posting an
@@ -1008,13 +1009,12 @@ no immigration advice and no assurance as to visa compliance;
 independent immigration advice must be taken.</p>
 <p><strong>10.5 Restricted Categories.</strong> Opportunities involving
 alcohol, betting, gambling, tobacco, e-cigarettes and vaping, cannabis,
-prescription medicines, weapons, supplements, high-risk financial
-products, cryptoassets, or other categories flagged on the Service,
-require the Talent's specific prior written consent and are subject to
+prescription medicines, weapons, supplements, high-risk financial products, cryptoassets, political, geopolitical or advocacy campaigns (as described in clause 10.5A), or other categories flagged on the Service, require the Talent’s specific prior written consent and are subject to
 territory-specific restrictions under Applicable Law, which the Brand
 warrants it has verified. Restricted categories are prohibited entirely
 in respect of Talent under 18 and under the Schools Programme (Part
 G).</p>
+<p><strong>10.5A Platform Neutrality.</strong> Sport Endorse operates a neutral marketplace serving Talent, clubs, federations and institutions across many countries, cultures and backgrounds. Accordingly, Sport Endorse does not facilitate, and Brands and Agencies may not post, Opportunities whose purpose or predominant effect is to promote, fundraise for or associate Talent with a political party, candidate, electoral campaign, referendum position, government, armed conflict, territorial or sovereignty dispute, or any campaign of political or geopolitical advocacy, irrespective of the cause or viewpoint involved. This restriction applies to the content, purpose and presentation of the Opportunity and not to a Brand’s lawful charitable giving, corporate values or the personal views of its principals. Sport Endorse may determine, acting reasonably, whether an Opportunity or an applicant falls within this clause, and may decline an application under clause 3.7, decline to list an Opportunity, or act under clause 12.4 and 12.5 accordingly. Nothing in this clause restricts Talent from expressing their own views on their own channels outside a Sponsorship Contract.</p>
 <p><strong>10.6 Anti-Bribery and Financial Crime.</strong> Each User
 shall comply with applicable anti-bribery, anti-corruption,
 anti-money-laundering and counter-terrorist-financing laws, including
